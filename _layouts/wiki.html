@@ -6,11 +6,17 @@
     <div class="wiki-container">
       <h1>{{ page.title }}</h1>
       <hr>
-      <aside></aside>
+      <aside id="toc"></aside>
       <article>
         {{ content }}
       </article>
     </div>
+    <script>
+     $('aside#toc').toc({
+       'container': 'article',
+       'smoothScrolling': true,
+     });
+    </script>
     {% include footer.html %}
   </body>
 </html>
