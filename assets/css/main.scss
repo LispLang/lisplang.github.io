@@ -1,0 +1,72 @@
+---
+---
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Lusitana);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+@font-face {
+  font-family: Seshat;
+  src: url({{ "/assets/fonts/Seshat.otf" | prepend: site.baseurl }}) format("opentype");
+}
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  color: #444;
+  //font-family: 'Lusitana', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+  margin-bottom: 45px;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+#implementations {
+  width: 70%;
+  margin: 0 auto;
+
+  .impl {
+    .impl-inner {
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      padding: 15px;
+      @include border-radius(5px);
+
+      .name {
+        font-size: 22px;
+      }
+
+      .fullname {
+        font-size: 85%;
+        color: #333;
+        font-style: italic;
+        margin-left: 25px;
+      }
+
+      hr {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+/* Wiki style */
+
+.wiki-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+article.wiki-article {
+  margin: 0 auto 25px;
+}

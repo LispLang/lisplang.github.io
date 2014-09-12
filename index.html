@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<main>
+  <section id="why">
+    <h1>Why Common Lisp?</h1>
+    <span id="answer">Mature, industrial-strenght programming.</span>
+    <div id="reasons" class="row">
+
+    </div>
+  </section>
+  <section id="implementations" class="row">
+    <h1>Pick an Implementation</h1>
+    {% for impl in site.impls %}
+      <div class="impl col-md-6">
+        <div class="impl-inner">
+          <span class="name">
+            {{ impl.name }}
+            {% if impl.fullname %}
+              <span class="fullname">{{ impl.fullname }}</span>
+            {% endif %}
+          </span>
+          <hr>
+          <span class="tagline">{{ impl.tagline }}</span>
+          <p class="desc">{{ impl.desc }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+</main>
