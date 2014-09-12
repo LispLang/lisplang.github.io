@@ -36,6 +36,7 @@ layout: wiki
 - [ClouchDb](http://common-lisp.net/project/clouchdb/)
 - [cl-memcached](https://github.com/quasi/cl-memcached)
 - [clache](https://github.com/m2ym/clache)
+- [elasticity](http://eudoxia0.github.io/elasticsearch/): Elasticsearch client.
 
 # FFI
 
@@ -45,6 +46,7 @@ layout: wiki
 # Game Development
 
 - [Xelf](http://xelf.me/reference-plain.html)
+- [Buclet](https://github.com/aerique/buclet): Bindings to the Bullet library.
 
 # Graphics
 
@@ -55,17 +57,28 @@ layout: wiki
 - [zpng](http://www.xach.com/lisp/zpng/)
 - [cl-svg](https://code.google.com/p/cl-svg/): Library for generating SVGs.
 
+cl-horde3d - 
+cl-sdl2
+cl-gd
+cl-graphviz
+
+- [Okra](https://github.com/aerique/okra): Ogre3D bindings.
+
 # GUI
 
-- Austral
-- [CommonQt](http://common-lisp.net/project/commonqt/): Qt binding.
+- [Austral](http://eudoxia0.github.io/austral/): Like
+  [node-webkit](https://github.com/rogerwang/node-webkit), for CL.
+- [CommonQt](http://common-lisp.net/project/commonqt/): Qt bindings.
 - [cl-cffi-gtk](http://www.crategus.com/books/cl-cffi-gtk/): GTK+ binding.
 - [cl-xul](https://github.com/mmontone/cl-xul): Binding to Mozilla's XUL engine.
+- [CLX](https://en.wikipedia.org/wiki/CLX_%28Common_Lisp%29): X interface.
+- [Zen](https://github.com/pyb/zen): X server.
 
 # Console
 
 # Parsing
 
+- [cl-ppcre](http://weitz.de/cl-ppcre/): Regular expressions.
 - [esrap](https://github.com/nikodemus/esrap): A packrat parser generator.
 - [cl-parsec](https://github.com/vseloved/cl-parsec): Parser combinators.
 
@@ -86,6 +99,13 @@ layout: wiki
 - [http-parse](https://github.com/orthecreedence/http-parse): Parsing HTTP
   requests.
 
+https://github.com/davazp/cl-icalendar
+
+http://www.cliki.net/simple-currency
+
+
+puri
+
 ## JSON
 
 - [cl-json](http://common-lisp.net/project/cl-json/)
@@ -103,17 +123,31 @@ different libraries here)
 # Network
 
 - [Drakma](http://weitz.de/drakma/): HTTP client.
+- [usocket](http://common-lisp.net/project/usocket/): Portable socket
+  abstraction.
+
+## Protocols
+
+cl-zmq -
+cl-xmpp -
 
 # Science
 
 - [GSLL](http://common-lisp.net/project/gsll/): The GNU Scientific Library for
   Lisp.
 
+http://www.cliki.net/Chemboy
+
+
 # Mathematics
 
 - [Napa-FFT3](https://github.com/pkhuong/Napa-FFT3)
 - [common-lisp-stat](https://github.com/blindglobe/common-lisp-stat/)
 - [lisp-matrix](https://github.com/blindglobe/lisp-matrix)
+
+## Plotting
+
+- [cl-spark](https://github.com/tkych/cl-spark): Sparkline charts.
 
 # Machine Learning
 
@@ -135,7 +169,10 @@ different libraries here)
 ### Modules
 
 - [clack-errors](https://github.com/eudoxia0/clack-errors): Better error pages
-- [hermetic](https://github.com/eudoxia0/hermetic): Authentication.
+- [hermetic](https://github.com/eudoxia0/hermetic): Authentication for
+  Clack-based applications.
+- [OpenID](http://common-lisp.net/project/cl-openid/darcs/cl-openid/README.html): OpenID interface.
+- [Saluto](https://github.com/dmitrys99/saluto): RESTAS authentication.
 
 ## Template Engines
 
@@ -172,6 +209,7 @@ different libraries here)
 
 - [cl-fad](http://weitz.de/cl-fad/): Portable pathname library.
 - [iolib](https://github.com/sionescu/iolib): Input/Output library.
+- [fast-io](https://github.com/rpav/fast-io): Fast octet streams and vectors.
 
 # Parallel, Concurrent and Async
 
@@ -196,11 +234,16 @@ different libraries here)
 
 - [colleen](https://github.com/Shinmera/colleen): Modular IRC bot framework.
 
+cl-irc
+
 # DSLs
 
 - [texp](http://mr.gy/software/texp/): Generates TeX using S-expressions.
 - [inferior-shell](http://quickdocs.org/inferior-shell/): DSL for writing shell
   scripts.
+
+https://github.com/tkych/donuts
+
 
 # Unit Testing
 
@@ -222,6 +265,8 @@ different libraries here)
 - [cl-annot](https://github.com/arielnetworks/cl-annot): Decorator syntax.
 - [cl-2dsyntax](http://lisp.hyperprostor.unas.cz/cl-2dsyntax/): Python-like
   syntax implemented in reader macros.
+- [named-readtables](https://github.com/melisgl/named-readtables)
+- [cl-interpol](http://www.cliki.net/cl-interpol): String iterpolation.
 
 ## Type System
 
@@ -233,43 +278,22 @@ different libraries here)
 - [interface](https://bitbucket.org/tarballs_are_good/interface): Defining
   interfaces.
 
+## Misc.
+
+- [iterate](http://common-lisp.net/project/iterate/): A lispier version of
+  `loop`.
+
+https://github.com/tkych/quicksearch
+
+
+# Date and Time
+
+- [local-time](http://common-lisp.net/project/local-time/manual.html)
+
 # Misc
 
 - [lesque](https://github.com/fukamachi/lesque): Job queue (Port of
 [Resque](https://github.com/resque/resque)).
-
-http://www.cliki.net/ContextL
-https://github.com/melisgl/named-readtables
-http://common-lisp.net/project/iterate/ local-time http://www.cliki.net/cl-ppcre
-http://www.cliki.net/cl-interpol https://github.com/froydnj/diff/
-http://www.cliki.net/Soundex http://www.cliki.net/fast-io
-http://www.cliki.net/flexi-streams CL-LDAP cl-openid
-
-CLX 
-Saluto 
-usocket
-https://github.com/pyb/zen
-http://www.cliki.net/Chemboy
-http://www.cliki.net/simple-currency
-https://github.com/davazp/cl-icalendar
-puri
-cl-zmq -
-cl-xmpp -
- cl-irc
-Buclet -
-cl-horde3d - 
-cl-sdl2
-cl-gd -
-cl-graphviz
-https://github.com/tkych/quicksearch
-https://github.com/tkych/cl-spark
-https://github.com/tkych/donuts
-https://github.com/aerique/okra#readme
-s-dot
-http://www.cliki.net/cl-geo
-http://www.cliki.net/cl-wkb
-elasticity
-http://common-lisp.net/project/cl-sbml/
  
 # Configuration Management
 
