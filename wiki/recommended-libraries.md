@@ -5,8 +5,10 @@ layout: wiki
 
 # Cryptography
 
-- [Ironclad](http://method-combination.net/lisp/ironclad/)
-- [crypto-shortcuts](https://github.com/Shinmera/crypto-shortcuts)
+- [Ironclad](http://method-combination.net/lisp/ironclad/): A complete library
+  with a flexible API.
+- [crypto-shortcuts](https://github.com/Shinmera/crypto-shortcuts): A simpler
+  interface to Ironclad.
 
 # Databases
 
@@ -19,7 +21,7 @@ layout: wiki
 
 - [Crane](http://eudoxia0.github.io/crane/): Supports Postgres, MySQL and
   SQLite3, provides automatic migrations.
-- [Integral](https://github.com/fukamachi/integral)
+- [Integral](https://github.com/fukamachi/integral): Another ORM.
 - [Postmodern](http://marijnhaverbeke.nl/postmodern/): A Postgres-only ORM.
 
 ### Drivers
@@ -49,23 +51,23 @@ layout: wiki
 - [CLinch](https://github.com/BradWBeer/CLinch)
 - [Varjo](https://github.com/cbaggers/varjo): Compiles Lisp to GSLL.
 - [cl-cairo2](https://github.com/rpav/cl-cairo2)
-- [Vecto](http://www.xach.com/lisp/vecto/)
+- [Vecto](http://www.xach.com/lisp/vecto/): Generates vector graphics.
 - [zpng](http://www.xach.com/lisp/zpng/)
-- [cl-svg](https://code.google.com/p/cl-svg/)
+- [cl-svg](https://code.google.com/p/cl-svg/): Library for generating SVGs.
 
 # GUI
 
 - Austral
-- [CommonQt](http://common-lisp.net/project/commonqt/)
-- [cl-cffi-gtk](http://www.crategus.com/books/cl-cffi-gtk/)
-- [cl-xul](https://github.com/mmontone/cl-xul)
+- [CommonQt](http://common-lisp.net/project/commonqt/): Qt binding.
+- [cl-cffi-gtk](http://www.crategus.com/books/cl-cffi-gtk/): GTK+ binding.
+- [cl-xul](https://github.com/mmontone/cl-xul): Binding to Mozilla's XUL engine.
 
 # Console
 
 # Parsing
 
-- [esrap](https://github.com/nikodemus/esrap)
-- [cl-parsec](https://github.com/vseloved/cl-parsec)
+- [esrap](https://github.com/nikodemus/esrap): A packrat parser generator.
+- [cl-parsec](https://github.com/vseloved/cl-parsec): Parser combinators.
 
 # Audio
 
@@ -80,15 +82,18 @@ layout: wiki
 
 - [CXML](http://common-lisp.net/project/cxml/)
 - [plump](https://github.com/Shinmera/plump)
-- [lquery](https://github.com/Shinmera/lquery)
-- [http-parse](https://github.com/orthecreedence/http-parse)
+- [lquery](https://github.com/Shinmera/lquery): A jQuery-like library.
+- [http-parse](https://github.com/orthecreedence/http-parse): Parsing HTTP
+  requests.
 
 ## JSON
 
 - [cl-json](http://common-lisp.net/project/cl-json/)
-- [jsown](): Parse JSON as fast as possible.
+- [jsown](https://github.com/madnificent/jsown): Parse JSON as fast as possible.
 
-(Sabra Crolleton [compared](https://sites.google.com/site/sabraonthehill/home/json-libraries) the different libraries here)
+(Sabra Crolleton
+[compared](https://sites.google.com/site/sabraonthehill/home/json-libraries) the
+different libraries here)
 
 ## Data Validation
 
@@ -121,22 +126,26 @@ layout: wiki
 
 ## Web Frameworks
 
-- [Lucerne]()
+- [Lucerne](): A [Flask](http://flask.pocoo.org/)-inspired, Clack-based
+  microframework.
 - [radiance](https://github.com/Shinmera/radiance): An extensible CMS.
-- [Caveman2](http://8arrow.org/caveman/)
-- [Ningle](http://8arrow.org/ningle/)
+- [Caveman2](http://8arrow.org/caveman/): A larger framework built on Clack.
+- [Ningle](http://8arrow.org/ningle/): Microframework built on Clack.
 
 ### Modules
 
 - [clack-errors](https://github.com/eudoxia0/clack-errors): Better error pages
-- [hermetic](https://github.com/eudoxia0/hermetic)
+- [hermetic](https://github.com/eudoxia0/hermetic): Authentication.
 
 ## Template Engines
 
-- [eco](https://github.com/eudoxia0/eco)
-- [cl-closure-template](https://github.com/archimag/cl-closure-template)
-- [djula](https://github.com/mmontone/djula)
-- [cl-markup](https://github.com/arielnetworks/cl-markup)
+- [eco](https://github.com/eudoxia0/eco): Fast, designer-friendly templates.
+- [cl-closure-template](https://github.com/archimag/cl-closure-template):
+  Google's Closure template engine on Common Lisp.
+- [djula](https://github.com/mmontone/djula): Port of the Django template
+  system.
+- [cl-markup](https://github.com/arielnetworks/cl-markup): Generate HTML through
+  an S-expression DSL.
 
 ## JavaScript
 
@@ -144,7 +153,7 @@ layout: wiki
   Lisp to JavaScript.
 - [cl-javascript](http://marijnhaverbeke.nl/cl-javascript/): Compile JavaScript
   to Common Lisp.
-- [parse-js](http://marijnhaverbeke.nl/parse-js/)
+- [parse-js](http://marijnhaverbeke.nl/parse-js/): Javascript parser.
 
 # Web Service Clients
 
@@ -154,15 +163,15 @@ layout: wiki
 
 # Web Servers
 
-- [Hunchentoot](http://weitz.de/hunchentoot/)
+- [Hunchentoot](http://weitz.de/hunchentoot/): A mature web server in pure CL.
 - [Wookie](http://wookie.beeets.com/): Asynchronous server
 - [Portable AllegroServe](https://github.com/franzinc/aserve): Portable version
   of AllegroServe, developed by Franz
 
 # System Interface
 
-- [cl-fad](http://weitz.de/cl-fad/)
-- [iolib](https://github.com/sionescu/iolib)
+- [cl-fad](http://weitz.de/cl-fad/): Portable pathname library.
+- [iolib](https://github.com/sionescu/iolib): Input/Output library.
 
 # Parallel, Concurrent and Async
 
@@ -174,8 +183,10 @@ layout: wiki
 
 # Encodings
 
-- [trivial-utf-8](http://common-lisp.net/project/trivial-utf-8/)
-- [babel](http://common-lisp.net/project/babel/)
+- [trivial-utf-8](http://common-lisp.net/project/trivial-utf-8/): A simple way
+  to handle UTF-8 conversion.
+- [babel](http://common-lisp.net/project/babel/): A heavier library to convert
+  across multiple character encodings.
 
 # Localization
 
@@ -183,7 +194,7 @@ layout: wiki
 
 # IRC
 
-- [colleen](https://github.com/Shinmera/colleen)
+- [colleen](https://github.com/Shinmera/colleen): Modular IRC bot framework.
 
 # DSLs
 
@@ -204,34 +215,35 @@ layout: wiki
 
 ## Syntax
 
-- [cl21](http://cl21.org/)
-- [cl-syntax](https://github.com/m2ym/cl-syntax)
+- [cl21](http://cl21.org/): A redesign of Common Lisp, implemented in Common
+  Lisp.
+- [cl-syntax](https://github.com/m2ym/cl-syntax): Building blocks for extending
+  the syntax.
 - [cl-annot](https://github.com/arielnetworks/cl-annot): Decorator syntax.
-http://lisp.hyperprostor.unas.cz/cl-2dsyntax/
+- [cl-2dsyntax](http://lisp.hyperprostor.unas.cz/cl-2dsyntax/): Python-like
+  syntax implemented in reader macros.
 
 ## Type System
 
 - [trivia-types](https://github.com/m2ym/trivial-types)
-- [optima](https://github.com/m2ym/optima)
+- [optima](https://github.com/m2ym/optima): Optimized pattern matching.
 - [cl-algebraic-data-type](https://bitbucket.org/tarballs_are_good/cl-algebraic-data-type)
-- [template](https://bitbucket.org/tarballs_are_good/template)
-- [interface](https://bitbucket.org/tarballs_are_good/interface)
+- [template](https://bitbucket.org/tarballs_are_good/template): C++-like
+  template metaprogramming.
+- [interface](https://bitbucket.org/tarballs_are_good/interface): Defining
+  interfaces.
 
 # Misc
 
-- [lesque](https://github.com/fukamachi/lesque)
+- [lesque](https://github.com/fukamachi/lesque): Job queue (Port of
+[Resque](https://github.com/resque/resque)).
+
 http://www.cliki.net/ContextL
 https://github.com/melisgl/named-readtables
-http://common-lisp.net/project/iterate/
-local-time
-http://www.cliki.net/cl-ppcre
-http://www.cliki.net/cl-interpol
-https://github.com/froydnj/diff/
-http://www.cliki.net/Soundex
-http://www.cliki.net/fast-io
-http://www.cliki.net/flexi-streams
- CL-LDAP
- cl-openid
+http://common-lisp.net/project/iterate/ local-time http://www.cliki.net/cl-ppcre
+http://www.cliki.net/cl-interpol https://github.com/froydnj/diff/
+http://www.cliki.net/Soundex http://www.cliki.net/fast-io
+http://www.cliki.net/flexi-streams CL-LDAP cl-openid
 
 CLX 
 Saluto 
@@ -266,17 +278,21 @@ http://common-lisp.net/project/cl-sbml/
 
 # Build Systems
 
-- [ASDF](http://common-lisp.net/project/asdf/)
+- [ASDF](http://common-lisp.net/project/asdf/): **The** Common Lisp build
+  system.
 - [asdf-linguist](https://github.com/eudoxia0/asdf-linguist): Extensions to ASDF
   for compiling other languages, Sass files, etc.
-- [XCVB](http://common-lisp.net/project/xcvb/)
+- [XCVB](http://common-lisp.net/project/xcvb/): A build system built at ITA
+  Software to handle large parallel builds.
 
 ## Package Management
 
 - [Quicklisp](http://www.quicklisp.org/)
-- [Quickutil](https://github.com/tarballs-are-good/quickutil)
+- [Quickutil](https://github.com/tarballs-are-good/quickutil): Package manager
+  for utilities.
 - [qlot](https://github.com/fukamachi/qlot)
-- [cl-project](https://github.com/fukamachi/cl-project)
+- [cl-project](https://github.com/fukamachi/cl-project): Project skeleton
+  generator.
 
 # Benchmarking
 
