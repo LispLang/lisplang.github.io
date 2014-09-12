@@ -51,18 +51,19 @@ layout: wiki
 # Graphics
 
 - [CLinch](https://github.com/BradWBeer/CLinch)
-- [Varjo](https://github.com/cbaggers/varjo): Compiles Lisp to GSLL.
+- [Varjo](https://github.com/cbaggers/varjo): Compiles Lisp to
+  [GLSL](http://www.opengl.org/documentation/glsl/).
 - [cl-cairo2](https://github.com/rpav/cl-cairo2)
 - [Vecto](http://www.xach.com/lisp/vecto/): Generates vector graphics.
 - [zpng](http://www.xach.com/lisp/zpng/)
 - [cl-svg](https://code.google.com/p/cl-svg/): Library for generating SVGs.
-
-cl-horde3d - 
-cl-sdl2
-cl-gd
-cl-graphviz
-
-- [Okra](https://github.com/aerique/okra): Ogre3D bindings.
+- [cl-horde3d](https://github.com/anwyn/cl-horde3d/):
+  [Horde3D](http://www.horde3d.org/) bindings.
+- [cl-sdl2](https://github.com/lispgames/cl-sdl2)
+- [cl-gd](http://weitz.de/cl-gd/): Binding to the
+  [GD](http://libgd.bitbucket.org/) graphics library.
+- [Okra](https://github.com/aerique/okra): [OGRE](http://www.ogre3d.org/)
+  bindings.
 
 # GUI
 
@@ -98,13 +99,10 @@ cl-graphviz
 - [lquery](https://github.com/Shinmera/lquery): A jQuery-like library.
 - [http-parse](https://github.com/orthecreedence/http-parse): Parsing HTTP
   requests.
-
-https://github.com/davazp/cl-icalendar
-
-http://www.cliki.net/simple-currency
-
-
-puri
+- [cl-icalendar](https://github.com/davazp/cl-icalendar): iCalendar
+  implementation.
+- [simple-currency](https://github.com/a0-prw/simple-currency): Currency conversion.
+- [puri-unicode](https://github.com/archimag/puri-unicode): URI parser.
 
 ## JSON
 
@@ -126,18 +124,10 @@ different libraries here)
 - [usocket](http://common-lisp.net/project/usocket/): Portable socket
   abstraction.
 
-## Protocols
-
-cl-zmq -
-cl-xmpp -
-
 # Science
 
 - [GSLL](http://common-lisp.net/project/gsll/): The GNU Scientific Library for
   Lisp.
-
-http://www.cliki.net/Chemboy
-
 
 # Mathematics
 
@@ -233,17 +223,14 @@ http://www.cliki.net/Chemboy
 # IRC
 
 - [colleen](https://github.com/Shinmera/colleen): Modular IRC bot framework.
-
-cl-irc
+- [cl-irc](http://www.common-lisp.net/project/cl-irc/): IRC framework.
 
 # DSLs
 
 - [texp](http://mr.gy/software/texp/): Generates TeX using S-expressions.
 - [inferior-shell](http://quickdocs.org/inferior-shell/): DSL for writing shell
   scripts.
-
-https://github.com/tkych/donuts
-
+- [donuts](https://github.com/tkych/donuts): Generates `dot` graphs.
 
 # Unit Testing
 
@@ -282,9 +269,7 @@ https://github.com/tkych/donuts
 
 - [iterate](http://common-lisp.net/project/iterate/): A lispier version of
   `loop`.
-
-https://github.com/tkych/quicksearch
-
+- [quicksearch](https://github.com/tkych/quicksearch): Search for libraries.
 
 # Date and Time
 
