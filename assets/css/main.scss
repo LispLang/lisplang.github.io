@@ -18,10 +18,22 @@
   src: url({{ "/assets/fonts/Seshat.otf" | prepend: site.baseurl }}) format("opentype");
 }
 
-/* Variables */
+/* Responsive */
 
-$mobile: new-breakpoint(max-width 480px);
-$desktop: new-breakpoint(min-width 480px);
+$mobile-size: 768px;
+$desktop-size: calc($mobile-size+1);
+
+@mixin on-desktop() {
+  @media (min-width: $mobile-size) {
+    @content;
+  }
+}
+
+@mixin on-mobile() {
+  @media (max-width: $mobile-size) {
+    @content;
+  }
+}
 
 /* Mixins */
 
@@ -50,10 +62,16 @@ section {
 
 #implementations {
   @include outer-container;
-  width: 70%;
-  margin: 0 auto;
 
   .impl {
+    @include on-desktop() {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @include on-mobile() {
+      @include span-columns(12);
+    }
+
     .impl-inner {
       border: 1px solid #ccc;
       margin: 10px 0;
