@@ -3,13 +3,6 @@ title: Recommended Libraries
 layout: wiki
 ---
 
-# Cryptography
-
-- [Ironclad](http://method-combination.net/lisp/ironclad/): A complete library
-  with a flexible API.
-- [crypto-shortcuts](https://github.com/Shinmera/crypto-shortcuts): A simpler
-  interface to Ironclad.
-
 # Databases
 
 ## Relational
@@ -40,13 +33,22 @@ layout: wiki
 
 # FFI
 
+## C
+
 - [CFFI](http://common-lisp.net/project/cffi/)
 - [cl-autowrap](https://github.com/rpav/cl-autowrap)
 
-# Game Development
+## Java
 
-- [Xelf](http://xelf.me/reference-plain.html)
-- [Buclet](https://github.com/aerique/buclet): Bindings to the Bullet library.
+- [CL+J](http://common-lisp.net/project/cl-plus-j/)
+- [Foil](http://foil.sourceforge.net/)
+
+# Cryptography
+
+- [Ironclad](http://method-combination.net/lisp/ironclad/): A complete library
+  with a flexible API.
+- [crypto-shortcuts](https://github.com/Shinmera/crypto-shortcuts): A simpler
+  interface to Ironclad.
 
 # Graphics
 
@@ -65,7 +67,7 @@ layout: wiki
 - [Okra](https://github.com/aerique/okra): [OGRE](http://www.ogre3d.org/)
   bindings.
 
-# GUI
+## GUI
 
 - [Austral](http://eudoxia0.github.io/austral/): Like
   [node-webkit](https://github.com/rogerwang/node-webkit), for CL.
@@ -75,22 +77,16 @@ layout: wiki
 - [CLX](https://en.wikipedia.org/wiki/CLX_%28Common_Lisp%29): X interface.
 - [Zen](https://github.com/pyb/zen): X server.
 
-# Console
+# Game Development
+
+- [Xelf](http://xelf.me/reference-plain.html)
+- [Buclet](https://github.com/aerique/buclet): Bindings to the Bullet library.
 
 # Parsing
 
 - [cl-ppcre](http://weitz.de/cl-ppcre/): Regular expressions.
 - [esrap](https://github.com/nikodemus/esrap): A packrat parser generator.
 - [cl-parsec](https://github.com/vseloved/cl-parsec): Parser combinators.
-
-# Audio
-
-# Java
-
-- [CL+J](http://common-lisp.net/project/cl-plus-j/)
-- [Foil](http://foil.sourceforge.net/)
-
-# Image Manipulation
 
 # Data Formats
 
@@ -124,6 +120,11 @@ different libraries here)
 - [usocket](http://common-lisp.net/project/usocket/): Portable socket
   abstraction.
 
+## IRC
+
+- [colleen](https://github.com/Shinmera/colleen): Modular IRC bot framework.
+- [cl-irc](http://www.common-lisp.net/project/cl-irc/): IRC framework.
+
 # Science
 
 - [GSLL](http://common-lisp.net/project/gsll/): The GNU Scientific Library for
@@ -139,7 +140,7 @@ different libraries here)
 
 - [cl-spark](https://github.com/tkych/cl-spark): Sparkline charts.
 
-# Machine Learning
+## Machine Learning
 
 - [NLP](https://github.com/vseloved/cl-nlp)
 
@@ -182,13 +183,13 @@ different libraries here)
   to Common Lisp.
 - [parse-js](http://marijnhaverbeke.nl/parse-js/): Javascript parser.
 
-# Web Service Clients
+## Web Service Clients
 
 - [avatar-api](https://github.com/eudoxia0/avatar-api): Gravatar and others
 - [chirp](https://github.com/Shinmera/chirp): Twitter
 - [humbler](https://github.com/Shinmera/humbler): Tumblr
 
-# Web Servers
+## Web Servers
 
 - [Hunchentoot](http://weitz.de/hunchentoot/): A mature web server in pure CL.
 - [Wookie](http://wookie.beeets.com/): Asynchronous server
@@ -201,7 +202,7 @@ different libraries here)
 - [iolib](https://github.com/sionescu/iolib): Input/Output library.
 - [fast-io](https://github.com/rpav/fast-io): Fast octet streams and vectors.
 
-# Parallel, Concurrent and Async
+## Parallel, Concurrent and Async
 
 - [lparallel](http://lparallel.org/)
 - [Xecto](https://github.com/pkhuong/Xecto): An implementation of data parallelism.
@@ -209,7 +210,7 @@ different libraries here)
 - [chanl](https://github.com/sykopomp/chanl)
 - [cl-cuda](https://github.com/takagi/cl-cuda)
 
-# Encodings
+## Encodings
 
 - [trivial-utf-8](http://common-lisp.net/project/trivial-utf-8/): A simple way
   to handle UTF-8 conversion.
@@ -220,17 +221,16 @@ different libraries here)
 
 - [cl-locale](https://github.com/fukamachi/cl-locale)
 
-# IRC
-
-- [colleen](https://github.com/Shinmera/colleen): Modular IRC bot framework.
-- [cl-irc](http://www.common-lisp.net/project/cl-irc/): IRC framework.
-
 # DSLs
 
 - [texp](http://mr.gy/software/texp/): Generates TeX using S-expressions.
 - [inferior-shell](http://quickdocs.org/inferior-shell/): DSL for writing shell
   scripts.
 - [donuts](https://github.com/tkych/donuts): Generates `dot` graphs.
+
+# Date and Time
+
+- [local-time](http://common-lisp.net/project/local-time/manual.html)
 
 # Unit Testing
 
@@ -265,26 +265,6 @@ different libraries here)
 - [interface](https://bitbucket.org/tarballs_are_good/interface): Defining
   interfaces.
 
-## Misc.
-
-- [iterate](http://common-lisp.net/project/iterate/): A lispier version of
-  `loop`.
-- [quicksearch](https://github.com/tkych/quicksearch): Search for libraries.
-
-# Date and Time
-
-- [local-time](http://common-lisp.net/project/local-time/manual.html)
-
-# Misc
-
-- [lesque](https://github.com/fukamachi/lesque): Job queue (Port of
-[Resque](https://github.com/resque/resque)).
- 
-# Configuration Management
-
-- [envy](https://github.com/fukamachi/envy)
-- [universal-config](https://github.com/Shinmera/Universal-Config)
-
 # Build Systems
 
 - [ASDF](http://common-lisp.net/project/asdf/): **The** Common Lisp build
@@ -302,6 +282,19 @@ different libraries here)
 - [qlot](https://github.com/fukamachi/qlot)
 - [cl-project](https://github.com/fukamachi/cl-project): Project skeleton
   generator.
+
+# Miscellaneous
+
+- [iterate](http://common-lisp.net/project/iterate/): A lispier version of
+  `loop`.
+- [quicksearch](https://github.com/tkych/quicksearch): Search for libraries.
+- [lesque](https://github.com/fukamachi/lesque): Job queue (Port of
+[Resque](https://github.com/resque/resque)).
+ 
+## Configuration Management
+
+- [envy](https://github.com/fukamachi/envy)
+- [universal-config](https://github.com/Shinmera/Universal-Config)
 
 # Benchmarking
 
