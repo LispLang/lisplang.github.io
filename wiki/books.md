@@ -15,7 +15,7 @@ layout: wiki
 
 ## Land of Lisp
 
-## Let over Lambda
+## Let Over Lambda
 
 # Books using Common Lisp
 

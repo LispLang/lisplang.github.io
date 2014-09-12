@@ -170,8 +170,7 @@ different libraries here)
 - [eco](https://github.com/eudoxia0/eco): Fast, designer-friendly templates.
 - [cl-closure-template](https://github.com/archimag/cl-closure-template):
   Google's Closure template engine on Common Lisp.
-- [djula](https://github.com/mmontone/djula): Port of the Django template
-  system.
+- [djula](http://mmontone.github.io/djula/): Port of the Django template system.
 - [cl-markup](https://github.com/arielnetworks/cl-markup): Generate HTML through
   an S-expression DSL.
 
@@ -221,13 +220,6 @@ different libraries here)
 
 - [cl-locale](https://github.com/fukamachi/cl-locale)
 
-# DSLs
-
-- [texp](http://mr.gy/software/texp/): Generates TeX using S-expressions.
-- [inferior-shell](http://quickdocs.org/inferior-shell/): DSL for writing shell
-  scripts.
-- [donuts](https://github.com/tkych/donuts): Generates `dot` graphs.
-
 # Date and Time
 
 - [local-time](http://common-lisp.net/project/local-time/manual.html)
@@ -257,7 +249,7 @@ different libraries here)
 
 ## Type System
 
-- [trivia-types](https://github.com/m2ym/trivial-types)
+- [trivial-types](https://github.com/m2ym/trivial-types)
 - [optima](https://github.com/m2ym/optima): Optimized pattern matching.
 - [cl-algebraic-data-type](https://bitbucket.org/tarballs_are_good/cl-algebraic-data-type)
 - [template](https://bitbucket.org/tarballs_are_good/template): C++-like
@@ -283,6 +275,13 @@ different libraries here)
 - [cl-project](https://github.com/fukamachi/cl-project): Project skeleton
   generator.
 
+# DSLs
+
+- [texp](http://mr.gy/software/texp/): Generates TeX using S-expressions.
+- [inferior-shell](http://quickdocs.org/inferior-shell/): DSL for writing shell
+  scripts.
+- [donuts](https://github.com/tkych/donuts): Generates `dot` graphs.
+
 # Miscellaneous
 
 - [iterate](http://common-lisp.net/project/iterate/): A lispier version of
@@ -296,6 +295,6 @@ different libraries here)
 - [envy](https://github.com/fukamachi/envy)
 - [universal-config](https://github.com/Shinmera/Universal-Config)
 
-# Benchmarking
+## Benchmarking
 
 - [trivial-benchmark](https://github.com/Shinmera/trivial-benchmark)
