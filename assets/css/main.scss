@@ -2,13 +2,28 @@
 ---
 
 @charset "utf-8";
+
+@import "typeplate/typeplate-vars"; // Must come first
+@import "typeplate/typeplate";
+@import "bourbon/bourbon";
+@import "neat/neat";
+
 @import url(http://fonts.googleapis.com/css?family=Lusitana);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* Fonts */
 
 @font-face {
   font-family: Seshat;
   src: url({{ "/assets/fonts/Seshat.otf" | prepend: site.baseurl }}) format("opentype");
 }
+
+/* Variables */
+
+$mobile: new-breakpoint(max-width 480px);
+$desktop: new-breakpoint(min-width 480px);
+
+/* Mixins */
 
 @mixin border-radius($radius) {
   -moz-border-radius: $radius;
@@ -16,6 +31,8 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+
+/* Front page style */
 
 body {
   color: #444;
@@ -32,6 +49,7 @@ section {
 }
 
 #implementations {
+  @include outer-container;
   width: 70%;
   margin: 0 auto;
 
@@ -43,11 +61,11 @@ section {
       @include border-radius(5px);
 
       .name {
-        font-size: 22px;
+        //font-size: 22px;
       }
 
       .fullname {
-        font-size: 85%;
+        //font-size: 85%;
         color: #333;
         font-style: italic;
         margin-left: 25px;
