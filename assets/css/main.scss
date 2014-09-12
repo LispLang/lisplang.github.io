@@ -66,7 +66,7 @@ section {
   .impl {
     @include on-desktop() {
       @include span-columns(6);
-      @include omega(2n);
+      @include omega(3n); /* Why does this not work at 2n? */
     }
     @include on-mobile() {
       @include span-columns(12);
