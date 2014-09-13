@@ -114,6 +114,17 @@ section {
   }
 }
 
+#reasons {
+  @include outer-container;
+
+  .reason {
+    @include on-desktop() {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+  }
+}
+
 #implementations {
   @include outer-container;
 
@@ -187,34 +198,34 @@ $toc-h3-padding: $toc-h2-padding + $toc-padding-step;
     }
 
     /* Make headers smaller in articles */
-      h1 {
-        @extend .beta;
-        @extend %hN;
-      }
-
-      h2 {
-        @extend .gamma;
-        @extend %hN;
-      }
-
-      h3 {
-        @extend .delta;
-        @extend %hN;
-      }
-
-      h4 {
-        @extend .epsilon;
-        @extend %hN;
-      }
-
-      h5 {
-        @extend .zeta;
-        @extend %hN;
-      }
-
-      h6 {
-        @extend .zeta;
-        @extend %hN;
-      }
+    h1 {
+      @extend .beta;
+      @extend %hN;
     }
+
+    h2 {
+      @extend .gamma;
+      @extend %hN;
+    }
+
+    h3 {
+      @extend .delta;
+      @extend %hN;
+    }
+
+    h4 {
+      @extend .epsilon;
+      @extend %hN;
+    }
+
+    h5 {
+      @extend .zeta;
+      @extend %hN;
+    }
+
+    h6 {
+      @extend .zeta;
+      @extend %hN;
+    }
+  }
 }

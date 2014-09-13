@@ -10,11 +10,10 @@ layout: default
 <main>
   <section id="why">
     <h1>Why Common Lisp?</h1>
-    <span id="answer">Mature, industrial-strenght programming.</span>
     <div id="reasons">
       {% for reason in site.reasons %}
-        <div>
-          <span>{{ reason.title }}</span>
+        <div class="reason">
+          <h4>{{ reason.title }}</h4>
           <p>{{ reason.desc }}</p>
         </div>
       {% endfor %}

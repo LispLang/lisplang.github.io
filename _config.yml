@@ -28,7 +28,7 @@ reasons:
           <a href="/wiki/recommended-libraries.html">favorites</a>.
   - title: Modules
     desc: Common Lisp's module system is explicit and beautiful, and lends
-          itself to well-structured code.
+          itself to well-structured code on large codebases.
   - title: Concurrent
     desc: Parallelism, channel-based concurrency, async, STM, data parallelism
           &ndash; you name it, you have it.
