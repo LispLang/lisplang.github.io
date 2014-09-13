@@ -8,7 +8,7 @@ layout: wiki
 ## Relational
 
 - [sxql](https://github.com/fukamachi/sxql): DSL for generating SQL.
-- [datafly](https://github.com/fukamachi/datafly)
+- [datafly](https://github.com/fukamachi/datafly): Lightweight ORM-like layer.
 
 ### ORMs
 
@@ -26,17 +26,19 @@ layout: wiki
 - [cl-redis](https://github.com/vseloved/cl-redis)
 - [cl-mongo](https://github.com/fons/cl-mongo)
 - [cl-rethinkdb](https://github.com/orthecreedence/cl-rethinkdb)
-- [ClouchDb](http://common-lisp.net/project/clouchdb/)
+- [ClouchDb](http://common-lisp.net/project/clouchdb/): CouchDB interface.
 - [cl-memcached](https://github.com/quasi/cl-memcached)
-- [clache](https://github.com/m2ym/clache)
-- [elasticity](http://eudoxia0.github.io/elasticsearch/): Elasticsearch client.
+- [clache](https://github.com/m2ym/clache): Cache facility.
+- [elasticity](http://eudoxia0.github.io/elasticity/): Elasticsearch client.
 
 # FFI
 
 ## C
 
-- [CFFI](http://common-lisp.net/project/cffi/)
-- [cl-autowrap](https://github.com/rpav/cl-autowrap)
+- [CFFI](http://common-lisp.net/project/cffi/): Portable, easy to use C foreign
+  function interface.
+- [cl-autowrap](https://github.com/rpav/cl-autowrap): Automatically parser
+  header files into CFFI definitions.
 
 ## Java
 
@@ -52,12 +54,12 @@ layout: wiki
 
 # Graphics
 
-- [CLinch](https://github.com/BradWBeer/CLinch)
+- [CLinch](https://github.com/BradWBeer/CLinch): OpenGL-based Graphics Engine.
 - [Varjo](https://github.com/cbaggers/varjo): Compiles Lisp to
   [GLSL](http://www.opengl.org/documentation/glsl/).
-- [cl-cairo2](https://github.com/rpav/cl-cairo2)
+- [cl-cairo2](https://github.com/rpav/cl-cairo2): Cairo bindings.
 - [Vecto](http://www.xach.com/lisp/vecto/): Generates vector graphics.
-- [zpng](http://www.xach.com/lisp/zpng/)
+- [zpng](http://www.xach.com/lisp/zpng/): Create PNG images.
 - [cl-svg](https://code.google.com/p/cl-svg/): Library for generating SVGs.
 - [cl-horde3d](https://github.com/anwyn/cl-horde3d/):
   [Horde3D](http://www.horde3d.org/) bindings.
@@ -79,7 +81,7 @@ layout: wiki
 
 # Game Development
 
-- [Xelf](http://xelf.me/reference-plain.html)
+- [Xelf](http://xelf.me/reference-plain.html): Extensible game engine.
 - [Buclet](https://github.com/aerique/buclet): Bindings to the Bullet library.
 
 # Parsing
@@ -90,8 +92,8 @@ layout: wiki
 
 # Data Formats
 
-- [CXML](http://common-lisp.net/project/cxml/)
-- [plump](https://github.com/Shinmera/plump)
+- [CXML](http://common-lisp.net/project/cxml/): XML parser.
+- [plump](https://github.com/Shinmera/plump): Lenient XML parser.
 - [lquery](https://github.com/Shinmera/lquery): A jQuery-like library.
 - [http-parse](https://github.com/orthecreedence/http-parse): Parsing HTTP
   requests.
@@ -102,7 +104,8 @@ layout: wiki
 
 ## JSON
 
-- [cl-json](http://common-lisp.net/project/cl-json/)
+- [cl-json](http://common-lisp.net/project/cl-json/): JSON parser and
+  serializer.
 - [jsown](https://github.com/madnificent/jsown): Parse JSON as fast as possible.
 
 (Sabra Crolleton
@@ -132,9 +135,9 @@ different libraries here)
 
 # Mathematics
 
-- [Napa-FFT3](https://github.com/pkhuong/Napa-FFT3)
+- [Napa-FFT3](https://github.com/pkhuong/Napa-FFT3): High-performance FFT.
 - [common-lisp-stat](https://github.com/blindglobe/common-lisp-stat/)
-- [lisp-matrix](https://github.com/blindglobe/lisp-matrix)
+- [lisp-matrix](https://github.com/blindglobe/lisp-matrix): Linear algebra.
 
 ## Plotting
 
@@ -142,7 +145,8 @@ different libraries here)
 
 ## Machine Learning
 
-- [NLP](https://github.com/vseloved/cl-nlp)
+- [NLP](https://github.com/vseloved/cl-nlp): Natural Language Processing
+  toolkit.
 
 # Web Development
 
@@ -184,9 +188,9 @@ different libraries here)
 
 ## Web Service Clients
 
-- [avatar-api](https://github.com/eudoxia0/avatar-api): Gravatar and others
-- [chirp](https://github.com/Shinmera/chirp): Twitter
-- [humbler](https://github.com/Shinmera/humbler): Tumblr
+- [avatar-api](https://github.com/eudoxia0/avatar-api): Gravatar and others.
+- [chirp](https://github.com/Shinmera/chirp): Twitter.
+- [humbler](https://github.com/Shinmera/humbler): Tumblr.
 
 ## Web Servers
 
@@ -203,11 +207,12 @@ different libraries here)
 
 ## Parallel, Concurrent and Async
 
-- [lparallel](http://lparallel.org/)
-- [Xecto](https://github.com/pkhuong/Xecto): An implementation of data parallelism.
-- [cl-async](http://orthecreedence.github.io/cl-async/)
-- [chanl](https://github.com/sykopomp/chanl)
-- [cl-cuda](https://github.com/takagi/cl-cuda)
+- [lparallel](http://lparallel.org/): Parallel versions of most CL operations.
+- [Xecto](https://github.com/pkhuong/Xecto): An implementation of data
+  parallelism.
+- [cl-async](http://orthecreedence.github.io/cl-async/): Async operations.
+- [chanl](https://github.com/sykopomp/chanl): Channel-based concurrency.
+- [cl-cuda](https://github.com/takagi/cl-cuda): Access NVIDIA's CUDA.
 
 ## Encodings
 
@@ -244,14 +249,16 @@ different libraries here)
 - [cl-annot](https://github.com/arielnetworks/cl-annot): Decorator syntax.
 - [cl-2dsyntax](http://lisp.hyperprostor.unas.cz/cl-2dsyntax/): Python-like
   syntax implemented in reader macros.
-- [named-readtables](https://github.com/melisgl/named-readtables)
+- [named-readtables](https://github.com/melisgl/named-readtables): Separate
+  reader macros into packages.
 - [cl-interpol](http://www.cliki.net/cl-interpol): String iterpolation.
 
 ## Type System
 
-- [trivial-types](https://github.com/m2ym/trivial-types)
+- [trivial-types](https://github.com/m2ym/trivial-types): Simple type
+  declarations.
 - [optima](https://github.com/m2ym/optima): Optimized pattern matching.
-- [cl-algebraic-data-type](https://bitbucket.org/tarballs_are_good/cl-algebraic-data-type)
+- [cl-algebraic-data-type](https://bitbucket.org/tarballs_are_good/cl-algebraic-data-type): ADT library.
 - [template](https://bitbucket.org/tarballs_are_good/template): C++-like
   template metaprogramming.
 - [interface](https://bitbucket.org/tarballs_are_good/interface): Defining
@@ -268,10 +275,11 @@ different libraries here)
 
 ## Package Management
 
-- [Quicklisp](http://www.quicklisp.org/)
+- [Quicklisp](http://www.quicklisp.org/): Package manager.
 - [Quickutil](https://github.com/tarballs-are-good/quickutil): Package manager
   for utilities.
-- [qlot](https://github.com/fukamachi/qlot)
+- [qlot](https://github.com/fukamachi/qlot): Like Ruby's
+  [Bundler](http://bundler.io/).
 - [cl-project](https://github.com/fukamachi/cl-project): Project skeleton
   generator.
 
@@ -292,9 +300,12 @@ different libraries here)
  
 ## Configuration Management
 
-- [envy](https://github.com/fukamachi/envy)
-- [universal-config](https://github.com/Shinmera/Universal-Config)
+- [envy](https://github.com/fukamachi/envy): Manage configuration options
+  through environment variables.
+- [universal-config](http://shinmera.github.io/Universal-Config/): Configuration
+  persistence.
 
 ## Benchmarking
 
-- [trivial-benchmark](https://github.com/Shinmera/trivial-benchmark)
+- [trivial-benchmark](https://github.com/Shinmera/trivial-benchmark):
+  Statistical benchmarking.
