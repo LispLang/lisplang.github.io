@@ -8,6 +8,35 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 markdown: kramdown
 
 # Variables
+reasons:
+  - title: Extensible
+    desc: <a href="/wiki/reader-macros.html">Reader macros</a> allow new syntax
+          (Decorators, list comprehensions) to be added to the language as
+          libraries &ndash; portably &ndash; without modifying the
+          implementation.
+  - title: Fast
+    desc: Gradual typing and type inference ensure the compiler generates the
+          fastest possible code.
+  - title: Mature and Stable
+    desc:
+  - title: Great Tools
+    desc:
+  - title: Ecosystem
+    desc: Tons of readily available libraries, and
+          <a href="https://github.com/quicklisp/quicklisp-projects/issues">
+          plenty of new ones</a> on the waiting list. Look at our
+          <a href="/wiki/recommended-libraries.html">favorites</a>.
+  - title: Modules
+    desc: Common Lisp's module system is explicit and beautiful, and lends
+          itself to well-structured code.
+  - title: Concurrent
+    desc: Parallelism, channel-based concurrency, async, STM, data parallelism
+          &ndash; you name it, you have it.
+  - title: CLOS
+    desc: Common Lisp has a rich object system that solves
+          <a href="/wiki/clos.html#benefits">most common pitfalls</a> of other
+          object systems.
+
 impls:
   - name: SBCL
     fullname: Steel Bank Common Lisp
