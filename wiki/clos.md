@@ -12,6 +12,28 @@ change class.
 
 # Examples
 
+## Simple Example
+
+~~~lisp
+(defclass <ship> ()
+  ((name :reader name   ;; Only reader is implemented, so you can't rename a
+                        ;; ship
+         :initarg :name
+         :type string)
+   (kind :accessor kind
+         :initarg :kind)
+   (tonnage :accessor tonnage
+            :initarg :tonnage
+            :type float)))
+
+(defparameter *my-ship*
+              (make-instance '<ship> :name "USS Walter Mondale"
+                                     :kind :laundry-ship
+                                     :tonnage 345))
+
+(class-of *my-ship*) ;; => #<standard-class <ship>>
+~~~
+
 ## Generic Functions
 
 Adapted from the Corvus [source code](https://github.com/eudoxia0/corvus/blob/32f17fb0f4a6c8c913e13317168be8b4b1acb86a/compiler/bootstrap/types.lisp):
