@@ -154,5 +154,36 @@ $toc-h3-padding: $toc-h2-padding + $toc-padding-step;
     h1, h2, h3, h4, h5, h6 {
       border-bottom: 1px solid #eee;
     }
-  }
+
+    /* Make headers smaller in articles */
+      h1 {
+        @extend .beta;
+        @extend %hN;
+      }
+
+      h2 {
+        @extend .gamma;
+        @extend %hN;
+      }
+
+      h3 {
+        @extend .delta;
+        @extend %hN;
+      }
+
+      h4 {
+        @extend .epsilon;
+        @extend %hN;
+      }
+
+      h5 {
+        @extend .zeta;
+        @extend %hN;
+      }
+
+      h6 {
+        @extend .zeta;
+        @extend %hN;
+      }
+    }
 }
