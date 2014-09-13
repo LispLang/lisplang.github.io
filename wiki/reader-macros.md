@@ -51,6 +51,54 @@ Taken from [here](http://frank.kank.net/essays/hash.html).
       ,retn)))))
 ~~~
 
+## List Comprehensions
+
+From [here](http://lisp-univ-etc.blogspot.com/2013/01/real-list-comprehensions-in-lisp.html).
+
+~~~lisp
+(defun read-listcomp (stream char)
+  (declare (ignore char))
+  (let (rezs srcs conds state)
+    (dolist (item (read-delimited-list #\} stream))
+      (if (eql '|| item)
+          (setf state (if state :cond :src))
+          (case state
+            (:src (push item srcs))
+            (:cond (push item conds))
+            (otherwise (push item rezs)))))
+    (setf rezs (reverse rezs)
+          srcs (reverse srcs)
+          conds (reverse conds))
+    (let ((binds (mapcar (lambda (group) (cons (first group) (third group)))
+                         (group 3 srcs))))
+      `(mapcan (lambda ,(mapcar #'car binds)
+                 (when (and ,@conds)
+                   (list ,(if (rest rezs)
+                              (cons 'list rezs)
+                              (first rezs)))))
+               ,@(mapcar #'cdr binds)))))
+
+(set-macro-character #\{ #'read-listcomp)
+(set-macro-character #\} (get-macro-character #\)))
+~~~
+
+This uses the `group` utility function defined in Paul Graham's *On Lisp*:
+
+~~~lisp
+(defun group (n list)
+  "Split LIST into a list of lists of length N."
+  (declare (integer n))
+  (when (zerop n)
+    (error "Group length N shouldn't be zero."))
+  (labels ((rec (src acc)
+             (let ((rest (nthcdr n src)))
+               (if (consp rest)
+                   (rec rest (cons (subseq src 0 n) acc))
+                   (nreverse (cons src acc))))))
+    (when list
+      (rec list nil))))
+~~~
+
 # See Also
 
 - [Reader Macros in Common Lisp](https://gist.github.com/chaitanyagupta/9324402)
