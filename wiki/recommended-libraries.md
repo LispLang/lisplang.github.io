@@ -45,6 +45,11 @@ layout: wiki
 - [CL+J](http://common-lisp.net/project/cl-plus-j/)
 - [Foil](http://foil.sourceforge.net/)
 
+## Scripting Languages
+
+- [burgled-batteries](https://github.com/pinterface/burgled-batteries): C-level
+  Python bridge.
+
 # Cryptography
 
 - [Ironclad](http://method-combination.net/lisp/ironclad/): A complete library
