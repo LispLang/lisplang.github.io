@@ -21,7 +21,7 @@
 /* Responsive */
 
 $mobile-size: 768px;
-$desktop-size: calc($mobile-size+1);
+$desktop-size: $mobile-size + 1;
 
 @mixin on-desktop() {
   @media (min-width: $mobile-size) {
@@ -116,11 +116,26 @@ section {
 
 /* Wiki style */
 
+$toc-padding-step: 20px;
+$toc-h1-padding: 0px;
+$toc-h2-padding: $toc-h1-padding + $toc-padding-step;
+$toc-h3-padding: $toc-h2-padding + $toc-padding-step;
+
 .wiki-container {
   @include outer-container;
 
   aside {
     @include span-columns(3);
+
+    ul {
+      list-style-type: none;
+      padding-left: 10px;
+
+      /* Padding imitates sublists */
+      .toc-h1 { padding-left: $toc-h1-padding; }
+      .toc-h2 { padding-left: $toc-h2-padding; }
+      .toc-h3 { padding-left: $toc-h3-padding; }
+    }
   }
 
   article {
