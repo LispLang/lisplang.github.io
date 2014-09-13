@@ -61,6 +61,15 @@ nav {
   }
 }
 
+/* Link style */
+
+a {
+  &:link, &:visited, &:hover, &:active {
+    color: #428BCA;
+    text-decoration: none;
+  }
+}
+
 /* Front page style */
 
 body {
