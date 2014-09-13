@@ -62,9 +62,9 @@ In the file `~/.config/common-lisp/source-registry.conf`.
 
 We install SLIME through Quicklisp:
 
-{% highlight bash %}
+~~~bash
 sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
-{% endhighlight %}
+~~~
 
 ## Sublime Text
 
