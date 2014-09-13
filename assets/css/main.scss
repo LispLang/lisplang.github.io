@@ -150,7 +150,6 @@ $toc-h3-padding: $toc-h2-padding + $toc-padding-step;
 
   article {
     @include span-columns(9);
-    margin-top: 25px;
 
     /* Header style */
     h1, h2, h3, h4, h5, h6 {
