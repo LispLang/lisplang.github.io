@@ -49,7 +49,18 @@ $desktop-size: $mobile-size + 1;
 nav {
   width: 100%;
   height: 55px;
+  line-height: 55px;
   background: #F5F5F5;
+
+  .nav-content {
+    @include on-desktop() {
+      width: 70%;
+      margin: 0 auto;
+    }
+    @include on-mobile() {
+      width: 100%;
+    }
+  }
 
   .brand {
     float: left;
@@ -58,6 +69,8 @@ nav {
   ul {
     list-style-type: none;
     float: right;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -165,6 +178,7 @@ $toc-h3-padding: $toc-h2-padding + $toc-padding-step;
 
   article {
     @include span-columns(9);
+    margin-top: 25px;
 
     /* Header style */
     h1, h2, h3, h4, h5, h6 {
