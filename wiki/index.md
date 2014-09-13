@@ -1,5 +1,5 @@
 ---
-title: Index
+title: Common Lisp Wiki
 layout: wiki
 ---
 
@@ -11,8 +11,10 @@ This page acts as an index to the rest of the wiki.
 * [Curated list of recommended libraries](/wiki/recommended-libraries.html)
 * [Quickdocs](http://quickdocs.org/): Online library documentation and API
   references.
+* [Style Guide](/wiki/style-guide.html)
 
 ## Learning
 
 * [Getting Started](/wiki/getting-started.html)
 * [Common Lisp books](/wiki/books.html)
+* [Reader Macros](/wiki/reader-macros.html)

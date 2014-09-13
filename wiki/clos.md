@@ -1,0 +1,39 @@
+---
+title: Common Lisp Object System
+layout: wiki
+---
+
+# Benefits
+
+According to Peter Norvig, with CLOS "16 of 23 patterns have qualitatively
+simpler implementation in Lisp or Dylan than in C++"[^norvig]. The
+circle-ellipse problem, for example, is solved immediately because objects can
+change class.
+
+# Examples
+
+## Generic Functions
+
+Adapted from the Corvus [source code](https://github.com/eudoxia0/corvus/blob/32f17fb0f4a6c8c913e13317168be8b4b1acb86a/compiler/bootstrap/types.lisp):
+
+~~~lisp
+(defclass <i8> () ())
+(defclass <i16> () ())
+(defclass <i32> () ())
+(defclass <i64> () ())
+(defclass <i128> () ())
+
+(defgeneric size (type)
+  (:documentation "Size in bytes of an integer type.")
+  (:method ((int <i8>)) 8)
+  (:method ((int <i16>)) 16)
+  (:method ((int <i32>)) 32)
+  (:method ((int <i64>)) 64)
+  (:method ((int <i128>)) 128))
+~~~
+
+# References
+
+[^norvig]: [*Design Patterns in Dynamic Programming*][norvig].
+
+[norvig]: http://norvig.com/design-patterns/design-patterns.pdf
