@@ -86,6 +86,21 @@ section {
   }
 }
 
+#hero-unit {
+  height: 300px;
+  text-align: center;
+
+  .title {
+    font-size: 46px;
+    font-family: 'Lusitana', serif;
+    display: block;
+  }
+
+  .tagline {
+    font-size: 28px;
+  }
+}
+
 #implementations {
   @include outer-container;
 

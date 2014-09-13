@@ -102,8 +102,6 @@ layout: wiki
 - [lquery](https://github.com/Shinmera/lquery): A jQuery-like library.
 - [http-parse](https://github.com/orthecreedence/http-parse): Parsing HTTP
   requests.
-- [cl-icalendar](https://github.com/davazp/cl-icalendar): iCalendar
-  implementation.
 - [simple-currency](https://github.com/a0-prw/simple-currency): Currency conversion.
 - [puri-unicode](https://github.com/archimag/puri-unicode): URI parser.
 
