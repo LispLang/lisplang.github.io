@@ -10,10 +10,10 @@ markdown: kramdown
 # Variables
 reasons:
   - title: Extensible
-    desc: <a href="/wiki/reader-macros.html">Reader macros</a> allow new syntax
+    desc: [Reader macros](/wiki/reader-macros.html) allow new syntax
           (Decorators, list comprehensions) to be added to the language as
           libraries &ndash; portably &ndash; without modifying the
-          implementation.
+          implementation, ensuring the language stays up to date.
   - title: Fast
     desc: Gradual typing and type inference ensure the compiler generates the
           fastest possible code.
@@ -23,9 +23,9 @@ reasons:
     desc:
   - title: Ecosystem
     desc: Tons of readily available libraries, and
-          <a href="https://github.com/quicklisp/quicklisp-projects/issues">
-          plenty of new ones</a> on the waiting list. Look at our
-          <a href="/wiki/recommended-libraries.html">favorites</a>.
+          [plenty of new ones](https://github.com/quicklisp/quicklisp-projects/issues)
+          on the waiting list. Look at our
+          [favorites](/wiki/recommended-libraries.html).
   - title: Modules
     desc: Common Lisp's module system is explicit and beautiful, and lends
           itself to well-structured code on large codebases.
@@ -34,8 +34,8 @@ reasons:
           &ndash; you name it, you have it.
   - title: CLOS
     desc: Common Lisp has a rich object system that solves
-          <a href="/wiki/clos.html#benefits">most common pitfalls</a> of other
-          object systems.
+          [most common pitfalls](/wiki/clos.html#benefits) of other object
+          systems.
 
 impls:
   - name: SBCL

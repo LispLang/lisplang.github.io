@@ -14,7 +14,7 @@ layout: default
       {% for reason in site.reasons %}
         <div class="reason">
           <h4>{{ reason.title }}</h4>
-          <p>{{ reason.desc }}</p>
+          {{ reason.desc | markdownify }}
         </div>
       {% endfor %}
     </div>
