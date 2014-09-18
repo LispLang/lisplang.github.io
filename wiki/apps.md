@@ -7,6 +7,15 @@ layout: wiki
 
 Full article: [StumpWM](/wiki/stumpwm.html)
 
+[StumpWM](https://github.com/stumpwm/stumpwm) is a tiling window manager written
+entirely in Common Lisp, using the CLX library. It's not a minimalistic window
+manager: It's goal is to be a hackable, Emacs-like,
+everything-and-the-kitchen-sink (Maximalist, but not in the way GNOME and KDE)
+are window manager.
+
+The [`stumpwm-contrib`](https://github.com/stumpwm/stumpwm-contrib) repository
+has community-contributed loadable modules.
+
 # Opusmodus
 
 # Quickdocs
