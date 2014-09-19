@@ -99,6 +99,11 @@ section {
   }
 }
 
+footer {
+  height: 180px;
+  background: linear-gradient(to bottom, #252422, #2B2F3E);
+}
+
 #hero-unit {
   height: 300px;
   text-align: center;
@@ -233,7 +238,6 @@ $toc-h3-padding: $toc-h2-padding + $toc-padding-step;
 
   figure {
     img {
-      @include border-radius(7px);
       box-shadow: 0px 10px 50px 1px rgba(0,0,0,0.25);
     }
   }
