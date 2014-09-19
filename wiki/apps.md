@@ -15,7 +15,7 @@ are window manager.
 The [`stumpwm-contrib`](https://github.com/stumpwm/stumpwm-contrib) repository
 has community-contributed loadable modules.
 
-{% include fig uri="stumpwm.png" desc="StumpWM screenshot, using useless gaps." %}
+{% include fig uri="stumpwm.jpg" desc="StumpWM screenshot, using useless gaps." %}
 
 # Opusmodus
 
