@@ -8,6 +8,8 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 markdown: kramdown
 
 # Variables
+repo_url: https://github.com/eudoxia0/lisp-site
+
 reasons:
   - title: Extensible
     desc: |
@@ -51,3 +53,15 @@ impls:
     tagline: Tight JVM integration
   - name: mocl
     tagline: Run on iOS, Android and OS X
+
+# Custom links
+l:
+  # Implementations
+  sbcl: "[SBCL](/wiki/implementations.html#sbcl)"
+  ccl: "[CCL](/wiki/implementations.html#ccl)"
+
+  # Apps
+  buildapp: "[Buildapp](/wiki/buildapp.html)"
+
+  # Books
+  amop: "[The Art of the Metaobject Protocol](/wiki/books.html#)"
