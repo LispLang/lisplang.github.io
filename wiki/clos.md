@@ -3,6 +3,10 @@ title: Common Lisp Object System
 layout: wiki
 ---
 
+The Common Lisp Object System is Common Lisp's object-oriented programming
+system. It was originally implemented as macros over Common Lisp, but merged
+into the languge as it was standarized.
+
 # Benefits
 
 According to Peter Norvig, with CLOS "16 of 23 patterns have qualitatively
@@ -53,6 +57,13 @@ Adapted from the Corvus [source code](https://github.com/eudoxia0/corvus/blob/32
   (:method ((int <i64>)) 64)
   (:method ((int <i128>)) 128))
 ~~~
+
+# Metaobject Protocol
+
+The Metaobject Protocol (MOP) provides mechanisms for extending CLOS by
+customizing its behaviour on certain classes. Basically, the MOP sees a class as
+being an instance of a metaclass (Think of it as a kind of 'higher-order' object
+system, or a 'two tier' object system).
 
 # References
 
