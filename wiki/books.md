@@ -1,6 +1,5 @@
 ---
 title: Common Lisp Books
-layout: wiki
 ---
 
 # Books about Common Lisp

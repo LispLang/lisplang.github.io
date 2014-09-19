@@ -1,6 +1,5 @@
 ---
 title: Reader Macros
-layout: wiki
 ---
 
 # Examples

@@ -1,6 +1,5 @@
 ---
 title: Contributing
-layout: wiki
 ---
 
 # Version Control

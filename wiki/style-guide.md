@@ -1,6 +1,5 @@
 ---
 title: Style Guide
-layout: wiki
 ---
 
 This page is largely based on Google's [Common Lisp Style Guide][google] and

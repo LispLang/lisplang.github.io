@@ -1,6 +1,5 @@
 ---
 title: Common Lisp Implementations
-layout: wiki
 ---
 
 # Current Implementations

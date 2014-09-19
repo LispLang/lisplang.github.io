@@ -1,6 +1,5 @@
 ---
 title: Software Transactional Memory
-layout: wiki
 ---
 
 **Software Transactional Memory** is a mechanism for managing memory in a

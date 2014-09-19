@@ -1,6 +1,5 @@
 ---
 title: Buildapp
-layout: wiki
 ---
 
 [Buildapp](http://www.xach.com/lisp/buildapp/) is a program that facilitates the
