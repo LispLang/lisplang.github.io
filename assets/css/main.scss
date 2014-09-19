@@ -11,13 +11,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lusitana);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-/* Fonts */
-
-@font-face {
-  font-family: Seshat;
-  src: url({{ "/assets/fonts/Seshat.otf" | prepend: site.baseurl }}) format("opentype");
-}
-
 /* Responsive */
 
 $mobile-size: 768px;
@@ -44,201 +37,19 @@ $desktop-size: $mobile-size + 1;
   border-radius: $radius;
 }
 
-/* Navbar style */
+/* Variables */
 
-nav {
-  width: 100%;
-  height: 55px;
-  line-height: 55px;
-  background: #F5F5F5;
+$navbar-background: #F5F5F5;
+$navbar-height: 55px;
 
-  .nav-content {
-    @include on-desktop() {
-      width: 70%;
-      margin: 0 auto;
-    }
-    @include on-mobile() {
-      width: 100%;
-    }
-  }
+$footer-start-color: #4282AA;
+$footer-end-color: #428088;
+$footer-text-color: #fff;
 
-  .brand {
-    float: left;
-  }
+$text-color: #444;
 
-  ul {
-    list-style-type: none;
-    float: right;
-    margin: 0;
-    padding: 0;
-  }
-}
+/* The rest of the styles */
 
-/* Link style */
-
-a {
-  &:link, &:visited, &:hover, &:active {
-    color: #428BCA;
-    text-decoration: none;
-  }
-}
-
-/* Front page style */
-
-body {
-  color: #444;
-  //font-family: 'Lusitana', serif;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-section {
-  margin-bottom: 45px;
-
-  h1 {
-    text-align: center;
-  }
-}
-
-footer {
-  height: 180px;
-  background: linear-gradient(to bottom, #252422, #2B2F3E);
-}
-
-#hero-unit {
-  height: 300px;
-  text-align: center;
-
-  .title {
-    font-size: 46px;
-    font-family: 'Lusitana', serif;
-    display: block;
-  }
-
-  .tagline {
-    font-size: 28px;
-  }
-}
-
-#reasons {
-  @include outer-container;
-
-  .reason {
-    @include on-desktop() {
-      @include span-columns(3);
-      @include omega(4n);
-    }
-  }
-}
-
-#implementations {
-  @include outer-container;
-
-  .impl {
-    @include on-desktop() {
-      @include span-columns(6);
-      @include omega(3n); /* Why does this not work at 2n? */
-    }
-    @include on-mobile() {
-      @include span-columns(12);
-    }
-
-    .impl-inner {
-      border: 1px solid #ccc;
-      margin: 10px 0;
-      padding: 15px;
-      @include border-radius(5px);
-
-      .name {
-        //font-size: 22px;
-      }
-
-      .fullname {
-        //font-size: 85%;
-        color: #333;
-        font-style: italic;
-        margin-left: 25px;
-      }
-
-      hr {
-        margin: 3px;
-        color: #eee;
-      }
-    }
-  }
-}
-
-/* Wiki style */
-
-$toc-padding-step: 20px;
-$toc-h1-padding: 0px;
-$toc-h2-padding: $toc-h1-padding + $toc-padding-step;
-$toc-h3-padding: $toc-h2-padding + $toc-padding-step;
-
-.wiki-container {
-  @include outer-container;
-  margin-top: 35px;
-
-  aside {
-    @include span-columns(3);
-
-    ul {
-      list-style-type: none;
-      padding-left: 10px;
-
-      /* Padding imitates sublists */
-      .toc-h1 { padding-left: $toc-h1-padding; }
-      .toc-h2 { padding-left: $toc-h2-padding; }
-      .toc-h3 { padding-left: $toc-h3-padding; }
-    }
-  }
-
-  article {
-    @include span-columns(9);
-    margin-top: 25px;
-
-    /* Header style */
-    h1, h2, h3, h4, h5, h6 {
-      border-bottom: 1px solid #eee;
-      margin-top: 25px;
-    }
-
-    /* Make headers smaller in articles */
-    h1 {
-      @extend .beta;
-      @extend %hN;
-    }
-
-    h2 {
-      @extend .gamma;
-      @extend %hN;
-    }
-
-    h3 {
-      @extend .delta;
-      @extend %hN;
-    }
-
-    h4 {
-      @extend .epsilon;
-      @extend %hN;
-    }
-
-    h5 {
-      @extend .zeta;
-      @extend %hN;
-    }
-
-    h6 {
-      @extend .zeta;
-      @extend %hN;
-    }
-  }
-
-  /* Wiki images */
-
-  figure {
-    img {
-      box-shadow: 0px 10px 50px 1px rgba(0,0,0,0.25);
-    }
-  }
-}
+@import "global";
+@import "home";
+@import "wiki";

@@ -1,0 +1,75 @@
+/* Wiki style */
+
+$toc-padding-step: 20px;
+$toc-h1-padding: 0px;
+$toc-h2-padding: $toc-h1-padding + $toc-padding-step;
+$toc-h3-padding: $toc-h2-padding + $toc-padding-step;
+
+.wiki-container {
+  @include outer-container;
+  margin-top: 35px;
+
+  aside {
+    @include span-columns(3);
+
+    ul {
+      list-style-type: none;
+      padding-left: 10px;
+
+      /* Padding imitates sublists */
+      .toc-h1 { padding-left: $toc-h1-padding; }
+      .toc-h2 { padding-left: $toc-h2-padding; }
+      .toc-h3 { padding-left: $toc-h3-padding; }
+    }
+  }
+
+  article {
+    @include span-columns(9);
+    margin-top: 25px;
+
+    /* Header style */
+    h1, h2, h3, h4, h5, h6 {
+      border-bottom: 1px solid #eee;
+      margin-top: 25px;
+    }
+
+    /* Make headers smaller in articles */
+    h1 {
+      @extend .beta;
+      @extend %hN;
+    }
+
+    h2 {
+      @extend .gamma;
+      @extend %hN;
+    }
+
+    h3 {
+      @extend .delta;
+      @extend %hN;
+    }
+
+    h4 {
+      @extend .epsilon;
+      @extend %hN;
+    }
+
+    h5 {
+      @extend .zeta;
+      @extend %hN;
+    }
+
+    h6 {
+      @extend .zeta;
+      @extend %hN;
+    }
+  }
+
+  /* Wiki images */
+
+  figure {
+    img {
+      box-shadow: 0px 10px 50px 1px rgba(0,0,0,0.25);
+    }
+  }
+}
