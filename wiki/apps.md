@@ -18,6 +18,11 @@ has community-contributed loadable modules.
 
 # Opusmodus
 
+[Opusmodus](http://opusmodus.com/) is a music composition application, built
+with Clozure Common Lisp for OS X.
+
+{% include fig uri="opusmodus.jpg" desc="Screenshot of the composer" %}
+
 # Quickdocs
 
 # cmacro
