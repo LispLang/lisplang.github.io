@@ -12,9 +12,11 @@ This page acts as an index to the rest of the wiki.
 * [Quickdocs](http://quickdocs.org/): Online library documentation and API
   references.
 * [Style Guide](/wiki/style-guide.html)
+* [Implementations](/wiki/implementations.html)
 
 ## Learning
 
 * [Getting Started](/wiki/getting-started.html)
 * [Common Lisp books](/wiki/books.html)
 * [Reader Macros](/wiki/reader-macros.html)
+* [CLOS](/wiki/clos.html)
