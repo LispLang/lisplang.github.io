@@ -26,6 +26,10 @@ with Clozure Common Lisp for OS X.
 
 # Quickdocs
 
+[Quickdocs](http://quickdocs.org/) is a web application written using the
+Caveman2 web framework that hosts searchable documentation of the Common Lisp
+libraries available on Quicklisp.
+
 # cmacro
 
 [cmacro](https://github.com/eudoxia0/cmacro) implements a
@@ -35,7 +39,22 @@ C-like syntax. It is implemented in Common Lisp, and built using SBCL and
 
 # Maxima
 
+[Maxima](http://maxima.sourceforge.net/) is a computer algebra system with a
+long history. It's a descendant of [Macsyma][macsyma].
+
+Maxima can also be run on [Android](/wiki/platforms/android.html) using
+[Maxima on Android][maximadroid], which uses ECL.
+
+[macsyma]: http://en.wikipedia.org/wiki/Macsyma
+[maximadroid]: https://sites.google.com/site/maximaonandroid/
+
 # DART
+
+[DART][dart], the Dynamic Analysis and Replanning Tool, is a Common Lisp
+military logistics AI program. It's use in the Gulf War saved more funds than
+DARPA had spent in AI research in the previous 30 years.
+
+[dart]: http://en.wikipedia.org/wiki/Dynamic_Analysis_and_Replanning_Tool
 
 # Cyc
 
@@ -43,13 +62,31 @@ C-like syntax. It is implemented in Common Lisp, and built using SBCL and
 
 # Parasol
 
-https://github.com/Shinmera/parasol
+[Parasol][parasol] is a painting application written using CommonQt.
 
-A painting application written using CommonQt.
+[parasol]: https://github.com/Shinmera/parasol
 
 # pgloader
 
+[pgloader][pgloader] is an application for rapidly loading data from various
+formats into PostgreSQL. It's specially well suited to performing
+transformations on the data while it's loaded and handling the many kinds of
+corrupted or poorly formatted data.
+
+The author originally developed pgloader in Tcl, then ported it to Python, and
+finally to Common Lisp.
+
+See the [GitHub repo][pgloadergh].
+
+[pgloader]: http://pgloader.io/
+[pgloadergh]: https://github.com/dimitri/pgloader
+
 # pgcharts
+
+[pgcharts][pgcharts] is a Common Lisp web application for generating charts from
+queries to PostgreSQL databases.
+
+[pgcharts]: https://github.com/dimitri/pgcharts
 
 # Raytheon
 
@@ -76,9 +113,12 @@ installations.".
 
 # pgEdit
 
-http://www.lispworks.com/success-stories/pgedit.html
+[pgEdit][pgedit] is an SQL editor and development environment built for
+PostgreSQL.
 
 {% include fig uri="pgedit.png" desc="pgEdit screenshot" %}
+
+[pgedit]: http://www.lispworks.com/success-stories/pgedit.html
 
 # CAGED and BEST
 
