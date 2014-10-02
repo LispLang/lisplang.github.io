@@ -93,6 +93,7 @@ title: Recommended Libraries
 - [cl-ppcre](http://weitz.de/cl-ppcre/): Regular expressions.
 - [esrap](https://github.com/nikodemus/esrap): A packrat parser generator.
 - [cl-parsec](https://github.com/vseloved/cl-parsec): Parser combinators.
+- [smug](https://github.com/drewc/smug): Monadic parser combinators.
 
 # Data Formats
 
@@ -124,6 +125,16 @@ different libraries here)
 - [Drakma](http://weitz.de/drakma/): HTTP client.
 - [usocket](http://common-lisp.net/project/usocket/): Portable socket
   abstraction.
+
+## Email
+
+- [Postmaster](https://github.com/eudoxia0/postmaster): Provides a simple
+  interface to SMTP and IMAP.
+
+## SSH
+
+- [trivial-ssh](https://github.com/eudoxia0/trivial-ssh): A simple SSH/SCP
+  library built on top of libssh2.
 
 ## IRC
 
