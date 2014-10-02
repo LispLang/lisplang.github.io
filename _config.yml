@@ -64,6 +64,7 @@ l:
   # Implementations
   sbcl: "[SBCL](/wiki/implementations.html#sbcl)"
   ccl: "[CCL](/wiki/implementations.html#ccl)"
+  ecl: "[ECL](/wiki/implementations.html#ecl)"
 
   # Apps
   buildapp: "[Buildapp](/wiki/buildapp.html)"
