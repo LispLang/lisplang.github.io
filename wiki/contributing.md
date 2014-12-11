@@ -8,7 +8,13 @@ The source for this website is hosted on GitHub [here]({{ site.repo_url}}).
 
 ## How to Contribute
 
-# Kramdown Quick Reference
+Simply clone the repository, make a branch for your changes, and then make a
+[pull request][pr]. [Here][tut] is a short tutorial on PRs.
+
+[pr]: https://help.github.com/articles/using-pull-requests/
+[tut]: http://yangsu.github.io/pull-request-tutorial/
+
+# Kramdown Specifics
 
 We use [Kramdown](http://kramdown.gettalong.org) to parse the Markdown pages to
 HTML. Kramdown has a few extensions to make life easier.
@@ -25,8 +31,6 @@ name of the language (`lisp`, usually).
 (defun id (x) x)
 ~~~
 ~~~~
-
-## Tables
 
 # Custom Links
 
