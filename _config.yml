@@ -1,7 +1,7 @@
 # Site settings
 title: Common Lisp
 description: Site description
-baseurl: "/lisp-site/" # the subpath of your site, e.g. /blog/
+baseurl: ""
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 defaults:
   - values:
