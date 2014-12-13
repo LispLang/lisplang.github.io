@@ -1,8 +1,8 @@
-html{
+html, body {
   height: 100%;
 }
 
-body {
+main {
   min-height: 100%;
 }
 
@@ -41,10 +41,8 @@ nav {
 }
 
 footer {
-  height: 180px;
-  overflow: hidden;
-
   background: #bbb;
+  width: 100%;
 
   .links, .copy {
     width: 100%;
