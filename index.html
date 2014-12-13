@@ -18,22 +18,4 @@ layout: default
       {% endfor %}
     </div>
   </section>
-  <section class="implementations">
-    <h1>Pick an Implementation</h1>
-    {% for impl in site.impls %}
-      <div class="impl">
-        <div class="impl-inner">
-          <span class="name">
-            {{ impl.name }}
-            {% if impl.fullname %}
-              <span class="fullname">{{ impl.fullname }}</span>
-            {% endif %}
-          </span>
-          <hr>
-          <span class="tagline">{{ impl.tagline }}</span>
-          <p class="desc">{{ impl.desc }}</p>
-        </div>
-      </div>
-    {% endfor %}
-  </section>
 </main>

@@ -99,3 +99,47 @@ footer {
 }
 
 /* Wiki style */
+
+.wiki {
+  width: 100%;
+
+  header {
+    padding-left: 100px;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+      }
+
+      li+li:before {
+        content: "\A0—\A0";
+      }
+    }
+  }
+
+  .container {
+    @include row();
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+
+    aside {
+      @include column(3);
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+    }
+
+    article {
+      @include column(9);
+
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+      }
+    }
+  }
+}
