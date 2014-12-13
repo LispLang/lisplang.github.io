@@ -131,14 +131,54 @@ footer {
       ul {
         list-style-type: none;
         padding-left: 0;
+
+        $toc-base-padding: 10px;
+
+        .toc-h2 {
+          padding-left: $toc-base-padding;
+        }
+
+        .toc-h3 {
+          padding-left: $toc-base-padding*2;
+        }
+
+        .toc-h4 {
+          padding-left: $toc-base-padding*3;
+        }
+
+        .toc-h5 {
+          padding-left: $toc-base-padding*4;
+        }
+
+        .toc-h6 {
+          padding-left: $toc-base-padding*5;
+        }
       }
     }
 
     article {
       @include column(9);
+      margin-bottom: 80px;
+      $internal-margins: 15px 0;
 
-      h1, h2, h3, h4, h5, h6 {
+      h1 {
         margin-top: 0;
+      }
+
+      h2, h3, h4, h5, h6 {
+        margin: $internal-margins;
+      }
+
+      p {
+        margin: $internal-margins;
+      }
+
+      pre {
+        margin: $internal-margins;
+      }
+
+      ul {
+        list-style-type: none;
       }
     }
   }
