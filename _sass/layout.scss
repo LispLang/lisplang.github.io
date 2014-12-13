@@ -1,0 +1,72 @@
+html{
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* Global style */
+
+nav {
+  $height: 50px;
+  $element-width: 100px;
+
+  width: 100%;
+  height: $height;
+
+  background: #aaa;
+
+  line-height: $height;
+
+  li {
+    text-align: center;
+  }
+
+  .brand {
+    float: left;
+    width: $element-width;
+    text-align: center;
+  }
+
+  ul {
+    float: right;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      width: $element-width;
+    }
+  }
+}
+
+footer {
+  height: 180px;
+  overflow: hidden;
+
+  background: #bbb;
+
+  .links, .copy {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .links {
+    @include row();
+
+    ul {
+      @include column(1);
+      list-style-type: none;
+    }
+  }
+}
+
+/* Home page style */
+
+.home {
+  header {
+    height: 300px;
+  }
+}
+
+/* Wiki style */

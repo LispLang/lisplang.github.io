@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<header id="hero-unit">
-  <span class="title">Common <em>Lisp</em></span>
-  <span class="tagline">The programmable language</span>
-</header>
-
-<main>
-  <section id="why">
+<main class="home">
+  <header>
+    <span class="title">Common <em>Lisp</em></span>
+    <span class="tagline">The programmable language</span>
+  </header>
+  <section class="why">
     <h1>Why Common Lisp?</h1>
     <div id="reasons">
       {% for reason in site.reasons %}
@@ -19,7 +18,7 @@ layout: default
       {% endfor %}
     </div>
   </section>
-  <section id="implementations">
+  <section class="implementations">
     <h1>Pick an Implementation</h1>
     {% for impl in site.impls %}
       <div class="impl">
