@@ -3,18 +3,20 @@
 
 @charset "utf-8";
 
-@import "typeplate/typeplate-vars"; // Must come first
-@import "typeplate/typeplate";
-@import "bourbon/bourbon";
-@import "neat/neat";
-
-@import url(http://fonts.googleapis.com/css?family=Lusitana);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
-/* Responsive */
+/* Variables */
 
 $mobile-size: 768px;
 $desktop-size: $mobile-size + 1;
+
+$column-count: 12;
+
+$red: #cc1c1e;
+$orange: #cd481d;
+$blue: #9fc8ff;
+$light-blue: #f1f8ff;
+$white: #ffffff;
+
+/* Responsive */
 
 @mixin on-desktop() {
   @media (min-width: $mobile-size) {
@@ -28,28 +30,5 @@ $desktop-size: $mobile-size + 1;
   }
 }
 
-/* Mixins */
-
-@mixin border-radius($radius) {
-  -moz-border-radius: $radius;
-  -webkit-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
-/* Variables */
-
-$navbar-background: #F5F5F5;
-$navbar-height: 55px;
-
-$footer-start-color: #4282AA;
-$footer-end-color: #428088;
-$footer-text-color: #fff;
-
-$text-color: #444;
-
-/* The rest of the styles */
-
-@import "global";
-@import "home";
-@import "wiki";
+@import "grid";
+@import "layout";

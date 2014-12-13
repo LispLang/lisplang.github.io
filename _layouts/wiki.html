@@ -1,35 +1,30 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-    {% include header.html %}
-    <div class="wiki-container">
-      <h1>{{ page.title }}</h1>
-      <hr>
-      <aside>
-        <ul id="sidebar">
-          <li><a href="/wiki/index.html">Home</a></li>
-          <li><a href="/wiki/all-pages.html">All Pages</a></li>
-        </ul>
-        <hr>
-        <div id="toc"></div>
-      </aside>
-      <article>
-        {{ content }}
-      </article>
-    </div>
-    <script>
-     $(document).ready(function() {
-       /* Highlight code */
-       hljs.initHighlightingOnLoad();
-       /* Create a table of contents */
-       $('#toc').toc({
-         'selectors': 'h1,h2,h3', // Only detect headers down to three levels
-         'container': 'article',
-         'smoothScrolling': true,
-       });
-     });
-    </script>
-    {% include footer.html %}
-  </body>
-</html>
+---
+layout: default
+---
+<main class="wiki">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <ul class="links">
+      <li><a href="/wiki/index.html">Home</a></li>
+      <li><a href="/wiki/all-pages.html">All Pages</a></li>
+    </ul>
+  </header>
+  <div class="container">
+    <aside id="toc"></aside>
+    <article>
+      {{ content }}
+    </article>
+  </div>
+</main>
+<script>
+ $(document).ready(function() {
+   /* Highlight code */
+   hljs.initHighlightingOnLoad();
+   /* Create a table of contents */
+   $('#toc').toc({
+     'selectors': 'h1,h2,h3', // Only detect headers down to three levels
+     'container': 'article',
+     'smoothScrolling': true,
+   });
+ });
+</script>

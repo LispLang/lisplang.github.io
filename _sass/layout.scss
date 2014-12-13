@@ -1,0 +1,145 @@
+html, body {
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+}
+
+/* Global style */
+
+nav {
+  $height: 50px;
+  $element-width: 100px;
+
+  width: 100%;
+  height: $height;
+
+  background: #aaa;
+
+  line-height: $height;
+
+  li {
+    text-align: center;
+  }
+
+  .brand {
+    float: left;
+    width: $element-width;
+    text-align: center;
+  }
+
+  ul {
+    float: right;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      width: $element-width;
+    }
+  }
+}
+
+footer {
+  background: #bbb;
+  width: 100%;
+
+  .links, .copy {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .links {
+    @include row();
+
+    ul {
+      @include column(1);
+      list-style-type: none;
+    }
+  }
+}
+
+/* Home page style */
+
+.home {
+  header {
+    height: 300px;
+    text-align: center;
+
+    .title {
+      padding-top: 100px;
+      font-size: 3em;
+    }
+
+    .tagline {
+    }
+  }
+
+  section {
+    width: 100%;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .why {
+    .reasons {
+      @include row();
+      width: 80%;
+      margin: 0 auto;
+
+      .reason {
+        @include column(3);
+        height: 150px;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+/* Wiki style */
+
+.wiki {
+  width: 100%;
+
+  header {
+    padding-left: 100px;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+      }
+
+      li+li:before {
+        content: "\A0—\A0";
+      }
+    }
+  }
+
+  .container {
+    @include row();
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+
+    aside {
+      @include column(3);
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+    }
+
+    article {
+      @include column(9);
+
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+      }
+    }
+  }
+}
