@@ -31,4 +31,7 @@ $white: #ffffff;
 }
 
 @import "grid";
-@import "layout";
+@import "layout/global";
+@import "layout/home";
+@import "layout/wiki";
+@import "style/global.scss";

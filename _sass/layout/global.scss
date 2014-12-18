@@ -1,0 +1,58 @@
+/* Layout of global elements */
+
+html, body {
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+}
+
+/* Global elements */
+
+nav {
+  $height: 50px;
+  $element-width: 100px;
+
+  width: 100%;
+  height: $height;
+  line-height: $height;
+
+  li {
+    text-align: center;
+  }
+
+  .brand {
+    float: left;
+    width: $element-width;
+    text-align: center;
+  }
+
+  ul {
+    float: right;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      width: $element-width;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+
+  .links, .copy {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .links {
+    @include row();
+
+    ul {
+      @include column(1);
+      list-style-type: none;
+    }
+  }
+}
