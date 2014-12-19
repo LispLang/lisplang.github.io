@@ -1,9 +1,13 @@
 /* Global style */
 
 nav {
-  background: #aaa;
+  background: $white;
 }
 
 footer {
-  background: #bbb;
+  background: $light-blue;
+
+  .copy {
+    font-size: 0.7em;
+  }
 }
