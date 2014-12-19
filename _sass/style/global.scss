@@ -11,3 +11,21 @@ footer {
     font-size: 0.7em;
   }
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+}
+
+a {
+  &:link {
+    color: $blue;
+  }
+
+  &:visited {
+    color: $blue;
+  }
+
+  &:hover {
+    color: $red;
+  }
+}
