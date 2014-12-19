@@ -1,2 +1,11 @@
 /* Wiki style */
 
+.wiki {
+  p {
+    text-align: justify;
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+}
