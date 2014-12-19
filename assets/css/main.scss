@@ -3,7 +3,11 @@
 
 @charset "utf-8";
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
 /* Variables */
+
+$heading-font: 'Open Sans', sans-serif;
 
 $mobile-size: 768px;
 $desktop-size: $mobile-size + 1;
@@ -12,7 +16,7 @@ $column-count: 12;
 
 $red: #cc1c1e;
 $orange: #cd481d;
-$blue: #9fc8ff;
+$blue: #68A8FF;
 $light-blue: #f1f8ff;
 $white: #ffffff;
 
