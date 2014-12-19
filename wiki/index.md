@@ -1,5 +1,6 @@
 ---
 title: Common Lisp Wiki
+layout: wiki
 ---
 
 # Welcome to the Common Lisp wiki!

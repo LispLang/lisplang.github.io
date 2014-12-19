@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+layout: wiki
 ---
 
 # Installing Common Lisp

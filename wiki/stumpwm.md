@@ -1,5 +1,6 @@
 ---
 title: StumpWM
+layout: wiki
 ---
 
 StumpWM is a tiling window manager written in pure Common Lisp using the CLX

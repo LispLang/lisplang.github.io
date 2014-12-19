@@ -1,5 +1,6 @@
 ---
 title: All Pages
+layout: wiki
 ---
 
 {% for page in site.pages %}

@@ -1,5 +1,6 @@
 ---
 title: Recommended Libraries
+layout: wiki
 ---
 
 # Databases

@@ -1,5 +1,6 @@
 ---
 title: Common Lisp Object System
+layout: wiki
 ---
 
 The Common Lisp Object System is Common Lisp's object-oriented programming

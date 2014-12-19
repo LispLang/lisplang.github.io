@@ -3,9 +3,6 @@ title: Common Lisp
 description: Site description
 baseurl: ""
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-defaults:
-  - values:
-      layout: "wiki"
 
 # Build settings
 markdown: kramdown

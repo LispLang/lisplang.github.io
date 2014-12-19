@@ -1,5 +1,6 @@
 ---
 title: Applications using Common Lisp
+layout: wiki
 ---
 
 # StumpWM
