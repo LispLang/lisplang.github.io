@@ -11,12 +11,9 @@ main {
 /* Global elements */
 
 nav {
-  $height: 50px;
-  $element-width: 100px;
-
   width: 100%;
-  height: $height;
-  line-height: $height;
+  height: $navbar-height;
+  line-height: $navbar-height;
 
   li {
     text-align: center;
@@ -24,7 +21,7 @@ nav {
 
   .brand {
     float: left;
-    width: $element-width;
+    width: 100px;
     text-align: center;
   }
 
@@ -34,7 +31,7 @@ nav {
 
     li {
       display: inline-block;
-      width: $element-width;
+      padding-right: 15px;
     }
   }
 }
