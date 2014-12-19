@@ -12,7 +12,7 @@ layout: wiki
 
 ### ORMs
 
-- [Crane](http://eudoxia0.github.io/crane/): Supports Postgres, MySQL and
+- [Crane](http://eudoxia.me/crane/): Supports Postgres, MySQL and
   SQLite3, provides automatic migrations.
 - [Integral](https://github.com/fukamachi/integral): Another ORM.
 - [Postmodern](http://marijnhaverbeke.nl/postmodern/): A Postgres-only ORM.
@@ -29,7 +29,6 @@ layout: wiki
 - [ClouchDb](http://common-lisp.net/project/clouchdb/): CouchDB interface.
 - [cl-memcached](https://github.com/quasi/cl-memcached)
 - [clache](https://github.com/m2ym/clache): Cache facility.
-- [elasticity](http://eudoxia0.github.io/elasticity/): Elasticsearch client.
 
 # FFI
 
@@ -76,13 +75,9 @@ layout: wiki
 
 ## GUI
 
-- [Austral](http://eudoxia0.github.io/austral/): Like
-  [node-webkit](https://github.com/rogerwang/node-webkit), for CL.
 - [CommonQt](http://common-lisp.net/project/commonqt/): Qt bindings.
 - [cl-cffi-gtk](http://www.crategus.com/books/cl-cffi-gtk/): GTK+ binding.
 - [cl-xul](https://github.com/mmontone/cl-xul): Binding to Mozilla's XUL engine.
-- [CLX](https://en.wikipedia.org/wiki/CLX_%28Common_Lisp%29): X interface.
-- [Zen](https://github.com/pyb/zen): X server.
 
 # Game Development
 
@@ -94,7 +89,6 @@ layout: wiki
 - [cl-ppcre](http://weitz.de/cl-ppcre/): Regular expressions.
 - [esrap](https://github.com/nikodemus/esrap): A packrat parser generator.
 - [cl-parsec](https://github.com/vseloved/cl-parsec): Parser combinators.
-- [smug](https://github.com/drewc/smug): Monadic parser combinators.
 
 # Data Formats
 
@@ -164,8 +158,8 @@ different libraries here)
 
 # Web Development
 
-- [Clack](https://github.com/fukamachi/clack): The equivalent of Ruby's Rack or
-  Python's WSGI.
+- [Clack](http://clacklisp.org/): The equivalent of Ruby's Rack or Python's
+  WSGI.
 
 ## Web Frameworks
 
