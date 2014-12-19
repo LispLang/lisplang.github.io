@@ -5,7 +5,7 @@ layout: wiki
 
 # StumpWM
 
-Full article: [StumpWM](/wiki/stumpwm.html)
+Full article: [StumpWM](stumpwm.html)
 
 [StumpWM](https://github.com/stumpwm/stumpwm) is a tiling window manager written
 entirely in Common Lisp, using the CLX library. It's not a minimalistic window
@@ -29,7 +29,7 @@ with Clozure Common Lisp for OS X.
 
 [Quickdocs](http://quickdocs.org/) is a web application written using the
 Caveman2 web framework that hosts searchable documentation of the Common Lisp
-libraries available on Quicklisp.
+libraries available on [Quicklisp](quicklisp.html).
 
 # cmacro
 
@@ -43,7 +43,7 @@ C-like syntax. It is implemented in Common Lisp, and built using SBCL and
 [Maxima](http://maxima.sourceforge.net/) is a computer algebra system with a
 long history. It's a descendant of [Macsyma][macsyma].
 
-Maxima can also be run on [Android](/wiki/platforms/android.html) using
+Maxima can also be run on [Android](platforms/android.html) using
 [Maxima on Android][maximadroid], which uses ECL.
 
 [macsyma]: http://en.wikipedia.org/wiki/Macsyma
@@ -63,7 +63,8 @@ DARPA had spent in AI research in the previous 30 years.
 
 # Parasol
 
-[Parasol][parasol] is a painting application written using CommonQt.
+[Parasol][parasol] is a painting application written using
+[CommonQt](common-qt.html).
 
 [parasol]: https://github.com/Shinmera/parasol
 
