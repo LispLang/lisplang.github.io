@@ -22,7 +22,7 @@ $white: #ffffff;
 
 $navbar-height: 50px;
 
-/* Responsive */
+/* Mixins */
 
 @mixin on-desktop() {
   @media (min-width: $mobile-size) {
@@ -34,6 +34,13 @@ $navbar-height: 50px;
   @media (max-width: $mobile-size) {
     @content;
   }
+}
+
+@mixin gradient($first, $second) {
+  background: -webkit-linear-gradient(top, $first, $second);
+  background: -moz-linear-gradient(top, $first, $second);
+  background: -o-linear-gradient(top, $first, $second);
+  background: linear-gradient(to bottom, $first, $second);
 }
 
 @import "grid";

@@ -5,7 +5,7 @@ nav {
 }
 
 footer {
-  background: $light-blue;
+  @include gradient(#74a5b2, #adc8c4);
 
   .copy {
     font-size: 0.7em;

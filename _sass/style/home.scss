@@ -2,6 +2,6 @@
 
 .home {
   header {
-    background: $blue;
+    @include gradient(#00b2d0, #6bd1c2);
   }
 }
