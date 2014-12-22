@@ -5,7 +5,7 @@ nav {
 }
 
 footer {
-  @include gradient(#74a5b2, #adc8c4);
+  @include linear-gradient(#74a5b2, #adc8c4, 90deg);
 
   .copy {
     font-size: 0.7em;
