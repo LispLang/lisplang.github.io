@@ -1,6 +1,21 @@
 /* Wiki style */
 
 .wiki {
+  header {
+    background: $blue;
+    height: 130px;
+    padding-top: 20px;
+    color: white !important;
+
+    a {
+      color: white !important;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
   p {
     text-align: justify;
   }

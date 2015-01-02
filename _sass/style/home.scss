@@ -2,6 +2,8 @@
 
 .home {
   header {
-    @include radial-gradient(ellipse farthest-side at 100% 100% , #00b2d0 10%, #6bd1c2 120%)
+    //@include radial-gradient(ellipse farthest-side at 100% 100% , #00b2d0 10%, #6bd1c2 120%);
+    background: $blue;
+    color: $header-text-color;
   }
 }

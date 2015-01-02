@@ -2,13 +2,25 @@
 
 nav {
   background: $white;
+
+  ul {
+    li {
+      text-transform: uppercase;
+    }
+  }
 }
 
 footer {
-  @include linear-gradient(#74a5b2, #adc8c4, 90deg);
+  background: $blue;
+  height: 230px;
+  color: $white;
+
+  a {
+    color: #C4D9FD !important;
+  }
 
   .copy {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
 
@@ -17,6 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+  text-decoration: none;
+
   &:link {
     color: $blue;
   }
@@ -26,6 +40,6 @@ a {
   }
 
   &:hover {
-    color: $red;
+    color: $blue;
   }
 }
