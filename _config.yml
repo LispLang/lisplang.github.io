@@ -40,8 +40,8 @@ reasons:
       [STM](/wiki/stm.html), data parallelism &ndash; you name it, you have it.
   - title: CLOS
     desc: |
-      Common Lisp has a rich object system that solves [most common
-      pitfalls](/wiki/clos.html#benefits) of other object systems.
+      Common Lisp has a rich [object system](/wiki/clos.html) that solves [most
+      common pitfalls](/wiki/clos.html#benefits) of other object systems.
 
 impls:
   - name: SBCL
