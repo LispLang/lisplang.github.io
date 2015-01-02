@@ -20,20 +20,24 @@ reasons:
       portably &ndash; without modifying the implementation, ensuring the
       language stays up to date.
   - title: Fast
-    desc: Gradual typing and type inference ensure the compiler generates the
-          fastest possible code.
+    desc: |
+      Gradual typing and type inference ensure the compiler generates the
+      fastest possible code.
   - title: Mature and Stable
-    desc: foo
+    desc: |
+      foo
   - title: Great Tools
-    desc: foo
+    desc: |
+      foo
   - title: Ecosystem
     desc: |
       Tons of readily available libraries, and [plenty of new
       ones](https://github.com/quicklisp/quicklisp-projects/issues) on the
       waiting list. Look at our [favorites](/wiki/recommended-libraries.html).
   - title: Modules
-    desc: Common Lisp's module system is explicit and beautiful, and lends
-          itself to well-structured code on large codebases.
+    desc: |
+      Common Lisp's module system is explicit and beautiful, and lends itself to
+      well-structured code on large codebases.
   - title: Concurrent
     desc: |
       [Parallelism](http://lparallel.org/), channel-based concurrency, async,
