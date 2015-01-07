@@ -12,3 +12,7 @@ concurrent environment.
 library for Common Lisp. It was presented at the European Lisp Symposium 2014
 ([Slides](http://www.european-lisp-symposium.org/ghilardi.pdf),
 [video](http://medias.ircam.fr/xcc8494)).
+
+* [Features](http://stmx.org/features/)
+* [Documentation](http://stmx.org/docs/)
+* [News](http://stmx.org/news/)
