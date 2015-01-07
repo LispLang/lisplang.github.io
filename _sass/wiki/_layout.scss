@@ -26,19 +26,19 @@
     margin-top: 50px;
 
     aside {
-      @include column(3);
+      @include column(2);
 
       & > i {
         display: none;
       }
 
       ol {
-        padding-left: 10px;
+        padding-left: 15px;
       }
     }
 
     article {
-      @include column(9);
+      @include column(10);
       margin-bottom: 80px;
       $internal-margins: 15px 0;
 
