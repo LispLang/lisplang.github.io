@@ -3,7 +3,7 @@ title: Common Lisp Wiki
 layout: wiki
 ---
 
-# Welcome to the Common Lisp wiki!
+Welcome to the Common Lisp wiki!
 
 This page acts as an index to the rest of the wiki.
 
@@ -14,7 +14,7 @@ This page acts as an index to the rest of the wiki.
 * [Style Guide](/wiki/style-guide.html)
 * [Implementations](/wiki/implementations.html)
 
-## Learning
+## Getting Started
 
 * [Getting Started](/wiki/getting-started.html)
 * [Common Lisp books](/wiki/books.html)
