@@ -3,8 +3,9 @@ $(document).ready(function() {
     hljs.initHighlightingOnLoad();
     /* Create a table of contents */
     $('#toc').toc({
-        'selectors': 'h1,h2,h3', // Only detect headers down to three levels
-        'container': 'article',
-        'smoothScrolling': true,
+        listType: 'ol',
+        noBackToTopLinks: true,
+        headers: 'article h1, article h2, article h3',
+        showSpeed: 0,
     });
 });

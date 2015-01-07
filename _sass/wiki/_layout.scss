@@ -28,31 +28,12 @@
     aside {
       @include column(3);
 
-      ul {
-        list-style-type: none;
-        padding-left: 0;
+      & > i {
+        display: none;
+      }
 
-        $toc-base-padding: 10px;
-
-        .toc-h2 {
-          padding-left: $toc-base-padding;
-        }
-
-        .toc-h3 {
-          padding-left: $toc-base-padding*2;
-        }
-
-        .toc-h4 {
-          padding-left: $toc-base-padding*3;
-        }
-
-        .toc-h5 {
-          padding-left: $toc-base-padding*4;
-        }
-
-        .toc-h6 {
-          padding-left: $toc-base-padding*5;
-        }
+      ol {
+        padding-left: 10px;
       }
     }
 
