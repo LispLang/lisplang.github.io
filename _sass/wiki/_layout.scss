@@ -61,6 +61,23 @@
       ul {
         padding-left: 25px;
       }
+
+      figure {
+        margin: 75px auto;
+        width: 100%;
+
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        figcaption {
+          font-style: italic;
+          margin: 0 auto;
+          width: 70%;
+        }
+      }
     }
   }
 }
