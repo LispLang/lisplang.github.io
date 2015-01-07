@@ -1,0 +1,27 @@
+/* Mixins */
+
+@mixin on-desktop() {
+  @media (min-width: $mobile-size) {
+    @content;
+  }
+}
+
+@mixin on-mobile() {
+  @media (max-width: $mobile-size) {
+    @content;
+  }
+}
+
+@mixin linear-gradient($first, $second, $angle) {
+  background: -webkit-linear-gradient($angle, $first, $second);
+  background: -moz-linear-gradient($angle, $first, $second);
+  background: -o-linear-gradient($angle, $first, $second);
+  background: linear-gradient($angle, bottom, $first, $second);
+}
+
+@mixin radial-gradient($arguments...) {
+  background: -webkit-radial-gradient($arguments);
+  background: -o-radial-gradient($arguments);
+  background: -moz-radial-gradient($arguments);
+  background: radial-gradient($arguments);
+}

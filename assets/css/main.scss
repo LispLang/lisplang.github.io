@@ -7,58 +7,21 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
 @import url(http://fonts.googleapis.com/css?family=Poly:400,400italic);
 
-/* Variables */
+@import "utils/variables";
+@import "utils/mixins";
 
-$heading-font: 'Open Sans', sans-serif;
-$home-title-font: 'Julius Sans One', sans-serif;
-$text-font: 'Poly', serif;
+@import "base/reset";
+@import "base/typography";
 
-$mobile-size: 768px;
-$desktop-size: $mobile-size + 1;
+@import "layout/grid";
+@import "layout/navbar";
+@import "layout/footer";
 
-$column-count: 12;
+@import "global/layout";
+@import "global/style";
 
-// Color scheme
-$blue: #2d5fb4;
-$light-blue: #C4D9FD;
-$white: #fff;
+@import "home/layout";
+@import "home/style";
 
-$navbar-height: 50px;
-
-$header-text-color: $white;
-
-/* Mixins */
-
-@mixin on-desktop() {
-  @media (min-width: $mobile-size) {
-    @content;
-  }
-}
-
-@mixin on-mobile() {
-  @media (max-width: $mobile-size) {
-    @content;
-  }
-}
-
-@mixin linear-gradient($first, $second, $angle) {
-  background: -webkit-linear-gradient($angle, $first, $second);
-  background: -moz-linear-gradient($angle, $first, $second);
-  background: -o-linear-gradient($angle, $first, $second);
-  background: linear-gradient($angle, bottom, $first, $second);
-}
-
-@mixin radial-gradient($arguments...) {
-  background: -webkit-radial-gradient($arguments);
-  background: -o-radial-gradient($arguments);
-  background: -moz-radial-gradient($arguments);
-  background: radial-gradient($arguments);
-}
-
-@import "grid";
-@import "layout/global";
-@import "layout/home";
-@import "layout/wiki";
-@import "style/global";
-@import "style/home";
-@import "style/wiki";
+@import "wiki/layout";
+@import "wiki/style";

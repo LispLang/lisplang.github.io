@@ -1,14 +1,4 @@
-/* Layout of global elements */
-
-html, body {
-  height: 100%;
-}
-
-main {
-  min-height: 100%;
-}
-
-/* Global elements */
+/* Layout of the navigation bar */
 
 nav {
   width: 100%;
@@ -32,24 +22,6 @@ nav {
     li {
       display: inline-block;
       padding-right: 15px;
-    }
-  }
-}
-
-footer {
-  width: 100%;
-
-  .links, .copy {
-    width: 100%;
-    padding: 25px 15px;
-  }
-
-  .links {
-    @include row();
-
-    ul {
-      @include column(1);
-      list-style-type: none;
     }
   }
 }

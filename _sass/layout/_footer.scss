@@ -1,0 +1,19 @@
+/* Layout for the footer */
+
+footer {
+  width: 100%;
+
+  .links, .copy {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .links {
+    @include row();
+
+    ul {
+      @include column(1);
+      list-style-type: none;
+    }
+  }
+}
