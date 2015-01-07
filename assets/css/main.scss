@@ -3,15 +3,12 @@
 
 @charset "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
-@import url(http://fonts.googleapis.com/css?family=Poly:400,400italic);
-
 @import "utils/variables";
 @import "utils/mixins";
 
+@import "themes/blues";
+
 @import "base/reset";
-@import "base/typography";
 
 @import "layout/grid";
 @import "layout/navbar";

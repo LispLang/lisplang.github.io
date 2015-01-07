@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-  background: $white;
+  background: $navbar-background;
 
   ul {
     li {
@@ -15,12 +15,12 @@ nav {
 }
 
 footer {
-  background: $blue;
+  background: $footer-background;
   height: 230px;
-  color: $white;
+  color: $footer-text-color;
 
   a {
-    color: $light-blue !important;
+    color: $footer-link-color !important;
   }
 
   .copy {
@@ -36,14 +36,14 @@ a {
   text-decoration: none;
 
   &:link {
-    color: $blue;
+    color: $link-color;
   }
 
   &:visited {
-    color: $blue;
+    color: $link-visited-color;
   }
 
   &:hover {
-    color: $blue;
+    color: $link-hover-color;
   }
 }

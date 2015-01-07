@@ -1,0 +1,35 @@
+/* Blue-colors theme */
+
+// Fonts
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Poly:400,400italic);
+
+$heading-font: 'Open Sans', sans-serif;
+$home-title-font: 'Julius Sans One', sans-serif;
+$text-font: 'Poly', serif;
+
+// Colors
+
+$blue: #2d5fb4;
+$light-blue: #C4D9FD;
+$white: #fff;
+
+$navbar-background: $white;
+
+$footer-background: $blue;
+$footer-text-color: $white;
+$footer-link-color: $light-blue;
+
+$link-color: $blue;
+$link-visited-color: $link-color;
+$link-hover-color: $link-color;
+
+$home-header-background: $blue;
+$home-header-text-color: $white;
+
+$wiki-header-background: $blue;
+$wiki-header-text-color: $white;
+
+$wiki-header-link-color: $white;

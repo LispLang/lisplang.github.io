@@ -2,13 +2,13 @@
 
 .wiki {
   header {
-    background: $blue;
+    background: $wiki-header-background;
     height: 130px;
     padding-top: 20px;
-    color: white !important;
+    color: $wiki-header-text-color !important;
 
     a {
-      color: white !important;
+      color: $wiki-header-link-color !important;
     }
 
     h1 {
