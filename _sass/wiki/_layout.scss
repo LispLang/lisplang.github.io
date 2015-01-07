@@ -3,22 +3,6 @@
 .wiki {
   width: 100%;
 
-  header {
-    padding-left: 100px;
-
-    ul {
-      list-style-type: none;
-
-      li {
-        display: inline-block;
-      }
-
-      li+li:before {
-        content: "\A0—\A0";
-      }
-    }
-  }
-
   .container {
     @include row();
     padding-left: 100px;
@@ -58,15 +42,6 @@
         margin: $internal-margins;
       }
 
-      :not(pre) > code {
-        font-family: 'Consolas', 'Liberation Mono', 'Courier' ,monospace;
-        background-color: #F6F6F6;
-        padding: 1px 2px;
-        border: 1px solid #DDD;
-        border-radius: 3px;
-        font-size: 12pt;
-      }
-
       ul {
         padding-left: 25px;
       }
@@ -88,7 +63,6 @@
         }
 
         figcaption {
-          font-style: italic;
           margin: 0 auto;
           width: 70%;
         }
