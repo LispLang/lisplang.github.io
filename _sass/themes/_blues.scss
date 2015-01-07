@@ -2,13 +2,12 @@
 
 // Fonts
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
-@import url(http://fonts.googleapis.com/css?family=Poly:400,400italic);
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic');
+@import url('http://fonts.googleapis.com/css?family=Merriweather:300,400,300italic');
 
-$heading-font: 'Open Sans', sans-serif;
-$home-title-font: 'Julius Sans One', sans-serif;
-$text-font: 'Poly', serif;
+$heading-font: 'Merriweather', serif;
+$home-title-font: 'Merriweather', serif;
+$text-font: 'Source Sans Pro', sans-serif;
 
 // Colors
 
