@@ -24,22 +24,21 @@
     article {
       @include column(10);
       margin-bottom: 80px;
-      $internal-margins: 15px 0;
 
       :first-child {
         margin-top: 0;
       }
 
       h2, h3, h4, h5, h6 {
-        margin: $internal-margins;
+        margin: $wiki-internal-margins;
       }
 
       p {
-        margin: $internal-margins;
+        margin: $wiki-internal-margins;
       }
 
       pre {
-        margin: $internal-margins;
+        margin: $wiki-internal-margins;
       }
 
       ul {
@@ -65,7 +64,7 @@
         }
 
         figcaption {
-          margin: 0 auto;
+          margin: 20px auto;
           width: 70%;
         }
       }
