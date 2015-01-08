@@ -159,7 +159,7 @@ For example:
 
 ~~~lisp
 (if (engine-running-p car)
-  (drive car))
+    (drive car))
 
 (if (not (seatbelts-fastened-p car))
     (warn-passengers car))
