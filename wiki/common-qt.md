@@ -23,34 +23,43 @@ CommonQt uses Smoke, so that needs to be installed for it to be built.
 ## Arch Linux
 
 If you're on Arch, you can install Smoke by installing the
-`kdebindings-smokegen` and `kdebindings-smokeqt` packages:
+`kdebindings-smokegen`, `kdebindings-smokekde` and `kdebindings-smokeqt`
+packages:
 
 ~~~
 $[ eudoxia@laptop ] ~
-$> sudo pacman -S kdebindings-smokegen kdebindings-smokeqt
+$> sudo pacman -S kdebindings-smokegen kdebindings-smokekde kdebindings-smokeqt
 resolving dependencies...
 looking for inter-conflicts...
 
-Packages (4): qimageblitz-0.0.6-4  qscintilla-2.8.4-3  kdebindings-smokegen-4.14.3-1  kdebindings-smokeqt-4.14.3-1
+Packages (5): qimageblitz-0.0.6-4  qscintilla-2.8.4-3
+              kdebindings-smokegen-4.14.3-1  kdebindings-smokekde-4.14.3-1
+              kdebindings-smokeqt-4.14.3-1
 
-Total Download Size:    4.22 MiB
-Total Installed Size:   23.28 MiB
+Total Download Size:    5.58 MiB
+Total Installed Size:   34.66 MiB
 
 :: Proceed with installation? [Y/n] y
 :: Retrieving packages ...
- kdebindings-smokegen-4.14.3-1-x86_64                  348.4 KiB   223K/s 00:02 [#############################################] 100%
- qimageblitz-0.0.6-4-x86_64                             81.7 KiB  2.16M/s 00:00 [#############################################] 100%
- qscintilla-2.8.4-3-x86_64                            1043.2 KiB   151K/s 00:07 [#############################################] 100%
- kdebindings-smokeqt-4.14.3-1-x86_64                     2.8 MiB   219K/s 00:13 [#############################################] 100%
-(4/4) checking keys in keyring                                                  [#############################################] 100%
-(4/4) checking package integrity                                                [#############################################] 100%
-(4/4) loading package files                                                     [#############################################] 100%
-(4/4) checking for file conflicts                                               [#############################################] 100%
-(4/4) checking available disk space                                             [#############################################] 100%
-(1/4) installing kdebindings-smokegen                                           [#############################################] 100%
-(2/4) installing qimageblitz                                                    [#############################################] 100%
-(3/4) installing qscintilla                                                     [#############################################] 100%
-(4/4) installing kdebindings-smokeqt                                            [#############################################] 100%
+ kdebindings-smokege...   348.4 KiB   576K/s 00:01 [##########################] 100%
+ qimageblitz-0.0.6-4...    81.7 KiB   256K/s 00:00 [##########################] 100%
+ qscintilla-2.8.4-3-...  1043.2 KiB   529K/s 00:02 [##########################] 100%
+ kdebindings-smokeqt...     2.8 MiB   327K/s 00:09 [##########################] 100%
+ kdebindings-smokekd...  1679.6 KiB   418K/s 00:04 [##########################] 100%
+(5/5) checking keys in keyring                     [##########################] 100%
+(5/5) checking package integrity                   [##########################] 100%
+(5/5) loading package files                        [##########################] 100%
+(5/5) checking for file conflicts                  [##########################] 100%
+(5/5) checking available disk space                [##########################] 100%
+(1/5) installing kdebindings-smokegen              [##########################] 100%
+(2/5) installing qimageblitz                       [##########################] 100%
+(3/5) installing qscintilla                        [##########################] 100%
+(4/5) installing kdebindings-smokeqt               [##########################] 100%
+(5/5) installing kdebindings-smokekde              [##########################] 100%
+Optional dependencies for kdebindings-smokekde
+    kdesdk-kate: Kate bindings [installed]
+    kdegraphics-okular: Okular bindings
+    kdepimlibs: akonadi bindings
 $[ eudoxia@laptop ] ~
 $>
 ~~~
