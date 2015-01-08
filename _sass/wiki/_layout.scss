@@ -22,7 +22,7 @@
     }
 
     article {
-      @include column(10);
+      @include column(8);
       margin-bottom: 80px;
 
       :first-child {
