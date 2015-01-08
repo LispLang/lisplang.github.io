@@ -3,9 +3,43 @@ title: Continuous Integration
 layout: wiki
 ---
 
-# TravisCI
+# Travis CI
+
+[Travis CI][travis] is a free continuous integration service that runs from
+GitHub repositories.
+
+To use Travis, simply add a `.travis.yml` file to your repository, sign up with
+your GitHub account, and enable the repo in your settings.
 
 ## The `.travis.yml` file
+
+~~~yaml
+language: common-lisp
+
+env:
+  matrix:
+    - LISP=sbcl
+
+install:
+  # Install cl-travis
+  - curl https://raw.githubusercontent.com/luismbo/cl-travis/master/install.sh | bash
+
+# If the tests use FiveAM
+script:
+  - cl -e '(ql:quickload :fiveam)'
+       -e '(setf fiveam:*debug-on-error* t)'
+       -e '(setf *debugger-hook*
+                 (lambda (c h)
+                   (declare (ignore c h))
+                   (uiop:quit -1)))'
+       -e '(ql:quickload :crane-test)'
+
+# If the tests use prove
+script:
+  - cl -l prove
+       -e '(or (prove:run :woo-test)
+               (uiop:quit -1))'
+~~~
 
 ## Example Projects
 
@@ -71,5 +105,6 @@ script:
                (uiop:quit -1))'
 ~~~
 
+[travis]: https://travis-ci.org/
 [crane]: http://eudoxia.me/crane
 [woo]: https://github.com/fukamachi/woo
