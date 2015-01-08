@@ -10,7 +10,7 @@
     margin-top: 50px;
 
     aside {
-      @include column(2);
+      @include column(3);
 
       & > i {
         display: none;
@@ -22,7 +22,7 @@
     }
 
     article {
-      @include column(8);
+      @include column(7);
       margin-bottom: 80px;
 
       :first-child {
