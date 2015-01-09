@@ -10,6 +10,24 @@ layout: wiki
 The [`cl-annot`](https://github.com/arielnetworks/cl-annot) library implements
 the decorator pattern (Calling them "annotations") in Common Lisp.
 
+You can use it, for instance, to export symbols outside the package definition
+and document them, e.g:
+
+~~~lisp
+(defpackage my-package
+  (:use :cl :cl-annot.doc))
+(in-package :my-package)
+(annot:enable-annot-syntax)
+
+@doc "Add two numbers."
+@export
+(defun add (x y)
+  (+ x y))
+~~~
+
+Note that you have to put `(annot:enable-annot-syntax)` at the beginning of any
+file that uses annotations.
+
 ## Hash Table Literals
 
 Taken from [here](http://frank.kank.net/essays/hash.html).
