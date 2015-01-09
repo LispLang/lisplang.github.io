@@ -7,8 +7,8 @@ layout: wiki
 
 ## Decorators
 
-The [`cl-annot`](https://github.com/arielnetworks/cl-annot) library implements
-the decorator pattern (Calling them "annotations") in Common Lisp.
+The [cl-annot](https://github.com/arielnetworks/cl-annot) library implements the
+decorator pattern (Calling them "annotations") in Common Lisp.
 
 You can use it, for instance, to export symbols outside the package definition
 and document them, e.g:

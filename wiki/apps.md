@@ -13,8 +13,8 @@ manager: It's goal is to be a hackable, Emacs-like,
 everything-and-the-kitchen-sink (Maximalist, but not in the way GNOME and KDE)
 are window manager.
 
-The [`stumpwm-contrib`](https://github.com/stumpwm/stumpwm-contrib) repository
-has community-contributed loadable modules.
+The [stumpwm-contrib](https://github.com/stumpwm/stumpwm-contrib) repository has
+community-contributed loadable modules.
 
 {% include fig uri="stumpwm.jpg" desc="StumpWM screenshot, using useless gaps." %}
 
