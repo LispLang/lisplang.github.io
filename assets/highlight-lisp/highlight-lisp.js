@@ -379,6 +379,7 @@ var highlight_lisp = function() {
 	 */
 	this.highlight_element = function(code_el)
 	{
+		code_el.className += ' hl-highlighted';
 		var html = code_el.innerHTML;
 		// can't have &...;'s running wild like a pack of animals...
 		html = html.replace(/&amp;/g, '&');
