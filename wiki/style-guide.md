@@ -26,6 +26,23 @@ alternative library to an existing one.
 As always, check the licensing information of the libraries you use for
 incompatibilities.
 
+## Write Libraries
+
+Before starting a project, think about its structure: Does *every* component
+have to be implemented within the project? Or are there parts that might be
+usable by others? If so, split the project into libraries.
+
+If you set out to write a vast monolith and then lose interest, you will end up
+wieth 30% of an ambitius project, completely unusable to others because it's
+bound to the rest of the unfinished application.
+
+If you think of your project as a collection of independent libraries, bound
+together by a thin layer of domain-specific functionality, then if you lose
+interest in a project you will have left a short trail of useful libraries for
+others to use and build upon.
+
+In short: [Write many small libraries][small-libs].
+
 # Naming
 
 ## Variables
@@ -336,4 +353,5 @@ users.
 [google]: https://google-styleguide.googlecode.com/svn/trunk/lispguide.xml
 [an]: http://labs.ariel-networks.com/cl-style-guide.html
 [consolidation]: http://fare.livejournal.com/169346.html
+[small-libs]: https://gist.github.com/substack/5075355
 [tt]: https://github.com/m2ym/trivial-types
