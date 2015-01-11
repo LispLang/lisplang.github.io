@@ -343,7 +343,7 @@ such, should contain all the relevant metadata. It should look like this:
   :author "John Q. Lisper <jql@example.com>"
   :maintainer "John Q. Lisper <jql@example.com>"
   :license "MIT"
-  :homepage "https://github.com/example/my-project"
+  :homepage "https://github.com/johnqlisp/my-project"
   :version "0.1"
   :depends-on (:local-time
                :clack)
@@ -366,7 +366,7 @@ the main system definition file. It should look like this:
 ~~~lisp
 (defsystem my-project-test
   :author "John Q. Lisper <jql@example.com>"
-  :license "{{license}}"
+  :license "MIT"
   :depends-on (:my-project
                :some-test-framework
   :components ((:module "t"
