@@ -8,6 +8,24 @@ This is an opinionated guide to writing good, maintainable Common Lisp code.
 This page is largely based on Google's [Common Lisp Style Guide][google] and
 Ariel Networks' own [guide][an].
 
+# General Guidelines
+
+## Use Libraries
+
+Look for libraries that solve the problems you are trying to solve before
+embarking on a project. Making a project with no dependencies is not some sort
+of virtue. It doesn't aid portability and it doesn't help when it comes to
+turning a Lisp program into an executable.
+
+Writing a library that solves the same problem as another hurts
+[consolidation][consolidation]. Generally, you should only do this if you are
+going to make it worth it: Good, complete documentation, examples, and a
+well-designed website are -- taken together -- a good reason to write an
+alternative library to an existing one.
+
+As always, check the licensing information of the libraries you use for
+incompatibilities.
+
 # Naming
 
 ## Variables
@@ -317,4 +335,5 @@ users.
 
 [google]: https://google-styleguide.googlecode.com/svn/trunk/lispguide.xml
 [an]: http://labs.ariel-networks.com/cl-style-guide.html
+[consolidation]: http://fare.livejournal.com/169346.html
 [tt]: https://github.com/m2ym/trivial-types
