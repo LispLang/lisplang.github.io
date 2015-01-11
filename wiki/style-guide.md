@@ -45,6 +45,12 @@ In short: [Write many small libraries][small-libs].
 
 # Naming
 
+## General style
+
+Names are lowercase, separated by single dashes (`-`), and they are complete
+words. That is, you should write `user-count` rather than `user-cnt` and
+`make-text-node` is better `mk-txt-node`.
+
 ## Variables
 
 **Special variables** (Mutable globals) should be surrounded by asterisks. These
