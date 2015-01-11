@@ -299,6 +299,82 @@ spider/
   spider-run-js.asd
 ~~~
 
+## System Definitions
+
+The following system definition files should be defined:
+
+`project.asd`
+: The system definition of the library or application itself. Contains most of
+the metadata.
+
+`project-test.asd`
+: Unit tests for the project.
+
+Contributed modules should each have their own `.asd` file.
+
+The following system definition options should be specified:
+
+`:author`, `:maintainer`
+: The original author and current maintainer of the project. If you're writing
+the system definition for the first time, the two should be equal.
+
+`:license`
+: The license of the project. Should be a short string with the name of the
+license.
+
+`:homepage`
+: A link to the project homepage. It can be an actual homepage, or a link to the
+GitHub or Bitbucket repo.
+
+`:version`
+: The project's version string.
+
+The following subsections have example contents of `.asd` files. Note that these
+are for the simplest case of a small library with a single file. For larger
+projects, you should split the code across multiple files.
+
+### Main System Definition
+
+The main system definition is the first 'entry point' to your project, and as
+such, should contain all the relevant metadata. It should look like this:
+
+~~~lisp
+(defsystem my-project
+  :author "John Q. Lisper <jql@example.com>"
+  :maintainer "John Q. Lisper <jql@example.com>"
+  :license "MIT"
+  :homepage "https://github.com/example/my-project"
+  :version "0.1"
+  :depends-on (:local-time
+               :clack)
+  :components ((:module "src"
+                :serial t
+                :components
+                ((:file "my-project"))))
+  :description "A description of the project."
+  :long-description
+  #.(uiop:read-file-string
+     (uiop:subpathname *load-pathname* "README.md"))
+  :in-order-to ((test-op (test-op my-project-test))))
+~~~
+
+### Testing System Definition
+
+The system definition file for the test system doesn't need as much metadata as
+the main system definition file. It should look like this:
+
+~~~lisp
+(defsystem my-project-test
+  :author "John Q. Lisper <jql@example.com>"
+  :license "{{license}}"
+  :depends-on (:my-project
+               :some-test-framework
+  :components ((:module "t"
+                :serial t
+                :components
+                ((:file "my-project")))))
+~~~
+
 ## The README
 
 You should use Markdown for the README file, for two reasons:
