@@ -97,6 +97,26 @@ reasonable Common Lisp translation of the name, i.e. `libGUI` should be
 `lib-gui`) as the package name and the actual name of the function as the
 function name.
 
+# Formatting
+
+## Indentation
+
+## Line length
+
+Lines should not exceed 100 columns. The lower limit of 80 columns, used in
+other languages, is less fitting for Common Lisp, which encourages descriptive
+variable names and complete rather than abbreviated function names.
+
+## File header
+
+The top of the file should include a
+[four-semicolon comment](#comment-hierarchy) comment describing the purpose of
+the file.
+
+You should **not** include copyright or authorship information in file-level
+comments. The license should not be mentioned outside the system definition and
+the README.
+
 # Documentation
 
 ## Docstrings everywhere
@@ -108,10 +128,6 @@ individual slots, and you should use this.
 
 Comments that start with four semicolons, `;;;;`, should appear at the top of a
 file, explaining its purpose.
-
-You should **not** include copyright or authorship information in file-level
-comments. The license should not be mentioned outside the system definition and
-the README.
 
 Comments starting with three semicolons, `;;;`, should be used to separate
 regions of the code.
