@@ -97,7 +97,12 @@ reasonable Common Lisp translation of the name, i.e. `libGUI` should be
 `lib-gui`) as the package name and the actual name of the function as the
 function name.
 
-# Comments
+# Documentation
+
+## Docstrings everywhere
+
+Common Lisp allows you to add docstrings to functions, packages, classes and
+individual slots, and you should use this.
 
 ## Comment Hierarchy
 
@@ -166,11 +171,6 @@ The following slot options should be used in this order:
 
 MOP-defined slot options should be added after all other slot options and before
 the `:documentation` option.
-
-## Document everything
-
-Common Lisp allows you to add docstrings both to classes and individual slots,
-and you should use this.
 
 ## Use the `:type` slot option
 
