@@ -80,6 +80,17 @@ Predicates should be suffixed with:
 : If the rest of the function name is more than one word, e.g
 `largest-planet-p`, `request-throttled-p`.
 
+## Don't prefix package names
+
+This is what packages are for. The name of a function in a package
+`myapp.parser` should not start with `parser-`.
+
+If you're binding a C library where every function name is of the form
+`library_name_function_name`, use the library's name (Or, more accurately, a
+reasonable Common Lisp translation of the name, i.e. `libGUI` should be
+`lib-gui`) as the package name and the actual name of the function as the
+function name.
+
 # Comments
 
 ## Comment Hierarchy
