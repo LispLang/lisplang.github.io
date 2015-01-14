@@ -345,6 +345,16 @@ the metadata.
 
 Contributed modules should each have their own `.asd` file.
 
+System definition files should contain a system definition and not much
+more. They should not contain any code, or anything that fiddles with ASDF's
+setup. If you need to do that, do it in your
+[initialization file](init-file.html).
+
+A read-time call to read the contents of the [README](#the-readme) file into the
+system definition's `:long-description` option is fine.
+
+### Options
+
 The following system definition options should be specified:
 
 `:author`, `:maintainer`

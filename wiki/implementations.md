@@ -3,6 +3,12 @@ title: Common Lisp Implementations
 layout: wiki
 ---
 
+Notes for beginners:
+
+* Just use SBCL
+* Just use SBCL
+* **Just use SBCL**
+
 # Current Implementations
 
 These implementations are active maintained, improved, and used in production,
