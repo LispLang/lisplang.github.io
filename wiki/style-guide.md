@@ -345,14 +345,6 @@ the metadata.
 
 Contributed modules should each have their own `.asd` file.
 
-System definition files should contain a system definition and not much
-more. They should not contain any code, or anything that fiddles with ASDF's
-setup. If you need to do that, do it in your
-[initialization file](init-file.html).
-
-A read-time call to read the contents of the [README](#the-readme) file into the
-system definition's `:long-description` option is fine.
-
 ### Options
 
 The following system definition options should be specified:
@@ -418,6 +410,21 @@ the main system definition file. It should look like this:
                 ((:file "my-project")))))
 ~~~
 
+### Other code
+
+From the [ASDF manual][asdf-other-code]:
+
+>However, it is recommended to keep such forms to a minimal, and to instead
+>define defsystem extensions that you use with :defsystem-depends-on.
+
+System definition files should contain a system definition and not much
+more. They should not contain any code, or anything that fiddles with ASDF's
+setup. If you need to do that, do it in your
+[initialization file](init-file.html).
+
+A read-time call to read the contents of the [README](#the-readme) file into the
+system definition's `:long-description` option is fine.
+
 ## The README
 
 You should use Markdown for the README file, for two reasons:
@@ -474,3 +481,4 @@ users.
 [consolidation]: http://fare.livejournal.com/169346.html
 [small-libs]: https://gist.github.com/substack/5075355
 [tt]: https://github.com/m2ym/trivial-types
+[asdf-other-code]: http://common-lisp.net/project/asdf/asdf/Other-code-in-_002easd-files.html#Other-code-in-_002easd-files
