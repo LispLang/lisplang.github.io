@@ -1,0 +1,42 @@
+/* Navbar style */
+
+nav {
+    position: absolute;
+    width: 100%;
+
+    .content {
+        width: 80%;
+        height: 90px;
+        margin: 0 auto;
+
+        @include flex();
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(space-between);
+
+        .brand {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        ul {
+            @include flex();
+            @include flex-direction(row);
+
+            list-style-type: none;
+
+            li {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,27 +1,55 @@
 /* Mixins */
 
-@mixin on-desktop() {
-  @media (min-width: $mobile-size) {
-    @content;
-  }
+/* Flexbox mixins */
+
+@mixin flex() {
+    /* Portable version of `display: flex` */
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+};
+
+@mixin flex-direction($direction) {
+    /* Portable version of `flex-direction` */
+    flex-direction: $direction;
+    -webkit-flex-direction: $direction;
 }
 
-@mixin on-mobile() {
-  @media (max-width: $mobile-size) {
-    @content;
-  }
+@mixin justify-content($alignment) {
+    /* Portable version of `justify-content` */
+    justify-content: $alignment;
+    -webkit-justify-content: $alignment;
 }
 
-@mixin linear-gradient($first, $second, $angle) {
-  background: -webkit-linear-gradient($angle, $first, $second);
-  background: -moz-linear-gradient($angle, $first, $second);
-  background: -o-linear-gradient($angle, $first, $second);
-  background: linear-gradient($angle, bottom, $first, $second);
+@mixin align-items($alignment) {
+    /* Portable version of `align-items` */
+    align-items: $alignment;
+    -webkit-align-items: $alignment;
 }
 
-@mixin radial-gradient($arguments...) {
-  background: -webkit-radial-gradient($arguments);
-  background: -o-radial-gradient($arguments);
-  background: -moz-radial-gradient($arguments);
-  background: radial-gradient($arguments);
+@mixin flex-flow($value) {
+    flex-flow: $value;
+    -webkit-flex-flow: $value;
+}
+
+/* Gradients */
+
+@mixin linear-gradient($direction, $start-color, $start-percentage, $end-color,
+                       $end-percentage) {
+    background-image: -o-linear-gradient($direction,
+                                         $start-color $start-percentage,
+                                         $end-color $end-percentage);
+    background-image: -moz-linear-gradient($direction,
+                                           $start-color $start-percentage,
+                                           $end-color $end-percentage);
+    background-image: -webkit-linear-gradient($direction,
+                                              $start-color $start-percentage,
+                                              $end-color $end-percentage);
+    background-image: -ms-linear-gradient($direction,
+                                          $start-color $start-percentage,
+                                          $end-color $end-percentage);
+    background-image: linear-gradient($direction,
+                                      $start-color $start-percentage,
+                                      $end-color $end-percentage);
 }
