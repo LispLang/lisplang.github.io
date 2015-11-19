@@ -1,0 +1,18 @@
+/* Site-wide variables */
+
+$blue: #2d5fb4;
+$light-blue: #C4D9FD;
+$better-light-blue: #D5E0F3;
+$white: #fff;
+$black: #333;
+
+/* $blue background and $light-blue foreground is not sufficiently contrasting
+for visual impairment. use $better-light-blue as foreground */
+
+$navbar-background: $white;
+
+$header-height: 100vh;
+
+$footer-background: $blue;
+$footer-text-color: $white;
+$footer-link-color: $better-light-blue;

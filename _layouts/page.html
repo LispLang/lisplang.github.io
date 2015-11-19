@@ -1,0 +1,15 @@
+---
+layout: default
+css_file: page
+---
+
+<main class="page">
+  <header{% if page.header_class %} class="{{ page.header_class }}"{% endif %}>
+    <div class="title">
+      {{ page.title }}
+    </div>
+  </header>
+  <div class="content">
+    {{ content }}
+  </div>
+</main>

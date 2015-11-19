@@ -1,16 +1,16 @@
 # Site settings
 title: Common Lisp
-description: Site description
-baseurl: ""
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+domain: "lisp-lang.org"
 
 # Build settings
 markdown: kramdown
 sass:
     style: :compressed
 
-# Variables
-repo_url: https://github.com/eudoxia0/lisp-site
+# Custom variables
+links:
+  gh: https://github.com/LispLang
+  repo: https://github.com/LispLang/landing
 
 reasons:
   - title: Extensible
@@ -46,29 +46,3 @@ reasons:
     desc: |
       Common Lisp has a rich [object system](/wiki/clos.html) that solves [most
       common pitfalls](/wiki/clos.html#benefits) of other object systems.
-
-impls:
-  - name: SBCL
-    fullname: Steel Bank Common Lisp
-    tagline: Peak performance, always
-  - name: CCL
-    fullname: Clozure Common Lisp
-    tagline: Run anywhere
-  - name: ABCL
-    fullname: Armed Bear Common Lisp
-    tagline: Tight JVM integration
-  - name: mocl
-    tagline: Run on iOS, Android and OS X
-
-# Custom links
-l:
-  # Implementations
-  sbcl: "[SBCL](/wiki/implementations.html#sbcl)"
-  ccl: "[CCL](/wiki/implementations.html#ccl)"
-  ecl: "[ECL](/wiki/implementations.html#ecl)"
-
-  # Apps
-  buildapp: "[Buildapp](/wiki/buildapp.html)"
-
-  # Books
-  amop: "[The Art of the Metaobject Protocol](/wiki/books.html#)"

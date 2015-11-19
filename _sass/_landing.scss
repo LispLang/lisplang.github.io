@@ -1,0 +1,23 @@
+/* Style for the landing page */
+
+main.landing {
+    header {
+        @include linear-gradient(bottom, #4274C9, 10%, #2D5FB4, 80%);
+
+        h1 {
+            display: inline-block;
+            line-height: $header-height;
+            width: 100%;
+            text-align: center;
+            font-size: 72px;
+            font-family: 'Lusitana', serif;
+            font-weight: 400;
+            margin-top: 0;
+            color: $white;
+        }
+    }
+
+    .why {
+
+    }
+}

@@ -1,0 +1,33 @@
+/* Page style */
+
+main.page {
+    header {
+        background-size: cover;
+        background-position: center;
+
+        .title {
+            z-index: 1;
+            text-align: center;
+            line-height: $header-height;
+
+            font-family: 'Lato', sans-serif;
+            font-size: 56px;
+            font-weight: 300;
+            color: white;
+        }
+
+        /* Header background images */
+
+        &.community {
+            background-image: url(/assets/img/header/community.jpg);
+        }
+
+        &.news {
+            background-image: url(/assets/img/header/news.jpg);
+        }
+    }
+
+    .content {
+
+    }
+}

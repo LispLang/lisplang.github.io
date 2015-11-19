@@ -1,6 +1,8 @@
 ---
 title: News
-layout: news
+layout: page
+permalink: /news/
+header_class: news
 ---
 
 <ul class="news-list">
@@ -9,7 +11,12 @@ layout: news
       <h3>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h3>
-      <span class="tagline">Posted by {{ post.author }} on {{ post.date | date: "%b %-d, %Y" }}</span>
+      <span class="info">
+        Posted by {{ post.author }} on
+        <span class="date">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </span>
+      </span>
       <article>
         {{ post.excerpt }}
       </article>
