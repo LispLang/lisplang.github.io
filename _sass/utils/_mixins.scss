@@ -35,21 +35,25 @@
 
 /* Gradients */
 
-@mixin linear-gradient($direction, $start-color, $start-percentage, $end-color,
-                       $end-percentage) {
-    background-image: -o-linear-gradient($direction,
-                                         $start-color $start-percentage,
-                                         $end-color $end-percentage);
-    background-image: -moz-linear-gradient($direction,
-                                           $start-color $start-percentage,
-                                           $end-color $end-percentage);
-    background-image: -webkit-linear-gradient($direction,
-                                              $start-color $start-percentage,
-                                              $end-color $end-percentage);
-    background-image: -ms-linear-gradient($direction,
-                                          $start-color $start-percentage,
-                                          $end-color $end-percentage);
-    background-image: linear-gradient($direction,
-                                      $start-color $start-percentage,
-                                      $end-color $end-percentage);
+@mixin linear-gradient($direction, $start-color, $end-color) {
+    background-image: -o-linear-gradient($direction, $start-color, $end-color);
+    background-image: -moz-linear-gradient($direction, $start-color, $end-color);
+    background-image: -webkit-linear-gradient($direction, $start-color, $end-color);
+    background-image: -ms-linear-gradient($direction, $start-color, $end-color);
+    background-image: linear-gradient($direction, $start-color, $end-color);
+}
+
+/* Blur */
+
+@mixin blur($size) {
+    filter: blur($size);
+    -webkit-filter: blur($size);
+}
+
+/* Shadow */
+
+@mixin box-shadow($values) {
+    box-shadow: $values;
+    -webkit-box-shadow: $values;
+    -moz-box-shadow: $values;
 }
