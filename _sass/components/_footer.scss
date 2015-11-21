@@ -3,7 +3,6 @@
 footer {
     width: 100%;
     background: $footer-background;
-    height: 230px;
     color: $footer-text-color;
     font-family: 'PT Sans', sans-serif;
 
@@ -41,8 +40,11 @@ footer {
     }
 
     .copy {
+        border-top: 1px solid #5E86C7;
+        width: 80%;
+        padding: 30px 0;
+        margin: 80px auto 0 auto;
+        text-align: center;
         font-size: 13px;
-        margin-top: 30px;
-        margin-left: 45px;
     }
 }
