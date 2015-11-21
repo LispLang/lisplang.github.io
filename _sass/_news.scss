@@ -1,13 +1,13 @@
 /* News page style */
 
 .news-list {
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 100px;
 
     li {
-        margin-top: 100px;
         list-style-type: none;
+
+        &:not(:first-child) {
+            margin-top: 90px;
+        }
 
         h3 {
             a {
