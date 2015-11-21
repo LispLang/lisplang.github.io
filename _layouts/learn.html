@@ -1,0 +1,46 @@
+---
+css_file: learn
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body class="learn">
+    <aside>
+      <div class="logo">
+        <a href="/learn/">
+          <img src="/assets/img/logo/logo.svg">
+        </a>
+      </div>
+      <ul>
+        {% for post in site.categories['learn'] reversed %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="copy">
+        {% include copy.html %}
+      </div>
+    </aside>
+    <article>
+      <header>
+        <h1>{{ page.title }}</h1>
+        <nav>
+          {% if page.previous.url and page.previous.url contains '/learn/' %}
+            <a href="{{ page.previous.url }}">
+              {{ page.previous.title }}
+            </a>
+          {% endif %}
+          {% if page.next.url and page.next.url contains '/learn/' %}
+            <a href="{{ page.next.url }}">
+              {{ page.next.title }}
+            </a>
+          {% endif %}
+        </nav>
+      </header>
+      <div class="content">
+        {{ content }}
+      </div>
+    </article>
+  </body>
+</html>
