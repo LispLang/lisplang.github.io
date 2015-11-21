@@ -1,0 +1,68 @@
+/* Tutorial style */
+
+.learn {
+    @include flex();
+    @include flex-direction(row);
+
+    aside {
+        width: 300px;
+        height: 100vh;
+        @include flex();
+        @include flex-direction(column);
+
+        @include box-shadow(10px 0px 30px 1px rgba(209,209,209,1));
+        border-right: 1px solid #ccc;
+        background: rgba(0,0,0,0.02);
+
+        .logo {
+            @include flex();
+            @include flex-direction(row);
+            @include justify-content(center);
+            padding: 27px 0;
+            border-bottom: 1px solid #ccc;
+
+            img {
+                display: block;
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        ul {
+            flex: 1;
+            background: white;
+        }
+
+        .copy {
+            background: white;
+            text-align: center;
+            padding: 8px 0;
+
+            font-size: 13px;
+            font-family: 'PT Sans', sans-serif;
+        }
+    }
+
+    article {
+        padding: 45px 70px;
+
+        header {
+            h1 {
+                font-family: 'PT Sans', serif;
+                font-weight: 400;
+                font-size: 64px;
+                margin: 0;
+                color: $black;
+            }
+
+            nav {
+                @include flex();
+                @include flex-direction(row);
+            }
+        }
+
+        .content {
+            margin-top: 70px;
+        }
+    }
+}
