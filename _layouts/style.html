@@ -1,0 +1,31 @@
+---
+layout: default
+css_file: style
+---
+
+<main class="style">
+  <header>
+    <div class="title-container">
+      <div class="background">
+      </div>
+      <div class="title">
+        {{ page.title }}
+      </div>
+    </div>
+  </header>
+  <div id="toc" class="toc"></div>
+  <article class="content">
+    {{ content }}
+  </article>
+</main>
+<script src="/assets/js/jquery-2.1.4.js"></script>
+<script src="/assets/js/toc-0.3.2.js"></script>
+<script>
+ $(document).ready(function() {
+     $('#toc').toc({
+         'selectors': 'h1,h2',
+         'container': 'article',
+         'prefix': 'toc'
+     })
+ })
+</script>
