@@ -1,8 +1,24 @@
 /* Style for the landing page */
 
+$lighter: rgba(66, 116, 201, 0.90); // #4274C9
+$darker: rgba(45, 95, 180, 0.95); // #2D5FB4
+
 main.landing {
     header {
-        @include linear-gradient(bottom, #4274C9, 10%, #2D5FB4, 80%);
+        @include linear-gradient(bottom, $lighter, $darker);
+
+        .background {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+
+            background-image: url(/assets/img/header/landing.jpg);
+            background-size: cover;
+            background-position: center;
+            z-index: -10;
+        }
 
         h1 {
             display: inline-block;
