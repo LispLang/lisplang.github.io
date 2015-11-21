@@ -7,6 +7,14 @@ markdown: kramdown
 sass:
     style: :compressed
 
+defaults:
+  -
+    scope:
+      path: "learn"
+    values:
+      layout: "learn"
+      permalink: "/learn/:title"
+
 # Custom variables
 links:
   gh: https://github.com/LispLang
