@@ -103,6 +103,26 @@ function name.
 
 ## Indentation
 
+Indentation is two lines per form, for instance:
+
+~~~lisp
+(defun f ()
+  (let ((x 1)
+        (y 2))
+    (format t "X=~A, Y=~A" x y)
+    (terpri)
+    t))
+~~~
+
+There are, however, some exceptions. In the `if` special form, both branches
+must be on the same line:
+
+~~~lisp
+(if (> x 5)
+    (format t "Greater than five")
+    (format t "Less than or equal to five"))
+~~~
+
 ## Line length
 
 Lines should not exceed 100 columns. The lower limit of 80 columns, used in
