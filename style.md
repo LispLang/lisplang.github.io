@@ -2,7 +2,7 @@
 title: Common Lisp Style Guide
 layout: style
 description: The style guide for Common Lisp
-permalink: /style/
+permalink: /style-guide/
 ---
 
 This is an opinionated guide to writing good, maintainable Common Lisp code.
