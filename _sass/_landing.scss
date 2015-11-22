@@ -36,4 +36,46 @@ main.landing {
     .why {
 
     }
+
+    .start {
+        height: 300px;
+        background: $light-blue;
+
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
+
+        a {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 72px;
+            color: $white;
+
+            text-decoration: none;
+            padding: 10px 15px;
+
+            position: relative;
+
+            &:after {
+                $underline-height: 1px;
+
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: -$underline-height;
+                width: 0;
+                height: $underline-height;
+                background-color: $white;
+                content: "";
+                transition: width 0.2s;
+            }
+
+            &:hover {
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
