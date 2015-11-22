@@ -6,6 +6,10 @@ $darker: rgba(45, 95, 180, 0.95); // #2D5FB4
 main.landing {
     header {
         @include linear-gradient(bottom, $lighter, $darker);
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
 
         .background {
             position: absolute;
@@ -21,10 +25,6 @@ main.landing {
         }
 
         h1 {
-            display: inline-block;
-            line-height: $header-height;
-            width: 100%;
-            text-align: center;
             font-size: 72px;
             font-family: 'Lusitana', serif;
             font-weight: 400;
