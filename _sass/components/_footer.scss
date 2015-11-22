@@ -16,7 +16,7 @@ footer {
     }
 
     .links {
-        @include flex();
+        @include flexbox();
         @include flex-direction(row);
         padding: 25px 15px;
 

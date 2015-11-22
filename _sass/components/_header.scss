@@ -5,7 +5,7 @@ main > header {
     background-size: cover;
     background-position: center;
 
-    @include flex();
+    @include flexbox();
     @include flex-direction(row);
     @include align-items(center);
     @include justify-content(center);

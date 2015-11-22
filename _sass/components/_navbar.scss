@@ -9,7 +9,7 @@ nav {
         height: 90px;
         margin: 0 auto;
 
-        @include flex();
+        @include flexbox();
         @include flex-direction(row);
         @include align-items(center);
         @include justify-content(space-between);
@@ -22,7 +22,7 @@ nav {
         }
 
         ul {
-            @include flex();
+            @include flexbox();
             @include flex-direction(row);
 
             list-style-type: none;

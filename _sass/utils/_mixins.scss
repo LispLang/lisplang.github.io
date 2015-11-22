@@ -1,37 +1,8 @@
 /* Mixins */
 
-/* Flexbox mixins */
+/* Flexbox */
 
-@mixin flex() {
-    /* Portable version of `display: flex` */
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-};
-
-@mixin flex-direction($direction) {
-    /* Portable version of `flex-direction` */
-    flex-direction: $direction;
-    -webkit-flex-direction: $direction;
-}
-
-@mixin justify-content($alignment) {
-    /* Portable version of `justify-content` */
-    justify-content: $alignment;
-    -webkit-justify-content: $alignment;
-}
-
-@mixin align-items($alignment) {
-    /* Portable version of `align-items` */
-    align-items: $alignment;
-    -webkit-align-items: $alignment;
-}
-
-@mixin flex-flow($value) {
-    flex-flow: $value;
-    -webkit-flex-flow: $value;
-}
+@import 'vendor/flexbox';
 
 /* Gradients */
 
