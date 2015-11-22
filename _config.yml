@@ -18,7 +18,7 @@ defaults:
 # Custom variables
 links:
   gh: https://github.com/LispLang
-  repo: https://github.com/LispLang/landing
+  repo: https://github.com/LispLang/site
 
 reasons:
   - title: Extensible
