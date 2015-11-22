@@ -283,6 +283,31 @@ Should be written as:
 
 Unless it makes sense to have one package cover multiple files.
 
+## Avoid `:use`
+
+Unless you are really going to need all (or most of) the symbols in a package,
+it is strongly recommended that you write a manual `:import-from` list as
+opposed to using `:use`.
+
+For instance, if you're writing a package that uses a couple of symbols from
+[Alexandria][alexandria], don't do this:
+
+~~~lisp
+(defpackage my-package
+  (:use :cl :alexandria))
+(in-package :my-package)
+~~~
+
+Instead, do this:
+
+~~~lisp
+(defpackage my-pacakge
+  (:use :cl)
+  (:import-from :alexandria
+                :with-gensyms
+                :curry))
+~~~
+
 # Project Structure
 
 ## Directory Structure
