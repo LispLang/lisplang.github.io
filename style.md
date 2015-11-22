@@ -308,6 +308,21 @@ Instead, do this:
                 :curry))
 ~~~
 
+## Hierarchical Package Names
+
+For instance, here is an example package hierarchy for a game:
+
+~~~lisp
+title
+  title.graphics
+    title.graphics.mesh
+    title.graphics.obj
+    title.graphics.gl
+  title.config
+  title.logging
+  title.db
+~~~
+
 # Project Structure
 
 ## Directory Structure
