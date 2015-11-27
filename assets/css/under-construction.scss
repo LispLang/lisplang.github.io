@@ -1,0 +1,25 @@
+---
+---
+
+@charset 'UTF-8';
+
+@import 'utils/fonts';
+@import 'utils/normalize';
+@import 'utils/reset';
+@import 'utils/mixins';
+
+.unfinished {
+    font-family: 'PT Sans';
+    font-size: 18px;
+
+    @include flexbox();
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(center);
+
+    main {
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
