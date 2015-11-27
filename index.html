@@ -13,7 +13,7 @@ description: Common Lisp
   <section class="why">
     <h1>Why Common Lisp?</h1>
     <div class="reasons">
-      {% for reason in site.reasons %}
+      {% for reason in site.data.landing.reasons %}
         <div class="reason">
           <h4>{{ reason.title }}</h4>
           {{ reason.desc | markdownify }}
