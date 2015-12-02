@@ -1,0 +1,22 @@
+# Data for the success stories
+
+# The background image for each category is a .jpg file in /assets/img/success/
+# with the same name as the tag.
+
+categories:
+  - name: Aerospace
+    tag: aero
+  - name: CAD
+    tag: cad
+  - name: Music
+    tag: music
+  - name: Mathematics
+    tag: math
+  - name: Science
+    tag: science
+  - name: Data Analysis
+    tag: data
+  - name: AI & Machine Learning
+    tag: ai
+  - name: Graphics
+    tag: graphics
