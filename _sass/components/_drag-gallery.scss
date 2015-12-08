@@ -1,0 +1,27 @@
+.gallery {
+    overflow: hidden;
+    min-width: 100%;
+
+    .handle {
+        display: inline-block;
+        cursor: pointer;
+
+        ul {
+            @include flexbox();
+            @include flex-direction(row);
+            margin: 30px 0;
+
+            li {
+                display: block;
+
+                &:not(:first-child) {
+                    margin-left: 40px;
+                }
+
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
