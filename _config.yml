@@ -17,4 +17,3 @@ defaults:
       path: "success"
     values:
       layout: "success"
-      permalink: "/success/:title"
