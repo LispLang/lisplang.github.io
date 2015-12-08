@@ -75,7 +75,7 @@ main.success {
         @include flexbox();
         @include flex-direction(column);
 
-        .desc {
+        article {
             padding: 50px;
             color: white;
             font-family: 'PT Sans', sans-serif;
@@ -119,6 +119,12 @@ main.success {
 
         &.raytheon {
             @include linear-gradient(to left, #a73737 , #7a2828);
+        }
+
+        &.maxima, &.acl2, &.axiom {
+            article {
+                color: $black;
+            }
         }
     }
 }
