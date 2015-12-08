@@ -1,0 +1,19 @@
+---
+title: Success Stories
+permalink: /success/
+---
+
+<div class="categories">
+  <ul>
+    {% for category in site.data.success.categories %}
+      <li>
+        <img src="/assets/img/success/header/{{ category.tag }}.jpg">
+        <div class="text">
+          <a href="/success/{{ category.tag }}/">
+            {{ category.name }}
+          </a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
