@@ -70,4 +70,24 @@ main.success {
             }
         }
     }
+
+    section {
+        @include flexbox();
+        @include flex-direction(column);
+
+        .desc {
+            padding: 50px;
+            color: white;
+
+            h2 {
+                font-family: 'PT Sans', sans-serif;
+                font-size: 46px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &.piano {
+            @include linear-gradient(to top, #1A2980 , #26D0CE);
+        }
+    }
 }
