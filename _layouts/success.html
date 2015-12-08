@@ -16,6 +16,8 @@ css_file: success
 </main>
 <script src="/assets/js/jquery-2.1.4.js"></script>
 <script src="/assets/js/dragdealer-0.9.8.js"></script>
+<script src="/assets/js/tabby-9.0.0.js"></script>
+<link rel="stylesheet" href="/assets/css/tabby-9.0.0.css">
 <script>
  $(document).ready(function() {
      $('.gallery').each(function(index, node) {
@@ -24,5 +26,6 @@ css_file: success
              x: 0.5,
          });
      });
+     tabby.init();
  });
 </script>
