@@ -78,16 +78,47 @@ main.success {
         .desc {
             padding: 50px;
             color: white;
+            font-family: 'PT Sans', sans-serif;
 
             h2 {
                 font-family: 'PT Sans', sans-serif;
                 font-size: 46px;
                 margin-bottom: 20px;
             }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+
+            blockquote {
+                width: 60%;
+                margin: 0 auto;
+                font-size: 26px;
+                text-align: justify;
+
+                .source {
+                    margin-top: 20px;
+                    text-align: right;
+                    font-style: italic;
+
+                    &::before {
+                        content: '—';
+                    }
+                }
+            }
         }
 
         &.piano {
             @include linear-gradient(to top, #1A2980 , #26D0CE);
+        }
+
+        &.raytheon {
+            @include linear-gradient(to left, #a73737 , #7a2828);
         }
     }
 }
