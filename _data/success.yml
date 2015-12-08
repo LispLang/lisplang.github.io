@@ -1,7 +1,7 @@
 # Data for the success stories
 
-# The background image for each category is a .jpg file in /assets/img/success/
-# with the same name as the tag.
+# The background image for each category is a .jpg file in
+# /assets/img/success/header/ with the same name as the tag.
 
 categories:
   - name: Aerospace
