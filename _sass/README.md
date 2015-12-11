@@ -15,4 +15,5 @@ This section lists the Sass files and their purpose.
     * `_footer.scss`: Footer style.
     * `_navbar.scss`: Style for the navbar.
     * `_header.scss`: Style for the header.
-  * `variables.scss`: Site-wide variables.
+  * `_variables.scss`: Site-wide variables.
+  * `_landing.scss`: Style for the landing page.
