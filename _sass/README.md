@@ -4,6 +4,7 @@
 
 This section lists the Sass files and their purpose.
 
+* `variables.scss`: Site-wide variables.
 * `utils/`: Utilities
   * `_reset.scss`: Normalize default appearance across browsers.
   * `_fonts.scss`: Defines fonts and paths to their font files.
