@@ -10,6 +10,8 @@
         @include flexbox();
         @include flex-direction(column);
 
+        font-family: 'Lato', sans-serif;
+
         @include box-shadow(10px 0px 30px 1px rgba(209,209,209,1));
         border-right: 1px solid #ccc;
         background: rgba(0,0,0,0.02);
