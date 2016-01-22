@@ -33,6 +33,25 @@
         .lists {
             flex: 1;
             background: white;
+
+            padding: 25px;
+
+            a {
+                text-decoration: none;
+                color: $blue;
+            }
+
+            ul {
+                h2 {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+
+                li {
+                    list-style-type: none;
+                    margin-left: 15px;
+                }
+            }
         }
 
         .copy {
