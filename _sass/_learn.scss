@@ -16,6 +16,15 @@
         border-right: 1px solid #ccc;
         background: rgba(0,0,0,0.02);
 
+        a {
+            text-decoration: none;
+            color: $blue;
+
+            &:hover {
+                color: $light-blue;
+            }
+        }
+
         .logo {
             @include flexbox();
             @include flex-direction(row);
@@ -35,11 +44,6 @@
             background: white;
 
             padding: 25px;
-
-            a {
-                text-decoration: none;
-                color: $blue;
-            }
 
             ul {
                 h2 {
@@ -65,25 +69,26 @@
     }
 
     article {
+        width: 100%;
         padding: 45px 70px;
 
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'PT Sans', serif;
+            font-weight: 400;
+            color: $black;
+        }
+
         header {
+            width: 100%;
+
             h1 {
-                font-family: 'PT Sans', serif;
-                font-weight: 400;
                 font-size: 64px;
                 margin: 0;
-                color: $black;
-            }
-
-            nav {
-                @include flexbox();
-                @include flex-direction(row);
             }
         }
 
         .content {
-            margin-top: 70px;
+            margin-top: 40px;
         }
     }
 }
