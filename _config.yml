@@ -17,3 +17,11 @@ defaults:
       path: "success"
     values:
       layout: "success"
+  - scope:
+      path: "learn/_posts/tutorials"
+    values:
+      kind: "tutorial"
+  - scope:
+      path: "learn/_posts/guides"
+    values:
+      kind: "guide"
