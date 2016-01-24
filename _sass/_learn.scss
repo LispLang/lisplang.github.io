@@ -6,7 +6,7 @@
 
     aside {
         width: 300px;
-        height: 100vh;
+        height: 100%;
         @include flexbox();
         @include flex-direction(column);
 
@@ -71,6 +71,8 @@
     article {
         width: 100%;
         padding: 45px 70px;
+        overflow: auto;
+        position: relative;
 
         h1, h2, h3, h4, h5, h6 {
             font-family: 'PT Sans', serif;
@@ -89,6 +91,45 @@
 
         .content {
             margin-top: 40px;
+
+            p,
+            dl {
+                margin-bottom: 20px;
+            }
+
+            pre {
+                border: 0;
+                background: white;
+
+                code {
+                    border-top: 1px solid;
+                    border-bottom: 1px solid;
+                    border-color: #d9d9d9;
+
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+
+                    padding: 50px 100px;
+                }
+            }
+
+            dl {
+                padding-left: 20px;
+
+                dt {
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                dd {
+                    padding-left: 20px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
         }
     }
 }
