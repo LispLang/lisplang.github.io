@@ -15,7 +15,7 @@ css_file: learn
         <a href="/learn/getting-started">Getting Started</a>
         <ul class="tutorials">
           <h2>Tutorials</h2>
-          {% for post in site.categories['learn'] %}
+          {% for post in site.categories['learn'] reversed %}
             {% if post.kind == 'tutorial' %}
               <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
@@ -25,7 +25,7 @@ css_file: learn
         </ul>
         <ul class="guides">
           <h2>Guides</h2>
-          {% for post in site.categories['learn'] %}
+          {% for post in site.categories['learn'] reversed %}
             {% if post.kind == 'guide' %}
               <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
