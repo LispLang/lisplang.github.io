@@ -4,6 +4,15 @@
     @include flexbox();
     @include flex-direction(row);
 
+    a {
+        text-decoration: none;
+        color: $blue;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+
     aside {
         width: 300px;
         height: 100%;
@@ -15,15 +24,6 @@
         @include box-shadow(10px 0px 30px 1px rgba(209,209,209,1));
         border-right: 1px solid #ccc;
         background: rgba(0,0,0,0.02);
-
-        a {
-            text-decoration: none;
-            color: $blue;
-
-            &:hover {
-                color: $light-blue;
-            }
-        }
 
         .logo {
             @include flexbox();
@@ -91,9 +91,11 @@
 
         .content {
             margin-top: 40px;
+            font-size: 16px;
 
             p,
-            dl {
+            dl,
+            pre{
                 margin-bottom: 20px;
             }
 
@@ -101,17 +103,22 @@
                 border: 0;
                 background: white;
 
+
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-color: #d9d9d9;
+
+                padding: 50px 100px;
+
                 code {
-                    border-top: 1px solid;
-                    border-bottom: 1px solid;
-                    border-color: #d9d9d9;
-
-                    position: absolute;
-                    width: 100%;
-                    left: 0;
-
-                    padding: 50px 100px;
                 }
+            }
+
+            :not(pre) > code {
+                border-color: #d9d9d9;
+
+                font-size: 14px;
+                padding: 1px 4px;
             }
 
             dl {
