@@ -22,6 +22,7 @@ defaults:
       path: "success"
     values:
       layout: "success"
+      css_file: success
   - scope:
       path: "learn/_posts/tutorials"
     values:

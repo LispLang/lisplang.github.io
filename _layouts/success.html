@@ -1,6 +1,5 @@
 ---
 layout: default
-css_file: success
 ---
 
 {% include navbar.html %}
@@ -15,17 +14,5 @@ css_file: success
   </div>
 </main>
 <script src="/assets/js/jquery-2.1.4.js"></script>
-<script src="/assets/js/dragdealer-0.9.8.js"></script>
 <script src="/assets/js/tabby-9.0.0.js"></script>
 <link rel="stylesheet" href="/assets/css/tabby-9.0.0.css">
-<script>
- $(document).ready(function() {
-     $('.gallery').each(function(index, node) {
-         new Dragdealer(node, {
-             horizontal: true,
-             x: 0.5,
-         });
-     });
-     tabby.init();
- });
-</script>
