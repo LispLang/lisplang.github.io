@@ -9,10 +9,15 @@ sass:
 
 defaults:
   - scope:
+      path: ""
+    values:
+      css_file: "page"
+  - scope:
       path: "learn"
     values:
       layout: "learn"
       permalink: "/learn/:title"
+      css_file: "learn"
   - scope:
       path: "success"
     values:

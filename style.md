@@ -1,6 +1,7 @@
 ---
 title: Common Lisp Style Guide
 layout: style
+css_file: style
 description: The style guide for Common Lisp
 permalink: /style-guide/
 ---
