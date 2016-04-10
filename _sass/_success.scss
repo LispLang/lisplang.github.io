@@ -1,14 +1,26 @@
+$lighter: rgba(66, 116, 201, 0.90); // #4274C9
+$darker: rgba(45, 95, 180, 0.95); // #2D5FB4
 
 main.success {
     header {
-        background: blue;
+        @include linear-gradient(bottom, $lighter, $darker);
         @include flexbox();
         @include flex-direction(row);
         @include justify-content(center);
         @include align-items(center);
 
-        &.success {
-            background-image: url(/assets/img/header/success.jpg);
+        .background {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: -10;
         }
     }
 

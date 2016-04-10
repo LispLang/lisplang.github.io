@@ -4,7 +4,14 @@ layout: default
 
 {% include navbar.html %}
 <main class="success">
-  <header{% if page.header_class %} class="{{ page.header_class }}"{% endif %}>
+  <header>
+    <div class="background"
+         {% if page.tag %}
+         style="background-image: url(/assets/img/success/header/{{ page.tag }}.jpg);"
+         {% else %}
+         style="background-image: url(/assets/img/header/success.jpg);"
+         {% endif %}>
+    </div>
     <div class="title">
       {{ page.title }}
     </div>
