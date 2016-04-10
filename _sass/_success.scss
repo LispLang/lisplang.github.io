@@ -139,7 +139,16 @@ main.success {
             @include flexbox();
             @include flex-direction(row);
             @include justify-content(space-between);
-            @include align-items(center);
+        }
+
+        dl {
+            dt {
+                font-weight: bold;
+            }
+
+            dd {
+                padding-left: 40px;
+            }
         }
 
         &.piano {
