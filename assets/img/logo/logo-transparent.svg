@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="logo-transparent.svg"
-   inkscape:export-filename="/home/eudoxia/logo.png"
+   inkscape:export-filename="/home/eudoxia/code/LispLang/site/assets/img/logo/logo-transparent.png"
    inkscape:export-xdpi="450"
    inkscape:export-ydpi="450">
   <defs
@@ -25,18 +25,18 @@
      pagecolor="#d3d7dc"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.80019"
-     inkscape:cx="11.323418"
-     inkscape:cy="20.907787"
+     inkscape:cx="21.693606"
+     inkscape:cy="18.222649"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1316"
-     inkscape:window-height="718"
-     inkscape:window-x="25"
-     inkscape:window-y="25"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
