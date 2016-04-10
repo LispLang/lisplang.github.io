@@ -135,6 +135,13 @@ main.success {
             }
         }
 
+        .row {
+            @include flexbox();
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            @include align-items(center);
+        }
+
         &.piano {
             @include linear-gradient(to top, #1A2980 , #26D0CE);
         }
