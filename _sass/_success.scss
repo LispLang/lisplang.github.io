@@ -148,6 +148,16 @@ main.success {
                 color: $black;
             }
         }
+
+        &.pgloader {
+            article {
+                color: $black;
+            }
+        }
+
+        &.somewrite {
+            @include linear-gradient(to bottom, #32a7db , #fff);
+        }
     }
 }
 
