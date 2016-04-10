@@ -95,10 +95,12 @@ main.success {
         article {
             padding: 50px;
             color: white;
+        }
+
+        .text {
             font-family: 'PT Sans', sans-serif;
 
             h2 {
-                font-family: 'PT Sans', sans-serif;
                 font-size: 46px;
                 margin-bottom: 20px;
             }
@@ -108,7 +110,8 @@ main.success {
             }
 
             a {
-                color: white;
+                color: inherit;
+                font-weight: bold;
                 text-decoration: underline;
             }
 
@@ -117,6 +120,8 @@ main.success {
                 margin: 0 auto;
                 font-size: 26px;
                 text-align: justify;
+                font-style: italic;
+                color: white;
 
                 .source {
                     margin-top: 20px;
