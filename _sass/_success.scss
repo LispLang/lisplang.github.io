@@ -49,7 +49,7 @@ main.success {
                         @include align-items(center);
                         @include justify-content(center);
 
-                        background-color: rgba(1, 1, 1, 0.50);
+                        background-color: rgba(1, 1, 1, 0.55);
                         transition: background-color .5s;
 
                         &:hover {
