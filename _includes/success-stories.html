@@ -5,6 +5,18 @@
     <div class="desc">
       {{ story.description | markdownify }}
     </div>
+    {% if story.overlay %}
+      <div class="image-overlay">
+        <div class="background">
+          <img src="{{ story.overlay.image }}">
+        </div>
+        <div class="content-wrapper">
+          <div class="content">
+            {{ story.overlay.content | markdownify }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
   </section>
   {% endfor %}
 </div>
