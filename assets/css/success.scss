@@ -83,11 +83,13 @@ main.success {
         @extend %standard-text;
 
         h2 {
-
+            margin-top: 100px;
+            margin-left: 70px;
         }
 
         .desc {
-
+            margin: 0 auto;
+            width: 70%;
         }
 
         .image-overlay {
@@ -103,6 +105,10 @@ main.success {
                     text-decoration: underline;
                 }
             }
+        }
+
+        .gallery {
+            padding: 70px 0;
         }
     }
 }
