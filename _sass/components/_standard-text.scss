@@ -1,16 +1,15 @@
 %standard-text {
+    /* Variables */
+    $paragraph-indent: 25px;
+    $list-indent: 30px;
+
+    /* Fonts */
+
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     color: $black;
 
-    a {
-        text-decoration: none;
-        color: $blue;
-
-        &:hover {
-            color: $light-blue;
-        }
-    }
+    /* Space between elements */
 
     p, ul, ol, dl, h1, h2, h3, h4, h5, h6, pre, dd {
         margin-bottom: 16px;
@@ -40,9 +39,18 @@
 
     /* Other elements */
 
+    a {
+        text-decoration: none;
+        color: $blue;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+
     p {
         text-align: justify;
-        text-indent: 25px;
+        text-indent: $paragraph-indent;
     }
 
     blockquote {
@@ -53,7 +61,7 @@
     /* List style */
 
     ul, ol {
-        padding-left: 30px;
+        padding-left: $list-indent;
     }
 
     dl {
@@ -63,7 +71,24 @@
         }
 
         dd {
-            padding-left: 30px;
+            padding-left: $list-indent;
+        }
+    }
+
+    /* Code */
+
+    pre {
+        border: 0;
+        background: white;
+
+
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: #d9d9d9;
+
+        padding: 50px 100px;
+
+        code {
         }
     }
 }
