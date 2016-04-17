@@ -159,6 +159,21 @@ stories:
     - title: ACL2
       description: |
         ACL2 is a theorem prover.
+      tabs:
+        - id: amd
+          tab: >
+            <img alt="AMD" title="AMD" src="/assets/img/success/math/amd.png">
+          content: |
+            AMD used ACL2 to formally verify the correctness of AMD Athlon's
+            IEEE 754 floating-point support.
+        - id: motorola
+          tab: >
+            <img alt="Motorola" title="Motorola" src="/assets/img/success/math/motorola.png">
+          content: |
+            ACL2 was used by Motorola Government Systems to certify microcode
+            programs for the Motorola CAD signal processor. The model could be
+            used to predict every bit of memory at every cycle.
+
 
     - title: Axiom
       description: |
