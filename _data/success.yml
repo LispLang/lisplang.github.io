@@ -135,3 +135,33 @@ stories:
         count: 3
         directory: plantwise
         type: png
+  music:
+    - title: OpusModus
+      description: |
+      gallery:
+        count: 8
+        directory: opusmodus
+        type: jpg
+
+    - title: Common Music Notation
+      description: |
+
+    - title: Common Lisp Music
+      description: |
+
+    - title: OpenMusic
+      description: |
+  graphics:
+    - title: DART
+      description: |
+    - title: Grammarly
+      description: |
+    - title: Cyc
+      description: |
+    - title: Boeing Simplified English Checker
+      description: |
+  graphics:
+    - title: Mirai
+      description: |
+    - title: NaughtyDog
+      description: |
