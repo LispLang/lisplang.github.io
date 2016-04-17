@@ -1,0 +1,47 @@
+---
+---
+
+@charset 'UTF-8';
+
+@import 'utils/fonts';
+@import 'utils/normalize';
+@import 'utils/reset';
+@import 'utils/mixins';
+
+@import 'variables';
+
+@import 'components/standard-text';
+@import 'components/navbar';
+@import 'components/big-header';
+@import 'components/footer';
+@import 'components/page';
+
+.news-list {
+    li {
+        list-style-type: none;
+
+        &:not(:first-child) {
+            margin-top: 90px;
+        }
+
+        h3 {
+            a {
+//                color: $black;
+                text-decoration: none;
+                font-size: 27px;
+            }
+        }
+
+        .info {
+            font-style: italic;
+        }
+
+        article {
+
+        }
+
+        a {
+
+        }
+    }
+}

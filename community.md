@@ -1,9 +1,10 @@
 ---
 title: Community
-layout: page
 permalink: /community/
-header: /assets/img/header/community.jpg
+
+layout: page
 css_file: community
+header: /assets/img/header/community.jpg
 ---
 
 # Forums
