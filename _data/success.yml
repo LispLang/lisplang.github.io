@@ -105,3 +105,33 @@ stories:
         ><div class="source">[LispWorks][lw]</div>
 
         [lw]: http://www.lispworks.com/success-stories/fractalconcept-softscan.html
+    - title: PlantWise
+      description: |
+        >Bentley is the industry leader in providing comprehensive software solutions
+        >for the infrastructure lifecycle. Bentley has proven applications that help
+        >engineers, architects, contractors, governments, institutions, utilities and
+        >owner-operators design, build and operate more productively, collaborate more
+        >globally and deliver infrastructure assets that perform more sustainably.
+        >
+        >With nearly 3000 colleagues in more than 45 countries and annual revenues of
+        >$500 million, Bentley Systems has invested more than $1 billion in research,
+        >development and acquisitions since 1999. Nearly 90 percent of the Engineering
+        >News-Record Top 500 Design firms are Bentley subscribers and Daratech has
+        >ranked Bentley as the world's No. 2 provider of software solutions to the
+        >architecture, engineering, construction and owner-operator market as well as
+        >No. 2 in the GIS/geospatial market.
+        >
+        >Bentley uses Allegro CL's Dynamic Objects technology in its PlantWise product,
+        >a conceptual plant design software system built on top of Design++, developed
+        >by Design Power.
+        >
+        ><div class="source">[Franz][franz]</div>
+
+        Take a look at the [data sheet][ds] for more information.
+
+        [franz]: http://franz.com/success/customer_apps/knowledge_mgmt/plantwise.lhtml
+        [ds]: http://ftp2.bentley.com/dist/collateral/docs/bentley_plantwise/bentley-plantwise_product-data-sheet.pdf
+      gallery:
+        count: 3
+        directory: plantwise
+        type: png
