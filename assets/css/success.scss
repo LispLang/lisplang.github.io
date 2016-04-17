@@ -87,9 +87,20 @@ main.success {
             margin-left: 70px;
         }
 
+        .row {
+            @include flexbox();
+            @include flex-direction(row);
+        }
+
         .desc {
             margin: 0 auto;
             width: 70%;
+
+            &.no-center {
+                margin: 0;
+                width: 100%;
+                padding: 140px;
+            }
         }
 
         .image-overlay {
