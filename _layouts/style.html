@@ -3,7 +3,15 @@ layout: default
 ---
 
 <main class="style">
-  {% include big-header.html text='Style Guide' url='/assets/img/header/style.jpg' %}
+  <header>
+    <div class="title-container">
+      <div class="background">
+      </div>
+      <div class="title">
+        {{ page.title }}
+      </div>
+    </div>
+  </header>
   <div id="toc" class="toc"></div>
   <article class="content">
     {{ content }}

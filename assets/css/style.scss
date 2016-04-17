@@ -11,13 +11,21 @@
 @import 'variables';
 
 @import 'components/navbar';
-@import 'components/big-header';
 @import 'components/footer';
 
 $style-translucent: rgba(255, 255, 255, 0.11);
 
 main.style {
     header {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+
+        @include flexbox();
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(center);
+
         background-image: url(/assets/img/header/style.jpg);
 
         .title-container {
