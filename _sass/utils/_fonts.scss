@@ -309,3 +309,21 @@
   src: url('/assets/fonts/lusitana/Lusitana-Bold.ttf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+/* Inconsolata */
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata'),
+       url('/assets/fonts/lusitana/Lusitana-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Inconsolata Bold'),
+       local( url('/assets/fonts/lusitana/Lusitana-Bold.ttf') format('truetype');
+}
