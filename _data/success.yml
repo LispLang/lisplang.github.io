@@ -55,10 +55,10 @@ stories:
         >In our experience, the straightforward licensing approach and technical
         >professionalism of LispWorks stand out in the complex landscape of software
         >development and create a highly effective combination.
-        ><div class="source">[LispWorks][lw]</div>
+        >
+        ><div class="source"><a href="http://www.lispworks.com/success-stories/piano.html">LispWorks</a></div>
 
         [site]: http://www.piano.aero/
-        [lw]: http://www.lispworks.com/success-stories/piano.html
       gallery:
         count: 4
         directory: piano
@@ -70,6 +70,22 @@ stories:
         used in missile defense.
 
         It combines high-performance FFTs and composable signal processing components.
+
+        >By leveraging decades of experience across several kill vehicle
+        >programs and vast tactical weapon expertise across every domain and
+        >mission area, we’re meeting the critical needs of today and planning
+        >for the threats of tomorrow.
+
+        >Raytheon is the only company working simultaneously on four kill
+        >vehicles, providing a pipeline of crucial lessons learned and
+        >laboratories and factories teeming with experts whose knowledge is
+        >irreplaceable. Pioneering the nation’s early kinetic warhead
+        >development provided Raytheon the expertise to evolve the way kill
+        >vehicles are produced, tested, deployed, and ultimately how they
+        >perform to defend the United States and its allies. The company is
+        >building upon this legacy of expertise to revolutionize the role that
+        >kill vehicles play in missile defense.
+
       overlay:
         image: /assets/img/success/aero/raytheon/kv.jpg
         content: |
@@ -84,6 +100,16 @@ stories:
           ><div class="source">David McClain, Raytheon
 
           [ekv]: http://www.raytheon.com/capabilities/products/ekv/
+    - title: An NFS server for the 747
+      description: |
+        [Franz][franz] wrote an [NFS][nfs] server, used in Boeing 747 and 777
+        aircraft.
+
+        [franz]: http://franz.com/
+        [nfs]: https://en.wikipedia.org/wiki/Network_File_System
+    - title: iCAD Model of the 747
+      description: |
+        Boeing uses iCAD to implement a parametric, spreadsheet-like CAD model of the 747.
   cad:
     - title: ICAD
       description: |
@@ -102,9 +128,8 @@ stories:
         >software that drives automated, non-destructive testing applications -
         >'completely written in Lisp, hence its reliability and robustness'.
         >
-        ><div class="source">[LispWorks][lw]</div>
+        ><div class="source"><a href="http://www.lispworks.com/success-stories/fractalconcept-softscan.html">LispWorks</a></div>
 
-        [lw]: http://www.lispworks.com/success-stories/fractalconcept-softscan.html
     - title: PlantWise
       description: |
         >Bentley is the industry leader in providing comprehensive software solutions
@@ -125,12 +150,12 @@ stories:
         >a conceptual plant design software system built on top of Design++, developed
         >by Design Power.
         >
-        ><div class="source">[Franz][franz]</div>
+        ><div class="source"><a href="http://franz.com/success/customer_apps/knowledge_mgmt/plantwise.lhtml">Franz</a></div>
 
         Take a look at the [data sheet][ds] for more information.
 
-        [franz]: http://franz.com/success/customer_apps/knowledge_mgmt/plantwise.lhtml
         [ds]: http://ftp2.bentley.com/dist/collateral/docs/bentley_plantwise/bentley-plantwise_product-data-sheet.pdf
+
       gallery:
         count: 3
         directory: plantwise
