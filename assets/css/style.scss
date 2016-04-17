@@ -1,7 +1,6 @@
 ---
 ---
 
-/*
 @charset 'UTF-8';
 
 @import 'utils/fonts';
@@ -11,8 +10,8 @@
 
 @import 'variables';
 
-@import 'components/header';
+@import 'components/navbar';
+@import 'components/big-header';
 @import 'components/footer';
 
 @import 'style';
-*/
