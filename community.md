@@ -3,6 +3,7 @@ title: Community
 layout: page
 permalink: /community/
 header: /assets/img/header/community.jpg
+css_file: community
 ---
 
 # Forums
