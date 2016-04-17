@@ -10,6 +10,8 @@
 
 @import 'variables';
 
+@import 'components/highlight';
+
 .learn {
     @include flexbox();
     @include flex-direction(row);
