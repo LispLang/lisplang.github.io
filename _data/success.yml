@@ -151,6 +151,20 @@ stories:
 
     - title: OpenMusic
       description: |
+  math:
+    - title: Maxima
+      description: |
+        Maxima is a computer algebra system.
+
+    - title: ACL2
+      description: |
+        ACL2 is a theorem prover.
+
+    - title: Axiom
+      description: |
+        Axiom is a computer algebra system built as a literate program.
+
+
   data:
     - title: pgloader
       description: |
