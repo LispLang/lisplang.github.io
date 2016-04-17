@@ -2,9 +2,24 @@
   {% for story in site.data.success.stories[include.tag] %}
   <section class="story">
     <h2>{{ story.title }}</h2>
-    <div class="desc">
-      {{ story.description | markdownify }}
-    </div>
+    {% if story.video %}
+      <div class="row">
+        <div class="desc">
+          {{ story.description | markdownify }}
+        </div>
+        <div class="video">
+          <video>
+            {% for source in story.video.sources %}
+              <source src="{{ source.url }}" type="{{ source.type }}">
+            {% endfor %}
+          </video>
+        </div>
+      </div>
+    {% else %}
+      <div class="desc">
+        {{ story.description | markdownify }}
+      </div>
+    {% endif %}
     {% if story.overlay %}
       <div class="image-overlay">
         <div class="background">
