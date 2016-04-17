@@ -80,72 +80,16 @@ main.success {
     }
 
     section {
-        @include flexbox();
-        @include flex-direction(column);
-
-        h3 {
-            font-size: 36px;
-        }
-
-        article {
-            padding: 50px;
-        }
-
-        .text {
-            @extend %standard-text;
-            font-family: 'Lato', sans-serif;
-
-            blockquote {
-                width: 60%;
-                margin: 0 auto;
-                font-size: 26px;
-                text-align: justify;
-                font-style: italic;
-            }
-
-            a {
-                color: inherit;
-                font-weight: bold;
-                text-decoration: underline;
-            }
-        }
-
         .row {
             @include flexbox();
             @include flex-direction(row);
             @include justify-content(space-between);
         }
 
-        dl {
-            dt {
-                font-weight: bold;
-            }
-
-            dd {
-                padding-left: 40px;
-            }
-        }
-
         .image-overlay {
             blockquote {
                 color: white;
             }
-        }
-
-        /* Custom section style */
-
-        &.normal {
-            @extend %standard-text;
-            background: white;
-            color: $black;
-        }
-
-        &.piano {
-            @include linear-gradient(to top, #1A2980 , #26D0CE);
-        }
-
-        &.somewrite {
-            @include linear-gradient(to bottom, #32a7db , #fff);
         }
     }
 }
