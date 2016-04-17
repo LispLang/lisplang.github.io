@@ -68,5 +68,25 @@ main.style {
         margin: 100px auto;
 
         @extend %standard-text;
+
+        .toc {
+            $indent-step: 40px;
+
+            li {
+                list-style-type: none;
+            }
+
+            .toc-h1 {
+                margin-left: 0;
+            }
+
+            .toc-h2 {
+                margin-left: $indent-step * 1;
+            }
+
+            .toc-h3 {
+                margin-left: $indent-step * 2;
+            }
+        }
     }
 }
