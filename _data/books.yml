@@ -12,6 +12,7 @@
     [pcl]: http://www.gigamonkeys.com/book/
 
 - title: ANSI Common Lisp
+  cover: acl.jpg
   description: >
     [*ANSI Common Lisp*][acl] is a book for Lisp beginners. It has a nice
     example of writing a simple ray tracer in Common Lisp, and another (rather
