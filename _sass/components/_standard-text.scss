@@ -67,6 +67,16 @@
     blockquote {
         padding: 0 40px;
         font-style: italic;
+
+        .source {
+            margin-top: 20px;
+            text-align: right;
+            font-style: italic;
+
+            &::before {
+                content: '—';
+            }
+        }
     }
 
     /* List style */

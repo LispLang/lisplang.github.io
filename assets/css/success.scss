@@ -10,6 +10,7 @@
 
 @import 'variables';
 
+@import 'components/standard-text';
 @import 'components/navbar';
 @import 'components/big-header';
 @import 'components/footer';
@@ -76,6 +77,11 @@ main.success {
         }
     }
 
+    .breadcrubs {
+        width: 100%;
+        height: 40px;
+    }
+
     section {
         @include flexbox();
         @include flex-direction(column);
@@ -90,40 +96,14 @@ main.success {
         }
 
         .text {
+            @extend %standard-text;
             font-family: 'Lato', sans-serif;
-
-            h2 {
-                font-size: 46px;
-                margin-bottom: 20px;
-            }
-
-            p {
-                margin-bottom: 15px;
-            }
+            color: white;
 
             a {
                 color: inherit;
                 font-weight: bold;
                 text-decoration: underline;
-            }
-
-            blockquote {
-                width: 60%;
-                margin: 0 auto;
-                font-size: 26px;
-                text-align: justify;
-                font-style: italic;
-                color: white;
-
-                .source {
-                    margin-top: 20px;
-                    text-align: right;
-                    font-style: italic;
-
-                    &::before {
-                        content: '—';
-                    }
-                }
             }
         }
 
