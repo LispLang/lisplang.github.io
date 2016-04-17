@@ -7,6 +7,10 @@ markdown: kramdown
 sass:
     style: :compressed
 
+kramdown:
+  input: GFM
+  syntax_highlighter: none
+
 defaults:
   - scope:
       path: ""
