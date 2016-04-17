@@ -1,0 +1,17 @@
+---
+title: Common Lisp Books
+layout: page
+permalink: /books/
+header_class: books
+---
+
+<ul class="books">
+  {% for book in site.data.books %}
+    <li>
+      <h2>{{ book.title }}</h2>
+      <article class="desc">
+        {{ book.description | markdownify }}
+      </article>
+    </li>
+  {% endfor %}
+</ul>

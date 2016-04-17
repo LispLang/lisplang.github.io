@@ -26,6 +26,10 @@ main.page {
         &.news {
             background-image: url(/assets/img/header/news.jpg);
         }
+
+        &.books {
+            background-image: url(/assets/img/header/books.jpg);
+        }
     }
 
     .content {
