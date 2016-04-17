@@ -41,7 +41,6 @@ main.page {
 /* News page style */
 
 .news-list {
-
     li {
         list-style-type: none;
 
@@ -67,6 +66,34 @@ main.page {
 
         a {
 
+        }
+    }
+}
+
+/* Books page style */
+
+main.page {
+    .books {
+        list-style-type: none;
+
+        li {
+            @include flexbox();
+            @include flex-direction(row);
+            @include align-items(flex-start);
+
+            img {
+                width: 400px;
+            }
+
+            main {
+                h2 {
+
+                }
+
+                article {
+
+                }
+            }
         }
     }
 }

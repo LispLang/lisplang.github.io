@@ -8,11 +8,13 @@ header_class: books
 <ul class="books">
   {% for book in site.data.books %}
     <li>
-      <h2>{{ book.title }}</h2>
-      <img src="/assets/img/books/{{ book.cover }}"></li>
-      <article>
-        {{ book.description | markdownify }}
-      </article>
+      <img src="/assets/img/books/{{ book.cover }}">
+      <main>
+        <h2>{{ book.title }}</h2>
+        <article>
+          {{ book.description | markdownify }}
+        </article>
+      </main>
     </li>
   {% endfor %}
 </ul>
