@@ -41,6 +41,7 @@
     >System (CLOS).
 
 - title: Land of Lisp
+  cover: land.jpg
   description: >
     [*Land of Lisp*](http://landoflisp.com/) teaches Common Lisp by writing
     games. From the [publisher's description][land-pub]:
@@ -97,6 +98,7 @@
 
 
 - title: Principles of Biomedical Informatics
+  cover: pbi.jpg
   description: >
     [*Principles of Biomedical Informatics*][pobi] is a "pioneering technical
     work in biomedical informatics" that uses Common Lisp to implement various
