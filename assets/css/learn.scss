@@ -10,8 +10,6 @@
 
 @import 'variables';
 
-@import 'learn';
-
 .learn {
     @include flexbox();
     @include flex-direction(row);
