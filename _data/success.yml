@@ -84,3 +84,24 @@ stories:
           ><div class="source">David McClain, Raytheon
 
           [ekv]: http://www.raytheon.com/capabilities/products/ekv/
+  cad:
+    - title: ICAD
+      description: |
+        [ICAD][wiki] is a knowledge-based CAD system.
+
+        [wiki]: https://en.wikipedia.org/wiki/ICAD_(software)
+    - title: Softscan
+      description: |
+        >Fractal Concept offers a wide range of software and electronic
+        >products, from non-destructive testing ultrasonic devices to Internet
+        >applications. Founded in 1999, the company now works for several
+        >European bluechip companies. It helps clients gain competitive edge by
+        >employing only the most powerful and reliable software technologies.
+
+        >LispWorks has been used by Fractal Concept to develop SoftScan,
+        >software that drives automated, non-destructive testing applications -
+        >'completely written in Lisp, hence its reliability and robustness'.
+        >
+        ><div class="source">[LispWorks][lw]</div>
+
+        [lw]: http://www.lispworks.com/success-stories/fractalconcept-softscan.html
