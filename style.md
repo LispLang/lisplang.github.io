@@ -50,7 +50,7 @@ together by a thin layer of domain-specific functionality, then if you lose
 interest in a project you will have left a short trail of useful libraries for
 others to use and build upon.
 
-In short: [Write many small libraries][small-libs].
+In short: [write many small libraries][small-libs].
 
 # Naming
 
