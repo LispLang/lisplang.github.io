@@ -17,6 +17,7 @@ $color_ice_cold_approx: #aefff7;
 code.hl-highlighted {
     .keyword {
 	color: $color_gumbo_approx;
+
 	&.known {
 	    color: $color_pelorous_approx;
 	}
@@ -46,6 +47,7 @@ code.hl-highlighted {
     }
     .comment {
 	color: $color_silver_chalice_approx !important;
+
 	* {
 	    color: $color_silver_chalice_approx !important;
 	}
@@ -55,12 +57,14 @@ code.hl-highlighted {
     }
     .string {
 	color: $color_teal_approx !important;
+
 	* {
 	    color: $color_teal_approx !important;
 	}
     }
     .function.known {
 	color: $color_alpine_approx;
+
 	&.special {
 	    color: $color_forest_green_approx;
 	}
