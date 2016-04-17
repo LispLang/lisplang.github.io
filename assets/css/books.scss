@@ -10,6 +10,7 @@
 
 @import 'variables';
 
+@import 'components/standard-text';
 @import 'components/navbar';
 @import 'components/big-header';
 @import 'components/footer';
@@ -38,11 +39,17 @@ main.books {
 
                 h2 {
                     font-family: 'Lusitana', serif;
+                    font-size: 46px;
+                    color: $black;
+
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid $black;
                 }
 
                 article {
-                    font-family: 'Lato', sans-serif;
+                    @extend %standard-text;
 
+                    margin-top: 50px;
                 }
             }
         }
