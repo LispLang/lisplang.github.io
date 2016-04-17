@@ -4,6 +4,7 @@
     $list-indent: 30px;
     $text-font-size: 20px;
     $code-font-size: 21px;
+    $code-font: 'Inconsolata', monospace;
 
     /* Fonts */
 
@@ -13,10 +14,10 @@
     font-size: $text-font-size;
 
     :not(pre) > code {
-        font-family: 'Inconsolata', monospace;
+        font-family: $code-font;
         font-size: $code-font-size;
         font-weight: 400px;
-        color: #7f7f7f;
+        color: #6f6f6f;
     }
 
     /* Space between elements */
@@ -76,7 +77,6 @@
 
     dl {
         dt {
-            font-weight: bold;
             margin-bottom: 5px;
         }
 
@@ -91,7 +91,6 @@
         border: 0;
         background: white;
 
-
         border-top: 1px solid;
         border-bottom: 1px solid;
         border-color: #d9d9d9;
@@ -99,6 +98,7 @@
         padding: 50px 100px;
 
         code {
+            font-family: $code-font;
         }
     }
 }
