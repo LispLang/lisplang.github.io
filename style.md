@@ -217,7 +217,7 @@ The following slot options should be used in this order:
 MOP-defined slot options should be added after all other slot options and before
 the `:documentation` option.
 
-## Use the `:type` slot option
+## Use the :TYPE slot option
 
 Types are documentation, and Common Lisp allows you to declare the type of class
 slots.
@@ -246,7 +246,7 @@ In short:
 * Use `when` or `unless` when you're only interested in one condition branch.
 * Use `cond` when you have several conditional branches.
 
-## Use `when`, `unless`
+## Use WHEN, UNLESS
 
 If you have an `if` expression with no else part, you should use `when` instead,
 and when you have an expression like `(if (not <condition>) ...)` with no else
@@ -310,7 +310,7 @@ Should be written as:
 
 Unless it makes sense to have one package cover multiple files.
 
-## Avoid `:use`
+## Avoid :USE
 
 Unless you are really going to need all (or most of) the symbols in a package,
 it is strongly recommended that you write a manual `:import-from` list as
