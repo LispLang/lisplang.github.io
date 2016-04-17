@@ -12,9 +12,33 @@
         }
     }
 
-    p, blockquote {
-        margin-bottom: 20px;
+    p, ul, ol, dl, h1, h2, h3, h4, h5, h6, pre, dd {
+        margin-bottom: 16px;
     }
+
+    /* Heading style */
+
+    h1 {
+        font-size: 3.157em;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 2.369em;
+        padding-bottom: 9px;
+    }
+
+    h3 {
+        font-size: 1.777em;
+        padding-bottom: 7px;
+    }
+
+    h4 {
+        font-size: 1.333em;
+        padding-bottom: 4px;
+    }
+
+    /* Other elements */
 
     p {
         text-align: justify;
@@ -24,5 +48,22 @@
     blockquote {
         padding: 0 40px;
         font-style: italic;
+    }
+
+    /* List style */
+
+    ul, ol {
+        padding-left: 30px;
+    }
+
+    dl {
+        dt {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        dd {
+            padding-left: 30px;
+        }
     }
 }
