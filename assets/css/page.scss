@@ -15,6 +15,13 @@
 @import 'components/big-header';
 @import 'components/footer';
 
+main.page {
+    .content {
+        width: 60%;
+        margin: 100px auto;
+    }
+}
+
 .news-list {
     li {
         list-style-type: none;
