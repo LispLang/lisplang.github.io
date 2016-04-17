@@ -328,7 +328,7 @@ For instance, if you're writing a package that uses a couple of symbols from
 Instead, do this:
 
 ~~~lisp
-(defpackage my-pacakge
+(defpackage my-package
   (:use :cl)
   (:import-from :alexandria
                 :with-gensyms
