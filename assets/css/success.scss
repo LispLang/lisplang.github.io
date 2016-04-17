@@ -11,10 +11,9 @@
 @import 'variables';
 
 @import 'components/navbar';
-@import 'components/header';
+@import 'components/big-header';
 @import 'components/footer';
 @import 'components/gallery';
-@import 'components/hero';
 
 $lighter: rgba(66, 116, 201, 0.90); // #4274C9
 $darker: rgba(45, 95, 180, 0.95); // #2D5FB4

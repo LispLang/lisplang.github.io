@@ -1,45 +1,5 @@
 ---
 ---
-
-@charset 'UTF-8';
-
-@import 'utils/fonts';
-@import 'utils/normalize';
-@import 'utils/reset';
-@import 'utils/mixins';
-
-@import 'variables';
-
-@import 'components/navbar';
-@import 'components/header';
-@import 'components/footer';
-
-/* Page style */
-
-main.page {
-    header {
-        /* Header background images */
-        &.community {
-            background-image: url(/assets/img/header/community.jpg);
-        }
-
-        &.news {
-            background-image: url(/assets/img/header/news.jpg);
-        }
-
-        &.books {
-            background-image: url(/assets/img/header/books.jpg);
-        }
-    }
-
-    .content {
-        width: 60%;
-        margin: 100px auto;
-    }
-}
-
-/* News page style */
-
 .news-list {
     li {
         list-style-type: none;
@@ -50,7 +10,7 @@ main.page {
 
         h3 {
             a {
-                color: $black;
+//                color: $black;
                 text-decoration: none;
                 font-size: 27px;
             }
@@ -66,34 +26,6 @@ main.page {
 
         a {
 
-        }
-    }
-}
-
-/* Books page style */
-
-main.page {
-    .books {
-        list-style-type: none;
-
-        li {
-            @include flexbox();
-            @include flex-direction(row);
-            @include align-items(flex-start);
-
-            img {
-                width: 400px;
-            }
-
-            main {
-                h2 {
-
-                }
-
-                article {
-
-                }
-            }
         }
     }
 }
