@@ -9,7 +9,8 @@ header_class: books
   {% for book in site.data.books %}
     <li>
       <h2>{{ book.title }}</h2>
-      <article class="desc">
+      <img src="/assets/img/books/{{ book.cover }}"></li>
+      <article>
         {{ book.description | markdownify }}
       </article>
     </li>
