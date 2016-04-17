@@ -1,0 +1,35 @@
+.breadcrumbs {
+    width: 100%;
+    height: 70px;
+
+    background: $blue;
+
+    ol {
+        height: 100%;
+
+        @include flexbox();
+        @include flex-direction(row);
+        @include align-items(center);
+
+        li {
+            display: block;
+
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-size: 26px;
+
+            &:first-child {
+                padding-left: 60px;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        li+li:before {
+            content: "\A0»\A0";
+        }
+    }
+}
