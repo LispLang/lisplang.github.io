@@ -1,0 +1,22 @@
+.image-overlay {
+    width: 100%;
+    position: relative;
+
+    .background {
+        z-index: 9;
+    }
+
+    .content-wrapper {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: 10;
+
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(center);
+        @include align-items(center);
+    }
+}

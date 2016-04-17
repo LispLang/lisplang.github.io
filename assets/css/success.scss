@@ -16,6 +16,7 @@
 @import 'components/footer';
 @import 'components/gallery';
 @import 'components/breadcrumbs';
+@import 'components/image-overlay';
 
 main.success {
     .content {
@@ -95,6 +96,15 @@ main.success {
             @extend %standard-text;
             font-family: 'Lato', sans-serif;
             color: white;
+
+            blockquote {
+                width: 60%;
+                margin: 0 auto;
+                font-size: 26px;
+                text-align: justify;
+                font-style: italic;
+                color: white;
+            }
 
             a {
                 color: inherit;
