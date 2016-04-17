@@ -1,0 +1,44 @@
+---
+---
+
+@charset 'UTF-8';
+
+@import 'utils/fonts';
+@import 'utils/normalize';
+@import 'utils/reset';
+@import 'utils/mixins';
+
+@import 'variables';
+
+@import 'components/navbar';
+@import 'components/big-header';
+@import 'components/footer';
+
+main.books {
+    > ul {
+        margin: 0 auto;
+        width: 80%;
+
+        list-style-type: none;
+
+        li {
+            @include flexbox();
+            @include flex-direction(row);
+            @include align-items(flex-start);
+
+            img {
+                width: 550px;
+            }
+
+            main {
+                h2 {
+
+                }
+
+                article {
+
+                }
+            }
+        }
+    }
+}
