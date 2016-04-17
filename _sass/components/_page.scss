@@ -3,6 +3,6 @@ main.page {
         width: 60%;
         margin: 100px auto;
 
-        @extends %standard-text;
+        @extend %standard-text;
     }
 }
