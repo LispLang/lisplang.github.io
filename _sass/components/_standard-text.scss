@@ -2,4 +2,27 @@
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     color: $black;
+
+    a {
+        text-decoration: none;
+        color: $blue;
+
+        &:hover {
+            color: $light-blue;
+        }
+    }
+
+    p, blockquote {
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: justify;
+        text-indent: 25px;
+    }
+
+    blockquote {
+        padding: 0 40px;
+        font-style: italic;
+    }
 }

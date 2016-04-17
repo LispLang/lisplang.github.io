@@ -14,15 +14,6 @@
     @include flexbox();
     @include flex-direction(row);
 
-    a {
-        text-decoration: none;
-        color: $blue;
-
-        &:hover {
-            color: $light-blue;
-        }
-    }
-
     aside {
         width: 300px;
         height: 100%;
