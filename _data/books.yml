@@ -27,6 +27,7 @@
     [acl]: http://www.paulgraham.com/acl.html
 
 - title: On Lisp
+  cover: on-lisp.jpg
   description: >
     [*On Lisp*](http://www.paulgraham.com/onlisp.html) is "a comprehensive study
     of advanced Lisp techniques, with bottom-up programming as the unifying
@@ -45,7 +46,7 @@
     games. From the [publisher's description][land-pub]:
 
     >With his brilliantly quirky comics and out-of-this-world games, longtime
-    >Lisper Conrad Barski teaches you the mysteries of Common Lisp. You’ll start
+    >Lisper Conrad Barski teaches you the mysteries of Common Lisp. You'll start
     >with the basics, like list manipulation, I/O, and recursion, then move on
     >to more complex topics like macros, higher order programming, and
     >domain-specific languages. Then, when your brain overheats, you can kick
