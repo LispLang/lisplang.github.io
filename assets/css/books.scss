@@ -26,11 +26,15 @@ main.books {
             @include flex-direction(row);
             @include align-items(flex-start);
 
+            margin: 200px 0;
+
             img {
                 width: 550px;
             }
 
             main {
+                padding-left: 50px;
+
                 h2 {
 
                 }
