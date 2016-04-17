@@ -19,6 +19,7 @@ header: /assets/img/header/community.jpg
 # Social Media
 
 - [Planet Lisp][planet]
+- [Lisp World](https://twitter.com/LispWorld)
 
 # Mailing Lists
 
