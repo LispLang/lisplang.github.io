@@ -2,20 +2,13 @@
 layout: default
 ---
 
-{% include navbar.html %}
 <main class="success">
-  <header>
-    <div class="background"
-         {% if page.tag %}
-         style="background-image: url(/assets/img/success/header/{{ page.tag }}.jpg);"
-         {% else %}
-         style="background-image: url(/assets/img/header/success.jpg);"
-         {% endif %}>
-    </div>
-    <div class="title">
-      {{ page.title }}
-    </div>
-  </header>
+  {% if page.tag %}
+    {% capture header_path %}/assets/img/success/header/{{ page.tag }}.jpg{% endcapture %}
+    {% include big-header.html text=page.title url=header_path %}
+  {% else %}
+    {% include big-header.html text=page.title url='/assets/img/header/success.jpg' %}
+  {% endif %}
   <div class="content">
     {{ content }}
   </div>
