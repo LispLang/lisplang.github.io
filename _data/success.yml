@@ -154,6 +154,38 @@ stories:
   data:
     - title: pgloader
       description: |
+        [pgloader][pg] is a bulk importer for PostgreSQL. It can import data from MySQL,
+        SQLite or dBase databases and CSV files, automatically identify schemas, and
+        does everything asynchronously.
+
+        Migrate from MySQL to PostgreSQL. In one command.
+        : Given a MySQL connection string, pgloader query the catalogs to list your
+          tables, constraints and indexes and know how to transform this schema into a
+          PostgreSQL equivalent, applying advanced casting rules that you can edit in
+          the command.
+
+        Load any CSV file. Real quick.
+        : The current version of pgloader is up to ten times faster than the previous
+          one. The new command syntax is really powerful, and as it's different enough
+          from the previous version, pgloader includes a command line switch to upgrade
+          your setup for you.
+
+        Transform your data. While streaming.
+        : pgloader includes reformating modules allowing you to reformat your data, such
+          as transforming a couple of integer columns into a single ip address, or a
+          couple of floats into a single point. Of course, you can add any
+          transformation you like and easily get to use it with pgloader loading your
+          code!
+
+        [pg]: http://pgloader.io/
+      video:
+        sources:
+          - url: http://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.webm#t=57,357
+            type: video/webm
+          - url: http://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.mp4#t=57,357
+            type: video/mp4
+          - url: http://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.ogg#t=57,357
+            type: video/ogg
     - title: Somewrite
       description: |
         [Somewrite][web] is a Japanese startup.
