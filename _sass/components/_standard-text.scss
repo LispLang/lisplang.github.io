@@ -2,14 +2,22 @@
     /* Variables */
     $paragraph-indent: 0;
     $list-indent: 30px;
-    $base-font-size: 20px;
+    $text-font-size: 20px;
+    $code-font-size: 21px;
 
     /* Fonts */
 
     color: $black;
 
     font-family: 'Lato', sans-serif;
-    font-size: $base-font-size;
+    font-size: $text-font-size;
+
+    :not(pre) > code {
+        font-family: 'Inconsolata', monospace;
+        font-size: $code-font-size;
+        font-weight: 400px;
+        color: #7f7f7f;
+    }
 
     /* Space between elements */
 
@@ -92,12 +100,5 @@
 
         code {
         }
-    }
-
-    :not(pre) > code {
-        border-color: #d9d9d9;
-
-        font-size: 14px;
-        padding: 1px 4px;
     }
 }
