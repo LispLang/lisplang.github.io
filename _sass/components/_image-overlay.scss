@@ -4,6 +4,11 @@
 
     .background {
         z-index: 9;
+
+        img {
+            display: block;
+            min-height: 100%;
+        }
     }
 
     .content-wrapper {

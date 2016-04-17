@@ -89,13 +89,11 @@ main.success {
 
         article {
             padding: 50px;
-            color: white;
         }
 
         .text {
             @extend %standard-text;
             font-family: 'Lato', sans-serif;
-            color: white;
 
             blockquote {
                 width: 60%;
@@ -103,7 +101,6 @@ main.success {
                 font-size: 26px;
                 text-align: justify;
                 font-style: italic;
-                color: white;
             }
 
             a {
@@ -129,24 +126,22 @@ main.success {
             }
         }
 
+        .image-overlay {
+            blockquote {
+                color: white;
+            }
+        }
+
+        /* Custom section style */
+
+        &.normal {
+            @extend %standard-text;
+            background: white;
+            color: $black;
+        }
+
         &.piano {
             @include linear-gradient(to top, #1A2980 , #26D0CE);
-        }
-
-        &.raytheon {
-            @include linear-gradient(to left, #a73737 , #7a2828);
-        }
-
-        &.maxima, &.acl2, &.axiom {
-            article {
-                color: $black;
-            }
-        }
-
-        &.pgloader {
-            article {
-                color: $black;
-            }
         }
 
         &.somewrite {
