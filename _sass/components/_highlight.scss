@@ -1,16 +1,72 @@
-code.hl-highlighted .function.known {color: #a93;}
-code.hl-highlighted .function.known.special {color: #2a3;}
-code.hl-highlighted .keyword {color: #7aa;}
-code.hl-highlighted .keyword.known {color: #4bb;}
-code.hl-highlighted .symbol {color: #75a;}
-code.hl-highlighted .lambda-list {color: #966;}
-code.hl-highlighted .number {color: #800;}
-code.hl-highlighted .variable.known {color: #c3c;}
-code.hl-highlighted .variable.global {color: #939;}
-code.hl-highlighted .variable.constant {color: #229;}
-code.hl-highlighted .nil {color: #f00;}
+//colors
+$color_alpine_approx: #a93;
+$color_forest_green_approx: #2a3;
+$color_gumbo_approx: #7aa;
+$color_pelorous_approx: #4bb;
+$color_deluge_approx: #75a;
+$copper_rose: #966;
+$color_red_berry_approx: #800;
+$color_fuchsia_pink_approx: #c3c;
+$color_vivid_violet_approx: #939;
+$color_jacksons_purple_approx: #229;
+$red: #f00;
+$color_silver_chalice_approx: #aaa;
+$color_teal_approx: #088;
+$color_ice_cold_approx: #aefff7;
 
-code.hl-highlighted .comment, code.hl-highlighted .comment *, code.hl-highlighted .comment .string {color: #aaa !important;}
-code.hl-highlighted .string, code.hl-highlighted .string * {color: #088 !important;}
-
-code.hl-highlighted .list.active {display: inline-block; background: #aefff7;}
+code.hl-highlighted {
+	.keyword {
+		color: $color_gumbo_approx;
+		&.known {
+			color: $color_pelorous_approx;
+		}
+	}
+	.symbol {
+		color: $color_deluge_approx;
+	}
+	.lambda-list {
+		color: $copper_rose;
+	}
+	.number {
+		color: $color_red_berry_approx;
+	}
+	.variable {
+		&.known {
+			color: $color_fuchsia_pink_approx;
+		}
+		&.global {
+			color: $color_vivid_violet_approx;
+		}
+		&.constant {
+			color: $color_jacksons_purple_approx;
+		}
+	}
+	.nil {
+		color: $red;
+	}
+	.comment {
+		color: $color_silver_chalice_approx !important;
+		* {
+			color: $color_silver_chalice_approx !important;
+		}
+		.string {
+			color: $color_silver_chalice_approx !important;
+		}
+	}
+	.string {
+		color: $color_teal_approx !important;
+		* {
+			color: $color_teal_approx !important;
+		}
+	}
+	.function.known {
+		color: $color_alpine_approx;
+		&.special {
+			color: $color_forest_green_approx;
+		}
+	}
+	.list.active {
+		display: inline-block;
+		background: $color_ice_cold_approx;
+	}
+}
