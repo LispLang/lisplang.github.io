@@ -39,7 +39,7 @@
     >step-by-step construction of a working model of the Common Lisp Object
     >System (CLOS).
 
-- Title: Land Of Lisp
+- title: Land of Lisp
   description: >
     [*Land of Lisp*](http://landoflisp.com/) teaches Common Lisp by writing
     games. From the [publisher's description][land-pub]:
@@ -54,6 +54,7 @@
     [land-pub]: http://www.nostarch.com/lisp.htm
 
 - title: Let Over Lambda
+  cover: lol.jpg
   description: >
     [*Let Over Lambda*][lol] is a book about advanced Common Lisp topics.
 
