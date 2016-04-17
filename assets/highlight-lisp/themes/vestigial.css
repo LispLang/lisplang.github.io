@@ -1,7 +1,3 @@
-pre { white-space: pre; background-color: #f8f8f8; border: 1px solid #ccc; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; }
-pre code {white-space: pre; margin: 0; padding: 0; background: none; border: none; overflow-x: auto; font-size: 13px;}
-code {margin: 0 2px; padding: 0 5px; white-space: nowrap; font-family: Consolas, "Liberation Mono", Courier, monospace; background: #f8f8f8; border: 1px solid #eaeaea; border-radius: 3px;}
-
 code.hl-highlighted .function.known {color: #a93;}
 code.hl-highlighted .function.known.special {color: #2a3;}
 code.hl-highlighted .keyword {color: #7aa;}
@@ -18,4 +14,3 @@ code.hl-highlighted .comment, code.hl-highlighted .comment *, code.hl-highlighte
 code.hl-highlighted .string, code.hl-highlighted .string * {color: #088 !important;}
 
 code.hl-highlighted .list.active {display: inline-block; background: #aefff7;}
-
