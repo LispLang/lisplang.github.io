@@ -1,13 +1,10 @@
 ---
 layout: default
+css_file: page
 ---
 
 <main class="page">
-  <header{% if page.header_class %} class="{{ page.header_class }}"{% endif %}>
-    <div class="title">
-      {{ page.title }}
-    </div>
-  </header>
+  {% include big-header.html text=page.title url=page.header %}
   <div class="content">
     {{ content }}
   </div>

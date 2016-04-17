@@ -2,7 +2,7 @@
 title: Community
 layout: page
 permalink: /community/
-header_class: community
+header: /assets/img/header/community.jpg
 ---
 
 # Forums
