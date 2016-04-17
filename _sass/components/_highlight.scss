@@ -22,39 +22,50 @@ code.hl-highlighted {
 	    color: $color_pelorous_approx;
 	}
     }
+
     .symbol {
 	color: $color_deluge_approx;
     }
+
     .lambda-list {
 	color: $copper_rose;
     }
+
     .number {
 	color: $color_red_berry_approx;
     }
+
     .variable {
 	&.known {
 	    color: $color_fuchsia_pink_approx;
 	}
+
 	&.global {
 	    color: $color_vivid_violet_approx;
 	}
+
 	&.constant {
 	    color: $color_jacksons_purple_approx;
 	}
     }
+
     .nil {
 	color: $red;
     }
+
     .comment {
 	color: $color_silver_chalice_approx !important;
 
 	* {
 	    color: $color_silver_chalice_approx !important;
 	}
+
 	.string {
 	    color: $color_silver_chalice_approx !important;
 	}
+
     }
+
     .string {
 	color: $color_teal_approx !important;
 
@@ -62,13 +73,16 @@ code.hl-highlighted {
 	    color: $color_teal_approx !important;
 	}
     }
+
     .function.known {
 	color: $color_alpine_approx;
 
 	&.special {
 	    color: $color_forest_green_approx;
 	}
+
     }
+
     .list.active {
 	display: inline-block;
 	background: $color_ice_cold_approx;
