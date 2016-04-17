@@ -79,11 +79,15 @@ main.success {
         }
     }
 
-    section {
-        .row {
-            @include flexbox();
-            @include flex-direction(row);
-            @include justify-content(space-between);
+    section.story {
+        @extend %standard-text;
+
+        h2 {
+
+        }
+
+        .desc {
+
         }
 
         .image-overlay {

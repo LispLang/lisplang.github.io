@@ -1,0 +1,10 @@
+<div class="stories">
+  {% for story in site.data.success.stories[include.tag] %}
+  <section class="story">
+    <h2>{{ story.title }}</h2>
+    <div class="desc">
+      {{ story.description | markdownify }}
+    </div>
+  </section>
+  {% endfor %}
+</div>
