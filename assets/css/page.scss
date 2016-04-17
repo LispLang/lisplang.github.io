@@ -14,5 +14,55 @@
 @import 'components/header';
 @import 'components/footer';
 
-@import 'page';
-@import 'news';
+/* Page style */
+
+main.page {
+    header {
+        /* Header background images */
+        &.community {
+            background-image: url(/assets/img/header/community.jpg);
+        }
+
+        &.news {
+            background-image: url(/assets/img/header/news.jpg);
+        }
+    }
+
+    .content {
+        width: 60%;
+        margin: 100px auto;
+    }
+}
+
+/* News page style */
+
+.news-list {
+
+    li {
+        list-style-type: none;
+
+        &:not(:first-child) {
+            margin-top: 90px;
+        }
+
+        h3 {
+            a {
+                color: $black;
+                text-decoration: none;
+                font-size: 27px;
+            }
+        }
+
+        .info {
+            font-style: italic;
+        }
+
+        article {
+
+        }
+
+        a {
+
+        }
+    }
+}
