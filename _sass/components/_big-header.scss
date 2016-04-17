@@ -1,0 +1,31 @@
+header.hero {
+    $lighter: rgba(66, 116, 201, 0.90); // #4274C9
+    $darker: rgba(45, 95, 180, 0.95); // #2D5FB4
+
+    @include linear-gradient(bottom, $lighter, $darker);
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+
+    .background {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+
+        // Background image is set by a parameter
+        background-size: cover;
+        background-position: center;
+        z-index: -10;
+    }
+
+    h1 {
+        font-size: 72px;
+        font-family: 'Lusitana', serif;
+        font-weight: 400;
+        margin-top: 0;
+        color: $white;
+    }
+}
