@@ -6,10 +6,16 @@ description: The style guide for Common Lisp
 permalink: /style-guide/
 ---
 
+# Introduction
+
 This is an opinionated guide to writing good, maintainable Common Lisp code.
 
 This page is largely based on Google's [Common Lisp Style Guide][google] and
 Ariel Networks' own [guide][an].
+
+## Contents
+
+<div id="toc" class="toc"></div>
 
 # General Guidelines
 
