@@ -17,10 +17,6 @@ $color_ice_cold_approx: #aefff7;
 code.hl-highlighted {
     .keyword {
 	color: $color_gumbo_approx;
-
-	&.known {
-	    color: $color_pelorous_approx;
-	}
     }
 
     .symbol {
