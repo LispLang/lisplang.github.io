@@ -17,6 +17,20 @@
         </div>
       </div>
     {% endif %}
+    {% if story.gallery %}
+      <div class="gallery">
+        <ul>
+          {% for n in (1...story.gallery.count) %}
+            <li>
+              {% capture path %}{{ include.tag }}/{{ story.gallery.directory }}/{{ n }}.{{ story.gallery.type }}{% endcapture %}
+              <a href="/assets/img/success/{{ path }}">
+                <img src="/assets/img/success/{{ path }}">
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
   </section>
   {% endfor %}
 </div>
