@@ -79,6 +79,7 @@
     [lol]: http://letoverlambda.com/
 
 - title: Professional Automated Trading
+  cover: pat.jpg
   description: >
     [*Professional Automated Trading: Theory and Practice*][pat] uses Common
     Lisp to describe the implementation of automated trading systems.
