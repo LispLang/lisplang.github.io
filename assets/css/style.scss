@@ -66,7 +66,6 @@ main.style {
     article {
         width: 60%;
         margin: 100px auto;
-        font-size: 16px;
 
         @extend %standard-text;
     }
