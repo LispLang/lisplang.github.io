@@ -1,6 +1,7 @@
 - title: Practical Common Lisp
   cover: pcl.jpg
-  description: >-
+  description: |
+
     [*Practical Common Lisp*][pcl] contains introductory material as well as
     practical examples, such as a unit testing framework, web server, spam
     filter and ID3 tag parser.
@@ -13,7 +14,8 @@
 
 - title: ANSI Common Lisp
   cover: acl.jpg
-  description: >
+  description: |
+
     [*ANSI Common Lisp*][acl] is a book for Lisp beginners. It has a nice
     example of writing a simple ray tracer in Common Lisp, and another (rather
     dated) example of using macros to generate HTML.
@@ -28,7 +30,8 @@
 
 - title: On Lisp
   cover: on-lisp.jpg
-  description: >
+  description: |
+
     [*On Lisp*](http://www.paulgraham.com/onlisp.html) is "a comprehensive study
     of advanced Lisp techniques, with bottom-up programming as the unifying
     theme".
@@ -42,7 +45,8 @@
 
 - title: Land of Lisp
   cover: land.jpg
-  description: >
+  description: |
+
     [*Land of Lisp*](http://landoflisp.com/) teaches Common Lisp by writing
     games. From the [publisher's description][land-pub]:
 
@@ -57,7 +61,8 @@
 
 - title: Let Over Lambda
   cover: lol.jpg
-  description: >
+  description: |
+
     [*Let Over Lambda*][lol] is a book about advanced Common Lisp topics.
 
     From the author's description:
@@ -81,7 +86,8 @@
 
 - title: Professional Automated Trading
   cover: pat.jpg
-  description: >
+  description: |
+
     [*Professional Automated Trading: Theory and Practice*][pat] uses Common
     Lisp to describe the implementation of automated trading systems.
 
@@ -99,7 +105,8 @@
 
 - title: Principles of Biomedical Informatics
   cover: pbi.jpg
-  description: >
+  description: |
+
     [*Principles of Biomedical Informatics*][pobi] is a "pioneering technical
     work in biomedical informatics" that uses Common Lisp to implement various
     bioinformatics programs.
