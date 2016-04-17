@@ -2,5 +2,7 @@ main.page {
     > .content {
         width: 60%;
         margin: 100px auto;
+
+        @extends %standard-text;
     }
 }

@@ -4,18 +4,12 @@ domain: "lisp-lang.org"
 
 # Build settings
 markdown: kramdown
-sass:
-    style: :compressed
 
 kramdown:
   input: GFM
   syntax_highlighter: none
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      css_file: "page"
   - scope:
       path: "learn"
     values:
