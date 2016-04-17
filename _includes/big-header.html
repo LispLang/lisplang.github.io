@@ -1,4 +1,5 @@
+{% include navbar.html %}
 <header class="hero">
-  <div class="background" style="background-image: ({{ url }});"></div>
-  <h1>{{ text }}</h1>
+  <div class="background" style="background-image: url({{ include.url }});"></div>
+  <h1>{{ include.text }}</h1>
 </header>
