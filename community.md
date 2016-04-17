@@ -21,8 +21,6 @@ header: /assets/img/header/community.jpg
 - [Planet Lisp][planet]
 - [Lisp World](https://twitter.com/LispWorld)
 
-# Mailing Lists
-
 [r]: https://www.reddit.com/r/lisp
 [rcl]: https://www.reddit.com/r/common_lisp
 [rlearn]: https://www.reddit.com/r/learnlisp
