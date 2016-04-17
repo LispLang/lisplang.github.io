@@ -151,7 +151,15 @@ stories:
 
     - title: OpenMusic
       description: |
-  graphics:
+  data:
+    - title: pgloader
+      description: |
+    - title: Somewrite
+      description: |
+        [Somewrite][web] is a Japanese startup.
+
+        [web]: http://somewrite.jp/
+  ai:
     - title: DART
       description: |
     - title: Grammarly
