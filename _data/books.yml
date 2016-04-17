@@ -102,7 +102,6 @@
 
     [pat]: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118129857.html
 
-
 - title: Principles of Biomedical Informatics
   cover: pbi.jpg
   description: |
@@ -111,7 +110,7 @@
     work in biomedical informatics" that uses Common Lisp to implement various
     bioinformatics programs.
 
-    From Franz's [description][pobi-desc]:
+    From the [description][pobi-desc]:
 
     >Lisp is the main programing language in this edition, as in the first. It
     >is by far the best for achieving the goals of the book, to present
@@ -121,7 +120,5 @@
     >as needed. The Appendix has been expanded to include more tutorial material
     >as well as references to aid the reader who is not so familiar with Lisp.
 
-    [pobi]:
-    http://www.amazon.com/Principles-Biomedical-Informatics-Second-Kalet/dp/0124160190/ref=sr_1_1?s=books&ie=UTF8&qid=1382968939&sr=1-1&keywords=Principles+of+Biomedical+Informatics%2C+Second+Edition
-    [pobi-desc]:
-    http://franz.com/success/customer_apps/bioinformatics/book_Ira-Kalet.lhtml
+    [pobi]: http://www.amazon.com/Principles-Biomedical-Informatics-Second-Kalet/dp/0124160190/ref=sr_1_1?s=books&ie=UTF8&qid=1382968939&sr=1-1&keywords=Principles+of+Biomedical+Informatics%2C+Second+Edition
+    [pobi-desc]: http://franz.com/success/customer_apps/bioinformatics/book_Ira-Kalet.lhtml
