@@ -204,6 +204,22 @@ stories:
       description: |
         Axiom is a computer algebra system built as a literate program.
 
+  science:
+    - title: CAGED and BEST
+      description: |
+
+        >Marco Ramoni and his team at Harvard and Boston Children's Hospital
+        >used LispWorks to develop both [CAGED][caged] and [BEST][best].
+
+        >CAGED (Cluster Analysis of Gene Expression Dynamics) is a program for
+        >the analysis of temporal profiles of gene expression data. CAGED is
+        >distributed free of charge to academic and non-profit
+        >organisations. BEST (Best Enumeration of SNP Tags) is a program
+        >designed to identify the minimum set of SNPs tagging an haplotype
+        >block.
+
+        [caged]: https://web.archive.org/web/20050421075601/http://www.genomethods.org/caged/
+        [best]: https://web.archive.org/web/20050207140130/http://genomethods.org/best/
 
   data:
     - title: pgloader
