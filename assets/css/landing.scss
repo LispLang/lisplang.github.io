@@ -21,15 +21,37 @@ main.landing {
     }
 
     .testimonials {
-        ul {
-            li {
-                .logo {
-                    img {
+        padding: 100px 0;
 
+        border-style: inset;
+
+        $shadow-color: #c9c9c9;
+        @include box-shadow(inset 0 60px 100px -40px $shadow-color,
+                            inset 0 -60px 100px -40px $shadow-color);
+
+        ul {
+            list-style-type: none;
+
+            li {
+                display: block;
+                width: 80%;
+                margin: 50px auto;
+                border: 1px solid gray;
+
+                @include flexbox();
+                @include flex-direction(row);
+
+                .logo {
+                    flex: 1;
+
+                    img {
+                        display: block;
                     }
                 }
 
                 .text {
+                    flex: 3;
+
                     blockquote {
                         .source {
 
