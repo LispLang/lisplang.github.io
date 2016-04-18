@@ -245,6 +245,24 @@ stories:
         directory: pathway
         type: jpg
 
+    - title: BioBike
+      description: |
+
+        >BioBike system is a biology-specific programming language embedded in
+        >an integrated biological knowledge-base, all accessible through the
+        >web. In the best case, biologists themselves would be able to log into
+        >the system and write their own programs to ask novel biological
+        >questions without the help of (or with very little help from) software
+        >engineers.
+        >
+        >First published in 2002, BioBike is Common Lisp from top to bottom. The
+        >team chose Lisp because it is the most natural language in which to
+        >write complex symbolic reasoning programs. Common Lisp features such as
+        >macros are critical when extending the syntax to create the BioBike
+        >language.
+        >
+        ><div class="source"><a href="http://www.lispworks.com/success-stories/biobike.html">LispWorks</a></div>
+
   data:
     - title: pgloader
       description: |
