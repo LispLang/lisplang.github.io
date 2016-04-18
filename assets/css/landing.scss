@@ -20,6 +20,26 @@ main.landing {
 
     }
 
+    .testimonials {
+        ul {
+            li {
+                .logo {
+                    img {
+
+                    }
+                }
+
+                .text {
+                    blockquote {
+                        .source {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .start {
         height: 300px;
         background: $light-blue;
