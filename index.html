@@ -17,6 +17,27 @@ description: Common Lisp
       {% endfor %}
     </div>
   </section>
+  <section class="testimonials">
+    <ul>
+      {% for reference in site.data.testimonials %}
+        <li>
+          <div class="logo">
+            <img alt="{{ reference.company.name }}"
+                 title="{{ reference.company.name }}"
+                 src="/assets/img/companies/{{ reference.company.logo }}">
+          </div>
+          <div class="text">
+            <blockquote>
+              {{ reference.quote.text | markdownify }}
+              <div class="source">
+                {{ reference.quote.source }}
+              </div>
+            </blockquote>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
   <section class="start">
     <a href="/learn/">Start here</a>
   </section>
