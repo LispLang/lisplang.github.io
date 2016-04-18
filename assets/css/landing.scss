@@ -11,6 +11,7 @@
 @import 'variables';
 
 @import 'components/navbar';
+@import 'components/standard-text';
 @import 'components/big-header';
 @import 'components/footer';
 
@@ -53,12 +54,21 @@ main.landing {
                     }
                 }
 
-                .text {
+                .text-wrapper {
                     flex: 3;
 
-                    blockquote {
-                        .source {
+                    border-left: 1px solid $light-blue;
 
+                    .text {
+                        width: 75%;
+                        margin: 0 auto;
+
+                        @extend %standard-text;
+
+                        blockquote {
+                            .source {
+
+                            }
                         }
                     }
                 }

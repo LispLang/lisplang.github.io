@@ -26,13 +26,15 @@ description: Common Lisp
                  title="{{ reference.company.name }}"
                  src="/assets/img/companies/{{ reference.company.logo }}">
           </div>
-          <div class="text">
-            <blockquote>
-              {{ reference.quote.text | markdownify }}
-              <div class="source">
-                {{ reference.quote.source }}
-              </div>
-            </blockquote>
+          <div class="text-wrapper">
+            <div class="text">
+              <blockquote>
+                {{ reference.quote.text | markdownify }}
+                <div class="source">
+                  {{ reference.quote.source }}
+                </div>
+              </blockquote>
+            </div>
           </div>
         </li>
       {% endfor %}
