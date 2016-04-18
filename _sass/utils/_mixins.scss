@@ -23,7 +23,7 @@
 
 /* Shadow */
 
-@mixin box-shadow($values) {
+@mixin box-shadow($values...) {
     box-shadow: $values;
     -webkit-box-shadow: $values;
     -moz-box-shadow: $values;
