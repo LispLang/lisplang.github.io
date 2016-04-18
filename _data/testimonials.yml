@@ -1,5 +1,6 @@
 - company:
     name: Grammarly
+    logo: grammarly.png
   quote:
     text: >
       At Grammarly, the foundation of our business, our core grammar engine, is
@@ -11,6 +12,7 @@
 
 - company:
     name: SISCOG
+    logo: siscog.jpg
   quote:
     text: derp
     source: herp
