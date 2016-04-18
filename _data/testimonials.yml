@@ -34,11 +34,6 @@
       our lisp-based algorithms, we can adapt our questions to become more
       narrow or broad depending on the situation.
 
-      Using a Lisp-based development environment, it's easy for us to add
-      features, such as the option of multiple airports and different travel
-      dates, that the other systems – which are basically webservers linked into
-      the old mainframe systems – can't.
-
     source: Jeremy Wertheimer
 
   link: https://www.itasoftware.com/
