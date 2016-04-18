@@ -163,6 +163,17 @@ stories:
   music:
     - title: OpusModus
       description: |
+
+        [OpusModus][om] is a Common Lisp-based music composition package.
+
+        >Opusmodus is aimed at composers of art music, concert music, choral
+        >music, film music, jazz, electro-acoustic music, music for games, new
+        >media, songwriters, teaching and studying. Opusmodus is the true
+        >composer’s software environment, providing a comprehensiveness not seen
+        >in any other system available today.
+
+        [om]: http://opusmodus.com/
+
       gallery:
         count: 8
         directory: opusmodus
