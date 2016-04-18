@@ -30,8 +30,9 @@ main.books {
             margin: 200px 0;
 
             img {
-                min-width: 550px;
-                max-width: 550px;
+                $width: 30vw;
+                min-width: $width;
+                max-width: $width;
             }
 
             main {
