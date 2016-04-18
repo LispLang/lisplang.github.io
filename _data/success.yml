@@ -221,6 +221,30 @@ stories:
         [caged]: https://web.archive.org/web/20050421075601/http://www.genomethods.org/caged/
         [best]: https://web.archive.org/web/20050207140130/http://genomethods.org/best/
 
+    - title: Pathway Tools at SRI
+      description: |
+
+        >Pathway Tools provides a powerful and comprehensive set of features for
+        >querying, visualization, analysis, and curation of the BioCyc database
+        >collection. Pathway Tools combines representation and inference
+        >techniques from artificial intelligence to extract additional
+        >information from genomes, and encode that information within a
+        >sophisticated ontology. Pathway Tools can operate on the BioCyc
+        >collection of PGDBs available through SRI, and on locally created
+        >PGDBs, such as for proprietary genomes. It can also operate on more
+        >than 1,700 PGDBs created by third parties, including those listed in
+        >SRI's Registry of Pathway/Genome Databases at
+        >http://biocyc.org/registry.html.
+        >
+        >To date, SRI has licensed Pathway Tools to more than 3,000 academic and industrial groups.
+        >
+        ><div class="source"><a href="http://franz.com/success/customer_apps/bioinformatics/SRI_Pathway-tools.lhtml">Franz</a></div>
+
+      gallery:
+        count: 6
+        directory: pathway
+        type: jpg
+
   data:
     - title: pgloader
       description: |
