@@ -1,0 +1,42 @@
+- company:
+    name: Grammarly
+  quote:
+    text: >
+      At Grammarly, the foundation of our business, our core grammar engine, is
+      written in Common Lisp. It currently processes more than a thousand
+      sentences per second, is horizontally scalable, and has reliably served in
+      production for almost 3 years.
+    source: Vsevolod Dyomkin
+  link: http://tech.grammarly.com/blog/posts/Running-Lisp-in-Production.html
+
+- company:
+    name: SISCOG
+  quote:
+    text: derp
+    source: herp
+  link: http://www.siscog.eu/upload/GESTAO-DE-LISTAS/News/PDF/eclm-2013-siscog-a-story-written-in-lisp-20130602.pdf
+
+- company:
+    name: Ita Software
+    logo: ita.png
+  quote:
+    text: |
+
+      Lisp was the natural language to start with. We needed to write lots of
+      code very quickly; and we needed the higher-level power that only Lisp and
+      Allegro CL provides. Lisp provided us with the ability to write the
+      algorithms that we needed.
+
+      We can search thousands of pricing and scheduling options in the time it
+      takes the other airline engines to search several hundred. And, thanks to
+      our lisp-based algorithms, we can adapt our questions to become more
+      narrow or broad depending on the situation.
+
+      Using a Lisp-based development environment, it's easy for us to add
+      features, such as the option of multiple airports and different travel
+      dates, that the other systems – which are basically webservers linked into
+      the old mainframe systems – can't.
+
+    source: Jeremy Wertheimer
+
+  link: https://www.itasoftware.com/
