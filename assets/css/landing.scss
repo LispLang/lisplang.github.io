@@ -23,7 +23,7 @@ main.landing {
     .testimonials {
         padding: 70px 0;
 
-        $shadow-color: #c9c9c9;
+        $shadow-color: rgba(0, 0, 0, 0.20);
         @include box-shadow(inset 0 60px 100px -40px $shadow-color,
                             inset 0 -60px 100px -40px $shadow-color);
 
