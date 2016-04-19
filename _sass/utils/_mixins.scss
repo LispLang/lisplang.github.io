@@ -28,3 +28,13 @@
     -webkit-box-shadow: $values;
     -moz-box-shadow: $values;
 }
+
+/* Animation */
+
+@mixin transition($values) {
+    -webkit-transition: $values;
+    -moz-transition: $values;
+    -o-transition: $values;
+    -ms-transition: $values;
+    transition: $values;
+}
