@@ -22,7 +22,7 @@ main.books {
 
         list-style-type: none;
 
-        li {
+        > li {
             @include flexbox();
             @include flex-direction(row);
             @include align-items(flex-start);
@@ -47,10 +47,48 @@ main.books {
                     border-bottom: 1px solid #c1c1c1;
                 }
 
+                .metadata {
+                    font-family: 'Lato', sans-serif;
+                    font-size: 20px;
+
+                    padding: 10px 0;
+
+                    font-style: italic;
+                    color: #a7a7a7;
+                }
+
                 article {
                     @extend %standard-text;
 
                     margin-top: 50px;
+
+                    .links {
+                        list-style-type: none;
+                        margin-top: 30px;
+                        padding: 0;
+
+                        li {
+                            display: inline-block;
+                            margin: 10px;
+                            padding: 5px;
+
+                            img {
+                                $width: 150px;
+                                min-width: $width;
+                                max-width: $width;
+                            }
+
+                            // Animation
+
+                            @include box-shadow(none);
+
+                            @include transition(box-shadow 0.3s ease-in-out 0s);
+
+                            &:hover {
+                                @include box-shadow(0 5px 10px #d9d9d9);
+                            }
+                        }
+                    }
                 }
             }
         }
