@@ -14,6 +14,7 @@
 @import 'components/standard-text';
 @import 'components/big-header';
 @import 'components/footer';
+@import 'components/hover-underline';
 
 
 main.landing {
@@ -94,27 +95,7 @@ main.landing {
             text-decoration: none;
             padding: 10px 15px;
 
-            position: relative;
-
-            &:after {
-                $underline-height: 1px;
-
-                display: block;
-                position: absolute;
-                left: 0;
-                bottom: -$underline-height;
-                width: 0;
-                height: $underline-height;
-                background-color: $white;
-                content: "";
-                transition: width 0.2s;
-            }
-
-            &:hover {
-                &:after {
-                    width: 100%;
-                }
-            }
+            @extend %hover-underline;
         }
     }
 }
