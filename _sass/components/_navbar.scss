@@ -35,9 +35,18 @@ nav {
                 a {
                     font-family: 'PT Sans', sans-serif;
                     font-size: 18px;
+                    padding: 10px 0;
 
                     text-decoration: none;
                     color: $white;
+
+                    border-bottom: 2px solid transparent;
+
+                    @include transition(border-bottom 0.25s ease);
+
+                    &:hover {
+                        border-bottom: 2px solid white;
+                    }
                 }
             }
         }
