@@ -10,6 +10,7 @@
 
 @import 'variables';
 
+@import 'components/standard-text';
 @import 'components/highlight';
 
 .learn {
@@ -40,6 +41,11 @@
                 width: 70px;
                 height: 70px;
             }
+        }
+
+        a {
+            color: $blue;
+            text-decoration: none;
         }
 
         .lists {
@@ -94,52 +100,8 @@
 
         .content {
             margin-top: 40px;
-            font-size: 16px;
 
-            p,
-            dl,
-            pre{
-                margin-bottom: 20px;
-            }
-
-            pre {
-                border: 0;
-                background: white;
-
-
-                border-top: 1px solid;
-                border-bottom: 1px solid;
-                border-color: #d9d9d9;
-
-                padding: 50px 100px;
-
-                code {
-                }
-            }
-
-            :not(pre) > code {
-                border-color: #d9d9d9;
-
-                font-size: 14px;
-                padding: 1px 4px;
-            }
-
-            dl {
-                padding-left: 20px;
-
-                dt {
-                    font-weight: bold;
-                    margin-bottom: 10px;
-                }
-
-                dd {
-                    padding-left: 20px;
-
-                    &:not(:last-child) {
-                        margin-bottom: 20px;
-                    }
-                }
-            }
+            @extend %standard-text;
         }
     }
 }
