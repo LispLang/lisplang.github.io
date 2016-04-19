@@ -11,11 +11,25 @@ description: Books about Common Lisp
   <ul>
     {% for book in site.data.books %}
     <li>
-      <img src="/assets/img/books/{{ book.cover }}">
+      <img src="/assets/img/books/covers/{{ book.cover }}">
       <main>
         <h2>{{ book.title }}</h2>
+        <div class="metadata">
+          <span class="author">{{ book.author }}</span>
+        </div>
         <article>
           {{ book.description | markdownify }}
+          {% if book.links %}
+            <ul class="links">
+              {% if book.links.amazon %}
+                <li>
+                  <a href="{{ book.links.amazon }}">
+                    <img src="/assets/img/books/amazon.png">
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+          {% endif %}
         </article>
       </main>
     </li>
