@@ -1,0 +1,23 @@
+%hover-underline {
+    position: relative;
+
+    &:after {
+        $underline-height: 1px;
+
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -$underline-height;
+        width: 0;
+        height: $underline-height;
+        background-color: $white;
+        content: "";
+        transition: width 0.2s;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
