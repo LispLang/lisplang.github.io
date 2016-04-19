@@ -1,4 +1,5 @@
 - title: Practical Common Lisp
+  author: Peter Seibel
   cover: pcl.jpg
   description: |
 
@@ -11,8 +12,11 @@
     download.
 
     [pcl]: http://www.gigamonkeys.com/book/
+  links:
+    amazon: http://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395
 
 - title: ANSI Common Lisp
+  author: Paul Graham
   cover: acl.jpg
   description: |
 
@@ -27,8 +31,11 @@
     >thorough, practical approach.
 
     [acl]: http://www.paulgraham.com/acl.html
+  links:
+    amazon: http://www.amazon.com/ANSI-Common-LISP-Paul-Graham/dp/0133708756
 
 - title: On Lisp
+  author: Paul Graham
   cover: on-lisp.jpg
   description: |
 
@@ -42,8 +49,11 @@
     >at object-oriented programming than previous Lisp books, showing the
     >step-by-step construction of a working model of the Common Lisp Object
     >System (CLOS).
+  links:
+    amazon: http://www.amazon.com/Lisp-Advanced-Techniques-Common/dp/0130305529
 
 - title: Land of Lisp
+  author: Conrad Barski
   cover: land.jpg
   description: |
 
@@ -58,8 +68,11 @@
     >back with an action-packed comic book interlude!
 
     [land-pub]: http://www.nostarch.com/lisp.htm
+  links:
+    amazon: http://www.amazon.com/Land-Lisp-Learn-Program-Game/dp/1593272812
 
 - title: Let Over Lambda
+  author: Doug Hoyte
   cover: lol.jpg
   description: |
 
@@ -83,8 +96,11 @@
     >is really about, this is the book you have been looking for.
 
     [lol]: http://letoverlambda.com/
+  links:
+    amazon: http://www.amazon.com/Let-Over-Lambda-Doug-Hoyte/dp/1435712757
 
 - title: Professional Automated Trading
+  author: Eugene Durenard
   cover: pat.jpg
   description: |
 
@@ -101,8 +117,11 @@
     >scalable systematic trading architecture.
 
     [pat]: http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118129857.html
+  links:
+    amazon: http://www.amazon.com/Professional-Automated-Trading-Theory-Practice/dp/1118129857
 
 - title: Principles of Biomedical Informatics
+  author: Ira Kalet
   cover: pbi.jpg
   description: |
 
@@ -122,3 +141,5 @@
 
     [pobi]: http://www.amazon.com/Principles-Biomedical-Informatics-Second-Kalet/dp/0124160190/ref=sr_1_1?s=books&ie=UTF8&qid=1382968939&sr=1-1&keywords=Principles+of+Biomedical+Informatics%2C+Second+Edition
     [pobi-desc]: http://franz.com/success/customer_apps/bioinformatics/book_Ira-Kalet.lhtml
+  links:
+    amazon: http://www.amazon.com/Principles-Biomedical-Informatics-Second-Kalet/dp/0124160190
