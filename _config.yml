@@ -9,6 +9,9 @@ kramdown:
   input: GFM
   syntax_highlighter: none
 
+#sass:
+#  style: compressed
+
 defaults:
   - scope:
       path: "learn"
@@ -29,3 +32,9 @@ defaults:
       path: "learn/_posts/guides"
     values:
       kind: "guide"
+  - scope:
+      path: "news"
+    values:
+      permalink: /news/:year/:month/:day/:title/
+      layout: "news"
+      css_file: "news"
