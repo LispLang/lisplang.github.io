@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<main class="page news">
+  <header>
+    {% include navbar.html %}
+    <div class="info-wrapper">
+      <div class="info">
+        <h1>
+          {{ page.title }}
+        </h1>
+        <div class="metadata">
+          <span class="author">{{ page.author }}</span>
+          &middot;
+          <span class="date">{{ page.date | date: '%-d %B, %Y' }}</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    {{ content }}
+  </div>
+</main>
