@@ -28,14 +28,19 @@ description: Common Lisp
           </div>
           <div class="text-wrapper">
             <div class="text">
-              <blockquote>
-                {{ reference.quote.text | markdownify }}
-                <div class="source">
-                  <a href="{{ reference.link }}">
-                    {{ reference.quote.source }}
-                  </a>
-                </div>
-              </blockquote>
+              {% if reference.description %}
+                {{ reference.description | markdownify }}
+              {% endif %}
+              {% if reference.quote %}
+                <blockquote>
+                  {{ reference.quote.text | markdownify }}
+                  <div class="source">
+                    <a href="{{ reference.link }}">
+                      {{ reference.quote.source }}
+                    </a>
+                  </div>
+                </blockquote>
+              {% endif %}
             </div>
           </div>
         </li>
