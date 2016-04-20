@@ -216,22 +216,6 @@ stories:
         Axiom is a computer algebra system built as a literate program.
 
   science:
-    - title: CAGED and BEST
-      description: |
-
-        >Marco Ramoni and his team at Harvard and Boston Children's Hospital
-        >used LispWorks to develop both [CAGED][caged] and [BEST][best].
-
-        >CAGED (Cluster Analysis of Gene Expression Dynamics) is a program for
-        >the analysis of temporal profiles of gene expression data. CAGED is
-        >distributed free of charge to academic and non-profit
-        >organisations. BEST (Best Enumeration of SNP Tags) is a program
-        >designed to identify the minimum set of SNPs tagging an haplotype
-        >block.
-
-        [caged]: https://web.archive.org/web/20050421075601/http://www.genomethods.org/caged/
-        [best]: https://web.archive.org/web/20050207140130/http://genomethods.org/best/
-
     - title: Pathway Tools at SRI
       description: |
 
@@ -259,6 +243,9 @@ stories:
     - title: BioBike
       description: |
 
+        [BioBike][paper] is a web-based, fully programmable research environment
+        and biological knowledge base.
+
         >BioBike system is a biology-specific programming language embedded in
         >an integrated biological knowledge-base, all accessible through the
         >web. In the best case, biologists themselves would be able to log into
@@ -273,6 +260,49 @@ stories:
         >language.
         >
         ><div class="source"><a href="http://www.lispworks.com/success-stories/biobike.html">LispWorks</a></div>
+
+        [paper]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2703918/
+
+    - title: StructureLab
+      description: |
+
+        >StructureLab is a computational system which has been developed to
+        >permit the use of a broad array of approaches to the analysis of the
+        >structure of RNA. The goal of the development is to provide a large set
+        >of tools that can be well integrated with experimental biology to aid
+        >in the process of the determination of the underlying structure of RNA
+        >sequences.
+
+        >The approach taken views the structure determination problem as one of
+        >dealing with a data base of many computationally generated structures
+        >and provides the capability to analyze this data set from different
+        >perspectives. Many algorithms are integrated into one system which also
+        >utilizes a heterogeneous computing approach permitting the use of
+        >several computer architectures to help solve the posed problems. These
+        >different computational platforms make it relatively easy to
+        >incorporate currently existing programs as well as newly developed
+        >algorithms and to match these algorithms to the appropriate hardware.
+        >
+        ><div class="source"><a href="http://franz.com/success/customer_apps/bioinformatics/structure_lab.lhtml">Franz</a></div>
+
+    - title: CAGED and BEST
+      description: |
+
+        >Marco Ramoni and his team at Harvard and Boston Children's Hospital
+        >used LispWorks to develop both [CAGED][caged] and [BEST][best].
+        >
+        >CAGED (Cluster Analysis of Gene Expression Dynamics) is a program for
+        >the analysis of temporal profiles of gene expression data. CAGED is
+        >distributed free of charge to academic and non-profit
+        >organisations. BEST (Best Enumeration of SNP Tags) is a program
+        >designed to identify the minimum set of SNPs tagging an haplotype
+        >block.
+        >
+        ><div class="source"><a href="http://www.lispworks.com/success-stories/hms-caged-best.html">LispWorks</a></div>
+
+
+        [caged]: https://web.archive.org/web/20050421075601/http://www.genomethods.org/caged/
+        [best]: https://web.archive.org/web/20050207140130/http://genomethods.org/best/
 
   data:
     - title: pgloader
@@ -317,14 +347,67 @@ stories:
   ai:
     - title: DART
       description: |
+        DART, the [Dynamic Analysis and Replanning Tool][wiki], is a logistics
+        expert system used by the US military and written in Common Lisp.
+
+        In four years, DART saved enough money in the Gulf War to pay for the
+        previous 30 years of DARPA-funded AI research.
+
+        [wiki]: https://en.wikipedia.org/wiki/Dynamic_Analysis_and_Replanning_Tool
+
     - title: Grammarly
       description: |
+        [Grammarly][site] is a spell checker.
+
+        >At Grammarly, the foundation of our business, our core grammar engine,
+        >is written in Common Lisp. It currently processes more than a thousand
+        >sentences per second, is horizontally scalable, and has reliably served
+        >in production for almost 3 years.
+        >
+        ><div class="source"><a href="http://tech.grammarly.com/blog/posts/Running-Lisp-in-Production.html">Vsevolod Dyomkin</a></div>
+
+        [site]: https://www.grammarly.com/
+
+    - title: Routific
+      description: |
+
+
     - title: Cyc
       description: |
     - title: Boeing Simplified English Checker
       description: |
+
+        The [Boeing Simplified English Checker][boeing] is an expert system to
+        aid aerospace technical writers.
+
+        >ASD Simplified Technical English (formerly AECMA Simplified English) is
+        >a writing standard for aerospace maintenance documentation. The
+        >standard is defined in Specification ASD-STE100. This type of writing
+        >standard is also known as a controlled language because it restricts
+        >grammar, style and vocabulary to a subset of the English language.  -
+        >
+        >The objective of Simplified Technical English is clear, unambiguous
+        >writing. Developed primarily for non-native English speakers, it is
+        >also known to improve the readability of maintenance text for native
+        >speakers. ASD Simplified Technical English does not attempt to define
+        >English grammar or prescribe correct English. It does attempt to limit
+        >the range of English, and many of its rules are recommendations found
+        >in technical writing textbooks.
+        >
+        ><div class="source"><a href="http://franz.com/success/customer_apps/natural_language/boeing.lhtml">Franz</a></div>
+
+        [boeing]: http://www.boeing.com/company/key-orgs/licensing/simplified-english-checker.page
+
+
   graphics:
     - title: Mirai
       description: |
+
+        [Mirai][wiki] is a 3D editor built on the winged-edge data structure. It
+        was used, among other things, to model the face of Gollum in the *Lord
+        of the Rings* trilogy.
+
+        [wiki]: https://en.wikipedia.org/wiki/Mirai_(software)
+
     - title: NaughtyDog
       description: |
