@@ -7,8 +7,16 @@ permalink: /learn/getting-started/
 This article describes what you need to do to get up and running with Common
 Lisp.
 
-# Linux
+## Linux
 
-# OS X
+### Ubuntu/Debian
 
-# Windows
+#### Install SBCL
+
+#### Install Quicklisp
+
+#### Set up Emacs
+
+## OS X
+
+## Windows

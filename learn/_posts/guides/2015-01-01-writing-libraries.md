@@ -2,7 +2,7 @@
 title: Writing Libraries
 ---
 
-# Ecosystem Overview
+## Ecosystem Overview
 
 In Common Lisp, the build system and the package manager are two separate
 things.
@@ -18,7 +18,7 @@ dependencies and downloads them from a central repository. Unlike most package
 managers, Quicklisp isn't a command-line application: you run it from the REPL
 like every other Lisp tool, so you can get up and running very easily.
 
-# Defining Systems
+## Defining Systems
 
 A typical system definition looks like this (from
 [this](https://github.com/CommonDoc/common-doc) project):
@@ -160,7 +160,7 @@ the guide about unit testing.
   :in-order-to ((test-op (test-op common-doc-test)))
 ~~~
 
-# Configuring ASDF
+## Configuring ASDF
 
 Before you can load a system, you have to tell ASDF where to find them. This is
 specified in the `~/.config/common-lisp/source-registry.conf` file.
@@ -177,12 +177,12 @@ Tells ASDF to find your system be searching recursively through the `~/code/`
 directory, and to inherit the configuration from Quicklisp so you can load
 Quicklisp's systems.
 
-# Loading
+## Loading
 
 After you have configured ASDF and created your system, you can load it using
 either Quicklisp or ASDF:
 
 ~~~lisp
-cl-user> (asdf:load-system :my-system)
-cl-user> (ql:quickload :my-system)
+CL-USER> (asdf:load-system :my-system)
+CL-USER> (ql:quickload :my-system)
 ~~~

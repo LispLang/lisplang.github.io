@@ -2,6 +2,8 @@
 title: Continuous Integration
 ---
 
+## Travis CI
+
 [Travis][travis] is a service for running unit tests in the cloud. Every commit
 you make and every pull request your project receives is seen by Travis, which
 spins up a [Docker][docker] container and runs your tests. With a little work,
@@ -143,7 +145,7 @@ script:
     - cl -l prove -e '(or (prove:run :my-project-test) (uiop:quit -1))'
 ~~~
 
-# Enabling Travis
+### Enabling Travis
 
 To use Travis, you need to sign up with your GitHub account. Then hover over
 your name in the upper right-hand corner of the page and go to your profile
@@ -159,7 +161,7 @@ you have to do is push a commit to trigger a build. Travis, like all services,
 has its ups and downs in terms of availability. So some times builds will start
 almost instantaneously, other times they'll take longer.
 
-# Coverage Testing
+## Coverage Tracking
 
 Code coverage is basically how many lines of source code are run by tests. SBCL
 supports coverage measuring, and can generate some HTML reports of coverage, but
@@ -214,7 +216,7 @@ script:
 Note how we used the `:exclude` option to prevent testing code from falling into
 coverage tracking.
 
-# Enabling Coveralls
+### Enabling Coveralls
 
 The process is similar to enabling a repo for Travis:
 
@@ -223,7 +225,7 @@ The process is similar to enabling a repo for Travis:
 You flick the switch to enable or disable a repo, and if the repo is new, click
 on 'Sync GitHub Repos' up there near the top of the page.
 
-# Badges
+## Badges
 
 Now, the whole point of this is letting users know what state the software is
 in. Both Travis and Coveralls give each project a status badge, and image you
@@ -239,7 +241,7 @@ Here's the Markdown for Travis and Coveralls badges:
 [![Coverage Status](https://coveralls.io/repos/USER/REPO/badge.svg?branch=master)](https://coveralls.io/r/USER/REPO?branch=master)
 ~~~
 
-# Projects
+## Projects
 
 Below is a (necessarily incomplete) list of projects using Travis and/or
 Coveralls:
@@ -250,7 +252,7 @@ Coveralls:
 * [Woo](https://github.com/fukamachi/woo)
 * [Jonathan](https://github.com/Rudolph-Miller/jonathan)
 
-# Footnotes
+## Footnotes
 
 [^uiop]:
     This is [ASDF's][asdf] portable tools layer. It provides a few very useful
