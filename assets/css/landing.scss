@@ -41,12 +41,17 @@ main.landing {
                 @include flexbox();
                 @include flex-direction(row);
                 @include justify-content(space-between);
-                @include align-items(center);
+                @include align-items(stretch);
 
                 @include box-shadow(0px 2px 4px 0px rgba(0,0,0,0.20));
 
                 .logo {
                     width: 25%;
+
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include justify-content(center);
+                    @include align-items(center);
 
                     img {
                         display: block;
@@ -57,7 +62,6 @@ main.landing {
 
                 .text-wrapper {
                     flex: 3;
-
                     border-left: 1px solid $light-blue;
 
                     .text {
