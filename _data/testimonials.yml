@@ -1,6 +1,10 @@
 - company:
     name: Grammarly
     logo: grammarly.png
+  description: |
+    [Grammarly][site] is a grammar checking startup.
+
+    [site]: https://www.grammarly.com
   quote:
     text: >
       At Grammarly, the foundation of our business, our core grammar engine, is
@@ -11,16 +15,12 @@
   link: http://tech.grammarly.com/blog/posts/Running-Lisp-in-Production.html
 
 - company:
-    name: SISCOG
-    logo: siscog.jpg
-  quote:
-    text: derp
-    source: herp
-  link: http://www.siscog.eu/upload/GESTAO-DE-LISTAS/News/PDF/eclm-2013-siscog-a-story-written-in-lisp-20130602.pdf
-
-- company:
     name: Ita Software
     logo: ita.png
+  description: |
+    Ita (now Google) developed [Matrix][matrix], _the_ flight search engine.
+
+    [matrix]: https://matrix.itasoftware.com/
   quote:
     text: |
 
@@ -37,3 +37,13 @@
     source: Jeremy Wertheimer
 
   link: https://www.itasoftware.com/
+
+- company:
+    name: SISCOG
+    logo: siscog.jpg
+  description: |
+    [SISCOG's][site] Common Lisp rail scheduling system moves millions of
+    passengers across Europe every day.
+
+    [site]: http://www.siscog.pt/
+  link: http://www.siscog.eu/upload/GESTAO-DE-LISTAS/News/PDF/eclm-2013-siscog-a-story-written-in-lisp-20130602.pdf
