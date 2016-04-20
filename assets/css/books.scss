@@ -29,10 +29,14 @@ main.books {
 
             margin: 200px 0;
 
-            img {
+            .cover {
                 $width: 30vw;
                 min-width: $width;
                 max-width: $width;
+
+                img {
+                    width: 100%;
+                }
             }
 
             main {
