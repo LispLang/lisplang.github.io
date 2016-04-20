@@ -82,6 +82,10 @@ main.success {
     section.story {
         @extend %standard-text;
 
+        &:last-child {
+            margin-bottom: 100px;
+        }
+
         h2 {
             margin-top: 100px;
             margin-left: 70px;
@@ -110,6 +114,7 @@ main.success {
 
         .image-overlay {
             font-size: 26px;
+            margin: 70px 0;
 
             blockquote {
                 width: 60%;
