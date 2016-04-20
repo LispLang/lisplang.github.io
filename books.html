@@ -11,7 +11,9 @@ description: Books about Common Lisp
   <ul>
     {% for book in site.data.books %}
     <li>
-      <img src="/assets/img/books/covers/{{ book.cover }}">
+      <div class="cover">
+        <img src="/assets/img/books/covers/{{ book.cover }}">
+      </div>
       <main>
         <h2>{{ book.title }}</h2>
         <div class="metadata">
