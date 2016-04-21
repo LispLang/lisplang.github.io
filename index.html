@@ -4,6 +4,7 @@ css_file: landing
 description: Common Lisp
 ---
 
+<link rel="stylesheet" href="/assets/css/chartist-0.9.7.css">
 <main class="landing">
   {% include big-header.html text='Common Lisp' url='/assets/img/header/landing.jpg' %}
   <section class="why">
@@ -16,6 +17,26 @@ description: Common Lisp
         </div>
       {% endfor %}
     </div>
+  </section>
+  <section class="features">
+    <section class="fast">
+      <div class="homepage-hero-module">
+        <div class="video-container">
+          <div class="filter"></div>
+          <video id="traffic" autoplay loop class="fillWidth">
+            <source src="/assets/video/landing/fast/video.mp4" type="video/mp4">
+            <source src="/assets/video/landing/fast/video.owebm" type="video/webm">
+          </video>
+        </div>
+      </div>
+      <div class="chart">
+        <h1>Fast</h1>
+        <div id="perfchart" class="ct-chart ct-perfect-fourth"></div>
+        <div class="desc">
+          Requests per second using <a href="https://github.com/fukamachi/woo">Woo</a>, an HTTP server written in pure Common Lisp.
+        </div>
+      </div>
+    </section>
   </section>
   <section class="testimonials">
     <ul>
@@ -36,7 +57,7 @@ description: Common Lisp
                   {{ reference.quote.text | markdownify }}
                   <div class="source">
                     <a href="{{ reference.link }}">
-                      {{ reference.quote.source }}
+                      {{ refer1ence.quote.source }}
                     </a>
                   </div>
                 </blockquote>
@@ -46,8 +67,28 @@ description: Common Lisp
         </li>
       {% endfor %}
     </ul>
+    <div class="text">
+      See more <a href="/success/">success stories</a>
+    </div>
   </section>
   <section class="start">
     <a href="/learn/">Start here</a>
   </section>
 </main>
+<script src="/assets/js/jquery-2.1.4.js"></script>
+<script src="/assets/js/chartist-0.9.7.js"></script>
+<script src="/assets/js/cover-video.js"></script>
+<script>
+ $(document).ready(function() {
+     // Speed up video
+     var vid = document.getElementById('traffic');
+     vid.playbackRate = 200;
+     // Performance chart
+     new Chartist.Bar('#perfchart', {
+         labels: ['Ruby', 'Node', 'Common Lisp'],
+         series: [9921, 11920, 15948]
+     }, {
+         distributeSeries: true
+     });
+ });
+</script>
