@@ -15,6 +15,7 @@
 @import 'components/big-header';
 @import 'components/footer';
 @import 'components/hover-underline';
+@import 'components/cover-video';
 
 
 main.landing {
@@ -22,8 +23,100 @@ main.landing {
 
     }
 
+    .features {
+        .fast {
+            $height: 70vh;
+            background: black;
+            position: relative;
+            height: $height;
+
+            .homepage-hero-module {
+                max-height: $height;
+            }
+
+            .chart {
+                z-index: 100;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: $height;
+
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content(space-around);
+                @include align-items(center);
+
+                background: rgba(0, 0, 0, 0.60);
+
+                h1 {
+                    font-family: 'Lato', sans-serif;
+                    font-size: 50px;
+                    color: white;
+                    margin: 0;
+                }
+
+                .desc {
+                    @extend %standard-text;
+                    color: white;
+
+                    a {
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+
+                // Chart style
+                .ct-chart {
+                    z-index: 200;
+                    height: 70%;
+                    width: 40%;
+
+                    .ct-series {
+                        .ct-bar {
+                            stroke-width: 10%;
+                        }
+
+                        &:nth-child(1) {
+                            .ct-bar {
+                                stroke: #CC342D;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            .ct-bar {
+                                stroke: #43853d;
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            .ct-bar {
+                                stroke: $blue;
+                            }
+                        }
+                    }
+
+                    .ct-label {
+                        font-family: 'Lato', sans-serif;
+                        color: white;
+
+                        &.ct-horizontal {
+                            font-size: 30px;
+                        }
+
+                        &.ct-vertical {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .testimonials {
         padding: 70px 0;
+        @extend %standard-text;
 
         $shadow-color: rgba(0, 0, 0, 0.10);
         @include box-shadow(inset 0 60px 100px -40px $shadow-color,
@@ -68,8 +161,6 @@ main.landing {
                         width: 75%;
                         margin: 0 auto;
 
-                        @extend %standard-text;
-
                         blockquote {
                             .source {
 
@@ -78,6 +169,13 @@ main.landing {
                     }
                 }
             }
+        }
+
+        > .text {
+            font-size: 2em;
+            text-align: center;
+
+            margin: 30px 0;
         }
     }
 
