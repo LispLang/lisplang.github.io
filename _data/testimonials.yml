@@ -18,8 +18,9 @@
     name: Ita Software
     logo: ita.png
   description: |
-    Ita (now Google) developed [Matrix][matrix], _the_ flight search engine.
+    [Ita Software][ita] (now Google) developed [Matrix][matrix], _the_ flight search engine.
 
+    [ita]: https://www.itasoftware.com/
     [matrix]: https://matrix.itasoftware.com/
   quote:
     text: |
