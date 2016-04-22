@@ -97,25 +97,48 @@ stories:
           >detection and discrimination systems for targeting incoming nuclear
           >warheads on our [EKV project][ekv] (Exoatmospheric Kill Vehicle).
           >
-          ><div class="source">David McClain, Raytheon
+          ><div class="source">David McClain, Raytheon</div>
 
           [ekv]: http://www.raytheon.com/capabilities/products/ekv/
-    - title: An NFS server for the 747
-      description: |
-        [Franz][franz] wrote an [NFS][nfs] server, used in Boeing 747 and 777
-        aircraft.
 
-        [franz]: http://franz.com/
-        [nfs]: https://en.wikipedia.org/wiki/Network_File_System
-    - title: iCAD Model of the 747
-      description: |
-        Boeing uses iCAD to implement a parametric, spreadsheet-like CAD model of the 747.
+    # - title: An NFS server for the 747
+    #   description: |
+    #     [Franz][franz] wrote an [NFS][nfs] server, used in Boeing 747 and 777
+    #     aircraft.
+
+    #     [franz]: http://franz.com/
+    #     [nfs]: https://en.wikipedia.org/wiki/Network_File_System
+
+    # - title: iCAD Model of the 747
+    #   description: |
+    #     Boeing uses iCAD to implement a parametric, spreadsheet-like CAD model of the 747.
+
   cad:
     - title: ICAD
       description: |
         [ICAD][wiki] is a knowledge-based CAD system.
 
+        >Knowledge Technologies International (KTI) is the world's leading
+        >provider of object-oriented engineering software solutions for the
+        >aerospace, automotive, industrial equipment, and construction
+        >industries. KTI chose the Allegro CL development environment for its
+        >highly successful ICAD System, used by such prominent customers as
+        >General Motors, Ford, Jaguar, Mitsubishi, and Honda.
+        >
+        >"The problems we solve," explains KTI's Vice President of Development
+        >Bob Phillips, "demand that we have a development tool that is
+        >scaleable, industrial-strength, and robust. Allegro CL has worked very
+        >well for us."
+        >
+        >"Previously we could analyze only two nose shapes on a new aircraft
+        >project because each one took 5 weeks," explains Steve Allwright of
+        >British Aerospace. "Using ICAD we are now able to evaluate upwards of
+        >sixty-five shapes, because each one takes only 10 minutes."
+        >
+        ><div class="source"><a href="http://franz.com/success/customer_apps/knowledge_mgmt/kti.lhtml">Franz</a></div>
+
         [wiki]: https://en.wikipedia.org/wiki/ICAD_(software)
+
     - title: Softscan
       description: |
         >Fractal Concept offers a wide range of software and electronic
@@ -339,11 +362,16 @@ stories:
             type: video/mp4
           - url: http://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.ogg#t=57,357
             type: video/ogg
+
     - title: Somewrite
       description: |
-        [Somewrite][web] is a Japanese startup.
+
+        [Somewrite][web] is a Japanese [owned media][media] startup focusing on
+        advertising delivery and ad recommendations.
 
         [web]: http://somewrite.jp/
+        [media]: https://www.titan-seo.com/newsarticles/trifecta.html
+
   ai:
     - title: DART
       description: |
