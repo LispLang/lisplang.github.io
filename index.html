@@ -7,34 +7,89 @@ description: Common Lisp
 <link rel="stylesheet" href="/assets/css/chartist-0.9.7.css">
 <main class="landing">
   {% include big-header.html text='Common Lisp' url='/assets/img/header/landing.jpg' %}
-  <section class="why">
-    <h1>Why Common Lisp?</h1>
-    <div class="reasons">
-      {% for reason in site.data.landing.reasons %}
-        <div class="reason">
-          <h4>{{ reason.title }}</h4>
-          {{ reason.desc | markdownify }}
-        </div>
-      {% endfor %}
-    </div>
-  </section>
   <section class="features">
-    <section class="fast">
-      <div class="homepage-hero-module">
-        <div class="video-container">
-          <div class="filter"></div>
-          <video id="traffic" autoplay loop class="fillWidth">
-            <source src="/assets/video/landing/fast/video.mp4" type="video/mp4">
-            <source src="/assets/video/landing/fast/video.owebm" type="video/webm">
-          </video>
+    <section class="stable">
+      <div class="text">
+        <h2>Mature &amp; Stable</h2>
+        <p>
+          An extensive <a href="/spec/">standard</a> provides a rock-solid
+          foundation that you can confidently build upon. You won't be
+          reinventing the same old wheels ten years from now.
+        </p>
+      </div>
+    </section>
+    <section class="extensible">
+      <h2>Extensible from the Inside-Out</h2>
+      <div class="row">
+        <div class="desc">
+          <blockquote>
+            Part of what makes Lisp distinctive is that it is designed to
+            evolve. As new abstractions become popular (object-oriented
+            programming, for example), it always turns out to be easy to
+            implement them in Lisp. Like DNA, such a language does not go out of
+            style.
+
+            <div class="source">
+              Paul Graham, <a href="/books/#ansi-common-lisp">ANSI Common Lisp</a>
+            </div>
+          </blockquote>
+        </div>
+        <div class="sample">
+          <p>
+            An example of <a href="https://github.com/fukamachi/sxql">SxQL</a>, a macro-based SQL DSL
+          </p>
+          <div class="window">
+            <div class="titlebar">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="body">
+              <pre><code class="lisp">(select (:title :author :year)
+  (from :books)
+  (where (:and (:>= :year 1995)
+               (:< :year 2010)))
+  (order-by (:desc :year)))
+
+⇒ ((:title "Practical Common Lisp" :author "Peter Seibel" :year 2005)
+   (:title "ANSI Common Lisp" :author "Paul Graham" :year 1995))</code></pre>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="chart">
-        <h1>Fast</h1>
-        <div id="perfchart" class="ct-chart ct-perfect-fourth"></div>
+    </section>
+    <section class="paradigm">
+      <section class="box fp">
+        <h2>Functional</h2>
         <div class="desc">
-          Requests per second using <a href="https://github.com/fukamachi/woo">Woo</a>, an HTTP server written in pure Common Lisp.
+          Functions are first class objects: you can pass them around, store
+          them, call them dynamically. Build your application by composing
+          small, functional building blocks.
         </div>
+        <pre><code class="lisp">(reduce #'- (reverse (list 1 2 3))) ⇒ 0</code></pre>
+      </section>
+      <section class="box oop">
+        <h2>Object-Oriented</h2>
+        <div class="desc">
+          Build reusable and extensible class hierarchies using the Common Lisp
+          Object System. Design patterns
+          <a href="http://norvig.com/design-patterns/design-patterns.pdf">disappear</a>
+          as you adapt the language to your problem domain.
+        </div>
+        <pre><code class="lisp">(defclass book ()
+  ((title :reader book-title :initarg :title)
+   (author :reader book-author :initarg :author))
+  (:documentation "Describes a book."))
+
+(make-instance 'book :title "ANSI Common Lisp"
+                     :author "Paul Graham")</code></pre>
+      </section>
+    </section>
+    <section class="fast">
+      <h2>Fast</h2>
+      <div id="perfchart" class="ct-chart ct-perfect-fourth"></div>
+      <div class="desc">
+        Requests per second using <a href="https://github.com/fukamachi/woo">Woo</a>, an HTTP server written in pure Common Lisp.
       </div>
     </section>
   </section>
@@ -57,7 +112,7 @@ description: Common Lisp
                   {{ reference.quote.text | markdownify }}
                   <div class="source">
                     <a href="{{ reference.link }}">
-                      {{ refer1ence.quote.source }}
+                      {{ reference.quote.source }}
                     </a>
                   </div>
                 </blockquote>
@@ -77,18 +132,17 @@ description: Common Lisp
 </main>
 <script src="/assets/js/jquery-2.1.4.js"></script>
 <script src="/assets/js/chartist-0.9.7.js"></script>
-<script src="/assets/js/cover-video.js"></script>
+<script src="/assets/highlight-lisp/highlight-lisp.js"></script>
 <script>
  $(document).ready(function() {
-     // Speed up video
-     var vid = document.getElementById('traffic');
-     vid.playbackRate = 3;
      // Performance chart
-     new Chartist.Bar('#perfchart', {
+     var chart = new Chartist.Bar('#perfchart', {
          labels: ['Ruby', 'Node', 'Common Lisp'],
          series: [9921, 11920, 15948]
      }, {
          distributeSeries: true
      });
+     // Highlight
+     HighlightLisp.highlight_auto();
  });
 </script>

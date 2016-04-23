@@ -15,99 +15,196 @@
 @import 'components/big-header';
 @import 'components/footer';
 @import 'components/hover-underline';
-@import 'components/cover-video';
+@import 'components/highlight';
+@import 'components/window';
 
 
 main.landing {
-    .why {
-
-    }
-
     .features {
-        .fast {
-            $height: 70vh;
-            background: black;
-            position: relative;
-            height: $height;
+        .stable {
+            @include background-image-overlay('/assets/img/landing/mountain.jpg', rgba(0, 0, 0, 0.60));
 
-            .homepage-hero-module {
-                max-height: $height;
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(center);
+            @include align-items(center);
+
+            @extend %standard-text;
+            color: white;
+
+            .text {
+                margin: 200px 0;
+                width: 40%;
+
+                h2 {
+                    font-family: 'Lusitana', serif;
+                    font-size: 3.5em;
+                    font-weight: normal;
+
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-family: 'Lusitana', serif;
+                    font-size: 1.3em;
+
+                    a {
+                        color: $light-blue;
+                    }
+                }
+            }
+        }
+
+        .extensible {
+            @extend %standard-text;
+            padding-top: 30px;
+
+            h2 {
+                text-align: center;
+                font-weight: normal;
             }
 
-            .chart {
-                z-index: 100;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: $height;
+            .row {
+                @include flexbox();
+                @include flex-direction(row);
+                @include justify-content(space-around);
+                @include align-items(stretch);
+            }
+
+            .desc {
+                flex: 3;
+                padding: 50px;
+            }
+
+            .sample {
+                padding: 30px 70px;
+                flex: 2;
 
                 @include flexbox();
                 @include flex-direction(column);
-                @include justify-content(space-around);
                 @include align-items(center);
 
-                background: rgba(0, 0, 0, 0.60);
+                .window {
+                    display: inline-block;
 
-                h1 {
-                    font-family: 'Lato', sans-serif;
-                    font-size: 50px;
-                    color: white;
-                    margin: 0;
+                    pre {
+                        margin: 0;
+                        padding: 25px;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .paradigm {
+            @include flexbox();
+            @include flex-direction(row);
+            @include justify-content(space-around);
+            @include align-items(stretch);
+
+            @extend %standard-text;
+
+            margin-top: 100px;
+
+            h2 {
+                font-weight: normal;
+            }
+
+            .box {
+                flex: 1;
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items(center);
+
+                border-top: 1px solid $black;
+                padding-top: 30px;
+                padding-bottom: 50px;
+
+                &:first-child {
+                    border-right: 1px solid $black;
                 }
 
                 .desc {
-                    @extend %standard-text;
-                    color: white;
+                    width: 80%;
+                    text-align: center;
+                }
+            }
 
-                    a {
-                        color: white;
-                        text-decoration: underline;
+            .fp, .oop {
+                pre {
+                    padding: 0;
+                }
+            }
+        }
+
+        .fast {
+            @include background-image-overlay('/assets/img/landing/fast.jpg', rgba(0, 0, 0, 0.60));
+
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items(center);
+            padding: 25px 0;
+
+            h2 {
+                font-family: 'Lato', sans-serif;
+                font-size: 50px;
+                font-weight: normal;
+                color: white;
+                margin: 0;
+                padding-bottom: 25px;
+            }
+
+            .desc {
+                @extend %standard-text;
+                color: white;
+                padding-top: 25px;
+
+                a {
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+
+            // Chart style
+            .ct-chart {
+                height: 70%;
+                width: 40%;
+
+                .ct-series {
+                    .ct-bar {
+                        stroke-width: 10%;
+                    }
+
+                    &:nth-child(1) {
+                        .ct-bar {
+                            stroke: #CC342D;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        .ct-bar {
+                            stroke: #43853d;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        .ct-bar {
+                            stroke: $blue;
+                        }
                     }
                 }
 
-                // Chart style
-                .ct-chart {
-                    z-index: 200;
-                    height: 70%;
-                    width: 40%;
+                .ct-label {
+                    font-family: 'Lato', sans-serif;
+                    color: white;
 
-                    .ct-series {
-                        .ct-bar {
-                            stroke-width: 10%;
-                        }
-
-                        &:nth-child(1) {
-                            .ct-bar {
-                                stroke: #CC342D;
-                            }
-                        }
-
-                        &:nth-child(2) {
-                            .ct-bar {
-                                stroke: #43853d;
-                            }
-                        }
-
-                        &:nth-child(3) {
-                            .ct-bar {
-                                stroke: $blue;
-                            }
-                        }
+                    &.ct-horizontal {
+                        font-size: 30px;
                     }
 
-                    .ct-label {
-                        font-family: 'Lato', sans-serif;
-                        color: white;
-
-                        &.ct-horizontal {
-                            font-size: 30px;
-                        }
-
-                        &.ct-vertical {
-                            font-size: 13px;
-                        }
+                    &.ct-vertical {
+                        font-size: 13px;
                     }
                 }
             }
@@ -124,6 +221,7 @@ main.landing {
 
         ul {
             list-style-type: none;
+            $shadow-color: rgba(0,0,0,0.20);
 
             li {
                 display: block;
@@ -136,7 +234,7 @@ main.landing {
                 @include justify-content(space-between);
                 @include align-items(stretch);
 
-                @include box-shadow(0px 2px 4px 0px rgba(0,0,0,0.20));
+                @include box-shadow(0px 2px 4px 0px $shadow-color);
 
                 .logo {
                     width: 25%;
@@ -155,7 +253,7 @@ main.landing {
 
                 .text-wrapper {
                     flex: 3;
-                    border-left: 1px solid $light-blue;
+                    border-left: 1px solid $shadow-color;
 
                     .text {
                         width: 75%;
