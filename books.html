@@ -15,7 +15,7 @@ description: Books about Common Lisp
         <img src="/assets/img/books/covers/{{ book.cover }}">
       </div>
       <main>
-        <h2>{{ book.title }}</h2>
+        <h2 id="{{ book.title | slugify }}">{{ book.title }}</h2>
         <div class="metadata">
           <span class="author">{{ book.author }}</span>
         </div>
