@@ -21,6 +21,14 @@
     -webkit-filter: blur($size);
 }
 
+/* Overlay */
+
+@mixin background-image-overlay($image, $color) {
+    background: linear-gradient($color, $color), url($image);
+    background-position: center;
+    background-size: cover;
+}
+
 /* Shadow */
 
 @mixin box-shadow($values...) {
@@ -37,4 +45,24 @@
     -o-transition: $values;
     -ms-transition: $values;
     transition: $values;
+}
+
+/* Border */
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-top-left-radius: $radius;
+  -moz-border-top-right-radius: $radius;
+  -ms-border-top-left-radius: $radius;
+  -ms-border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
 }
