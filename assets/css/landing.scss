@@ -165,7 +165,7 @@ main.landing {
             padding: 25px 0;
 
             h2 {
-                font-family: 'Lato', sans-serif;
+                font-family: $sans-serif-1-family;
                 font-size: 50px;
                 font-weight: normal;
                 color: white;
@@ -214,7 +214,7 @@ main.landing {
                 }
 
                 .ct-label {
-                    font-family: 'Lato', sans-serif;
+                    font-family: $sans-serif-1-family;
                     color: white;
 
                     &.ct-horizontal {
@@ -330,7 +330,7 @@ main.landing {
         @include align-items(center);
 
         a {
-            font-family: 'Lato', sans-serif;
+            font-family: $sans-serif-1-family;
             font-weight: 300;
             font-size: 72px;
             color: $white;

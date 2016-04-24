@@ -23,7 +23,7 @@
         @include flexbox();
         @include flex-direction(column);
 
-        font-family: 'Lato', sans-serif;
+        font-family: $sans-serif-1-family;
 
         @include box-shadow(10px 0px 30px 1px rgba(209,209,209,1));
         border-right: 1px solid #ccc;

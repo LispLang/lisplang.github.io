@@ -10,7 +10,7 @@
 
     color: $black;
 
-    font-family: 'Lato', sans-serif;
+    font-family: $sans-serif-1-family;
     font-size: $text-font-size;
 
     :not(pre) > code {
