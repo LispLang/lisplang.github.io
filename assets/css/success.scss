@@ -136,7 +136,10 @@ main.success {
             overflow: auto;
             width: 100%;
             min-height: 600px;
-            @include linear-gradient(to left, #ECE9E6 , #FFFFFF);
+
+            $shadow-color: rgba(0, 0, 0, 0.10);
+            @include box-shadow(inset 0 40px 60px -40px $shadow-color,
+                                inset 0 -40px 60px -40px $shadow-color);
 
             .title {
                 text-align: center;
@@ -168,9 +171,12 @@ main.success {
             .tabs-content {
                 width: 65%;
                 margin: 50px auto;
-                background: white;
                 min-height: 300px;
                 padding: 30px;
+
+                background: white;
+                border-radius: 4px;
+                border: 1px solid rgba(0,0,0,.08);
 
                 .tabs-pane {
 
