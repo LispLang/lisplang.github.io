@@ -13,57 +13,12 @@
 @import 'components/standard-text';
 @import 'components/navbar';
 @import 'components/footer';
+@import 'components/big-header';
 @import 'components/highlight';
 
 $style-translucent: rgba(255, 255, 255, 0.11);
 
 main.style {
-    header {
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-
-        @include flexbox();
-        @include flex-direction(row);
-        @include align-items(center);
-        @include justify-content(center);
-
-        background-image: url(/assets/img/header/style.jpg);
-
-        .title-container {
-            position: relative;
-            border: 1px solid $white;
-
-            .background {
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                bottom: 0px;
-                left: 0px;
-                z-index: 99;
-
-                background-image: url(/assets/img/header/style.jpg);
-                background-size: 100vw;
-                background-position: center;
-
-                @include blur(1px);
-            }
-
-            .title {
-                position: relative;
-                z-index: 100;
-
-                font-family: $sans-serif-1-family;
-                font-size: 66px;
-                font-weight: 300;
-                color: $white;
-
-                padding: 15px;
-                background: $style-translucent;
-            }
-        }
-    }
-
     article {
         width: 60%;
         margin: 100px auto;
