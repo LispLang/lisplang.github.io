@@ -393,6 +393,12 @@ stories:
     - title: Routific
       description: |
 
+        [Routific][site] is a route optimization and fleet management
+        startup. Their routing engine, written in Common Lisp, plans optimal
+        routes for delivery trucks, minimizing time and spent fuel.
+
+        [site]: https://routific.com/
+
     - title: Cyc
       description: |
 
