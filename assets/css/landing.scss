@@ -168,6 +168,7 @@ main.landing {
             @include flex-direction(column);
             @include align-items(center);
             padding: 25px 0;
+            @extend %standard-text;
 
             h2 {
                 font-size: $h2-size;
@@ -177,7 +178,6 @@ main.landing {
             }
 
             .desc {
-                @extend %standard-text;
                 color: white;
                 padding-top: 25px;
 
@@ -238,10 +238,10 @@ main.landing {
             .desc {
                 flex: 6;
                 @extend %standard-text;
-            }
 
-            h2 {
-                font-size: $h2-size;
+                h2 {
+                    font-size: $h2-size;
+                }
             }
 
             .device-wrapper {
