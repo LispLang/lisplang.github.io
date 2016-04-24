@@ -24,6 +24,10 @@ main.landing {
     $h2-size: 4em;
     $text-size: 1.3em;
 
+    h1, h2 {
+        font-family: $serif-1-family;
+    }
+
     header.hero {
         h1 {
             font-size: $h1-size;
@@ -55,7 +59,6 @@ main.landing {
                 width: 40%;
 
                 h2 {
-                    font-family: $serif-1-family;
                     font-size: $h2-size;
                     font-weight: normal;
 
@@ -165,7 +168,6 @@ main.landing {
             padding: 25px 0;
 
             h2 {
-                font-family: $sans-serif-1-family;
                 font-size: 50px;
                 font-weight: normal;
                 color: white;
