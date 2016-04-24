@@ -10,12 +10,12 @@ description: Books about Common Lisp
   {% include big-header.html text='Common Lisp Books' url='/assets/img/header/books.jpg' %}
   <ul>
     {% for book in site.data.books %}
-    <li>
+    <li id="{{ book.title | slugify }}">
       <div class="cover">
         <img src="/assets/img/books/covers/{{ book.cover }}">
       </div>
       <main>
-        <h2 id="{{ book.title | slugify }}">{{ book.title }}</h2>
+        <h2>{{ book.title }}</h2>
         <div class="metadata">
           <span class="author">{{ book.author }}</span>
         </div>
