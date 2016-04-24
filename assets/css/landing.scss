@@ -20,12 +20,18 @@
 
 
 main.landing {
-    $h1-size: 6em;
-    $h2-size: 4em;
+    $h1-size: 7em;
+    $bigger-h2-size: 4em;
+    $h2-size: 3em;
     $text-size: 1.3em;
 
     h1, h2 {
         font-family: $serif-1-family;
+        font-weight: normal;
+    }
+
+    h2 {
+        font-size: $h2-size;
     }
 
     header.hero {
@@ -59,9 +65,7 @@ main.landing {
                 width: 40%;
 
                 h2 {
-                    font-size: $h2-size;
-                    font-weight: normal;
-
+                    font-size: $bigger-h2-size;
                     text-align: center;
                     margin-bottom: 10px;
                 }
@@ -83,7 +87,6 @@ main.landing {
 
             h2 {
                 text-align: center;
-                font-weight: normal;
             }
 
             .desc, .sample {
@@ -128,10 +131,6 @@ main.landing {
 
             margin-top: 100px;
 
-            h2 {
-                font-weight: normal;
-            }
-
             .box {
                 flex: 1;
                 @include flexbox();
@@ -168,8 +167,6 @@ main.landing {
             padding: 25px 0;
 
             h2 {
-                font-size: 50px;
-                font-weight: normal;
                 color: white;
                 margin: 0;
                 padding-bottom: 25px;
