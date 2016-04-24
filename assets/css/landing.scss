@@ -30,10 +30,6 @@ main.landing {
         font-weight: normal;
     }
 
-    h2 {
-        font-size: $h2-size;
-    }
-
     header.hero {
         h1 {
             font-size: $h1-size;
@@ -86,6 +82,7 @@ main.landing {
             padding-top: 30px;
 
             h2 {
+                font-size: $h2-size;
                 text-align: center;
             }
 
@@ -101,7 +98,7 @@ main.landing {
 
                 blockquote {
                     width: 75%;
-                    font-size: 1.2em;
+                    font-size: $text-size;
                 }
             }
 
@@ -130,6 +127,10 @@ main.landing {
             @extend %standard-text;
 
             margin-top: 100px;
+
+            h2 {
+                font-size: $h2-size;
+            }
 
             .box {
                 flex: 1;
@@ -167,6 +168,7 @@ main.landing {
             padding: 25px 0;
 
             h2 {
+                font-size: $h2-size;
                 color: white;
                 margin: 0;
                 padding-bottom: 25px;
@@ -234,6 +236,10 @@ main.landing {
             .desc {
                 flex: 6;
                 @extend %standard-text;
+            }
+
+            h2 {
+                font-size: $h2-size;
             }
 
             .device-wrapper {
