@@ -20,6 +20,17 @@
 
 
 main.landing {
+    $h1-size: 6em;
+    $h2-size: 4em;
+    $text-size: 1.3em;
+
+    header.hero {
+        h1 {
+            font-size: $h1-size;
+            text-align: center;
+        }
+    }
+
     .features {
         .row {
             @include flexbox();
@@ -45,7 +56,7 @@ main.landing {
 
                 h2 {
                     font-family: 'Lusitana', serif;
-                    font-size: 3.5em;
+                    font-size: $h2-size;
                     font-weight: normal;
 
                     text-align: center;
@@ -54,7 +65,7 @@ main.landing {
 
                 p {
                     font-family: 'Lusitana', serif;
-                    font-size: 1.3em;
+                    font-size: $text-size;
 
                     a {
                         color: $light-blue;
