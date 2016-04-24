@@ -72,18 +72,25 @@ main.landing {
                 @include align-items(stretch);
             }
 
+            .desc, .sample {
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items(center);
+                @include justify-content(center);
+            }
+
             .desc {
                 flex: 3;
-                padding: 50px;
+
+                blockquote {
+                    width: 75%;
+                    font-size: 1.2em;
+                }
             }
 
             .sample {
                 padding: 30px 70px;
                 flex: 2;
-
-                @include flexbox();
-                @include flex-direction(column);
-                @include align-items(center);
 
                 .window {
                     display: inline-block;
