@@ -1,0 +1,45 @@
+.window {
+    $bar-height: 30px;
+    $circle-diam: 10px;
+    $titlebar-color: #eee;
+
+    .titlebar {
+        height: $bar-height;
+        background: $titlebar-color;
+        position: relative;
+
+        @include border-top-radius(7px);
+
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(flex-start);
+        @include align-items(center);
+
+        div {
+            @include border-radius(50%);
+            width: $circle-diam;
+            height: $circle-diam;
+            margin-left: 5px;
+
+            &:nth-child(1) {
+                // Close
+                background: #FF504D;
+                margin-left: 10px;
+            }
+
+            &:nth-child(2)  {
+                // Minimize
+                background: #E8C460;
+            }
+
+            &:nth-child(3)  {
+                // Maximize
+                background: #70FF6E;
+            }
+        }
+    }
+
+    .body {
+        border: 1px solid $titlebar-color;
+    }
+}
