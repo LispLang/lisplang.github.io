@@ -48,16 +48,18 @@
     {% endif %}
     {% if story.tabs %}
       <div class="tab-wrapper">
-        <div class="tabs">
+        <ul data-tabs class="tabs">
           {% for tab in story.tabs %}
-            <button class="active" data-tab="#{{ tab.id }}">
-              {{ tab.tab | safe }}
-            </button>
+            <li>
+              <a data-tab href="#{{ tab.id }}">
+                {{ tab.tab | safe }}
+              </a>
+            </li>
           {% endfor %}
-        </div>
-        <div class="tabs-content">
+        </ul>
+        <div data-tabs-content class="tabs-content">
           {% for tab in story.tabs %}
-            <div class="tabs-pane active" id="{{ tab.id }}">
+            <div data-tabs-pane class="tabs-pane active" id="{{ tab.id }}">
               {{ tab.content | markdownify }}
             </div>
           {% endfor %}
