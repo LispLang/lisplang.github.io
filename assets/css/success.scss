@@ -145,21 +145,18 @@ main.success {
             .tabs {
                 width: 65%;
                 margin: 0 auto;
+                list-style-type: none;
 
                 @include flexbox();
                 @include flex-direction(row);
                 @include justify-content(space-around);
                 @include align-items(center);
 
-                button {
+                li {
                     display: block;
                     border: none;
                     background: transparent;
                     width: 120px;
-
-                    img {
-                        max-width: 120px;
-                    }
                 }
             }
 
