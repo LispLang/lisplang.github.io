@@ -208,6 +208,11 @@ stories:
       description: |
         Maxima is a computer algebra system.
 
+      gallery:
+        count: 3
+        directory: maxima
+        type: png
+
     - title: ACL2
       description: |
         ACL2 is a theorem prover.
