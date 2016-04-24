@@ -360,7 +360,8 @@ stories:
       description: |
 
         [Somewrite][web] is a Japanese [owned media][media] startup focusing on
-        advertising delivery and ad recommendations.
+        advertising delivery and ad recommendations. They use Common Lisp to
+        power their ad delivery system.
 
         [web]: http://somewrite.jp/
         [media]: https://www.titan-seo.com/newsarticles/trifecta.html
