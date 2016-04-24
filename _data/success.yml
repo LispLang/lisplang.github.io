@@ -446,3 +446,33 @@ stories:
 
     - title: NaughtyDog
       description: |
+
+        [Naughty Dog Software][wiki] used a Common Lisp DSL to write the [Jak
+        and Dexter][series] series of games for the Play Station.
+
+        >Naughty Dog co-founder Andy Gavin, says the unique capabilities of Lisp
+        >enabled fast development and execution of character and object control
+        >– something that was needed to fully realize the numerous 3D creatures
+        >and devices which interact with the player in real-time (60 frames per
+        >second).
+        >
+        >"Lisp was just the best solution for this job," comments Gavin. "With
+        >leading edge game systems like ours, you have to deal with complicated
+        >behaviors and real-time action. Languages like C are very poor with
+        >temporal constructs. C is just very awkward for a project like
+        >this. Lisp, on the other hand, is ideal."
+        >
+        >As Gavin explains, "With Lisp, one can rapidly develop meta constructs
+        >for behaviors and combine them in new ways. In addition, Lisp allows
+        >the redefinition of the language to easily add new constructs;
+        >particularly those needed to deal with time-based behaviors and
+        >layering of actions. Contrary to popular belief, there is nothing
+        >inherently slow about Lisp. It is easy to construct a simple dialect
+        >which is just as efficient as C, but retains the dynamic and consistent
+        >qualities that make Lisp a much more effective expression of one’s
+        >programming intentions."
+        >
+        ><div class="source"><a href="http://franz.com/success/customer_apps/animation_graphics/naughtydog.lhtml">Franz</a></div>
+
+        [wiki]: https://en.wikipedia.org/wiki/Naughty_Dog)
+        [series]: https://en.wikipedia.org/wiki/Jak_and_Daxter
