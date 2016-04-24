@@ -206,7 +206,17 @@ stories:
   math:
     - title: Maxima
       description: |
-        Maxima is a computer algebra system.
+
+        [Maxima][wiki] is a [computer algebra system][cas] descended from the
+        [Macsyma][mac] project. It's built in Common Lisp, runs an all major
+        operator systems, and supports both symbolic and numerical computation.
+
+        Maxima also allows expensive numerical code to be compiled to Fortran to
+        speed up execution.
+
+        [wiki]: https://en.wikipedia.org/wiki/Maxima_(software)
+        [cas]: https://en.wikipedia.org/wiki/Computer_algebra_system
+        [mac]: https://en.wikipedia.org/wiki/Macsyma
 
       gallery:
         count: 3
