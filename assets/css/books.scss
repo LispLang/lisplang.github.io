@@ -27,7 +27,7 @@ main.books {
             @include flex-direction(row);
             @include align-items(flex-start);
 
-            margin: 200px 0;
+            padding: 100px 0;
 
             .cover {
                 $width: 30vw;
