@@ -19,9 +19,11 @@ header: /assets/img/header/news.jpg
           {{ post.date | date: "%b %-d, %Y" }}
         </span>
       </span>
+      <!--
       <article>
         {{ post.excerpt }}
       </article>
+      -->
       <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
     </li>
   {% endfor %}
