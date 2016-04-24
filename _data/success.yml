@@ -183,6 +183,7 @@ stories:
         count: 3
         directory: plantwise
         type: png
+
   music:
     - title: OpusModus
       description: |
@@ -202,14 +203,6 @@ stories:
         directory: opusmodus
         type: jpg
 
-    - title: Common Music Notation
-      description: |
-
-    - title: Common Lisp Music
-      description: |
-
-    - title: OpenMusic
-      description: |
   math:
     - title: Maxima
       description: |
