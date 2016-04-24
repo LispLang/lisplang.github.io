@@ -393,9 +393,13 @@ stories:
     - title: Routific
       description: |
 
-
     - title: Cyc
       description: |
+
+        The [Cyc][wiki] project aims to build a database of heuristics -- everyday knowledge.
+
+        [wiki]: https://en.wikipedia.org/wiki/Cyc
+
     - title: Boeing Simplified English Checker
       description: |
 
