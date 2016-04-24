@@ -242,10 +242,6 @@ stories:
             used to predict every bit of memory at every cycle.
 
 
-    - title: Axiom
-      description: |
-        Axiom is a computer algebra system built as a literate program.
-
   science:
     - title: Pathway Tools at SRI
       description: |
