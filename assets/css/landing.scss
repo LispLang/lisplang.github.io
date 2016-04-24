@@ -55,7 +55,7 @@ main.landing {
                 width: 40%;
 
                 h2 {
-                    font-family: 'Lusitana', serif;
+                    font-family: $serif-1-family;
                     font-size: $h2-size;
                     font-weight: normal;
 
@@ -64,7 +64,7 @@ main.landing {
                 }
 
                 p {
-                    font-family: 'Lusitana', serif;
+                    font-family: $serif-1-family;
                     font-size: $text-size;
 
                     a {
