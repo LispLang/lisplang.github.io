@@ -1,20 +1,15 @@
 .gallery {
-    overflow: hidden;
-    min-width: 100%;
-    @include flexbox();
-    @include flex-direction(row);
-
     ul {
         @include flexbox();
         @include flex-direction(row);
+        @include flex-flow(wrap);
+        @include justify-content(center);
+
         margin: 30px auto;
 
         li {
             display: block;
-
-            &:not(:first-child) {
-                margin-left: 40px;
-            }
+            margin: 30px;
 
             img {
                 height: 200px;
