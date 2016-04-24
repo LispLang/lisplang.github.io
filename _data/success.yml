@@ -225,7 +225,12 @@ stories:
 
     - title: ACL2
       description: |
-        ACL2 is a theorem prover.
+
+        [ACL2][wiki] is a [theorem prover][prover].
+
+        [wiki]: https://en.wikipedia.org/wiki/ACL2
+        [prover]: https://en.wikipedia.org/wiki/Automated_theorem_proving
+
       tabs:
         - id: amd
           tab: >
