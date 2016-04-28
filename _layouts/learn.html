@@ -38,6 +38,25 @@
     <article>
       <header>
         <h1>{{ page.title }}</h1>
+        {% if page.kind == 'tutorial' %}
+          <nav>
+            {% assign has_previous=page.previous.url and page.previous.url contains '/learn/' %}
+            {% assign has_next=page.next.url and page.next.url contains '/learn/' %}
+            {% if has_previous %}
+              <a href="{{ page.previous.url }}">
+                « {{ page.previous.title }}
+              </a>
+            {% endif %}
+            {% if has_previous and has_next %}
+              &mdash;
+            {% endif %}
+            {% if has_next %}
+              <a href="{{ page.next.url }}">
+                {{ page.next.title }} »
+              </a>
+            {% endif %}
+          </nav>
+        {% endif %}
       </header>
       <div class="content">
         {{ content }}
