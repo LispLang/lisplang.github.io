@@ -95,6 +95,15 @@
             h1 {
                 font-size: 64px;
                 margin: 0;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #e7e7e7;
+            }
+
+            nav {
+                a {
+                    color: $blue;
+                    text-decoration: none;
+                }
             }
         }
 
