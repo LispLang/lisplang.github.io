@@ -1,71 +1,71 @@
 <div class="stories">
   {% for story in site.data.success.stories[include.tag] %}
-  <section class="story">
-    <h2>{{ story.title }}</h2>
-    {% if story.video %}
-      <div class="row">
-        <div class="desc no-center">
-          {{ story.description | markdownify }}
-        </div>
-        <div class="video">
-          <video>
-            {% for source in story.video.sources %}
-              <source src="{{ source.url }}" type="{{ source.type }}">
-            {% endfor %}
-          </video>
-        </div>
-      </div>
-    {% else %}
-      <div class="desc">
-        {{ story.description | markdownify }}
-      </div>
-    {% endif %}
-    {% if story.overlay %}
-      <div class="image-overlay">
-        <div class="background">
-          <img src="{{ story.overlay.image }}">
-        </div>
-        <div class="content-wrapper">
-          <div class="content">
-            {{ story.overlay.content | markdownify }}
+    <section class="story">
+      <h2>{{ story.title }}</h2>
+      {% if story.video %}
+        <div class="row">
+          <div class="desc no-center">
+            {{ story.description | markdownify }}
+          </div>
+          <div class="video">
+            <video>
+              {% for source in story.video.sources %}
+                <source src="{{ source.url }}" type="{{ source.type }}">
+              {% endfor %}
+            </video>
           </div>
         </div>
-      </div>
-    {% endif %}
-    {% if story.gallery %}
-      <div class="gallery">
-        <ul>
-          {% for n in (1...story.gallery.count) %}
-            <li>
-              {% capture path %}{{ include.tag }}/{{ story.gallery.directory }}/{{ n }}.{{ story.gallery.type }}{% endcapture %}
-              <a href="/assets/img/success/{{ path }}">
-                <img src="/assets/img/success/{{ path }}">
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-    {% if story.tabs %}
-      <div class="tab-wrapper">
-        <ul data-tabs class="tabs">
-          {% for tab in story.tabs %}
-            <li>
-              <a data-tab href="#{{ tab.id }}">
-                {{ tab.tab | safe }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-        <div data-tabs-content class="tabs-content">
-          {% for tab in story.tabs %}
-            <div data-tabs-pane class="tabs-pane" id="{{ tab.id }}">
-              {{ tab.content | markdownify }}
-            </div>
-          {% endfor %}
+      {% else %}
+        <div class="desc">
+          {{ story.description | markdownify }}
         </div>
-      </div>
-    {% endif %}
-  </section>
+      {% endif %}
+      {% if story.overlay %}
+        <div class="image-overlay">
+          <div class="background">
+            <img src="{{ story.overlay.image }}">
+          </div>
+          <div class="content-wrapper">
+            <div class="content">
+              {{ story.overlay.content | markdownify }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% if story.gallery %}
+        <div class="gallery">
+          <ul>
+            {% for n in (1...story.gallery.count) %}
+              <li>
+                {% capture path %}{{ include.tag }}/{{ story.gallery.directory }}/{{ n }}.{{ story.gallery.type }}{% endcapture %}
+                <a href="/assets/img/success/{{ path }}">
+                  <img src="/assets/img/success/{{ path }}">
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      {% if story.tabs %}
+        <div class="tab-wrapper">
+          <ul data-tabs class="tabs">
+            {% for tab in story.tabs %}
+              <li>
+                <a data-tab href="#{{ tab.id }}">
+                  {{ tab.tab | safe }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          <div data-tabs-content class="tabs-content">
+            {% for tab in story.tabs %}
+              <div data-tabs-pane class="tabs-pane" id="{{ tab.id }}">
+                {{ tab.content | markdownify }}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </section>
   {% endfor %}
 </div>
