@@ -10,31 +10,31 @@ description: Books about Common Lisp
   {% include big-header.html text='Common Lisp Books' url='/assets/img/header/books.jpg' %}
   <ul>
     {% for book in site.data.books %}
-    <li id="{{ book.title | slugify }}">
-      <div class="cover">
-        <img src="/assets/img/books/covers/{{ book.cover }}">
-      </div>
-      <main>
-        <h2>{{ book.title }}</h2>
-        <div class="metadata">
-          <span class="author">{{ book.author }}</span>
+      <li id="{{ book.title | slugify }}">
+        <div class="cover">
+          <img src="/assets/img/books/covers/{{ book.cover }}">
         </div>
-        <article>
-          {{ book.description | markdownify }}
-          {% if book.links %}
-            <ul class="links">
-              {% if book.links.amazon %}
-                <li>
-                  <a href="{{ book.links.amazon }}">
-                    <img src="/assets/img/books/amazon.png">
-                  </a>
-                </li>
-              {% endif %}
-            </ul>
-          {% endif %}
-        </article>
-      </main>
-    </li>
+        <main>
+          <h2>{{ book.title }}</h2>
+          <div class="metadata">
+            <span class="author">{{ book.author }}</span>
+          </div>
+          <article>
+            {{ book.description | markdownify }}
+            {% if book.links %}
+              <ul class="links">
+                {% if book.links.amazon %}
+                  <li>
+                    <a href="{{ book.links.amazon }}">
+                      <img src="/assets/img/books/amazon.png">
+                    </a>
+                  </li>
+                {% endif %}
+              </ul>
+            {% endif %}
+          </article>
+        </main>
+      </li>
     {% endfor %}
   </ul>
 </main>
