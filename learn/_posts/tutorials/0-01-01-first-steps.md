@@ -16,6 +16,8 @@ evaluate to themselves: you can think of them sort of like enums.
 
 ## Hello, World!
 
+Without further ado:
+
 ```lisp
 CL-USER> (format t "Hello, world!")
 Hello, world!
