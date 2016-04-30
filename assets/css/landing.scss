@@ -23,7 +23,7 @@ main.landing {
     $h1-size: 7em;
     $bigger-h2-size: 4em;
     $h2-size: 3em;
-    $text-size: 1.3em;
+    $text-size: 1.2em;
 
     h1, h2 {
         font-family: $serif-1-family;
@@ -96,7 +96,6 @@ main.landing {
 
             @extend %standard-text;
             color: white;
-            height: 100vh;
 
             .text {
                 margin: 250px 0;
@@ -117,6 +116,11 @@ main.landing {
                         color: white;
                         // Fake underline
                         border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+                        transition: border-bottom-color 0.4s ease-in-out;
+
+                        &:hover {
+                            border-bottom-color: white;;
+                        }
                     }
                 }
             }
@@ -149,8 +153,9 @@ main.landing {
                 }
 
                 .desc {
-                    width: 80%;
-                    text-align: center;
+                    width: 60%;
+                    margin: 0 auto;
+                    text-align: justify;
                     font-size: $text-size;
                 }
             }
