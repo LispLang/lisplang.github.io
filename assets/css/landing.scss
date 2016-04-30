@@ -47,7 +47,7 @@ main.landing {
 
         .extensible {
             @extend %standard-text;
-            padding-top: 30px;
+            margin: 80px 0;
 
             h2 {
                 font-size: $h2-size;
@@ -96,6 +96,7 @@ main.landing {
 
             @extend %standard-text;
             color: white;
+            height: 100vh;
 
             .text {
                 margin: 250px 0;
@@ -110,9 +111,12 @@ main.landing {
                 p {
                     font-family: $serif-1-family;
                     font-size: $text-size;
+                    line-height: 1.5;
 
                     a {
-                        color: $light-blue;
+                        color: white;
+                        // Fake underline
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.40);
                     }
                 }
             }
