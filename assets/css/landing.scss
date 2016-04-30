@@ -45,38 +45,6 @@ main.landing {
             @include align-items(stretch);
         }
 
-        .stable {
-            @include background-image-overlay('/assets/img/landing/mountain.jpg', rgba(0, 0, 0, 0.60));
-
-            @include flexbox();
-            @include flex-direction(column);
-            @include justify-content(center);
-            @include align-items(center);
-
-            @extend %standard-text;
-            color: white;
-
-            .text {
-                margin: 250px 0;
-                width: 40%;
-
-                h2 {
-                    font-size: $bigger-h2-size;
-                    text-align: center;
-                    margin-bottom: 10px;
-                }
-
-                p {
-                    font-family: $serif-1-family;
-                    font-size: $text-size;
-
-                    a {
-                        color: $light-blue;
-                    }
-                }
-            }
-        }
-
         .extensible {
             @extend %standard-text;
             padding-top: 30px;
@@ -113,6 +81,38 @@ main.landing {
                         margin: 0;
                         padding: 25px;
                         font-size: 1em;
+                    }
+                }
+            }
+        }
+
+        .stable {
+            @include background-image-overlay('/assets/img/landing/mountain.jpg', rgba(0, 0, 0, 0.60));
+
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(center);
+            @include align-items(center);
+
+            @extend %standard-text;
+            color: white;
+
+            .text {
+                margin: 250px 0;
+                width: 40%;
+
+                h2 {
+                    font-size: $bigger-h2-size;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-family: $serif-1-family;
+                    font-size: $text-size;
+
+                    a {
+                        color: $light-blue;
                     }
                 }
             }
