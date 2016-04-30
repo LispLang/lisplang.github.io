@@ -126,7 +126,7 @@ main.landing {
 
             @extend %standard-text;
 
-            margin-top: 100px;
+            margin: 80px 0;
 
             h2 {
                 font-size: $h2-size;
@@ -137,13 +137,11 @@ main.landing {
                 @include flexbox();
                 @include flex-direction(column);
                 @include align-items(center);
-
-                border-top: 1px solid $black;
                 padding-top: 30px;
                 padding-bottom: 50px;
 
                 &:first-child {
-                    border-right: 1px solid $black;
+                    border-right: 1px solid #f3f3f3;
                 }
 
                 .desc {
