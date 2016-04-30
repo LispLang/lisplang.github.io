@@ -18,6 +18,17 @@
 @import 'components/highlight';
 @import 'components/window';
 
+%white-link-style {
+    color: white;
+    // Fake underline
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+    transition: border-bottom-color 0.4s ease-in-out;
+
+    &:hover {
+        border-bottom-color: white;;
+    }
+}
+
 
 main.landing {
     $h1-size: 7em;
@@ -118,14 +129,7 @@ main.landing {
                     line-height: 1.5;
 
                     a {
-                        color: white;
-                        // Fake underline
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.40);
-                        transition: border-bottom-color 0.4s ease-in-out;
-
-                        &:hover {
-                            border-bottom-color: white;;
-                        }
+                        @extend %white-link-style;
                     }
                 }
             }
@@ -195,8 +199,7 @@ main.landing {
                 padding-top: 25px;
 
                 a {
-                    color: white;
-                    text-decoration: underline;
+                    @extend %white-link-style;
                 }
             }
 
