@@ -186,10 +186,6 @@ main.landing {
             @include align-items(center);
             @extend %standard-text;
 
-            @include on-medium-and-large() {
-                padding: 100px 0;
-            }
-
             h2 {
                 font-size: $h2-size;
                 color: white;
@@ -204,6 +200,20 @@ main.landing {
 
                 a {
                     @extend %white-link-style;
+                }
+            }
+
+            @include on-medium-and-large() {
+                padding: 100px 0;
+            }
+
+            @include on-small() {
+                min-height: 100vh;
+                @include justify-content(space-around);
+
+                .desc {
+                    width: 80%;
+                    text-align: center;
                 }
             }
 
