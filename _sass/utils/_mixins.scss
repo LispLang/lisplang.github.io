@@ -66,3 +66,35 @@
   border-top-left-radius: $radius;
   border-top-right-radius: $radius;
 }
+
+/* Responsive */
+
+@mixin on-small() {
+    @media (max-width: $small-breakpoint) {
+        @content;
+    }
+}
+
+@mixin on-medium() {
+    @media (min-width: $small-breakpoint + 1) and (max-width: $medium-breakpoint) {
+        @content;
+    }
+}
+
+@mixin on-large() {
+    @media (min-width: $medium-breakpoint + 1) {
+        @content;
+    }
+}
+
+@mixin on-small-and-medium() {
+    @media (max-width: $medium-breakpoint) {
+        @content;
+    }
+}
+
+@mixin on-medium-and-large() {
+    @media (min-width: $small-breakpoint + 1) {
+        @content;
+    }
+}
