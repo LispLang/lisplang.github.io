@@ -197,6 +197,7 @@ main.landing {
             .desc {
                 color: white;
                 padding-top: 25px;
+                font-size: $text-size;
 
                 a {
                     @extend %white-link-style;
@@ -261,6 +262,7 @@ main.landing {
 
                 p {
                     padding-right: 70px;
+                    font-size: $text-size;
                 }
             }
 
@@ -328,19 +330,14 @@ main.landing {
                     .text {
                         width: 75%;
                         margin: 0 auto;
-
-                        blockquote {
-                            .source {
-
-                            }
-                        }
+                        font-size: 1em;
                     }
                 }
             }
         }
 
         > .text {
-            font-size: 1.2em;
+            font-size: 1em;
             text-align: center;
 
             margin: 30px 0;
