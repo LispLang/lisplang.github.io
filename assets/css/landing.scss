@@ -99,6 +99,16 @@ main.landing {
                         }
                     }
                 }
+
+                @include on-small-and-medium() {
+                    width: 90%;
+                    @include flex-direction(column);
+
+                    .sample {
+                        padding: 0;
+                        margin-top: 40px;
+                    }
+                }
             }
         }
 
