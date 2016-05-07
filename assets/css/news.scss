@@ -60,6 +60,11 @@ main.news {
 
     > .content {
         min-height: 100vh;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -83,11 +88,6 @@ main.news {
         }
 
         article {
-
-        }
-
-        a {
-
         }
     }
 }
