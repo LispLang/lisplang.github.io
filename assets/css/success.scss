@@ -30,10 +30,23 @@ main.success {
                 li {
                     display: block;
 
-                    width: 25vw;
-                    height: 25vw;
                     overflow: hidden;
                     position: relative;
+
+                    @include on-large() {
+                        width: 25vw;
+                        height: 25vw;
+                    }
+
+                    @include on-medium() {
+                        width: 50vw;
+                        height: 50vw;
+                    }
+
+                    @include on-small() {
+                        width: 100vw;
+                        height: 100vw;
+                    }
 
                     z-index: 0;
 
