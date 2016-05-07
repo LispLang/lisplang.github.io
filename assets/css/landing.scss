@@ -295,6 +295,22 @@ main.landing {
                     }
                 }
             }
+
+            @include on-small-and-medium() {
+                .row {
+                    @include flex-direction(column);
+                }
+
+                .desc {
+                    h2 {
+                        text-align: center;
+                    }
+
+                    p {
+                        padding-right: 0;
+                    }
+                }
+            }
         }
     }
 
