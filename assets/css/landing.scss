@@ -193,6 +193,16 @@ main.landing {
                     font-size: 20px;
                 }
             }
+
+            @include on-small-and-medium() {
+                @include flex-direction(column);
+
+                .box {
+                    &:first-child {
+                        border-right: none;
+                    }
+                }
+            }
         }
 
         .fast {
