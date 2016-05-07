@@ -102,6 +102,11 @@ main.success {
         h2 {
             margin-top: 100px;
             margin-left: 70px;
+
+            @include on-small() {
+                text-align: center;
+                margin-left: 0;
+            }
         }
 
         .row {
