@@ -112,6 +112,10 @@ main.success {
         .row {
             @include flexbox();
             @include flex-direction(row);
+
+            @include on-small-and-medium() {
+                @include flex-direction(column);
+            }
         }
 
         .desc {
@@ -128,6 +132,10 @@ main.success {
 
         .video {
             padding: 40px;
+
+            video {
+                width: 100%;
+            }
         }
 
         .image-overlay {
