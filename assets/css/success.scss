@@ -142,6 +142,18 @@ main.success {
             font-size: 26px;
             margin: 70px 0;
 
+            @include on-small() {
+                min-height: 100vh;
+
+                .background {
+                    height: 100vh;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+
             blockquote {
                 width: 60%;
                 margin: 0 auto;
