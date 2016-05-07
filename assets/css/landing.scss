@@ -184,8 +184,11 @@ main.landing {
             @include flexbox();
             @include flex-direction(column);
             @include align-items(center);
-            padding: 100px 0;
             @extend %standard-text;
+
+            @include on-medium-and-large() {
+                padding: 100px 0;
+            }
 
             h2 {
                 font-size: $h2-size;
@@ -206,8 +209,10 @@ main.landing {
 
             // Chart style
             .ct-chart {
-                height: 70%;
-                width: 40%;
+                @include on-medium-and-large() {
+                    height: 70%;
+                    width: 40%;
+                }
 
                 .ct-series {
                     .ct-bar {
