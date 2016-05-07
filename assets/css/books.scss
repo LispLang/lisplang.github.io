@@ -27,12 +27,22 @@ main.books {
             @include flex-direction(row);
             @include align-items(flex-start);
 
+            @include on-small() {
+                @include flex-direction(column);
+            }
+
             padding: 100px 0;
 
             .cover {
-                $width: 30vw;
-                min-width: $width;
-                max-width: $width;
+                @include on-medium-and-large() {
+                    $width: 30vw;
+                    min-width: $width;
+                    max-width: $width;
+                }
+
+                @include on-small() {
+                    width: 100%;
+                }
 
                 img {
                     width: 100%;
@@ -40,7 +50,9 @@ main.books {
             }
 
             main {
-                padding-left: 50px;
+                @include on-medium-and-large() {
+                    padding-left: 50px;
+                }
 
                 h2 {
                     font-family: $serif-1-family;
