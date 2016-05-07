@@ -59,7 +59,13 @@
           </ul>
           <div data-tabs-content class="tabs-content">
             {% for tab in story.tabs %}
-              <div data-tabs-pane class="tabs-pane" id="{{ tab.id }}">
+              <div data-tabs-pane
+                   {% if forloop.first == true %}
+                   class="tabs-pane active"
+                   {% else %}
+                   class="tabs-pane"
+                   {% endif %}
+                   id="{{ tab.id }}">
                 {{ tab.content | markdownify }}
               </div>
             {% endfor %}
