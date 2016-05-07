@@ -225,12 +225,17 @@ main.landing {
             }
 
             @include on-small() {
+                padding: 30px 0;
                 min-height: 100vh;
                 @include justify-content(space-around);
 
                 .desc {
                     width: 80%;
                     text-align: center;
+                }
+
+                .ct-chart {
+                    width: 90%;
                 }
             }
 
