@@ -104,6 +104,10 @@
         padding: 25px 100px;
         margin: 25px 0;
 
+        @include on-small() {
+            padding: 0;
+        }
+
         code {
             font-family: $code-font;
         }
