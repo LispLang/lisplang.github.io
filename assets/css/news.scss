@@ -33,6 +33,10 @@ main.news {
                 width: 70%;
                 margin: 0 auto;
 
+                @include on-small() {
+                    margin-top: 80px;
+                }
+
                 font-family: $serif-1-family;
                 color: white;
 
