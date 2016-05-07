@@ -133,6 +133,13 @@ main.landing {
                     }
                 }
             }
+
+            @include on-small() {
+                .text {
+                    margin: 150px;
+                    width: 80%;
+                }
+            }
         }
 
         .paradigm {
