@@ -37,6 +37,19 @@ footer {
                 font-size: 14px;
             }
         }
+
+        @include on-small() {
+            @include flex-direction(column);
+            @include align-items(center);
+
+            ul {
+                margin-left: 0;
+
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .copy {
