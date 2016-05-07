@@ -10,9 +10,19 @@ nav {
         margin: 0 auto;
 
         @include flexbox();
-        @include flex-direction(row);
         @include align-items(center);
         @include justify-content(space-between);
+        @include flex-direction(row);
+
+        @include on-small() {
+            height: auto;
+            margin-top: 15px;
+            @include flex-direction(column);
+
+            .brand {
+                margin-bottom: 15px;
+            }
+        }
 
         .brand {
             img {
@@ -22,14 +32,21 @@ nav {
         }
 
         ul {
+            list-style-type: none;
+
             @include flexbox();
             @include flex-direction(row);
 
-            list-style-type: none;
+            @include on-small() {
+                @include flex-direction(column);
+                @include align-items(center);
+            }
 
             li {
-                &:not(:last-child) {
-                    margin-right: 30px;
+                @include on-medium-and-large() {
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                    }
                 }
 
                 a {
@@ -40,12 +57,14 @@ nav {
                     text-decoration: none;
                     color: $white;
 
-                    border-bottom: 2px solid transparent;
+                    @include on-medium-and-large() {
+                        border-bottom: 2px solid transparent;
 
-                    @include transition(border-bottom 0.25s ease);
+                        @include transition(border-bottom 0.25s ease);
 
-                    &:hover {
-                        border-bottom: 2px solid white;
+                        &:hover {
+                            border-bottom: 2px solid white;
+                        }
                     }
                 }
             }
