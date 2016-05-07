@@ -14,12 +14,16 @@
 @import 'components/highlight';
 
 .learn {
-    @include flexbox();
-    @include flex-direction(row);
+    @include on-medium-and-large() {
+        @include flexbox();
+        @include flex-direction(row);
+    }
+
+    @include on-small() {
+        width: 100vw;
+    }
 
     aside {
-        width: 300px;
-        height: 100%;
         @include flexbox();
         @include flex-direction(column);
 
@@ -28,6 +32,16 @@
         @include box-shadow(10px 0px 30px 1px rgba(209,209,209,1));
         border-right: 1px solid #ccc;
         background: rgba(0,0,0,0.02);
+
+        @include on-medium-and-large() {
+            width: 300px;
+            height: 100%;
+        }
+
+        @include on-small() {
+            width: 100%;
+            height: auto;
+        }
 
         .logo {
             @include flexbox();
