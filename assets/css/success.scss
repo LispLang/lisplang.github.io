@@ -175,6 +175,14 @@ main.success {
                 @include justify-content(space-around);
                 @include align-items(center);
 
+                @include on-small() {
+                    @include flex-direction(column);
+
+                    li {
+                        margin-top: 30px;
+                    }
+                }
+
                 li {
                     display: block;
                     border: none;
