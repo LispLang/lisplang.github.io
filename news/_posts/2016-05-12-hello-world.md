@@ -48,10 +48,16 @@ variants of the letter lambda, the [Lisp salamander][salamander], and the
 But logos have to be 1) beautiful and 2) simple, so they are easily
 remembered. The salamander isn't the former and the alien isn't the latter.
 
-![lisp-lang.org logo](/assets/img/logo/logo-blue.png)
-
 But becacuse I'm not a graphic designer and good designers are expensive, I just
-slapped together a lambda and a rounded square. It's an MVP, I guess.
+slapped together a lambda and a rounded square, and called it a day:
+
+<img src="/assets/img/logo/old/blue.png" width="300" alt="old logo" title="old logo">
+
+Then a friend, who is a self-taught graphic designer, saw it and decided he
+couldn't let it stand. So he made this slightly different but curvier and thus
+more artistic logo:
+
+<img src="/assets/img/logo/blue.png" width="300" alt="new logo" title="new logo">
 
 # The Competition
 
