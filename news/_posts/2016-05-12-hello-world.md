@@ -51,10 +51,10 @@ advertising integrations:
 
 ![Stripe integration](/assets/img/news/stripe-integration.png)
 
-Because Common Lisp was created by an organization, it never got an 'official'
-logo. As a result, there are basically three logos in use in the wild: endless
-variants of the letter lambda, the [Lisp salamander][salamander], and the
-[Lisp alien][alien].
+Because Common Lisp was created by a [collection of organizations][credits], it
+never got an 'official' logo. As a result, there are basically three logos in
+use in the wild: endless variants of the letter lambda, the
+[Lisp salamander][salamander], and the [Lisp alien][alien].
 
 But logos have to be 1) beautiful and 2) simple, so they are easily
 remembered. The salamander isn't the former and the alien isn't the latter.
@@ -99,6 +99,7 @@ terrible age, and it's under Lispworks' copyright.
 [clhs]: http://www.lispworks.com/documentation/HyperSpec/Front/
 [tex]: https://github.com/LispLang/ansi-spec
 [stripe]: https://stripe.com/us/features
+[credits]: http://www.lispworks.com/documentation/lw50/CLHS/Body/00_.htm
 [salamander]: https://web.archive.org/web/20051126033302/http://www.normal-null.de/lisp_logo.html
 [alien]: http://lisperati.com/logo.html
 [cl.net]: https://common-lisp.net/
