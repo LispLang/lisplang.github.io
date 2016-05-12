@@ -42,6 +42,10 @@ In the future, there'll be a wiki, and a better-looking version of the
 in Lisp, of course) if the community demands it, but currently people seem to be
 fine with Reddit and IRC.
 
+So, in short: centralize a vast amount of distributed information, lower
+friction, and point people in the right direction. "Just use [SBCL][sbcl]"
+instead of "here's fifty implementations you can choose from, good luck".
+
 # The Logo
 
 Languages have to have logos. No just to associate them with easily remembered
@@ -102,6 +106,7 @@ terrible age, and it's under Lispworks' copyright.
 [book]: /books/
 [clhs]: http://www.lispworks.com/documentation/HyperSpec/Front/
 [tex]: https://github.com/LispLang/ansi-spec
+[sbcl]: http://www.sbcl.org/
 [stripe]: https://stripe.com/us/features
 [credits]: http://www.lispworks.com/documentation/lw50/CLHS/Body/00_.htm
 [salamander]: https://web.archive.org/web/20051126033302/http://www.normal-null.de/lisp_logo.html
