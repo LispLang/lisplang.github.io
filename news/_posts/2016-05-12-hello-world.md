@@ -50,8 +50,8 @@ Languages have to have logos. No just to associate them with easily remembered
 images, but because the logo is often use to identify the language in lieu of
 words.
 
-For instance, [Stripe][stripe] uses logos to identify languages when
-advertising integrations:
+[Stripe][stripe], for example, uses logos to identify languages when advertising
+integrations:
 
 ![Stripe integration](/assets/img/news/stripe-integration.png)
 
@@ -61,16 +61,8 @@ the wild: endless variants of the letter lambda, the
 [Lisp salamander][salamander], and the [Lisp alien][alien].
 
 But logos have to be 1) beautiful and 2) simple, so they are easily
-remembered. The salamander isn't the former and the alien isn't the latter.
-
-But becacuse I'm not a graphic designer and good designers are expensive, I just
-slapped together a lambda and a rounded square, and called it a day:
-
-<img src="/assets/img/logo/old/blue.png" width="300" alt="old logo" title="old logo">
-
-Then a friend, who is a self-taught graphic designer, saw it and decided he
-couldn't let it stand. So he made this slightly different but curvier and thus
-more artistic logo:
+remembered. The salamander isn't the former and the alien isn't the latter. So
+we've created this as an alternative:
 
 <img src="/assets/img/logo/blue.png" width="300" alt="new logo" title="new logo">
 
