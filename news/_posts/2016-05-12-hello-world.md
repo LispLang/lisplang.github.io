@@ -4,8 +4,6 @@ author: Fernando Borretti
 tags: [administrativia]
 ---
 
-I'm quite happpy
-
 # Previously
 
 If someone wanted to learn Common Lisp, the language, their best bet was Peter
