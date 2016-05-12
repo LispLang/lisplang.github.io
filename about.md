@@ -15,3 +15,11 @@ To make a change to the website:
 2. Fork it
 3. Make your changes
 4. Open a pull request
+
+# Colophon
+
+Built with [Jekyll][jek] and [Sass][sass]. Hosted on [GitHub Pages][gh].
+
+[jek]: https://jekyllrb.com/
+[sass]: http://sass-lang.com/
+[gh]: https://pages.github.com/
