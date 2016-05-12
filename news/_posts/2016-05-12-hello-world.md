@@ -4,12 +4,12 @@ author: Fernando Borretti
 tags: [administrativia]
 ---
 
-# Previously
+Welcome to `lisp-lang.org`, the new home of Common Lisp on the web.
 
-If someone wanted to learn Common Lisp, the language, their best bet was Peter
-Seibel's [_Practical Common Lisp_][pcl]. But the book, written in 2005, doesn't
-cover setting up a modern Common Lisp environment: [Quicklisp][ql] is a more
-recent invention.
+Previously, if someone wanted to learn Common Lisp, the language, their best bet
+was Peter Seibel's [_Practical Common Lisp_][pcl]. But the book, written in
+2005, doesn't cover setting up a modern Common Lisp environment: tools like
+[Quicklisp][ql] and [Quickdocs][qd] are more recent inventions.
 
 Learning how to write [ASDF][asdf] systems (think `package.json`), how a library
 should be structured, where to find documentation (the answer is
@@ -81,13 +81,12 @@ and [Cliki][cliki]. The former is primarily a [GitLab][gl]-based hosting service
 for Common Lisp projects, but the landing page contains a brief description of
 the language, plus links to tutorials and the like.
 
-Cliki is a wiki, but it looks horrible (which itself is a sufficient reason to
-replace it), and despite the number of articles, doesn't contain much useful
-information. For instance, the article on [CLOS][clos] is mostly (dead) links to
-other websites, and doesn't have code examples. So it will have to go.
+Cliki, the Common Lisp wiki, was written when the web was a very different
+place, and is starting to show its age.
 
-And the [CLHS][clhs] needs to be replaced as well, simply because it shows its
-terrible age, and it's under Lispworks' copyright.
+And the [CLHS][clhs] is under Lispworks' copyright, so it can't be improved by
+the community. Because of that, an open-source alternative generated from the
+spec sources, that people can easily fork, edit, and update, is needed.
 
 [pcl]: /books/#practical-common-lisp
 [ql]: https://www.quicklisp.org/beta/
