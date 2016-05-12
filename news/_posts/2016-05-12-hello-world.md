@@ -4,6 +4,8 @@ author: Fernando Borretti
 tags: [administrativia]
 ---
 
+I'm quite happpy
+
 # Previously
 
 If someone wanted to learn Common Lisp, the language, their best bet was Peter
@@ -51,9 +53,9 @@ advertising integrations:
 
 ![Stripe integration](/assets/img/news/stripe-integration.png)
 
-Because Common Lisp was created by a [collection of organizations][credits], it
-never got an 'official' logo. As a result, there are basically three logos in
-use in the wild: endless variants of the letter lambda, the
+Because Common Lisp was created by a [group of organizations][credits], it never
+got an 'official' logo. As a result, there are basically three logos in use in
+the wild: endless variants of the letter lambda, the
 [Lisp salamander][salamander], and the [Lisp alien][alien].
 
 But logos have to be 1) beautiful and 2) simple, so they are easily
