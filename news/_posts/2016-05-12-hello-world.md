@@ -31,8 +31,8 @@ provide a central location to both advertise Common Lisp, and provide all the
 information prospective users need to become productive with it, without having
 to collect it from different sites and blogs, and without falling into choice
 paralysis. 'Productive' means going beyond teaching users about lists and
-macros, and including information on how to write libraries, unit-test them, use
-CI and code coverage, and publish them to Quicklisp.
+macros, and including information on how to [write libraries][lib], unit-test
+them, use [CI and code coverage][ci], and publish them to Quicklisp.
 
 Currently we have [tutorials][tut], a [style guide][style], a showcase of
 [success stories][story], and a collection of [Lisp books][book].
@@ -94,6 +94,8 @@ terrible age, and it's under Lispworks' copyright.
 [scala]: http://www.scala-lang.org/
 [asdf]: https://common-lisp.net/project/asdf/
 [qd]: http://quickdocs.org/
+[lib]: /learn/writing-libraries
+[ci]: /learn/continuous-integration
 [tut]: /learn/
 [style]: /style-guide/
 [story]: /success/
