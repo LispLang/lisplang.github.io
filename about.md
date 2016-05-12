@@ -1,6 +1,6 @@
 ---
-title: Contributing
-permalink: /contribute/
+title: About
+permalink: /about/
 
 layout: page
 css_file: community
