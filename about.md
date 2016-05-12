@@ -7,7 +7,7 @@ css_file: community
 header: /assets/img/header/community.jpg
 ---
 
-# How to contribute
+# How to contribute {#contribute}
 
 To make a change to the website:
 
