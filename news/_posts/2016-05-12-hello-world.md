@@ -24,11 +24,13 @@ websites.
 
 # Goals
 
-The goal of `lisp-lang.org` is to unify: provide a central location to both
-advertise Common Lisp, and provide all the information prospective users need to
-become productive with it. 'Productive' means going beyond teaching users about
-lists and macros, and including information on how to write libraries, unit-test
-them, use CI and code coverage, and publish them to Quicklisp.
+The goal of `lisp-lang.org` is to **lower the barrier to entry to Common Lisp**:
+provide a central location to both advertise Common Lisp, and provide all the
+information prospective users need to become productive with it, without having
+to collect it from different sites and blogs, and without falling into choice
+paralysis. 'Productive' means going beyond teaching users about lists and
+macros, and including information on how to write libraries, unit-test them, use
+CI and code coverage, and publish them to Quicklisp.
 
 Currently we have [tutorials][tut], a [style guide][style], a showcase of
 [success stories][story], and a collection of [Lisp books][book].
@@ -39,6 +41,15 @@ in Lisp, of course) if the community demands it, but currently people seem to be
 fine with Reddit and IRC.
 
 # The Logo
+
+Languages have to have logos. No just to associate them with easily remembered
+images, but because the logo is often use to identify the language in lieu of
+words.
+
+For instance, [MonkeyLearn][ml] uses logos to identify languages when
+advertising integrations:
+
+![MonkeyLearn logo](/assets/img/news/monkeylearn-integration.png)
 
 Because Common Lisp was created by an organization, it never got an 'official'
 logo. As a result, there are basically three logos in use in the wild: endless
@@ -87,6 +98,7 @@ terrible age, and it's under Lispworks' copyright.
 [book]: /books/
 [clhs]: http://www.lispworks.com/documentation/HyperSpec/Front/
 [tex]: https://github.com/LispLang/ansi-spec
+[ml]: http://monkeylearn.com/
 [salamander]: https://web.archive.org/web/20051126033302/http://www.normal-null.de/lisp_logo.html
 [alien]: http://lisperati.com/logo.html
 [cl.net]: https://common-lisp.net/
