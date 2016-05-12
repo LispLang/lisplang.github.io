@@ -85,8 +85,9 @@ Cliki, the Common Lisp wiki, was written when the web was a very different
 place, and is starting to show its age.
 
 And the [CLHS][clhs] is under Lispworks' copyright, so it can't be improved by
-the community. Because of that, an open-source alternative generated from the
-spec sources, that people can easily fork, edit, and update, is needed.
+the community. Because of that, an open-source alternative with generated from
+the specification sources, that people can easily fork, edit, and update, is
+needed.
 
 [pcl]: /books/#practical-common-lisp
 [ql]: https://www.quicklisp.org/beta/
