@@ -42,7 +42,7 @@ have to be implemented within the project? Or are there parts that might be
 usable by others? If so, split the project into libraries.
 
 If you set out to write a vast monolith and then lose interest, you will end up
-wieth 30% of an ambitious project, completely unusable to others because it's
+with 30% of an ambitious project, completely unusable to others because it's
 bound to the rest of the unfinished code.
 
 If you think of your project as a collection of independent libraries, bound
