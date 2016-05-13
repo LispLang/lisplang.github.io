@@ -46,7 +46,7 @@ instead of "here's fifty implementations you can choose from, good luck".
 
 # The Logo
 
-Languages have to have logos. No just to associate them with easily remembered
+Languages have to have logos. Not just to associate them with easily remembered
 images, but because the logo is often use to identify the language in lieu of
 words.
 
