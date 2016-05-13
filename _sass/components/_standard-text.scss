@@ -1,5 +1,5 @@
 pre code {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata', "Lucida Console", Monaco, monospace;
 }
 
 %standard-text {
@@ -8,7 +8,7 @@ pre code {
     $list-indent: 30px;
     $text-font-size: 20px;
     $code-font-size: 21px;
-    $code-font: 'Inconsolata', monospace;
+    $code-font: 'Inconsolata', "Lucida Console", Monaco, monospace;
 
     /* Fonts */
 
