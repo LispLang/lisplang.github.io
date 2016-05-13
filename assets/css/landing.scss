@@ -290,6 +290,10 @@ main.landing {
 
                     &.ct-horizontal {
                         font-size: 30px;
+
+                        @include on-small() {
+                            font-size: 15px;
+                        }
                     }
 
                     &.ct-vertical {
