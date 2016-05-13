@@ -94,8 +94,8 @@ main.landing {
 
                         pre {
                             margin: 0;
-                            padding: 25px;
-                            font-size: 1em;
+                            padding: 25px 70px;
+                            font-size: 1.1em;
                         }
 
                         @include on-small() {
