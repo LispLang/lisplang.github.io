@@ -73,7 +73,11 @@ description: Common Lisp
           them, call them dynamically. Build your application by composing
           small, functional building blocks.
         </div>
-        <pre><code class="lisp">(reduce #'- (reverse (list 1 2 3))) ⇒ 0</code></pre>
+        <pre><code class="lisp">(reduce #'-
+        (reverse (list 1 2 3))) ⇒ 0
+
+(mapcar #'string-downcase
+        (list "Hello" "world!")) => ("hello" "world!")</code></pre>
       </section>
       <section class="box oop">
         <h2>Object-Oriented</h2>
@@ -84,12 +88,15 @@ description: Common Lisp
           as you adapt the language to your problem domain.
         </div>
         <pre><code class="lisp">(defclass book ()
-  ((title :reader book-title :initarg :title)
-   (author :reader book-author :initarg :author))
+  ((title :reader book-title
+          :initarg :title)
+   (author :reader book-author
+           :initarg :author))
   (:documentation "Describes a book."))
 
-(make-instance 'book :title "ANSI Common Lisp"
-                     :author "Paul Graham")</code></pre>
+(make-instance 'book
+               :title "ANSI Common Lisp"
+               :author "Paul Graham")</code></pre>
       </section>
     </section>
     <section class="fast">
