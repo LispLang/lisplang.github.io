@@ -47,7 +47,7 @@ differences being:
 2. `defparameter` variables are changed when code is reloaded with a new initial
    value, `defvar` variables are not.
 
-What does lexical scoping mean? It means:
+What does dynamic scoping mean? It means:
 
 ```lisp
 (defparameter *string* "I'm global")
