@@ -29,5 +29,9 @@ header.hero {
         font-weight: 400;
         margin-top: 0;
         color: $white;
+
+        @include on-small() {
+            font-size: 50px;
+        }
     }
 }

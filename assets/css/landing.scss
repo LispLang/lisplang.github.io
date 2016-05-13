@@ -43,8 +43,15 @@ main.landing {
 
     header.hero {
         h1 {
-            font-size: $h1-size;
             text-align: center;
+
+            @include on-medium-and-large() {
+                font-size: $h1-size;
+            }
+
+            @include on-small() {
+                font-size: 4em;
+            }
         }
     }
 
