@@ -72,8 +72,8 @@ and [Cliki][cliki]. The former is primarily a [GitLab][gl]-based hosting service
 for Common Lisp projects, but the landing page contains a brief description of
 the language, plus links to tutorials and the like.
 
-Cliki, the Common Lisp wiki, was written when the web was a very different
-place, and is starting to show its age.
+Cliki, the Common Lisp wiki, was written at a time when the web was a very
+different place, and is starting to show its age.
 
 And the [CLHS][clhs] is under Lispworks' copyright, so it can't be improved by
 the community. Because of that, an open-source alternative with generated from
