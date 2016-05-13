@@ -66,7 +66,7 @@ this as an alternative:
 
 <img src="/assets/img/logo/blue.png" width="300" alt="new logo" title="new logo">
 
-# The Competition
+# Prior Art
 
 The two websites that come close to this project are [common-lisp.net][cl.net]
 and [Cliki][cliki]. The former is primarily a [GitLab][gl]-based hosting service
