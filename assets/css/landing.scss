@@ -307,6 +307,10 @@ main.landing {
             margin: 100px 0;
             padding: 0 100px;
 
+            @include on-small() {
+                padding: 0 20px;
+            }
+
             .desc {
                 flex: 6;
                 @extend %standard-text;
