@@ -312,16 +312,4 @@
 
 /* Inconsolata */
 
-@font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Inconsolata'), url('/assets/fonts/lusitana/Lusitana-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Inconsolata';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Inconsolata Bold'), url('/assets/fonts/lusitana/Lusitana-Bold.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
