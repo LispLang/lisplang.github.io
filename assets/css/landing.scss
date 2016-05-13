@@ -97,6 +97,20 @@ main.landing {
                             padding: 25px;
                             font-size: 1em;
                         }
+
+                        @include on-small() {
+                            .titlebar {
+                                display: none;
+                            }
+
+                            .body {
+                                border: none;
+                            }
+
+                            pre {
+                                padding: 0;
+                            }
+                        }
                     }
                 }
 
