@@ -183,6 +183,10 @@ main.landing {
                     margin: 0 auto;
                     text-align: justify;
                     font-size: $text-size;
+
+                    @include on-small() {
+                        text-align: left;
+                    }
                 }
             }
 
