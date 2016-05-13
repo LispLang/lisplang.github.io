@@ -13,8 +13,8 @@ was Peter Seibel's [_Practical Common Lisp_][pcl]. But the book, written in
 
 Learning how to write [ASDF][asdf] systems (think `package.json`), how a library
 should be structured, where to find documentation (the answer is
-[Quickdocs][qd]), all of that information is spread across dozens of tutorials
-in different websites.
+[Quickdocs][qd]), all of that information is spread across dozens of tutorials,
+manuals and blog posts across different websites.
 
 Languages created by a single person or a small group, around which a community
 accretes, tend to do better here: [Python][python], [Ruby][ruby] and
