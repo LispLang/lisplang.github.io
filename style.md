@@ -78,7 +78,7 @@ For example:
 ~~~lisp
 (defparameter +golden-ratio+ 1.6180339)
 
-(defparameter +allowed-operators '(+ - * / expt))
+(defparameter +allowed-operators+ '(+ - * / expt))
 ~~~
 
 ## Predicates
