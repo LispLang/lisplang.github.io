@@ -93,9 +93,16 @@
 
     article {
         width: 100%;
-        padding: 45px 70px;
         overflow: auto;
         position: relative;
+
+        @include on-medium-and-large() {
+            padding: 45px 70px;
+        }
+
+        @include on-small() {
+            padding: 0 10px;
+        }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: 'PT Sans', serif;
