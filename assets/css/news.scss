@@ -52,6 +52,10 @@ main.news {
 
                     span {
                         padding: 0 10px;
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
                     }
                 }
             }
