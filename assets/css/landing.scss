@@ -497,4 +497,12 @@ main.landing {
             @extend %hover-underline;
         }
     }
+
+    @include on-small() {
+        pre {
+            code {
+                font-size: 15px !important;
+            }
+        }
+    }
 }
