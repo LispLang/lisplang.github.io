@@ -60,9 +60,8 @@ got an 'official' logo. As a result, there are basically three logos in use in
 the wild: endless variants of the letter lambda, the
 [Lisp salamander][salamander], and the [Lisp alien][alien].
 
-But logos have to be beautiful and simple, so they are easily remembered. The
-salamander isn't the former and the alien isn't the latter. So we've created
-this as an alternative:
+But logos have to be beautiful and simple, so they are easily remembered. These
+don't necessarily fit these criteria. So we've created this as an alternative:
 
 <img src="/assets/img/logo/blue.png" width="300" alt="new logo" title="new logo">
 
