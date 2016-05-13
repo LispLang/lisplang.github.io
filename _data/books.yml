@@ -143,3 +143,31 @@
     [pobi-desc]: http://franz.com/success/customer_apps/bioinformatics/book_Ira-Kalet.lhtml
   links:
     amazon: http://www.amazon.com/Principles-Biomedical-Informatics-Second-Kalet/dp/0124160190
+- title: Common Lisp Recipes 
+  author: Edmund Weitz
+  cover: clr.jpg
+  description: |
+    [*Common Lisp Recipes*](http://weitz.de/cl-recipes/) is a book
+    every Common Lisper should keep within arm's reach.
+
+    From the author's description:
+
+    >**Common Lisp Recipes** is a collection of solutions to problems
+    >and answers to questions you are likely to encounter when writing
+    >real-world applications in Common Lisp. Written by an author who
+    >has used Common Lisp in many successful commercial projects over
+    >more than a decade, this book covers areas as diverse as web
+    >programming, databases, graphical user interfaces, integration
+    >with other programming languages, multi-threading, and mobile
+    >devices as well as debugging techniques and optimization, to name
+    >just a few. It is also the first Common Lisp book to tackle such
+    >advanced topics as environment access, logical pathnames, Gray
+    >streams, delivery of executables, pretty printing, setf
+    >expansions, or changing the syntax of Common Lisp.
+
+    >**Common Lisp Recipes** is written in a style that mixes hands-on,
+    >no frills pragmatism with precise information and prudent
+    >mentorship.
+  links:
+    amazon: http://www.amazon.com/gp/product/1484211774/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1484211774&linkCode=as2&tag=ediwei-20&linkId=KLUFEAD2NVMNB7RZ
+      
