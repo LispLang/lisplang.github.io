@@ -362,11 +362,9 @@ main.landing {
         padding: 70px 0;
         @extend %standard-text;
 
-        @include on-medium-and-large() {
-            $shadow-color: rgba(0, 0, 0, 0.10);
-            @include box-shadow(inset 0 60px 100px -40px $shadow-color,
-                                inset 0 -60px 100px -40px $shadow-color);
-        }
+        $shadow-color: rgba(0, 0, 0, 0.10);
+        @include box-shadow(inset 0 60px 100px -40px $shadow-color,
+                            inset 0 -60px 100px -40px $shadow-color);
 
         ul {
             list-style-type: none;
