@@ -15,7 +15,20 @@ pre code {
     color: $black;
 
     font-family: $sans-serif-1-family;
-    font-size: $text-font-size;
+
+    @include on-medium-and-large() {
+        font-size: $text-font-size;
+    }
+
+    @include on-small() {
+        font-size: 16px;
+
+        pre {
+            code {
+                font-size: 16px;
+            }
+        }
+    }
 
     :not(pre) > code {
         font-family: $code-font;
