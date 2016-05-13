@@ -397,7 +397,7 @@ stories:
       description: |
         [Grammarly][site] is a grammar checking startup, but it's far more than
         a simple spell checker. It's grammar engine, written in Common Lisp,
-        finds instances of incorrenct tenses and suggests more precise synonyms
+        finds instances of incorrect tenses and suggests more precise synonyms
         for common words.
 
         >At Grammarly, the foundation of our business, our core grammar engine,

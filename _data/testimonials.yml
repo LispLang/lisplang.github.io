@@ -4,7 +4,7 @@
   description: |
     [Grammarly][site] is a grammar checking startup, but it's far more than a
     simple spell checker. Its grammar engine, written in Common Lisp, finds
-    instances of incorrenct tenses and suggests more precise synonyms for common
+    instances of incorrect tenses and suggests more precise synonyms for common
     words.
 
     [site]: https://www.grammarly.com
