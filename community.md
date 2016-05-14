@@ -20,8 +20,10 @@ header: /assets/img/header/community.jpg
 
 - [Planet Lisp][planet]
 - [Lisp World](https://twitter.com/LispWorld)
+- [The Little Lisper][thelittlelisper]
 
 [r]: https://www.reddit.com/r/lisp
 [rcl]: https://www.reddit.com/r/common_lisp
 [rlearn]: https://www.reddit.com/r/learnlisp
 [planet]: https://twitter.com/planet_lisp
+[thelittlelisper]: https://twitter.com/thelittlelisper
