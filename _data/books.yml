@@ -49,6 +49,8 @@
     >at object-oriented programming than previous Lisp books, showing the
     >step-by-step construction of a working model of the Common Lisp Object
     >System (CLOS).
+    
+    The book is available for free on [the author's site](http://www.paulgraham.com/onlisp.html).
   links:
     amazon: http://www.amazon.com/Lisp-Advanced-Techniques-Common/dp/0130305529
 
@@ -96,6 +98,8 @@
     >problems today and now, it has also been designed to be entertaining and
     >inspiring. If you have ever wondered what lisp or even programming itself
     >is really about, this is the book you have been looking for.
+    
+    Most of the book is available for free on [the author's site][lol]
 
     [lol]: http://letoverlambda.com/
   links:
