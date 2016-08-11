@@ -1,0 +1,24 @@
+---
+title: All Articles
+permalink: /wiki/article/all/
+---
+
+<main class="article list">
+  <ul class="articles">
+    {% assign lastletter = "" %}
+
+    {% for post in site.categories['wiki'] reversed %}
+      {% assign tmpletter = post.title | slice: 0 | upcase %}
+
+      {% if tmpletter != lastletter %}
+        <h1>{{ tmpletter }}</h1>
+      {% endif %}
+
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+
+      {% assign lastletter = tmpletter %}
+    {% endfor %}
+  </ul>
+</main>
