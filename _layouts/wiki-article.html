@@ -1,0 +1,34 @@
+---
+layout: wiki
+---
+
+<main class="article {{ article-class }}">
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <article>
+    {{ content }}
+  </article>
+  <div class="bottom-bar">
+    <ul>
+      <li>
+        <strong>Hide links</strong>
+        <a id="hide-links">off</a>
+      </li>
+      <li>
+        <strong>Font size</strong>
+        <a id="decrease-font-size">-</a>
+        <a id="increase-font-size">+</a>
+      </li>
+    </ul>
+    <ul>
+      {% assign wordCount = page.content | number_of_words %}
+      <li>
+        <strong>Words:</strong> {{ wordCount }}
+      </li>
+      <li>
+        <strong>Time to read:</strong> {{ wordCount | divided_by: 200 }} min
+      </li>
+    </ul>
+  </div>
+</main>
