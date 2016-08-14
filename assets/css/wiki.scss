@@ -278,17 +278,4 @@ main.article {
             }
         }
     }
-
-    &.changes .change-list {
-        width: 60%;
-        margin: 50px auto;
-
-        li {
-            list-style-type: none;
-            padding: 25px;
-            margin-bottom: 30px;
-            border: 1px solid #333;
-            border-radius: 6px;
-        }
-    }
 }
