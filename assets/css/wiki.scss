@@ -235,7 +235,13 @@ main.article {
             }
         }
 
-        &[hide-links=\"true\"] a {
+        // Link style
+
+        a {
+            color: blue;
+        }
+
+        &[hide-links=true] a {
             color: #333;
             text-decoration: none;
         }
