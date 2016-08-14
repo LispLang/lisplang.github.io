@@ -212,29 +212,6 @@ main.article {
             border: 1px solid black;
         }
 
-        .theorem {
-            padding-left: 15px;
-            border-left: 3px solid #d8d8d8;
-
-            .statement {
-                padding-left: 15px;
-                border-left: 3px solid #d8d8d8;
-                margin-bottom: 50px;
-            }
-
-            .proof {
-                padding-left: 15px;
-                border-left: 3px solid #d8d8d8;
-            }
-
-            .title {
-                font-size: 1.1em;
-                font-weight: bold;
-                display: block;
-                margin-bottom: 15px;
-            }
-        }
-
         // Link style
 
         a {
