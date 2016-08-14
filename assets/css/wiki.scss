@@ -144,28 +144,29 @@ main.article {
                 text-align: center;
                 width: 100px;
                 left: -100px;
+
+                &:before {
+                    content: '§';
+                }
+            }
+
+            &:hover {
+                position: relative;
+
+                .link {
+                    display: block;
+                }
             }
         }
-
-        h1 .link:before, h2 .link:before, h3 .link:before, h4 .link:before, h5 .link:before, h6 .link:before {
-                                                                                                 content: '§';
-                                                                                             }
-
-        h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
-                                                              position: relative;
-                                                          }
-
-        h1:hover .link, h2:hover .link, h3:hover .link, h4:hover .link, h5:hover .link, h6:hover .link {
-                                                                                            display: block;
-                                                                                        }
 
         ul li, ol li {
             margin-left: 45px;
         }
 
-        ul li:not(:last-child), ol li:not(:last-child) {
-                                    margin-bottom: 10px;
-                                }
+        ul li:not(:last-child),
+        ol li:not(:last-child) {
+            margin-bottom: 10px;
+        }
 
         dl {
             dt {
