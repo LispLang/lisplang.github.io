@@ -36,6 +36,11 @@ body {
             }
         }
     }
+
+    a {
+        color: #2d5fb4;
+        text-decoration: none;
+    }
 }
 
 main.article {
@@ -198,11 +203,6 @@ main.article {
         }
 
         // Link style
-
-        a {
-            color: #2d5fb4;
-            text-decoration: none;
-        }
 
         &[hide-links=true] a {
             color: #333;
