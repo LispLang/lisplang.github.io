@@ -6,7 +6,6 @@
 @import 'variables';
 
 @import 'utils/fonts';
-@import 'utils/normalize';
 @import 'utils/reset';
 @import 'utils/mixins';
 
@@ -20,11 +19,7 @@ body {
         height: 50px;
         line-height: 50px;
         background: #f9f9f9;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
+        @include flexbox();
         -webkit-box-direction: normal;
         -webkit-box-orient: horizontal;
         -webkit-flex-direction: row;
@@ -226,11 +221,7 @@ main.article {
         height: 30px;
         line-height: 30px;
         border-top: 1px solid #d8d8d8;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
+        @include flexbox();
         -webkit-box-direction: normal;
         -webkit-box-orient: horizontal;
         -webkit-flex-direction: row;
