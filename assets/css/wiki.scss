@@ -134,15 +134,17 @@ main.article {
       font-family: 'Crimson Text', 'Palatino Linotype', serif;
     }
 
-    h1 .link, h2 .link, h3 .link, h4 .link, h5 .link, h6 .link {
-      display: hidden;
-      color: #222;
-      text-decoration: none;
-      font-style: italic;
-      position: absolute;
-      text-align: center;
-      width: 100px;
-      left: -100px;
+    h1, h2, h3, h4, h5, h6 {
+      .link {
+        display: hidden;
+        color: #222;
+        text-decoration: none;
+        font-style: italic;
+        position: absolute;
+        text-align: center;
+        width: 100px;
+        left: -100px;
+      }
     }
 
     h1 .link:before, h2 .link:before, h3 .link:before, h4 .link:before, h5 .link:before, h6 .link:before {
