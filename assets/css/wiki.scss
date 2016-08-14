@@ -201,11 +201,11 @@ main.article {
 
         a {
             color: #2d5fb4;
+            text-decoration: none;
         }
 
         &[hide-links=true] a {
             color: #333;
-            text-decoration: none;
         }
     }
 
