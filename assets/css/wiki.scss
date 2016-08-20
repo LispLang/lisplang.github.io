@@ -44,6 +44,26 @@ body {
     }
 }
 
+main.article.list {
+    width: 60%;
+    margin: 35px auto;
+
+    border: 1px solid #ccc;
+
+    ul {
+        padding: 20px 30px;
+
+        li {
+            list-style-type: none;
+            padding-left: 45px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
 main.article {
     font-size: 22px;
 
