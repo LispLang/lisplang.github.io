@@ -51,7 +51,7 @@ $(document).ready(function() {
     },
     onSelect: function(event, term, item) {
       var slug = item.getAttribute('data-slug');
-      window.location = '/article/' + slug + '/';
+      window.location = 'wiki/article/' + slug;
     }
   });
 });
