@@ -34,11 +34,15 @@ body {
             li {
                 list-style-type: none;
                 display: block;
-                margin: 0 10px;
+                margin: 0 20px;
 
                 a {
-                    color: #333;
                     text-decoration: none;
+
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 600;
+                    font-size: 1em;
+                    color: black;
                 }
 
                 img {
