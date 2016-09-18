@@ -21,19 +21,29 @@ body {
         background: #f9f9f9;
         @include flexbox();
         @include flex-direction(row);
-        -ms-flex-pack: distribute;
-        -webkit-justify-content: space-around;
-        -moz-justify-content: space-around;
-        justify-content: space-around;
+        @include justify-content(space-around);
 
-        ul li {
-            list-style-type: none;
-            display: inline-block;
-            margin: 0 10px;
+        ul {
+            @include flexbox();
+            @include flex-direction(row);
+            @include justify-content(space-around);
+            @include align-items(center);
 
-            a {
-                color: #333;
-                text-decoration: none;
+            li {
+                list-style-type: none;
+                display: block;
+                margin: 0 10px;
+
+                a {
+                    color: #333;
+                    text-decoration: none;
+                }
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                    display: block;
+                }
             }
         }
 
