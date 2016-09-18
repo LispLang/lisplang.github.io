@@ -55,9 +55,29 @@ body {
 }
 
 main.landing {
+    header {
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        @include align-items(center);
 
+        padding: 70px 0;
+        border-bottom: 1px solid #ccc;
 
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
+        input {
+            height: 40px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #555;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+    }
 }
 
 main.article.list {
