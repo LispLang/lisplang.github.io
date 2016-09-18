@@ -16,12 +16,12 @@ body {
     font-family: 'Lato', sans-serif;
 
     > nav {
-        height: 50px;
-        line-height: 50px;
-        background: #f9f9f9;
+        height: 90px;
+        border-bottom: 1px solid #d9d9d9;
         @include flexbox();
         @include flex-direction(row);
         @include justify-content(space-around);
+        @include align-items(center);
 
         ul {
             @include flexbox();
