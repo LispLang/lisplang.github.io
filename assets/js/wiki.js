@@ -34,13 +34,10 @@ var autocompleteList = [
   {% endfor %}
 ];
 
-$(document).ready(function() {
-  addAnchorsToHeadings();
-  enableLinkVisibilityToggle();
-
+function setupAutocomplete(selector) {
   var autocompleteFuse = new Fuse(autocompleteList, { keys: ['title', '0'] });
   var completion = new autoComplete({
-    selector: 'input[name="search"]',
+    selector: selector,
     minChars: 1,
     delay: 0,
     source: function(term, suggest) {
@@ -51,7 +48,13 @@ $(document).ready(function() {
     },
     onSelect: function(event, term, item) {
       var slug = item.getAttribute('data-slug');
-      window.location = 'wiki/article/' + slug;
+      window.location = 'article/' + slug;
     }
   });
+}
+
+$(document).ready(function() {
+  addAnchorsToHeadings();
+  enableLinkVisibilityToggle();
+  setupAutocomplete('input[name="search"]');
 });
