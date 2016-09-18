@@ -78,6 +78,19 @@ main.landing {
             border: 1px solid #ccc;
         }
     }
+
+    article {
+        width: 60%;
+        margin: 35px auto;
+
+        ul li, ol li {
+            margin-left: 45px;
+        }
+
+        > * {
+            margin-bottom: 18px;
+        }
+    }
 }
 
 main.article.list {
