@@ -313,17 +313,8 @@ main.article {
         @include disable-user-select();
 
         ul {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-direction: normal;
-            -webkit-box-orient: horizontal;
-            -webkit-flex-direction: row;
-            -moz-flex-direction: row;
-            -ms-flex-direction: row;
-            flex-direction: row;
+            @include flexbox();
+            @include flex-direction(row);
 
             li {
                 list-style-type: none;
