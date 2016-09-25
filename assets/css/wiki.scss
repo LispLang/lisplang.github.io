@@ -260,6 +260,15 @@ main.article {
             }
         }
 
+        pre {
+            border: 1px solid #d9d9d9;
+            padding: 15px;
+        }
+
+        pre, pre code, pre span {
+            font-family: 'Inconsolata', monospace !important;
+        }
+
         img {
             display: block;
             margin: 70px auto;
