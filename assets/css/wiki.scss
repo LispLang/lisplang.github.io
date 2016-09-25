@@ -304,11 +304,7 @@ main.article {
         border-top: 1px solid #d8d8d8;
         @include flexbox();
         @include flex-direction(row);
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        justify-content: space-between;
+        @include justify-content(space-between);
         background: white;
         font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
         font-size: 13px;
