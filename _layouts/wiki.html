@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            <img src="/assets/img/logo/blue.png">
+          </a>
+        </li>
+        <li>
+          <a href="/wiki/">
+            Main Page
+          </a>
+        </li>
+        <li>
+          <a href="/wiki/article/all">
+            All Articles
+          </a>
+        </li>
+        <li>
+          <a href="/wiki/article/random/">
+            Random &nbsp;Article
+          </a>
+        </li>
+      </ul>
+      <div class="search">
+        <input name="search" type="text" placeholder="Search" autocomplete="off">
+      </div>
+    </nav>
+    <script src="/assets/js/jquery-2.1.4.js"></script>
+    <script src="/assets/js/fuse-2.2.0.js"></script>
+    <script src="/assets/js/autocomplete-1.0.4.js"></script>
+    <script src="/assets/js/wiki.js"></script>
+    <link rel="stylesheet" href="/assets/css/autocomplete-1.0.4.css">
+    {{ content }}
+    <script src="/assets/highlight-lisp/highlight-lisp.js"></script>
+    <script>HighlightLisp.highlight_auto({className: 'language-lisp'});</script>
+  </body>
+</html>

@@ -38,3 +38,13 @@ defaults:
       permalink: /news/:year/:month/:day/:title/
       layout: "news"
       css_file: "news"
+  - scope:
+      path: "wiki"
+    values:
+      permalink: /wiki/article/:title
+      layout: "wiki"
+      css_file: "wiki"
+  - scope:
+      path: "wiki/_posts"
+    values:
+      layout: "wiki-article"

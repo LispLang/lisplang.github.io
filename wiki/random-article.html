@@ -1,0 +1,17 @@
+---
+title: Random Article
+permalink: /wiki/article/random/
+---
+
+<script>
+ (function() {
+     var articleUrls = [
+         {% for post in site.categories['wiki'] reversed %}
+           "{{ post.url }}",
+         {% endfor %}
+     ];
+     var pos = Math.floor(Math.random()*articleUrls.length);
+     var choice = articleUrls[pos];
+     window.location = choice;
+ })();
+</script>

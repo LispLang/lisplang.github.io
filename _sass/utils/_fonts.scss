@@ -313,3 +313,26 @@
 /* Inconsolata */
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+/* ET Book */
+
+@font-face {
+  font-family: 'et-book';
+  src: url("/assets/fonts/et-book/et-bembo-roman-line-figures.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "'et-book'";
+  src: url("/assets/fonts/et-book/et-bembo-display-italic-old-style-figures.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "'et-book'";
+  src: url("/assets/fonts/et-book/et-bembo-bold-line-figures.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

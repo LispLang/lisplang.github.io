@@ -1,0 +1,37 @@
+---
+layout: wiki
+---
+
+<main class="article {{ article-class }}">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <div class="links">
+      <a href="{{ page.url }}" class="selected">
+        Article
+      </a>
+      <a href="https://raw.githubusercontent.com/LispLang/lisplang.github.io/wiki/wiki/_posts/2016-01-01-{{ page.slug }}.md">
+        Source
+      </a>
+    </div>
+  </header>
+  <article>
+    {{ content }}
+  </article>
+  <div class="bottom-bar">
+    <ul>
+      <li>
+        <strong>Hide links</strong>
+        <a id="hide-links">off</a>
+      </li>
+    </ul>
+    <ul>
+      {% assign wordCount = page.content | number_of_words %}
+      <li>
+        <strong>Words:</strong> {{ wordCount }}
+      </li>
+      <li>
+        <strong>Time to read:</strong> {{ wordCount | divided_by: 200 }} min
+      </li>
+    </ul>
+  </div>
+</main>
