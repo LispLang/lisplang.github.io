@@ -10,7 +10,7 @@ scoped variables.
 Variables are declared with the `let` special operator:
 
 ```lisp
-(let ((str "Hello, world"!))
+(let ((str "Hello, world!"))
   (string-upcase str))
 
 ;; => "HELLO, WORLD!"
