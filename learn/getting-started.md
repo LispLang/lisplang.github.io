@@ -7,6 +7,8 @@ permalink: /learn/getting-started/
 This article describes what you need to do to get up and running with Common
 Lisp.
 
+For the fastest solution, see [Portacle](https://shinmera.github.io/portacle/). It is a portable and multiplatform development environment, with no installation needed.
+
 ## Linux & OS X
 
 Linux and OS X differ only in how we install things, so we've grouped both in
