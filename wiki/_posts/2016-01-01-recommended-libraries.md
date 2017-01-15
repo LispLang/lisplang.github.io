@@ -239,7 +239,7 @@ different libraries here)
 # Unit Testing
 
 - [fiveam](http://common-lisp.net/project/fiveam/)
-- [cl-test-more](http://8arrow.org/cl-test-more/)
+- [prove](http://quickdocs.org/prove/)
 
 # Logging
 
