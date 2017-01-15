@@ -117,6 +117,7 @@ different libraries here)
 # Network
 
 - [Drakma](http://weitz.de/drakma/): HTTP client.
+- [Dexador](http://quickdocs.org/dexador/): HTTp client (that [aims at replacing Drakma](http://www.slideshare.net/fukamachi/dexador-rises)).
 - [usocket](http://common-lisp.net/project/usocket/): Portable socket
   abstraction.
 
