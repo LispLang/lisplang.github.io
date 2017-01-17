@@ -77,6 +77,7 @@ title: Recommended Libraries
 - [CommonQt](http://common-lisp.net/project/commonqt/): Qt bindings.
 - [cl-cffi-gtk](http://www.crategus.com/books/cl-cffi-gtk/): GTK+ binding.
 - [cl-xul](https://github.com/mmontone/cl-xul): Binding to Mozilla's XUL engine.
+- [Ceramic](https://github.com/ceramic/ceramic): Turn web apps into native desktop apps (with Electron).
 
 # Game Development
 
