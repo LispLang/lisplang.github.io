@@ -287,6 +287,7 @@ different libraries here)
 - [Quicklisp](http://www.quicklisp.org/): Package manager.
 - [Quickutil](https://github.com/tarballs-are-good/quickutil): Package manager
   for utilities.
+- [Roswell](https://github.com/roswell/roswell): implementation installer (like Python's pyenv), script launcher and manager.
 - [qlot](https://github.com/fukamachi/qlot): Like Ruby's
   [Bundler](http://bundler.io/).
 - [cl-project](https://github.com/fukamachi/cl-project): Project skeleton
