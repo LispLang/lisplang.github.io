@@ -254,7 +254,7 @@ different libraries here)
 - [cl-syntax](https://github.com/m2ym/cl-syntax): Building blocks for extending
   the syntax.
 - [cl-annot](https://github.com/arielnetworks/cl-annot): Decorator syntax.
-- [cl-2dsyntax](http://lisp.hyperprostor.unas.cz/cl-2dsyntax/): Python-like
+- [cl-2dsyntax](http://www.cliki.net/cl-2dsyntax): Python-like
   syntax implemented in reader macros.
 - [named-readtables](https://github.com/melisgl/named-readtables): Separate
   reader macros into packages.
