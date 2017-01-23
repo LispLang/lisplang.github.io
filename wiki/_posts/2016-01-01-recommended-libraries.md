@@ -259,6 +259,7 @@ different libraries here)
 - [named-readtables](https://github.com/melisgl/named-readtables): Separate
   reader macros into packages.
 - [cl-interpol](http://www.cliki.net/cl-interpol): String iterpolation.
+- [cl-strings](https://github.com/diogoalexandrefranco/cl-strings): a String manipulation library (split, join, replace, insert, clean, change case, parse numbers, etc).
 
 ## Type System
 
