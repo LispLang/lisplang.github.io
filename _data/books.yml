@@ -177,3 +177,30 @@
   links:
     amazon: http://www.amazon.com/gp/product/1484211774/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1484211774&linkCode=as2&tag=ediwei-20&linkId=KLUFEAD2NVMNB7RZ
       
+- title: Common Lisp in the Wild
+  author: Wimpie Nortje
+  cover: clitw.jpg
+  description: |
+    [*Common Lisp in the Wild*][clitw] is a practical guide to Common Lisp
+    application deployment. 
+
+    If you are unsure how to create executables, fighting with library version
+    conflicts, or struggling with reproducible builds then this book can save
+    you hours.
+
+    The text lays out a framework that solves these issues. It works both for
+    standalone applications and for programs that run from source code.
+
+    Understanding and using the framework does not require any advanced Lisp
+    knowledge. The examples build on one another without making conceptual
+    leaps.
+    
+    With the example projects in hand, you can start deploying applications in
+    minutes.
+
+    **Common Lisp in the Wild** is available [directly from][clitw] the
+    author. The sales process is managed by Gumroad.
+
+    [clitw]: https://www.darkchestnut.com/book-common-lisp-application-deployment/
+ 
+  links: 
