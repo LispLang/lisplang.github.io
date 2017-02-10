@@ -87,8 +87,7 @@ title: Recommended Libraries
 # Parsing
 
 - [cl-ppcre](http://weitz.de/cl-ppcre/): Regular expressions.
-- [esrap](https://github.com/nikodemus/esrap): A packrat parser generator.
-- [cl-parsec](https://github.com/vseloved/cl-parsec): Parser combinators.
+- [MaxPC](https://github.com/eugeneia/maxpc): A parser generator.
 
 # Data Formats
 
