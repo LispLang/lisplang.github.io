@@ -257,6 +257,8 @@ When the pipelines pass, you will see:
 
 You now have a ready to use Gitlab CI.
 
+- source: the [CL Cookbook](https://lispcookbook.github.io/cl-cookbook/testing.html#gitlab-ci)
+
 ## Coverage Tracking
 
 Code coverage is basically how many lines of source code are run by tests. SBCL
