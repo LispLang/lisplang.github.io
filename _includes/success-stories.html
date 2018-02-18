@@ -35,8 +35,7 @@
       {% if story.gallery %}
         <div class="gallery">
           <ul>
-            {% assign count=story.gallery.count %}
-            {% for n in (1..count) %}
+            {% for n in (1..story.gallery.count) %}
               <li>
                 {% capture path %}{{ include.tag }}/{{ story.gallery.directory }}/{{ n }}.{{ story.gallery.type }}{% endcapture %}
                 <a href="/assets/img/success/{{ path }}">
