@@ -40,17 +40,19 @@
         <h1>{{ page.title }}</h1>
         {% if page.kind == 'tutorial' %}
           <nav>
-            {% assign has_previous=page.previous.url and page.previous.url contains '/learn/' %}
-            {% assign has_next=page.next.url and page.next.url contains '/learn/' %}
-            {% if has_previous %}
+            {% assign previous=page.previous.url %}
+            {% assign next=page.next.url %}
+            {% if previous and previous contains 'learn' %}
               <a href="{{ page.previous.url }}">
                 « {{ page.previous.title }}
               </a>
             {% endif %}
-            {% if has_previous and has_next %}
+
+            {% if previous and next %}
               &mdash;
             {% endif %}
-            {% if has_next %}
+
+            {% if next and next contains 'learn' %}
               <a href="{{ page.next.url }}">
                 {{ page.next.title }} »
               </a>
