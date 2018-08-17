@@ -1,0 +1,9 @@
+#00b2d0 #6bd1c2
+#c1fecc #4cbbc8
+#74a5b2 #adc8c4
+
+http://coolors.co/041b15-136f63-22aaa1-4ce0d2-84cae7
+http://coolors.co/141b41-306bac-6f9ceb-98b9f2-918ef4
+http://coolors.co/000000-2f4550-586f7c-b8dbd9-f4f4f9
+
+@include linear-gradient(to left, #614385 , #516395)
