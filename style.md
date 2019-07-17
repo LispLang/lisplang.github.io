@@ -272,7 +272,7 @@ Should be:
   (warn-passengers car))
 ~~~
 
-Not the difference in indentation.
+Note the difference in indentation.
 
 ## Keep conditions short
 
@@ -549,6 +549,7 @@ part of your users.
 [consolidation]: http://fare.livejournal.com/169346.html
 [small-libs]: https://gist.github.com/substack/5075355
 [tt]: https://github.com/m2ym/trivial-types
+[alexandria]: https://common-lisp.net/project/alexandria
 [init-file]: broken-link
 [asdf-other-code]: http://common-lisp.net/project/asdf/asdf/Other-code-in-_002easd-files.html#Other-code-in-_002easd-files
 [ci]: https://en.wikipedia.org/wiki/Continuous_integration
