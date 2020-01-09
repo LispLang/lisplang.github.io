@@ -238,6 +238,11 @@ slots.
 
 Here, the [trivial-types][tt] library will come in handy.
 
+Checking that the type complies to the initial value is undefined by
+the standard and left to the implementations. Clozure CL and SBCL
+1.5.9 and onwards (or all versions when safety is high) do type checks
+at compile time.
+
 # Flow Control
 
 In short:
