@@ -83,7 +83,7 @@ little buffer at the bottom. Press enter, and a REPL will start.
 
 On Windows, you can use [Lispstick][ls].
 
-[sbcl]: http://www.sbcl.org/
+[sbcl]: http://sbcl.sourceforge.net/
 [ql]: https://www.quicklisp.org/beta/
 [slime]: https://common-lisp.net/project/slime/
 [ls]: http://www.iqool.de/lispstick.html
