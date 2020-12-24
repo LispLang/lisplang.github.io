@@ -16,6 +16,9 @@ header: /assets/img/header/community.jpg
 - [r/learn_lisp][rlearn]: a subreddit for novice Lisp programmers and beginner
   questions.
 
+- [Lisp Discord Server][discord): the Lisp Discord server.
+
+
 # Social Media
 
 - [Planet Lisp][planet]
@@ -27,3 +30,4 @@ header: /assets/img/header/community.jpg
 [rlearn]: https://www.reddit.com/r/learnlisp
 [planet]: https://twitter.com/planet_lisp
 [thelittlelisper]: https://twitter.com/thelittlelisper
+[discord]: https://discord.gg/hhk46CE
