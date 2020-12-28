@@ -207,7 +207,7 @@
 
 - title: The Common Lisp Cookbook
   author: collective
-  cover: https://lispcookbook.github.io/cl-cookbook/orly-cover.png
+  cover: cookbook.png
   description: |
     The [*Common Lisp Cookbook*][cookbook] is a collaborative ressource that shows how to do various things in a clear fashion on a variety of topics, from creating a project to deploying a web application.
 
