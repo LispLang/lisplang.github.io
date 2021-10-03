@@ -50,7 +50,7 @@ targets the JVM.
 
 # Domain-Specific Implementations
 
-These implimentations target a specific niche and should not be considered
+These implementations target a specific niche and should not be considered
 general purpose.
 
 ## Movitz
