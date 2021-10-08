@@ -16,7 +16,7 @@ header: /assets/img/header/community.jpg
 - [r/learn_lisp][rlearn]: a subreddit for novice Lisp programmers and beginner
   questions.
 
-- [Lisp Discord Server][discord): the Lisp Discord server.
+- [Lisp Discord Server][discord]: the Lisp Discord server.
 
 
 # Social Media
