@@ -76,9 +76,9 @@ For example:
 **Constants** should be surrounded with plus signs. For example:
 
 ~~~lisp
-(defparameter +golden-ratio+ 1.6180339)
+(defconstant +golden-ratio+ 1.6180339)
 
-(defparameter +allowed-operators+ '(+ - * / expt))
+(defconstant +allowed-operators+ '(+ - * / expt))
 ~~~
 
 ## Predicates
