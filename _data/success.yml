@@ -405,7 +405,7 @@ stories:
         >sentences per second, is horizontally scalable, and has reliably served
         >in production for almost 3 years.
         >
-        ><div class="source"><a href="http://tech.grammarly.com/blog/posts/Running-Lisp-in-Production.html">Vsevolod Dyomkin</a></div>
+        ><div class="source"><a href="https://www.grammarly.com/blog/engineering/running-lisp-in-production/">Vsevolod Dyomkin</a></div>
 
         [site]: https://www.grammarly.com/
 
