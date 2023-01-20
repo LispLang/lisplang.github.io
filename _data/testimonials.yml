@@ -15,7 +15,7 @@
       sentences per second, is horizontally scalable, and has reliably served in
       production for almost 3 years.
     source: Vsevolod Dyomkin
-  link: http://tech.grammarly.com/blog/posts/Running-Lisp-in-Production.html
+  link: https://www.grammarly.com/blog/engineering/running-lisp-in-production/
 
 - company:
     name: Ita Software
