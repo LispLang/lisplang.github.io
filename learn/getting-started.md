@@ -88,4 +88,3 @@ On Windows, you can use [Portacle][portacle].
 [sbcl]: http://www.sbcl.org/
 [ql]: https://www.quicklisp.org/beta/
 [slime]: https://common-lisp.net/project/slime/
-[ls]: http://www.iqool.de/lispstick.html
