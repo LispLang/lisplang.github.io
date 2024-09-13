@@ -35,9 +35,9 @@ Since SBCL is available from the official repositories, you can install it with:
 $ sudo pacman -S sbcl
 ```
 
-#### OS X
+#### macOS
 
-To install SBCL on OS X, just do:
+To install SBCL on macOS, just do:
 
 ```bash
 $ brew install sbcl
