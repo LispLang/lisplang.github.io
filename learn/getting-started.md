@@ -9,14 +9,14 @@ Lisp.
 
 For the fastest solution, see [Portacle](https://shinmera.github.io/portacle/). It is a portable and multiplatform development environment, with no installation needed.
 
-## Linux & OS X
+## Linux & macOS
 
-Linux and OS X differ only in how we install things, so we've grouped both in
+Linux and macOS differ only in how we install things, so we've grouped both in
 the same section.
 
 ### Install SBCL
 
-On both Linux and OS X, we'll use [SBCL][sbcl] as the Common Lisp
+On both Linux and macOS, we'll use [SBCL][sbcl] as the Common Lisp
 implementation.
 
 #### Ubuntu/Debian
