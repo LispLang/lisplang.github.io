@@ -81,7 +81,7 @@ little buffer at the bottom. Press enter, and a REPL will start.
 
 ## Windows
 
-On Windows, you can use [Lispstick][ls].
+On Windows, you can use [Portacle](https://shinmera.github.io/portacle/).
 
 [sbcl]: http://www.sbcl.org/
 [ql]: https://www.quicklisp.org/beta/
