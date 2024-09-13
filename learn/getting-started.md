@@ -7,7 +7,9 @@ permalink: /learn/getting-started/
 This article describes what you need to do to get up and running with Common
 Lisp.
 
-For the fastest solution, see [Portacle](https://shinmera.github.io/portacle/). It is a portable and multiplatform development environment, with no installation needed.
+For the fastest solution, see [Portacle][portacle]. It is a portable and multiplatform development environment, with no installation needed.
+
+[portacle]: https://shinmera.github.io/portacle/
 
 ## Linux & macOS
 
@@ -81,7 +83,7 @@ little buffer at the bottom. Press enter, and a REPL will start.
 
 ## Windows
 
-On Windows, you can use [Portacle](https://shinmera.github.io/portacle/).
+On Windows, you can use [Portacle][portacle].
 
 [sbcl]: http://www.sbcl.org/
 [ql]: https://www.quicklisp.org/beta/
