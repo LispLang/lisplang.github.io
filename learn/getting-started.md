@@ -7,9 +7,10 @@ permalink: /learn/getting-started/
 This article describes what you need to do to get up and running with Common
 Lisp.
 
-For the fastest solution, see [Portacle][portacle]. It is a portable and multiplatform development environment, with no installation needed.
+For the fastest solution, see [Portacle][portacle]. It is a portable and multiplatform development environment, with no installation needed. However, Portacle does require using Emacs. For other alternatives, see [here][editors].
 
 [portacle]: https://shinmera.github.io/portacle/
+[editors]: https://lispcookbook.github.io/cl-cookbook/editor-support.html
 
 ## Linux & macOS
 
