@@ -1,69 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  {% include head.html %}
-  <body class="learn">
-    <aside>
-      <div class="logo">
-        <a href="/">
-          <img src="/assets/img/logo/blue.png">
-        </a>
-      </div>
-      <div class="lists">
-        <a href="/learn/getting-started">Getting Started</a>
-        <ul class="tutorials">
-          <h2>Tutorials</h2>
-          {% for post in site.categories['learn'] reversed %}
-            {% if post.kind == 'tutorial' %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-        <ul class="guides">
-          <h2>Guides</h2>
-          {% for post in site.categories['learn'] reversed %}
-            {% if post.kind == 'guide' %}
-              <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="copy">
-        {% include copy.html %}
-      </div>
-    </aside>
-    <article>
-      <header>
-        <h1>{{ page.title }}</h1>
-        {% if page.kind == 'tutorial' %}
-          <nav>
-            {% assign previous=page.previous.url %}
-            {% assign next=page.next.url %}
-            {% if previous and previous contains 'learn' %}
-              <a href="{{ page.previous.url }}">
-                « {{ page.previous.title }}
-              </a>
-            {% endif %}
-
-            {% if previous and next %}
-              &mdash;
-            {% endif %}
-
-            {% if next and next contains 'learn' %}
-              <a href="{{ page.next.url }}">
-                {{ page.next.title }} »
-              </a>
-            {% endif %}
-          </nav>
-        {% endif %}
-      </header>
-      <div class="content">
-        {{ content }}
-      </div>
-    </article>
-    {% include highlight.html %}
-  </body>
+    {% include head.html %}
+    <body class="learn">
+        <aside>
+            <div class="logo">
+                <a href="/">
+                    <img src="/assets/img/logo/blue.png" />
+                </a>
+            </div>
+            <div class="lists">
+                <a href="/learn/getting-started">Getting Started</a>
+                <ul class="tutorials">
+                    <h2>Tutorials</h2>
+                    {% for post in site.categories['learn'] reversed %} {% if
+                    post.kind == 'tutorial' %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endif %} {% endfor %}
+                </ul>
+                <ul class="guides">
+                    <h2>Guides</h2>
+                    {% for post in site.categories['learn'] reversed %} {% if
+                    post.kind == 'guide' %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endif %} {% endfor %}
+                </ul>
+            </div>
+            <div class="copy">{% include copy.html %}</div>
+        </aside>
+        <article>
+            <header>
+                <h1>{{ page.title }}</h1>
+                {% if page.kind == 'tutorial' %}
+                <nav>
+                    {% assign previous=page.previous.url %} {% assign
+                    next=page.next.url %} {% if previous and previous contains
+                    'learn' %}
+                    <a href="{{ page.previous.url }}">
+                        « {{ page.previous.title }}
+                    </a>
+                    {% endif %} {% if previous and next %} &mdash; {% endif %}
+                    {% if next and next contains 'learn' %}
+                    <a href="{{ page.next.url }}"> {{ page.next.title }} » </a>
+                    {% endif %}
+                </nav>
+                {% endif %}
+            </header>
+            <div class="content">{{ content }}</div>
+        </article>
+        {% include highlight.html %}
+    </body>
 </html>

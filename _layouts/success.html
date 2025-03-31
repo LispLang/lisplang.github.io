@@ -3,27 +3,24 @@ layout: default
 ---
 
 <main class="success">
-  {% if page.tag %}
-    {% capture header_path %}/assets/img/success/header/{{ page.tag }}.jpg{% endcapture %}
-    {% include big-header.html text=page.title url=header_path %}
-  {% else %}
-    {% include big-header.html text=page.title url='/assets/img/header/success.jpg' %}
-  {% endif %}
-  <div class="content">
-    {% if page.tag %}
-      <div class="breadcrumbs">
-        <ol>
-          <li><a href="/success/">Success Stories</a></li>
-          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-        </ol>
-      </div>
-    {% endif %}
-    {{ content }}
-  </div>
+    {% if page.tag %} {% capture header_path %}/assets/img/success/header/{{
+    page.tag }}.jpg{% endcapture %} {% include big-header.html text=page.title
+    url=header_path %} {% else %} {% include big-header.html text=page.title
+    url='/assets/img/header/success.jpg' %} {% endif %}
+    <div class="content">
+        {% if page.tag %}
+        <div class="breadcrumbs">
+            <ol>
+                <li><a href="/success/">Success Stories</a></li>
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            </ol>
+        </div>
+        {% endif %} {{ content }}
+    </div>
 </main>
 <script src="/assets/js/jquery-2.1.4.js"></script>
 <script src="/assets/js/tabby-10.0.5.js"></script>
-<link rel="stylesheet" href="/assets/css/tabby-10.0.5.css">
+<link rel="stylesheet" href="/assets/css/tabby-10.0.5.css" />
 <script>
- tabby.init();
+    tabby.init();
 </script>

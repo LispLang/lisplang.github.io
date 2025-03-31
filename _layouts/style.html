@@ -3,20 +3,19 @@ layout: default
 ---
 
 <main class="style">
-  {% include big-header.html text='Style Guide' url='/assets/img/header/style.jpg' %}
-  <article class="content">
-    {{ content }}
-  </article>
+    {% include big-header.html text='Style Guide'
+    url='/assets/img/header/style.jpg' %}
+    <article class="content">{{ content }}</article>
 </main>
 <script src="/assets/js/jquery-2.1.4.js"></script>
 <script src="/assets/js/toc-0.3.2.js"></script>
 <script>
- $(document).ready(function() {
-     $('#toc').toc({
-         'selectors': 'h1,h2',
-         'container': 'article',
-         'prefix': 'toc'
-     })
- })
+    $(document).ready(function () {
+        $("#toc").toc({
+            selectors: "h1,h2",
+            container: "article",
+            prefix: "toc",
+        });
+    });
 </script>
 {% include highlight.html %}
