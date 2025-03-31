@@ -4,41 +4,48 @@ css_file: landing
 description: Common Lisp
 ---
 
-<link rel="stylesheet" href="/assets/css/chartist-0.9.7.css">
-<link rel="stylesheet" href="/assets/device-mockups/device-mockups.css">
+<link rel="stylesheet" href="/assets/css/chartist-0.9.7.css" />
+<link rel="stylesheet" href="/assets/device-mockups/device-mockups.css" />
 <main class="landing">
-  {% include big-header.html text='Common Lisp' url='/assets/img/header/landing.jpg' %}
-  <section class="features">
-    <section class="extensible">
-      <h2>Extensible from the Inside-Out</h2>
-      <div class="row">
-        <div class="desc">
-          <blockquote>
-            <p>
-              Part of what makes Lisp distinctive is that it is designed to
-              evolve. As new abstractions become popular (object-oriented
-              programming, for example), it always turns out to be easy to
-              implement them in Lisp. Like DNA, such a language does not go out
-              of style.
-            </p>
+    {% include big-header.html text='Common Lisp'
+    url='/assets/img/header/landing.jpg' %}
+    <section class="features">
+        <section class="extensible">
+            <h2>Extensible from the Inside-Out</h2>
+            <div class="row">
+                <div class="desc">
+                    <blockquote>
+                        <p>
+                            Part of what makes Lisp distinctive is that it is
+                            designed to evolve. As new abstractions become
+                            popular (object-oriented programming, for example),
+                            it always turns out to be easy to implement them in
+                            Lisp. Like DNA, such a language does not go out of
+                            style.
+                        </p>
 
-            <div class="source">
-              Paul Graham, <a href="/books/#ansi-common-lisp">ANSI Common Lisp</a>
-            </div>
-          </blockquote>
-        </div>
-        <div class="sample">
-          <p>
-            An example of <a href="https://github.com/fukamachi/sxql">SxQL</a>, a macro-based SQL DSL
-          </p>
-          <div class="window">
-            <div class="titlebar">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="body">
-              <pre><code class="lisp">(select (:title :author :year)
+                        <div class="source">
+                            Paul Graham,
+                            <a href="/books/#ansi-common-lisp"
+                                >ANSI Common Lisp</a
+                            >
+                        </div>
+                    </blockquote>
+                </div>
+                <div class="sample">
+                    <p>
+                        An example of
+                        <a href="https://github.com/fukamachi/sxql">SxQL</a>, a
+                        macro-based SQL DSL
+                    </p>
+                    <div class="window">
+                        <div class="titlebar">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="body">
+                            <pre><code class="lisp">(select (:title :author :year)
   (from :books)
   (where (:and (:>= :year 1995)
                (:< :year 2010)))
@@ -50,46 +57,50 @@ description: Common Lisp
    (:title "ANSI Common Lisp"
     :author "Paul Graham"
     :year 1995))</code></pre>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="stable">
-      <div class="text">
-        <h2>Mature &amp; Stable</h2>
-        <p>
-          An extensive <a href="/spec/">standard</a> provides a rock-solid
-          foundation that you can confidently build upon. You won't be
-          reinventing the same old wheels ten years from now.
-        </p>
-      </div>
-    </section>
-    <section class="paradigm">
-      <section class="box fp">
-        <h2>Functional</h2>
-        <div class="desc">
-          Functions are first class objects: you can pass them around, store
-          them, call them dynamically. Build your application by composing
-          small, functional building blocks.
-        </div>
-        <pre><code class="lisp">(reduce #'-
+        </section>
+        <section class="stable">
+            <div class="text">
+                <h2>Mature &amp; Stable</h2>
+                <p>
+                    An extensive <a href="/spec/">standard</a> provides a
+                    rock-solid foundation that you can confidently build upon.
+                    You won't be reinventing the same old wheels ten years from
+                    now.
+                </p>
+            </div>
+        </section>
+        <section class="paradigm">
+            <section class="box fp">
+                <h2>Functional</h2>
+                <div class="desc">
+                    Functions are first class objects: you can pass them around,
+                    store them, call them dynamically. Build your application by
+                    composing small, functional building blocks.
+                </div>
+                <pre><code class="lisp">(reduce #'-
         (reverse (list 1 2 3)))
 ⇒ 0
 
 (mapcar #'string-downcase
         (list "Hello" "world!"))
 => ("hello" "world!")</code></pre>
-      </section>
-      <section class="box oop">
-        <h2>Object-Oriented</h2>
-        <div class="desc">
-          Build reusable and extensible class hierarchies using the Common Lisp
-          Object System. Design patterns
-          <a href="http://norvig.com/design-patterns/design-patterns.pdf">disappear</a>
-          as you adapt the language to your problem domain.
-        </div>
-        <pre><code class="lisp">(defclass book ()
+            </section>
+            <section class="box oop">
+                <h2>Object-Oriented</h2>
+                <div class="desc">
+                    Build reusable and extensible class hierarchies using the
+                    Common Lisp Object System. Design patterns
+                    <a
+                        href="http://norvig.com/design-patterns/design-patterns.pdf"
+                        >disappear</a
+                    >
+                    as you adapt the language to your problem domain.
+                </div>
+                <pre><code class="lisp">(defclass book ()
   ((title :reader book-title
           :initarg :title)
    (author :reader book-author
@@ -99,97 +110,104 @@ description: Common Lisp
 (make-instance 'book
                :title "ANSI Common Lisp"
                :author "Paul Graham")</code></pre>
-      </section>
-    </section>
-    <section class="fast">
-      <h2>Fast</h2>
-      <div id="perfchart" class="ct-chart ct-perfect-fourth"></div>
-      <div class="desc">
-        Requests per second using <a href="https://github.com/fukamachi/woo">Woo</a>, an HTTP server written in pure Common Lisp.
-      </div>
-    </section>
-    <section class="tools">
-      <div class="row">
-        <div class="desc">
-          <h2>Great Tools</h2>
-          <div class="text">
-            <p>
-              <a href="https://common-lisp.net/project/slime/">SLIME</a>, an IDE that leverages the power of Common
-              Lisp and the extensibility of Emacs, provides a development
-              environment ahead of anything else.
-            </p>
-            <p>
-              You can leave the write-compile-debug cycle behind. Everything is
-              interactive: try your code on the REPL as you write it, and a
-              powerful debugger lets you inspect trees of live values, or rewind
-              the stack to undo an exception.
-            </p>
-          </div>
-        </div>
-        <div class="device-wrapper">
-          <div class="device-mockup macbook">
-            <div class="device">
-              <div class="screen">
-                <a href="/assets/img/landing/slime.png">
-                  <img src="/assets/img/landing/slime.png">
-                </a>
-              </div>
+            </section>
+        </section>
+        <section class="fast">
+            <h2>Fast</h2>
+            <div id="perfchart" class="ct-chart ct-perfect-fourth"></div>
+            <div class="desc">
+                Requests per second using
+                <a href="https://github.com/fukamachi/woo">Woo</a>, an HTTP
+                server written in pure Common Lisp.
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section>
-  <section class="testimonials">
-    <ul>
-      {% for reference in site.data.testimonials %}
-        <li>
-          <div class="logo">
-            <img alt="{{ reference.company.name }}"
-                 title="{{ reference.company.name }}"
-                 src="/assets/img/companies/{{ reference.company.logo }}">
-          </div>
-          <div class="text-wrapper">
-            <div class="text">
-              {% if reference.description %}
-                {{ reference.description | markdownify }}
-              {% endif %}
-              {% if reference.quote %}
-                <blockquote>
-                  {{ reference.quote.text | markdownify }}
-                  <div class="source">
-                    <a href="{{ reference.link }}">
-                      {{ reference.quote.source }}
-                    </a>
-                  </div>
-                </blockquote>
-              {% endif %}
+        </section>
+        <section class="tools">
+            <div class="row">
+                <div class="desc">
+                    <h2>Great Tools</h2>
+                    <div class="text">
+                        <p>
+                            <a href="https://common-lisp.net/project/slime/"
+                                >SLIME</a
+                            >, an IDE that leverages the power of Common Lisp
+                            and the extensibility of Emacs, provides a
+                            development environment ahead of anything else.
+                        </p>
+                        <p>
+                            You can leave the write-compile-debug cycle behind.
+                            Everything is interactive: try your code on the REPL
+                            as you write it, and a powerful debugger lets you
+                            inspect trees of live values, or rewind the stack to
+                            undo an exception.
+                        </p>
+                    </div>
+                </div>
+                <div class="device-wrapper">
+                    <div class="device-mockup macbook">
+                        <div class="device">
+                            <div class="screen">
+                                <a href="/assets/img/landing/slime.png">
+                                    <img src="/assets/img/landing/slime.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-    <div class="text">
-      See more <a href="/success/">success stories</a>
-    </div>
-  </section>
-  <section class="start">
-    <a href="/learn/">Start here</a>
-  </section>
+        </section>
+    </section>
+    <section class="testimonials">
+        <ul>
+            {% for reference in site.data.testimonials %}
+            <li>
+                <div class="logo">
+                    <img
+                        alt="{{ reference.company.name }}"
+                        title="{{ reference.company.name }}"
+                        src="/assets/img/companies/{{ reference.company.logo }}"
+                    />
+                </div>
+                <div class="text-wrapper">
+                    <div class="text">
+                        {% if reference.description %} {{ reference.description
+                        | markdownify }} {% endif %} {% if reference.quote %}
+                        <blockquote>
+                            {{ reference.quote.text | markdownify }}
+                            <div class="source">
+                                <a href="{{ reference.link }}">
+                                    {{ reference.quote.source }}
+                                </a>
+                            </div>
+                        </blockquote>
+                        {% endif %}
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="text">See more <a href="/success/">success stories</a></div>
+    </section>
+    <section class="start">
+        <a href="/learn/">Start here</a>
+    </section>
 </main>
 <script src="/assets/js/jquery-2.1.4.js"></script>
 <script src="/assets/js/chartist-0.9.7.js"></script>
 <script src="/assets/highlight-lisp/highlight-lisp.js"></script>
 <script>
- $(document).ready(function() {
-     // Performance chart
-     var chart = new Chartist.Bar('#perfchart', {
-         labels: ['Ruby', 'Node', 'Common Lisp'],
-         series: [9921, 11920, 15948]
-     }, {
-         distributeSeries: true
-     });
-     // Highlight
-     HighlightLisp.highlight_auto();
- });
+    $(document).ready(function () {
+        // Performance chart
+        var chart = new Chartist.Bar(
+            "#perfchart",
+            {
+                labels: ["Ruby", "Node", "Common Lisp"],
+                series: [9921, 11920, 15948],
+            },
+            {
+                distributeSeries: true,
+            },
+        );
+        // Highlight
+        HighlightLisp.highlight_auto();
+    });
 </script>
