@@ -22,12 +22,15 @@ header: /assets/img/header/community.jpg
 # Social Media
 
 - [Planet Lisp][planet]
-- [Lisp World](https://twitter.com/LispWorld)
-- [The Little Lisper][thelittlelisper]
+- [#lisp and #commonlisp on the Fediverse][fediverse]
+- [#commonlisp on Libera Chat][libera]
+- [#lisp on Lobste.rs][lobsters]
 
 [r]: https://www.reddit.com/r/lisp
 [rcl]: https://www.reddit.com/r/common_lisp
 [rlearn]: https://www.reddit.com/r/learnlisp
-[planet]: https://twitter.com/planet_lisp
-[thelittlelisper]: https://twitter.com/thelittlelisper
+[planet]: https://planet.lisp.org/
 [discord]: https://discord.gg/hhk46CE
+[fediverse]: https://mastodon.social/tags/lisp
+[libera]: https://web.libera.chat/#commonlisp
+[lobsters]: https://lobste.rs/t/lisp
