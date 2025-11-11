@@ -9,9 +9,6 @@ kramdown:
   input: GFM
   syntax_highlighter: none
 
-#sass:
-#  style: compressed
-
 defaults:
   - scope:
       path: "learn"
