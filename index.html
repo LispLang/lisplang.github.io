@@ -4,7 +4,6 @@ css_file: landing
 description: Common Lisp
 ---
 
-<link rel="stylesheet" href="/assets/css/chartist-0.9.7.css" />
 <link rel="stylesheet" href="/assets/device-mockups/device-mockups.css" />
 <main class="landing">
     {% include big-header.html text='Common Lisp'
@@ -114,7 +113,7 @@ description: Common Lisp
         </section>
         <section class="fast">
             <h2>Fast</h2>
-            <div id="perfchart" class="ct-chart ct-perfect-fourth"></div>
+            <img class="bench" src="/assets/img/landing/woo.png" />
             <div class="desc">
                 Requests per second using
                 <a href="https://github.com/fukamachi/woo">Woo</a>, an HTTP
@@ -192,22 +191,4 @@ description: Common Lisp
     </section>
 </main>
 <script src="/assets/js/jquery-2.1.4.js"></script>
-<script src="/assets/js/chartist-0.9.7.js"></script>
 <script src="/assets/highlight-lisp/highlight-lisp.js"></script>
-<script>
-    $(document).ready(function () {
-        // Performance chart
-        var chart = new Chartist.Bar(
-            "#perfchart",
-            {
-                labels: ["Ruby", "Node", "Common Lisp"],
-                series: [9921, 11920, 15948],
-            },
-            {
-                distributeSeries: true,
-            },
-        );
-        // Highlight
-        HighlightLisp.highlight_auto();
-    });
-</script>
