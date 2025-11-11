@@ -3,18 +3,18 @@
 
 @charset 'UTF-8';
 
-@import 'variables';
+@use 'variables' as *;
 
-@import 'utils/fonts';
-@import 'utils/normalize';
-@import 'utils/reset';
-@import 'utils/mixins';
+@use 'utils/fonts';
+@use 'utils/normalize';
+@use 'utils/reset';
+@use 'utils/mixins' as *;
 
-@import 'components/standard-text';
-@import 'components/navbar';
-@import 'components/footer';
-@import 'components/big-header';
-@import 'components/highlight';
+@use 'components/standard-text' as *;
+@use 'components/navbar';
+@use 'components/footer';
+@use 'components/big-header';
+@use 'components/highlight';
 
 $style-translucent: rgba(255, 255, 255, 0.11);
 

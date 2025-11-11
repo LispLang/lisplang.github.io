@@ -3,12 +3,12 @@
 
 @charset 'UTF-8';
 
-@import 'variables';
+@use 'variables' as *;
 
-@import 'utils/fonts';
-@import 'utils/normalize';
-@import 'utils/reset';
-@import 'utils/mixins';
+@use 'utils/fonts';
+@use 'utils/normalize';
+@use 'utils/reset';
+@use 'utils/mixins' as *;
 
 .unfinished {
     font-family: 'PT Sans';

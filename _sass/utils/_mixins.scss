@@ -1,8 +1,10 @@
 /* Mixins */
 
+@use '../variables' as *;
+
 /* Flexbox */
 
-@import 'vendor/flexbox';
+@use '../vendor/flexbox' as *;
 
 /* Gradients */
 
