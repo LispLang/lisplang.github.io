@@ -103,4 +103,3 @@ needed.
 [cl.net]: https://common-lisp.net/
 [cliki]: http://cliki.net/
 [gl]: https://about.gitlab.com/
-[clos]: http://cliki.net/CLOS
