@@ -312,7 +312,19 @@
 
 /* Inconsolata */
 
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/inconsolata/Inconsolata-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/inconsolata/Inconsolata-Bold.ttf') format('truetype');
+}
 
 /* ET Book */
 
