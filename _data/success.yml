@@ -246,7 +246,6 @@ stories:
             programs for the Motorola CAD signal processor. The model could be
             used to predict every bit of memory at every cycle.
 
-
   science:
     - title: Pathway Tools at SRI
       description: |
@@ -448,7 +447,6 @@ stories:
         ><div class="source"><a href="http://franz.com/success/customer_apps/natural_language/boeing.lhtml">Franz</a></div>
 
         [boeing]: http://www.boeing.com/company/key-orgs/licensing/simplified-english-checker.page
-
 
   graphics:
     - title: Mirai
