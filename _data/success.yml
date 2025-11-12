@@ -56,7 +56,7 @@ stories:
         >professionalism of LispWorks stand out in the complex landscape of software
         >development and create a highly effective combination.
         >
-        ><div class="source"><a href="http://www.lispworks.com/success-stories/piano.html">LispWorks</a></div>
+        ><div class="source"><a href="https://www.lispworks.com/success-stories/piano.html">LispWorks</a></div>
 
         [site]: http://www.piano.aero/
       gallery:
@@ -151,7 +151,7 @@ stories:
         >software that drives automated, non-destructive testing applications -
         >'completely written in Lisp, hence its reliability and robustness'.
         >
-        ><div class="source"><a href="http://www.lispworks.com/success-stories/fractalconcept-softscan.html">LispWorks</a></div>
+        ><div class="source"><a href="https://www.lispworks.com/success-stories/fractalconcept-softscan.html">LispWorks</a></div>
 
     - title: PlantWise
       description: |
@@ -290,7 +290,7 @@ stories:
         >macros are critical when extending the syntax to create the BioBike
         >language.
         >
-        ><div class="source"><a href="http://www.lispworks.com/success-stories/biobike.html">LispWorks</a></div>
+        ><div class="source"><a href="https://www.lispworks.com/success-stories/biobike.html">LispWorks</a></div>
 
         [paper]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2703918/
 
@@ -329,7 +329,7 @@ stories:
         >designed to identify the minimum set of SNPs tagging an haplotype
         >block.
         >
-        ><div class="source"><a href="http://www.lispworks.com/success-stories/hms-caged-best.html">LispWorks</a></div>
+        ><div class="source"><a href="https://www.lispworks.com/success-stories/hms-caged-best.html">LispWorks</a></div>
 
 
         [caged]: https://web.archive.org/web/20050421075601/http://www.genomethods.org/caged/

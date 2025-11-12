@@ -65,7 +65,7 @@ CL-USER> (multiple-value-bind (first second third)
 (2 4 6)
 ```
 
-[defun]: http://www.lispworks.com/documentation/lw50/CLHS/Body/m_defun.htm
-[funcall]: http://www.lispworks.com/documentation/lw70/CLHS/Body/f_funcal.htm
-[apply]: http://www.lispworks.com/documentation/lw50/CLHS/Body/f_apply.htm
-[m-v-b]: http://www.lispworks.com/documentation/HyperSpec/Body/m_multip.htm
+[defun]: https://www.lispworks.com/documentation/lw50/CLHS/Body/m_defun.htm
+[funcall]: https://www.lispworks.com/documentation/lw70/CLHS/Body/f_funcal.htm
+[apply]: https://www.lispworks.com/documentation/lw50/CLHS/Body/f_apply.htm
+[m-v-b]: https://www.lispworks.com/documentation/HyperSpec/Body/m_multip.htm

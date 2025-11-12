@@ -93,11 +93,11 @@ needed.
 [style]: /style-guide/
 [story]: /success/
 [book]: /books/
-[clhs]: http://www.lispworks.com/documentation/HyperSpec/Front/
+[clhs]: https://www.lispworks.com/documentation/HyperSpec/Front/
 [tex]: https://github.com/LispLang/ansi-spec
 [sbcl]: http://www.sbcl.org/
 [stripe]: https://stripe.com/us/features
-[credits]: http://www.lispworks.com/documentation/lw50/CLHS/Body/00_.htm
+[credits]: https://www.lispworks.com/documentation/lw50/CLHS/Body/00_.htm
 [salamander]: https://web.archive.org/web/20051126033302/http://www.normal-null.de/lisp_logo.html
 [alien]: http://lisperati.com/logo.html
 [cl.net]: https://common-lisp.net/
