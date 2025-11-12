@@ -9,6 +9,7 @@
 @use 'utils/normalize';
 @use 'utils/reset';
 @use 'utils/mixins' as *;
+@use 'vendor/flexbox' as *;
 
 @use 'components/navbar';
 @use 'components/standard-text' as *;

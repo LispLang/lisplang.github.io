@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use '../utils/mixins' as *;
+@use '../vendor/flexbox' as *;
 
 header.hero {
     height: 100vh;
