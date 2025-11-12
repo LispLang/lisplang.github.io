@@ -3,14 +3,15 @@
 
 @charset 'UTF-8';
 
-@import 'variables';
-@import 'utils/fonts';
-@import 'utils/normalize';
-@import 'utils/reset';
-@import 'utils/mixins';
+@use 'variables' as *;
 
-@import 'components/standard-text';
-@import 'components/highlight';
+@use 'utils/fonts';
+@use 'utils/normalize';
+@use 'utils/reset';
+@use 'utils/mixins' as *;
+
+@use 'components/standard-text' as *;
+@use 'components/highlight';
 
 .learn {
     @include on-medium-and-large() {

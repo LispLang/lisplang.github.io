@@ -1,5 +1,5 @@
-@import '../variables';
-@import '../utils/mixins';
+@use '../variables' as *;
+@use '../utils/mixins' as *;
 
 pre code {
     font-family: 'Inconsolata', 'Lucida Console', Monaco, monospace;

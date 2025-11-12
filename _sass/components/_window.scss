@@ -1,4 +1,4 @@
-@import '../utils/mixins';
+@use '../utils/mixins' as *;
 
 .window {
     $bar-height: 30px;

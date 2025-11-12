@@ -3,12 +3,13 @@
 
 @charset 'UTF-8';
 
-@import 'variables';
-@import 'utils/fonts';
-@import 'utils/reset';
-@import 'utils/mixins';
+@use 'variables' as *;
 
-@import 'components/highlight';
+@use 'utils/fonts';
+@use 'utils/reset';
+@use 'utils/mixins' as *;
+
+@use 'components/highlight';
 
 $border-color: #d9d9d9;
 

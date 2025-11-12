@@ -1,4 +1,4 @@
-@import '../utils/mixins';
+@use '../utils/mixins' as *;
 
 .image-overlay {
     width: 100%;
