@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .window {
     $bar-height: 30px;
     $circle-diam: 10px;

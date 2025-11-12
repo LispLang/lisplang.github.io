@@ -9,6 +9,12 @@ kramdown:
   input: GFM
   syntax_highlighter: none
 
+sass:
+  implementation: sass-embedded
+  style: compressed
+  load_paths:
+    - _sass
+
 defaults:
   - scope:
       path: "learn"

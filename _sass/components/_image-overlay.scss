@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .image-overlay {
     width: 100%;
     position: relative;
