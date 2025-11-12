@@ -39,7 +39,7 @@
   cover: on-lisp.jpg
   description: |
 
-    [*On Lisp*](http://www.paulgraham.com/onlisp.html) is "a comprehensive study
+    [*On Lisp*](https://www.paulgraham.com/onlisp.html) is "a comprehensive study
     of advanced Lisp techniques, with bottom-up programming as the unifying
     theme".
 
@@ -69,7 +69,7 @@
     >domain-specific languages. Then, when your brain overheats, you can kick
     >back with an action-packed comic book interlude!
 
-    [land-pub]: http://www.nostarch.com/lisp.htm
+    [land-pub]: https://www.nostarch.com/lisp.htm
 
     You can get an idea of the book's style in this tutorial by the same author: [Casting SPELs in Lisp](http://www.lisperati.com/casting_spels.pdf)
   links:
@@ -101,7 +101,7 @@
 
     Most of the book is available for free on [the author's site][lol]
 
-    [lol]: http://letoverlambda.com/
+    [lol]: https://letoverlambda.com/
   links:
     amazon: http://www.amazon.com/Let-Over-Lambda-Doug-Hoyte/dp/1435712757
 
