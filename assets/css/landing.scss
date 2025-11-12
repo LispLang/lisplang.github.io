@@ -3,21 +3,19 @@
 
 @charset 'UTF-8';
 
-@use 'variables' as *;
+@import 'variables';
+@import 'utils/fonts';
+@import 'utils/normalize';
+@import 'utils/reset';
+@import 'utils/mixins';
 
-@use 'utils/fonts';
-@use 'utils/normalize';
-@use 'utils/reset';
-@use 'utils/mixins' as *;
-@use 'vendor/flexbox' as *;
-
-@use 'components/navbar';
-@use 'components/standard-text' as *;
-@use 'components/big-header';
-@use 'components/footer';
-@use 'components/hover-underline' as *;
-@use 'components/highlight';
-@use 'components/window';
+@import 'components/navbar';
+@import 'components/standard-text';
+@import 'components/big-header';
+@import 'components/footer';
+@import 'components/hover-underline';
+@import 'components/highlight';
+@import 'components/window';
 
 %white-link-style {
     color: white;

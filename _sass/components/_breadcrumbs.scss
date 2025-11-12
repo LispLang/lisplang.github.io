@@ -1,6 +1,5 @@
-@use '../variables' as *;
-@use '../utils/mixins' as *;
-@use '../vendor/flexbox' as *;
+@import '../variables';
+@import '../utils/mixins';
 
 .breadcrumbs {
     width: 100%;

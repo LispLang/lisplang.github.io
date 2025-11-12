@@ -3,14 +3,12 @@
 
 @charset 'UTF-8';
 
-@use 'variables' as *;
+@import 'variables';
+@import 'utils/fonts';
+@import 'utils/reset';
+@import 'utils/mixins';
 
-@use 'utils/fonts';
-@use 'utils/reset';
-@use 'utils/mixins' as *;
-@use 'vendor/flexbox' as *;
-
-@use 'components/highlight';
+@import 'components/highlight';
 
 $border-color: #d9d9d9;
 

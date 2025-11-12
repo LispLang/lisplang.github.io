@@ -3,16 +3,14 @@
 
 @charset 'UTF-8';
 
-@use 'variables' as *;
+@import 'variables';
+@import 'utils/fonts';
+@import 'utils/normalize';
+@import 'utils/reset';
+@import 'utils/mixins';
 
-@use 'utils/fonts';
-@use 'utils/normalize';
-@use 'utils/reset';
-@use 'utils/mixins' as *;
-@use 'vendor/flexbox' as *;
-
-@use 'components/standard-text' as *;
-@use 'components/highlight';
+@import 'components/standard-text';
+@import 'components/highlight';
 
 .learn {
     @include on-medium-and-large() {
