@@ -1,11 +1,5 @@
 name: Check Links
-
-on:
-  push:
-    branches:
-      - master
-      - main
-  pull_request:
+on: push
 
 jobs:
   link-checker:
@@ -17,7 +11,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: "3.1"
           bundler-cache: true
 
       - name: Build Jekyll site
