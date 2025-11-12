@@ -20,7 +20,7 @@ jobs:
         run: jekyll build
 
       - name: Check links
-        uses: lycheeverse/lychee-action@v1
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: --verbose --no-progress --accept 200,201,202,203,204,206,300,301,302,303,304,307,308,403,429 './_site/**/*.html'
           fail: true
