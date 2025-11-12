@@ -13,8 +13,7 @@ jobs:
         with:
           ruby-version: "3.3.10"
 
-      - name: Install Jekyll
-        run: gem install jekyll -v 4.4.1
+      - run: gem install
 
       - name: Build Jekyll site
         run: jekyll build
