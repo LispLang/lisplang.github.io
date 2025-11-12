@@ -1,0 +1,26 @@
+name: Check Links
+on: push
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+
+      - name: Install Jekyll
+        run: gem install jekyll -v 4.4.1
+
+      - name: Build Jekyll site
+        run: jekyll build
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose --no-progress --accept 200,201,202,203,204,206,300,301,302,303,304,307,308,403,429 './_site/**/*.html'
+          fail: true
