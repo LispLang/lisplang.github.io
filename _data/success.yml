@@ -446,7 +446,7 @@ stories:
         >
         ><div class="source"><a href="http://franz.com/success/customer_apps/natural_language/boeing.lhtml">Franz</a></div>
 
-        [boeing]: http://www.boeing.com/company/key-orgs/licensing/simplified-english-checker.page
+        [boeing]: https://web.archive.org/web/20240119184526/http://www.boeing.com/company/key-orgs/licensing/simplified-english-checker.page
 
   graphics:
     - title: Mirai
