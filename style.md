@@ -552,7 +552,7 @@ part of your users.
 [google]: https://google.github.io/styleguide/lispguide.xml
 [an]: http://labs.ariel-networks.com/cl-style-guide.html
 [consolidation]: http://fare.livejournal.com/169346.html
-[small-libs]: https://gist.github.com/substack/5075355
+[small-libs]: https://web.archive.org/web/20220301041352/https://gist.github.com/substack/5075355
 [tt]: https://github.com/m2ym/trivial-types
 [alexandria]: https://common-lisp.net/project/alexandria
 [init-file]: broken-link
