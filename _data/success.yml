@@ -364,11 +364,11 @@ stories:
         [pg]: http://pgloader.io/
       video:
         sources:
-          - url: http://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.webm#t=57,357
+          - url: https://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.webm#t=57,357
             type: video/webm
-          - url: http://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.mp4#t=57,357
+          - url: https://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.mp4#t=57,357
             type: video/mp4
-          - url: http://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.ogg#t=57,357
+          - url: https://medias.ircam.fr/stream/ext/video/files/2014/05/13/ELSAA_6_mai2.mov.ogg#t=57,357
             type: video/ogg
 
     - title: Somewrite
