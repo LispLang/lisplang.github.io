@@ -101,5 +101,5 @@ needed.
 [salamander]: https://web.archive.org/web/20051126033302/http://www.normal-null.de/lisp_logo.html
 [alien]: http://lisperati.com/logo.html
 [cl.net]: https://common-lisp.net/
-[cliki]: http://cliki.net/
+[cliki]: https://en.wikipedia.org/wiki/CLiki
 [gl]: https://about.gitlab.com/
