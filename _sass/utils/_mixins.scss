@@ -4,7 +4,7 @@
 
 /* Flexbox */
 
-@use '../vendor/flexbox' as *;
+@forward '../vendor/flexbox';
 
 /* Gradients */
 
