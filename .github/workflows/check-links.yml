@@ -1,0 +1,59 @@
+name: Check Links
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --verbose --no-progress --accept 200,201,202,203,204,206,300,301,302,303,304,307,308,403,429 './_site/**/*.html'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Create Issue on Failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = 'Broken links detected';
+            const body = `The link checker found broken links in the latest push.\n\nCheck the [workflow run](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.`;
+
+            // Check if issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['broken-links']
+            });
+
+            if (issues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['broken-links']
+              });
+            }
