@@ -8,10 +8,10 @@
     filter and ID3 tag parser.
 
     The book can be [read online][pcl] for free, and the code is
-    [available](http://www.gigamonkeys.com/book/practicals-1.0.3.tar.gz) for
+    [available](https://www.gigamonkeys.com/book/practicals-1.0.3.tar.gz) for
     download.
 
-    [pcl]: http://www.gigamonkeys.com/book/
+    [pcl]: https://www.gigamonkeys.com/book/
   links:
     amazon: http://www.amazon.com/Practical-Common-Lisp-Peter-Seibel/dp/1590592395
 
@@ -30,7 +30,7 @@
     >programming easy to learn. Professional programmers will appreciate its
     >thorough, practical approach.
 
-    [acl]: http://www.paulgraham.com/acl.html
+    [acl]: https://www.paulgraham.com/acl.html
   links:
     amazon: http://www.amazon.com/ANSI-Common-LISP-Paul-Graham/dp/0133708756
 
@@ -49,7 +49,7 @@
     >at object-oriented programming than previous Lisp books, showing the
     >step-by-step construction of a working model of the Common Lisp Object
     >System (CLOS).
-    
+
     The book is available for free on [the author's site](http://www.paulgraham.com/onlisp.html).
   links:
     amazon: http://www.amazon.com/Lisp-Advanced-Techniques-Common/dp/0130305529
@@ -70,7 +70,7 @@
     >back with an action-packed comic book interlude!
 
     [land-pub]: http://www.nostarch.com/lisp.htm
-    
+
     You can get an idea of the book's style in this tutorial by the same author: [Casting SPELs in Lisp](http://www.lisperati.com/casting_spels.pdf)
   links:
     amazon: http://www.amazon.com/Land-Lisp-Learn-Program-Game/dp/1593272812
@@ -98,7 +98,7 @@
     >problems today and now, it has also been designed to be entertaining and
     >inspiring. If you have ever wondered what lisp or even programming itself
     >is really about, this is the book you have been looking for.
-    
+
     Most of the book is available for free on [the author's site][lol]
 
     [lol]: http://letoverlambda.com/
@@ -149,7 +149,7 @@
     [pobi-desc]: http://franz.com/success/customer_apps/bioinformatics/book_Ira-Kalet.lhtml
   links:
     amazon: http://www.amazon.com/Principles-Biomedical-Informatics-Second-Kalet/dp/0124160190
-- title: Common Lisp Recipes 
+- title: Common Lisp Recipes
   author: Edmund Weitz
   cover: clr.jpg
   description: |
@@ -176,13 +176,13 @@
     >mentorship.
   links:
     amazon: http://www.amazon.com/gp/product/1484211774/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1484211774&linkCode=as2&tag=ediwei-20&linkId=KLUFEAD2NVMNB7RZ
-      
+
 - title: Common Lisp in the Wild
   author: Wimpie Nortje
   cover: clitw.jpg
   description: |
     [*Common Lisp in the Wild*][clitw] is a practical guide to Common Lisp
-    application deployment. 
+    application deployment.
 
     If you are unsure how to create executables, fighting with library version
     conflicts, or struggling with reproducible builds then this book can save
@@ -194,7 +194,7 @@
     Understanding and using the framework does not require any advanced Lisp
     knowledge. The examples build on one another without making conceptual
     leaps.
-    
+
     With the example projects in hand, you can start deploying applications in
     minutes.
 
