@@ -21,5 +21,5 @@ To make a change to the website:
 Built with [Jekyll][jek] and [Sass][sass]. Hosted on [GitHub Pages][gh].
 
 [jek]: https://jekyllrb.com/
-[sass]: http://sass-lang.com/
+[sass]: https://sass-lang.com/
 [gh]: https://pages.github.com/
