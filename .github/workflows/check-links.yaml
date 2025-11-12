@@ -12,11 +12,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
-          bundler-cache: true
+
+      - name: Install Jekyll
+        run: gem install jekyll
 
       - name: Build Jekyll site
-        run: |
-          bundle exec jekyll build
+        run: jekyll build
 
       - name: Check links
         uses: lycheeverse/lychee-action@v1
