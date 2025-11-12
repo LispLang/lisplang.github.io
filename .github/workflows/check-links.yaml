@@ -12,8 +12,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.10"
-
-      - run: gem install
+          bundler-cache: true
 
       - name: Build Jekyll site
         run: jekyll build
