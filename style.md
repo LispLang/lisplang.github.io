@@ -58,12 +58,12 @@ In short: [write many small libraries][small-libs].
 
 Names are lowercase, separated by single dashes (`-`), and they are complete
 words. That is, you should write `user-count` rather than `user-cnt` and
-`make-text-node` is better `mk-txt-node`.
+`make-text-node` is better than `mk-txt-node`.
 
 ## Variables
 
-**Special variables** (Mutable globals) should be surrounded by asterisks. These
-  are called earmuffs.
+**Special variables** (mutable dynamic variables) should be surrounded by asterisks. These
+  are sometimes called "earmuffs".
 
 For example:
 
@@ -95,13 +95,13 @@ Predicates should be suffixed with:
 : If the rest of the function name is more than one word, e.g
 `largest-planet-p`, `request-throttled-p`.
 
-## Don't prefix package names
+## Don't prefix symbols with package name
 
 This is what packages are for. The name of a function in a package
 `myapp.parser` should not start with `parser-`.
 
 If you're binding a C library where every function name is of the form
-`library_name_function_name`, use the library's name (Or, more accurately, a
+`library_name_function_name`, use the library's name (or, more accurately, a
 reasonable Common Lisp translation of the name, i.e. `libGUI` should be
 `lib-gui`) as the package name and the actual name of the function as the
 function name.
@@ -132,14 +132,14 @@ must be on the same line:
 
 ## Line length
 
-Lines should not exceed 100 columns. The lower limit of 80 columns, used in
-other languages, is less fitting for Common Lisp, which encourages descriptive
-variable names and complete rather than abbreviated function names.
+Lines should not exceed 100 columns. The 80-column limit used in
+other languages is less fitting for Common Lisp, which encourages descriptive
+variable names that use complete, unabbreviated words.
 
 ## File header
 
 The top of the file should include a
-[four-semicolon comment](#comment-hierarchy) comment describing the purpose of
+[four-semicolon comment](#comment-hierarchy) describing the purpose of
 the file.
 
 You should **not** include copyright or authorship information in file-level
@@ -163,14 +163,14 @@ regions of the code.
 
 Comments with two semicolons, `;;`, should describe regions of code within a
 function or some other top-level form, while single-semicolon comments, `;`,
-should just be short notes on a single line.
+should just be short notes at the end of a single line.
 
 ## Do not use comments to erase code
 
-When testing, it's fine to use comments, especially multi-line comments, so
+When testing, it's fine to use comments, especially multi-line comments, to
 experimentally remove a large segment of code. However, all projects should use
 version control, and accordingly, code should be liberally deleted rather than
-hidden inside a comment.
+just commented out.
 
 # CLOS
 
@@ -342,7 +342,9 @@ Instead, do this:
 
 ## Hierarchical Package Names
 
-For instance, here is an example package hierarchy for a game:
+If your project needs more than one package (which is common for non-trivial projects)
+use hierarchical package names.  For instance, here is an example package hierarchy
+for a game named "title":
 
 ~~~lisp
 title
@@ -488,7 +490,7 @@ the main system definition file. It should look like this:
 
 From the [ASDF manual][asdf-other-code]:
 
->However, it is recommended to keep such forms to a minimal, and to instead
+>However, it is recommended to keep such forms minimal, and to instead
 >define defsystem extensions that you use with `:defsystem-depends-on`.
 
 System definition files should contain a system definition and not much
@@ -539,10 +541,10 @@ documentation, however.
 
 [Continuous integration][ci] allows you to move testing of your project to an
 external service, and allows potential users to see that its tests are passing
-without having to download and test it themselves
+without having to download and test it themselves.
 
-CI services are especially useful when the project depends on external
-dependencies, such as databases, to be installed for testing. An ORM, or
+CI services are especially useful when the project has external dependencies,
+such as databases, that need to be installed for testing. An ORM, or
 database interface library, or a binding to a library written in C, would
 require specific configuration and setup of external things in order to be
 tested. CI services allow you to install all the necessary packages and
